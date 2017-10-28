@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档 | 我的博客</title>
+  <title>grub2命令启动win7 | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录新的一天">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的博客">
-<meta property="og:url" content="https://github.com/loresky/loresky.github.io/archives/index.html">
+  <meta name="description" content="grub2命令启动win7假设win7安装在第一硬盘第一分区（即hd0,1，如果不是，自行修改）：1234grub&amp;gt;insmod ntfsgrub&amp;gt;set root=&apos;hd0,1&apos;grub&amp;gt;chainloader +1grub&amp;gt;boot 或者试试：1234grub&amp;gt;insmod ntfsgrub&amp;gt;search --no-floppy --set=root  /b">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="grub2命令启动win7">
+<meta property="og:url" content="https://github.com/loresky/loresky.github.io/2017/07/03/grub2命令启动win7/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="记录新的一天">
+<meta property="og:description" content="grub2命令启动win7假设win7安装在第一硬盘第一分区（即hd0,1，如果不是，自行修改）：1234grub&amp;gt;insmod ntfsgrub&amp;gt;set root=&apos;hd0,1&apos;grub&amp;gt;chainloader +1grub&amp;gt;boot 或者试试：1234grub&amp;gt;insmod ntfsgrub&amp;gt;search --no-floppy --set=root  /b">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-10-28T04:22:25.889Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的博客">
-<meta name="twitter:description" content="记录新的一天">
+<meta name="twitter:title" content="grub2命令启动win7">
+<meta name="twitter:description" content="grub2命令启动win7假设win7安装在第一硬盘第一分区（即hd0,1，如果不是，自行修改）：1234grub&amp;gt;insmod ntfsgrub&amp;gt;set root=&apos;hd0,1&apos;grub&amp;gt;chainloader +1grub&amp;gt;boot 或者试试：1234grub&amp;gt;insmod ntfsgrub&amp;gt;search --no-floppy --set=root  /b">
   
     <link rel="alternate" href="/atom.xml" title="我的博客" type="application/atom+xml">
   
@@ -67,215 +69,69 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/loresky.github.io/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/10/28/hello-world/" class="archive-article-date">
-  <time datetime="2017-10-28T04:07:03.788Z" itemprop="datePublished">10月 28</time>
+        <section id="main"><article id="post-grub2命令启动win7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/07/03/grub2命令启动win7/" class="article-date">
+  <time datetime="2017-07-03T06:49:26.000Z" itemprop="datePublished">2017-07-03</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/10/28/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      grub2命令启动win7
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/09/26/mongodb可视化/" class="archive-article-date">
-  <time datetime="2017-09-26T02:17:09.000Z" itemprop="datePublished">9月 26</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/09/26/mongodb可视化/">mongodb可视化</a>
-    </h1>
-  
+        <h2 id="grub2命令启动win7"><a href="#grub2命令启动win7" class="headerlink" title="grub2命令启动win7"></a>grub2命令启动win7</h2><p><strong>假设win7安装在第一硬盘第一分区（即hd0,1，如果不是，自行修改）：</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">grub&gt;</span><span class="bash">insmod ntfs</span></div><div class="line"><span class="meta">grub&gt;</span><span class="bash"><span class="built_in">set</span> root=<span class="string">'hd0,1'</span></span></div><div class="line"><span class="meta">grub&gt;</span><span class="bash">chainloader +1</span></div><div class="line"><span class="meta">grub&gt;</span><span class="bash">boot</span></div></pre></td></tr></table></figure></p>
+<p><strong>或者试试：</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">grub&gt;</span><span class="bash">insmod ntfs</span></div><div class="line"><span class="meta">grub&gt;</span><span class="bash">search --no-floppy --<span class="built_in">set</span>=root  /bootmgr</span></div><div class="line"><span class="meta">grub&gt;</span><span class="bash">chainloader +1</span></div><div class="line"><span class="meta">grub&gt;</span><span class="bash">boot</span></div></pre></td></tr></table></figure></p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/09/20/go环境和目录/" class="archive-article-date">
-  <time datetime="2017-09-19T17:53:21.000Z" itemprop="datePublished">9月 20</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/09/20/go环境和目录/">go环境和目录</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/07/03/linux查看端口/" class="archive-article-date">
-  <time datetime="2017-07-03T06:57:38.000Z" itemprop="datePublished">7月 3</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/grub2命令启动win7/" data-id="cj9atmjyg000fuyicdai8e8l6" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/07/03/linux查看端口/">linux程序端口占用情况</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/07/03/linux硬盘安装/" class="archive-article-date">
-  <time datetime="2017-07-03T06:56:38.000Z" itemprop="datePublished">7月 3</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/07/03/linux硬盘安装/">linux硬盘安装</a>
-    </h1>
-  
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/loresky.github.io/2017/07/03/linux硬盘安装/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          linux硬盘安装
+        
+      </div>
+    </a>
+  
+  
+    <a href="/loresky.github.io/2017/06/30/xmind破解/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">xmind破解</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/07/03/grub2命令启动win7/" class="archive-article-date">
-  <time datetime="2017-07-03T06:49:26.000Z" itemprop="datePublished">7月 3</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/07/03/grub2命令启动win7/">grub2命令启动win7</a>
-    </h1>
-  
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/06/30/xmind破解/" class="archive-article-date">
-  <time datetime="2017-06-30T03:56:07.000Z" itemprop="datePublished">6月 30</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/06/30/xmind破解/">xmind破解</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/06/28/linux常用命令/" class="archive-article-date">
-  <time datetime="2017-06-28T12:20:14.000Z" itemprop="datePublished">6月 28</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/06/28/linux常用命令/">linux常用命令</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/06/27/docker常用命令/" class="archive-article-date">
-  <time datetime="2017-06-27T05:12:12.000Z" itemprop="datePublished">6月 27</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/06/27/docker常用命令/">docker常用命令</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/loresky.github.io/2017/06/27/android配置/" class="archive-article-date">
-  <time datetime="2017-06-27T03:30:39.000Z" itemprop="datePublished">6月 27</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/loresky.github.io/2017/06/27/android配置/">android配置</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/loresky.github.io/archives/page/2/">2</a><a class="page-number" href="/loresky.github.io/archives/page/3/">3</a><a class="extend next" rel="next" href="/loresky.github.io/archives/page/2/">__('next') &raquo;</a>
-  </nav>
 </section>
         
           <aside id="sidebar">
