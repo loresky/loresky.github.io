@@ -14,7 +14,7 @@ tags: golang
 |const	|fallthrough	|if	|range	|type|
 |continue	|for	|import	|return	|var|
 
-## Go 语言还有 36 个预定义标识符
+## Go 语言还有 36 个预定义标识ss符
 ||||||||||
 |---|---|---|---|---|---|---|---|---|
 |append	|bool	|byte|cap|close	|complex	|complex64	|complex128	|uint16|
