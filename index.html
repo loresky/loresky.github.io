@@ -69,6 +69,285 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-go结构switch" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go结构switch/" class="article-date">
+  <time datetime="2018-01-06T07:48:00.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go结构switch/">go结构switch</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Go-语言中的-switch-结构使用上更加灵活。它接受任意形式的表达式："><a href="#Go-语言中的-switch-结构使用上更加灵活。它接受任意形式的表达式：" class="headerlink" title="Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式："></a>Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式：</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> var1 &#123;</span><br><span class="line">    <span class="keyword">case</span> val1:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">case</span> val2:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用-fallthrough-关键字来达到目的"><a href="#如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用-fallthrough-关键字来达到目的" class="headerlink" title="如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的"></a>如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> i &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">0</span>: <span class="keyword">fallthrough</span></span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">        f() <span class="comment">// 当 i == 0 时函数也会被调用</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="switch-语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为-true）"><a href="#switch-语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为-true）" class="headerlink" title="switch 语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为 true）"></a>switch 语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为 true）</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> num1 <span class="keyword">int</span> = <span class="number">7</span></span><br><span class="line">    <span class="keyword">switch</span> &#123;</span><br><span class="line">        <span class="keyword">case</span> num1 &lt; <span class="number">0</span>:</span><br><span class="line">            fmt.Println(<span class="string">"Number is negative"</span>)</span><br><span class="line">        <span class="keyword">case</span> num1 &gt; <span class="number">0</span> &amp;&amp; num1 &lt; <span class="number">10</span>:</span><br><span class="line">            fmt.Println(<span class="string">"Number is between 0 and 10"</span>)</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            fmt.Println(<span class="string">"Number is 10 or greater"</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Number is between 0 and 10</span></span><br></pre></td></tr></table></figure>
+<h2 id="switch-语句的第三种形式是包含一个初始化语句："><a href="#switch-语句的第三种形式是包含一个初始化语句：" class="headerlink" title="switch 语句的第三种形式是包含一个初始化语句："></a>switch 语句的第三种形式是包含一个初始化语句：</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> result := calculate(); &#123;</span><br><span class="line">    <span class="keyword">case</span> result &lt; <span class="number">0</span>:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">case</span> result &gt; <span class="number">0</span>:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="comment">// 0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go结构switch/" data-id="cjc3293h3000rnb3r3clrw1bb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-go多返回值函数的错误" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go多返回值函数的错误/" class="article-date">
+  <time datetime="2018-01-06T07:34:47.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go多返回值函数的错误/">go多返回值函数的错误</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">anInt, _ = strconv.Atoi(origStr)</span><br></pre></td></tr></table></figure>
+<p><strong>如果 origStr 不能被转换为整数，anInt 的值会变成 0 而 _ 无视了错误，程序会继续运行。</strong><br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">"fmt"</span></span><br><span class="line">    <span class="string">"strconv"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> orig <span class="keyword">string</span> = <span class="string">"ABC"</span></span><br><span class="line">    <span class="comment">// var an int</span></span><br><span class="line">    <span class="keyword">var</span> newS <span class="keyword">string</span></span><br><span class="line">    <span class="comment">// var err error</span></span><br><span class="line"></span><br><span class="line">    fmt.Printf(<span class="string">"The size of ints is: %d\n"</span>, strconv.IntSize)      </span><br><span class="line">    <span class="comment">// anInt, err = strconv.Atoi(origStr)</span></span><br><span class="line">    an, err := strconv.Atoi(orig)</span><br><span class="line">    <span class="keyword">if</span> err != <span class="literal">nil</span> &#123;</span><br><span class="line">        fmt.Printf(<span class="string">"orig %s is not an integer - exiting with error\n"</span>, orig)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    &#125; </span><br><span class="line">    <span class="comment">// 未发生错误，继续执行：</span></span><br><span class="line">    fmt.Printf(<span class="string">"The integer is %d\n"</span>, an)</span><br><span class="line">    an = an + <span class="number">5</span></span><br><span class="line">    newS = strconv.Itoa(an)</span><br><span class="line">    fmt.Printf(<span class="string">"The new string is: %s\n"</span>, newS)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go多返回值函数的错误/" data-id="cjc3293hi001gnb3r0t39pu11" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-go字符串" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go字符串/" class="article-date">
+  <time datetime="2018-01-06T07:06:42.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go字符串/">go字符串</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Go 支持以下 2 种形式的字面值：</p>
+<ul>
+<li>解释字符串：<br><strong>该类字符串使用双引号括起来，其中的相关的转义字符将被替换，这些转义字符包括： </strong></li>
+</ul>
+<ol>
+<li>\n：换行符</li>
+<li>\r：回车符</li>
+<li>\t：tab 键</li>
+<li>\u 或 \U：Unicode 字符</li>
+<li>\：反斜杠自身</li>
+</ol>
+<ul>
+<li>非解释字符串：<br><strong>该类字符串使用反引号括起来，支持换行，例如：</strong><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`This is a raw string \n` 中的 `\n\` 会被原样输出。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go字符串/" data-id="cjc3293gy000hnb3rzm8sj0n6" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-go基本类型和运算符" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go基本类型和运算符/" class="article-date">
+  <time datetime="2018-01-06T06:17:43.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go基本类型和运算符/">go基本类型和运算符</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-布尔类型-bool"><a href="#1-布尔类型-bool" class="headerlink" title="1.布尔类型 bool"></a>1.布尔类型 bool</h2><p>非运算符：!<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!T -&gt; <span class="literal">false</span></span><br><span class="line">!F -&gt; <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<p>和运算符：&amp;&amp;<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">T &amp;&amp; T -&gt; <span class="literal">true</span></span><br><span class="line">T &amp;&amp; F -&gt; <span class="literal">false</span></span><br><span class="line">F &amp;&amp; T -&gt; <span class="literal">false</span></span><br><span class="line">F &amp;&amp; F -&gt; <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<p>或运算符：||<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">T || T -&gt; <span class="literal">true</span></span><br><span class="line">T || F -&gt; <span class="literal">true</span></span><br><span class="line">F || T -&gt; <span class="literal">true</span></span><br><span class="line">F || F -&gt; <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="2-数字类型"><a href="#2-数字类型" class="headerlink" title="2.数字类型"></a>2.数字类型</h2><p><strong>Go 语言支持整型和浮点型数字，并且原生支持复数。</strong><br><strong>Go 也有基于架构的类型，例如：int、uint 和 uintptr。</strong><br>这些类型的长度都是根据运行程序所在的操作系统类型所决定的：</p>
+<ul>
+<li>int 和 uint 在 32 位操作系统上，它们均使用 32 位（4 个字节），在 64 位操作系统上，它们均使用 64 位（8 个字节）。</li>
+<li>uintptr 的长度被设定为足够存放一个指针即可。</li>
+</ul>
+<h3 id="整数："><a href="#整数：" class="headerlink" title="整数："></a>整数：</h3><ul>
+<li>int8（-128 -&gt; 127）</li>
+<li>int16（-32768 -&gt; 32767）</li>
+<li>int32（-2,147,483,648 -&gt; 2,147,483,647）</li>
+<li>int64（-9,223,372,036,854,775,808 -&gt; 9,223,372,036,854,775,807）</li>
+</ul>
+<h3 id="无符号整数："><a href="#无符号整数：" class="headerlink" title="无符号整数："></a>无符号整数：</h3><ul>
+<li>uint8（0 -&gt; 255）</li>
+<li>uint16（0 -&gt; 65,535）</li>
+<li>uint32（0 -&gt; 4,294,967,295）</li>
+<li>uint64（0 -&gt; 18,446,744,073,709,551,615）</li>
+</ul>
+<p><strong>int 型是计算最快的一种类型。</strong><br>整型的零值为 0，浮点型的零值为 0.0。<br><strong>float32 精确到小数点后 7 位，float64 精确到小数点后 15 位。</strong>由于精确度的缘故，你在使用 == 或者 != 来比较浮点数时应当非常小心。你最好在正式使用前测试对于精确度要求较高的运算。<br>你应该尽可能地使用 float64，因为 math 包中所有有关数学运算的函数都会要求接收这个类型。<br>你可以通过增加前缀 0 来表示 8 进制数（如：077），增加前缀 0x 来表示 16 进制数（如：0xFF），以及使用 e 来表示 10 的连乘（如： 1e3 = 1000，或者 6.022e23 = 6.022 x 1e23）。<br>你可以使用 a := uint64(0) 来同时完成类型转换和赋值操作，这样 a 的类型就是 uint64。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> n <span class="keyword">int16</span> = <span class="number">34</span></span><br><span class="line">    <span class="keyword">var</span> m <span class="keyword">int32</span></span><br><span class="line">    <span class="comment">// compiler error: cannot use n (type int16) as type int32 in assignment</span></span><br><span class="line">    <span class="comment">//m = n</span></span><br><span class="line">    m = <span class="keyword">int32</span>(n)</span><br><span class="line"></span><br><span class="line">    fmt.Printf(<span class="string">"32 bit int is: %d\n"</span>, m)</span><br><span class="line">    fmt.Printf(<span class="string">"16 bit int is: %d\n"</span>, n)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出：</span></span><br><span class="line"><span class="number">32</span> bit <span class="keyword">int</span> is: <span class="number">34</span></span><br><span class="line"><span class="number">16</span> bit <span class="keyword">int</span> is: <span class="number">34</span></span><br></pre></td></tr></table></figure>
+<h4 id="格式化说明符"><a href="#格式化说明符" class="headerlink" title="格式化说明符"></a>格式化说明符</h4><p><strong>%d </strong>用于格式化整数（%x 和 %X 用于格式化 16 进制表示的数字<br><strong>%g </strong>用于格式化浮点型（%f 输出浮点数，%e 输出科学计数表示法）<br><strong>%0d </strong>用于规定输出定长的整数，其中开头的数字 0 是必须的</p>
+<h2 id="3-数字类型"><a href="#3-数字类型" class="headerlink" title="3.数字类型"></a>3.数字类型</h2><p>Go 拥有以下复数类型：<br>complex64 (32 位实数和虚数)<br>complex128 (64 位实数和虚数)<br><strong>复数使用 re+imI 来表示，其中 re 代表实数部分，im 代表虚数部分，I 代表根号负 1。</strong><br>在使用格式化说明符时，可以使用 %v 来表示复数，但当你希望只表示其中的一个部分的时候需要使用 %f</p>
+<h2 id="4-位运算"><a href="#4-位运算" class="headerlink" title="4.位运算"></a>4.位运算</h2><h3 id="二元运算符"><a href="#二元运算符" class="headerlink" title="二元运算符"></a>二元运算符</h3><ul>
+<li><p>按位与 &amp;：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> &amp; <span class="number">1</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">1</span> &amp; <span class="number">0</span> -&gt; <span class="number">0</span></span><br><span class="line"><span class="number">0</span> &amp; <span class="number">1</span> -&gt; <span class="number">0</span></span><br><span class="line"><span class="number">0</span> &amp; <span class="number">0</span> -&gt; <span class="number">0</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按位或 |：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> | <span class="number">1</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">1</span> | <span class="number">0</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">0</span> | <span class="number">1</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">0</span> | <span class="number">0</span> -&gt; <span class="number">0</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按位异或 ^：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> ^ <span class="number">1</span> -&gt; <span class="number">0</span></span><br><span class="line"><span class="number">1</span> ^ <span class="number">0</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">0</span> ^ <span class="number">1</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">0</span> ^ <span class="number">0</span> -&gt; <span class="number">0</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="二元运算符-1"><a href="#二元运算符-1" class="headerlink" title="二元运算符"></a>二元运算符</h3><ul>
+<li><p>按位补足 ^：<br>该运算符与异或运算符一同使用，即 m^x，对于无符号 x 使用“全部位设置为 1”，对于有符号 x 时使用 m=-1。例如：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">^<span class="number">2</span> = ^<span class="number">10</span> = <span class="number">-01</span> ^ <span class="number">10</span> = <span class="number">-11</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>位左移 &lt;&lt;：<br>用法：bitP &lt;&lt; n。<br>bitP 的位向左移动 n 位，右侧空白部分使用 0 填充；如果 n 等于 2，则结果是 2 的相应倍数，即 2 的 n 次方。例如：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span> <span class="comment">// 等于 1 KB</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">20</span> <span class="comment">// 等于 1 MB</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">30</span> <span class="comment">// 等于 1 GB</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>位右移 &gt;&gt;：<br>用法：bitP &gt;&gt; n。<br>bitP 的位向右移动 n 位，左侧空白部分使用 0 填充；如果 n 等于 2，则结果是当前值除以 2 的 n 次方。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span> <span class="comment">// 等于 1 KB</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">20</span> <span class="comment">// 等于 1 MB</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">30</span> <span class="comment">// 等于 1 GB</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="位左移常见实现存储单位的用例"><a href="#位左移常见实现存储单位的用例" class="headerlink" title="位左移常见实现存储单位的用例"></a>位左移常见实现存储单位的用例</h4><p><strong>使用位左移与 iota 计数配合可优雅地实现存储单位的常量枚举：</strong><br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> ByteSize <span class="keyword">float64</span></span><br><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    _ = <span class="literal">iota</span> <span class="comment">// 通过赋值给空白标识符来忽略值</span></span><br><span class="line">    KB ByteSize = <span class="number">1</span>&lt;&lt;(<span class="number">10</span>*<span class="literal">iota</span>)</span><br><span class="line">    MB</span><br><span class="line">    GB</span><br><span class="line">    TB</span><br><span class="line">    PB</span><br><span class="line">    EB</span><br><span class="line">    ZB</span><br><span class="line">    YB</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
+<h2 id="5-运算符与优先级"><a href="#5-运算符与优先级" class="headerlink" title="5.运算符与优先级"></a>5.运算符与优先级</h2><table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>运算符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>^ !</td>
+</tr>
+<tr>
+<td>6</td>
+<td>* / % &lt;&lt; &gt;&gt; &amp; &amp;^</td>
+</tr>
+<tr>
+<td>5</td>
+<td>+ - &#124; ^</td>
+</tr>
+<tr>
+<td>4</td>
+<td>== != &lt; &lt;= &gt;= &gt;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&lt;-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>&amp;&amp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>&#124;&#124;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-字符类型"><a href="#6-字符类型" class="headerlink" title="6.字符类型"></a>6.字符类型</h2><h4 id="格式化说明符-1"><a href="#格式化说明符-1" class="headerlink" title="格式化说明符"></a>格式化说明符</h4><p>%c 用于表示字符<br>当和字符配合使用时，%v 或 %d 会输出用于表示该字符的整数<br>%U 输出格式为 U+hhhh 的字符串</p>
+<ul>
+<li>判断是否为字母：unicode.IsLetter(ch)</li>
+<li>判断是否为数字：unicode.IsDigit(ch)</li>
+<li>判断是否为空白符号：unicode.IsSpace(ch)</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go基本类型和运算符/" data-id="cjc3293gw000fnb3r8v9bckhz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-go常量、变量、枚举" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/loresky.github.io/2018/01/06/go常量、变量、枚举/" class="article-date">
@@ -100,10 +379,11 @@
 <h1 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h1><h4 id="第一个-iota-等于-0，每当-iota-在新的一行被使用时，它的值都会自动加-1；所以-a-0-b-1-c-2-可以简写为如下形式："><a href="#第一个-iota-等于-0，每当-iota-在新的一行被使用时，它的值都会自动加-1；所以-a-0-b-1-c-2-可以简写为如下形式：" class="headerlink" title="第一个 iota 等于 0，每当 iota 在新的一行被使用时，它的值都会自动加 1；所以 a=0, b=1, c=2 可以简写为如下形式："></a>第一个 iota 等于 0，每当 iota 在新的一行被使用时，它的值都会自动加 1；所以 a=0, b=1, c=2 可以简写为如下形式：</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    a = <span class="literal">iota</span></span><br><span class="line">    b</span><br><span class="line">    c</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <h4 id="一周中每天的名称"><a href="#一周中每天的名称" class="headerlink" title="一周中每天的名称"></a>一周中每天的名称</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    Sunday = <span class="literal">iota</span></span><br><span class="line">    Monday</span><br><span class="line">    Tuesday</span><br><span class="line">    Wednesday</span><br><span class="line">    Thursday</span><br><span class="line">    Friday</span><br><span class="line">    Saturday</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <h4 id="使用某个类型作为枚举常量的类型："><a href="#使用某个类型作为枚举常量的类型：" class="headerlink" title="使用某个类型作为枚举常量的类型："></a>使用某个类型作为枚举常量的类型：</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> Color <span class="keyword">int</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    RED Color = <span class="literal">iota</span> <span class="comment">// 0</span></span><br><span class="line">    ORANGE <span class="comment">// 1</span></span><br><span class="line">    YELLOW <span class="comment">// 2</span></span><br><span class="line">    GREEN <span class="comment">// ..</span></span><br><span class="line">    BLUE</span><br><span class="line">    INDIGO</span><br><span class="line">    VIOLET <span class="comment">// 6</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">15</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="literal">false</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">"Go says hello to the world!"</span></span><br><span class="line"><span class="comment">//或：</span></span><br><span class="line"><span class="keyword">var</span> (</span><br><span class="line">    a = <span class="number">15</span></span><br><span class="line">    b = <span class="literal">false</span></span><br><span class="line">    str = <span class="string">"Go says hello to the world!"</span></span><br><span class="line">    numShips = <span class="number">50</span></span><br><span class="line">    city <span class="keyword">string</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go常量、变量、枚举/" data-id="cjc2vpu1l0006493rstxp7gqd" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go常量、变量、枚举/" data-id="cjc3293hg001cnb3rueybvyqy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
@@ -254,7 +534,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go文件名、关键字与标识符/" data-id="cjc2vpu1s000l493r30ofzhdb" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go文件名、关键字与标识符/" data-id="cjc3293h1000nnb3ruqzgl12x" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
@@ -298,7 +578,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go生成代码文档/" data-id="cjc2vpu2b001q493ri80c2yj0" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go生成代码文档/" data-id="cjc3293hq001vnb3rffwz3icy" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
@@ -345,7 +625,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/05/hello-world/" data-id="cjc2vpu1v000r493rfwus6rrp" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/05/hello-world/" data-id="cjc3293h6000vnb3rxwdljdk6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -388,7 +668,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/11/13/Virtualbox中win7虚拟机中U盘不可用问题的解决/" data-id="cjc2vpu1b0000493rkri92t7n" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/11/13/Virtualbox中win7虚拟机中U盘不可用问题的解决/" data-id="cjc3293gk0001nb3r5mcvju2l" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/win/">win</a></li></ul>
@@ -441,200 +721,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/10/31/openvpn/" data-id="cjc2vpu26001d493rwq6284zp" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/10/31/openvpn/" data-id="cjc3293hr001ynb3r0twauz58" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/vpn/">vpn</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-mongodb可视化" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/09/26/mongodb可视化/" class="article-date">
-  <time datetime="2017-09-26T02:17:09.000Z" itemprop="datePublished">2017-09-26</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/mongodb/">mongodb</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/09/26/mongodb可视化/">mongodb可视化</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="mongo-express"><a href="#mongo-express" class="headerlink" title="mongo-express"></a>mongo-express</h2><p><strong>复制创建配置文件</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp config.default.js config.js</span><br></pre></td></tr></table></figure></p>
-<p><strong>配置Mongo数据库的连接信息：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">mongo = &#123;</span><br><span class="line">    db:       &apos;db&apos;,</span><br><span class="line">    host:     &apos;localhost&apos;,</span><br><span class="line">    password: &apos;pass&apos;,</span><br><span class="line">    port:     27017,</span><br><span class="line">    ssl:      false,</span><br><span class="line">    url:      &apos;mongodb://localhost:27017/db&apos;,</span><br><span class="line">    username: &apos;admin&apos;,</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>配置Web服务的信息</strong><br>其中根据场景需求，可能需要把<br><code>host:             process.env.VCAP_APP_HOST                 || &#39;localhost&#39;</code><br>修改为<br><code>host:             process.env.VCAP_APP_HOST                 || &#39;0.0.0.0&#39;,</code></p>
-<p><strong>修改登录网页所需要的用户名、密码，默认为admin和pass：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">basicAuth: &#123;</span><br><span class="line">    username: process.env.ME_CONFIG_BASICAUTH_USERNAME || &apos;admin&apos;,</span><br><span class="line">    password: process.env.ME_CONFIG_BASICAUTH_PASSWORD || &apos;pass&apos;,</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>admin feature需要打开，才能够同时管理多个DB</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN.toLowerCase() === &apos;true&apos; : false,</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/09/26/mongodb可视化/" data-id="cjc2vpu25001b493rhcfyvmul" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/mongodb/">mongodb</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-go环境和目录" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/09/20/go环境和目录/" class="article-date">
-  <time datetime="2017-09-19T17:53:21.000Z" itemprop="datePublished">2017-09-20</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/09/20/go环境和目录/">go环境和目录</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Go-的源代码有以下三个分支："><a href="#Go-的源代码有以下三个分支：" class="headerlink" title="Go 的源代码有以下三个分支："></a>Go 的源代码有以下三个分支：</h2><ul>
-<li>Go release：最新稳定版，实际开发最佳选择</li>
-<li>Go weekly：包含最近更新的版本，一般每周更新一次</li>
-<li>Go tip：永远保持最新的版本，相当于内测版</li>
-</ul>
-<h2 id="最为重要的环境变量"><a href="#最为重要的环境变量" class="headerlink" title="最为重要的环境变量:"></a>最为重要的环境变量:</h2><p><strong>$GOROOT </strong>表示 Go 在你的电脑上的安装位置,它的值一般都是$HOME/go,当然,你也可以安装在别的地方。<br><strong>$GOARCH </strong>表示目标机器的处理器架构,它的值可以是 386、amd64 或 arm。<br><strong>$GOOS </strong>表示目标机器的操作系统,它的值可以是 darwin、freebsd、linux 或 windows。<br><strong>$GOBIN </strong>表示编译器和链接器的安装位置,默认是$GOROOT/bin</p>
-<p><strong>$GOPATH </strong> 默认采用和 $GOROOT 一样的值，但从 Go 1.1 版本开始，你必须修改为其它路径。它可以包含多个包含 Go 语言源码文件、包文件和可执行文件的路径，而这些路径下又必须分别包含三个规定的目录：src、pkg 和 bin，这三个目录分别用于存放源码文件、包文件和可执行文件。<br><strong>$GOARM </strong>专门针对基于 arm 架构的处理器，它的值可以是 5 或 6，默认为 6。<br><strong> $GOMAXPROCS </strong>用于设置应用程序可使用的处理器个数与核数。</p>
-<h2 id="Go-安装目录"><a href="#Go-安装目录" class="headerlink" title="Go 安装目录"></a>Go 安装目录</h2><ul>
-<li>/bin :包含可执行文件,如:编译器,Go 工具</li>
-<li>/doc :包含示例程序,代码工具,本地文档等</li>
-<li>/lib :包含文档模版</li>
-<li>/misc:包含与支持 Go 编辑器有关的配置文件以及 cgo 的示例</li>
-<li>/os_arch</li>
-<li>/src:包含标准库的包的对象文件(.a):包含源代码构建脚本和标准库的包的完整源代码(Go 是一门开源语言)</li>
-<li>/src/cmd:包含 Go 和 C 的编译器和命令行脚本</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/09/20/go环境和目录/" data-id="cjc2vpu1o000b493rl8tnwwzf" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux查看端口" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/07/03/linux查看端口/" class="article-date">
-  <time datetime="2017-07-03T06:57:38.000Z" itemprop="datePublished">2017-07-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/07/03/linux查看端口/">linux程序端口占用情况</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><p><strong>lsof -i:port</strong><br><strong>netstat –apn | grep 8080</strong></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/linux查看端口/" data-id="cjc2vpu210011493r86rcol0d" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux硬盘安装" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/07/03/linux硬盘安装/" class="article-date">
-  <time datetime="2017-07-03T06:56:38.000Z" itemprop="datePublished">2017-07-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/07/03/linux硬盘安装/">linux硬盘安装</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title Install Ubuntu</span><br><span class="line">root (hd0,0)</span><br><span class="line">kernel (hd0,0)/vmlinuz.efi boot=casper iso-scan/filename=/ubuntu.iso locale=zh_CN.UTF-8</span><br><span class="line">initrd (hd0,0)/initrd.lz</span><br><span class="line">title reboot</span><br><span class="line">reboot</span><br><span class="line">title halt</span><br><span class="line">halt</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/linux硬盘安装/" data-id="cjc2vpu200010493rc8tdjnnk" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
 
     </footer>
   </div>
@@ -676,7 +766,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/loresky.github.io/tags/android/" style="font-size: 10px;">android</a> <a href="/loresky.github.io/tags/docker/" style="font-size: 13.33px;">docker</a> <a href="/loresky.github.io/tags/git/" style="font-size: 10px;">git</a> <a href="/loresky.github.io/tags/golang/" style="font-size: 16.67px;">golang</a> <a href="/loresky.github.io/tags/idea插件/" style="font-size: 10px;">idea插件</a> <a href="/loresky.github.io/tags/linux/" style="font-size: 20px;">linux</a> <a href="/loresky.github.io/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/loresky.github.io/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/loresky.github.io/tags/vpn/" style="font-size: 10px;">vpn</a> <a href="/loresky.github.io/tags/win/" style="font-size: 16.67px;">win</a> <a href="/loresky.github.io/tags/数据库/" style="font-size: 10px;">数据库</a>
+      <a href="/loresky.github.io/tags/android/" style="font-size: 10px;">android</a> <a href="/loresky.github.io/tags/docker/" style="font-size: 12.5px;">docker</a> <a href="/loresky.github.io/tags/git/" style="font-size: 10px;">git</a> <a href="/loresky.github.io/tags/golang/" style="font-size: 20px;">golang</a> <a href="/loresky.github.io/tags/idea插件/" style="font-size: 10px;">idea插件</a> <a href="/loresky.github.io/tags/linux/" style="font-size: 17.5px;">linux</a> <a href="/loresky.github.io/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/loresky.github.io/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/loresky.github.io/tags/vpn/" style="font-size: 10px;">vpn</a> <a href="/loresky.github.io/tags/win/" style="font-size: 15px;">win</a> <a href="/loresky.github.io/tags/数据库/" style="font-size: 10px;">数据库</a>
     </div>
   </div>
 
@@ -698,23 +788,23 @@
       <ul>
         
           <li>
+            <a href="/loresky.github.io/2018/01/06/go结构switch/">go结构switch</a>
+          </li>
+        
+          <li>
+            <a href="/loresky.github.io/2018/01/06/go多返回值函数的错误/">go多返回值函数的错误</a>
+          </li>
+        
+          <li>
+            <a href="/loresky.github.io/2018/01/06/go字符串/">go字符串</a>
+          </li>
+        
+          <li>
+            <a href="/loresky.github.io/2018/01/06/go基本类型和运算符/">go基本类型和运算符</a>
+          </li>
+        
+          <li>
             <a href="/loresky.github.io/2018/01/06/go常量、变量、枚举/">go常量、变量、枚举</a>
-          </li>
-        
-          <li>
-            <a href="/loresky.github.io/2018/01/06/go文件名、关键字与标识符/">go文件名、关键字与标识符</a>
-          </li>
-        
-          <li>
-            <a href="/loresky.github.io/2018/01/06/go生成代码文档/">go生成代码文档</a>
-          </li>
-        
-          <li>
-            <a href="/loresky.github.io/2018/01/05/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/loresky.github.io/2017/11/13/Virtualbox中win7虚拟机中U盘不可用问题的解决/">Virtualbox中win7虚拟机中U盘不可用问题的解决</a>
           </li>
         
       </ul>

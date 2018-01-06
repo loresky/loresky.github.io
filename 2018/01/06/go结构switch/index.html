@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>win的linux_location | 我的博客</title>
+  <title>go结构switch | 我的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。里面说到 linux 存放位置在C:\Users{user}\AppData\Local\lxss{username}其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。以及你的 /home 文件夹会在C:\Users{user}\AppDat">
-<meta name="keywords" content="win">
+  <meta name="description" content="Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式：12345678switch var1 &amp;#123;    case val1:        ...    case val2:        ...    default:        ...&amp;#125; 如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的123">
+<meta name="keywords" content="golang">
 <meta property="og:type" content="article">
-<meta property="og:title" content="win的linux_location">
-<meta property="og:url" content="https://github.com/loresky/loresky.github.io/2017/06/15/win的linux_location/index.html">
+<meta property="og:title" content="go结构switch">
+<meta property="og:url" content="https://github.com/loresky/loresky.github.io/2018/01/06/go结构switch/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。里面说到 linux 存放位置在C:\Users{user}\AppData\Local\lxss{username}其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。以及你的 /home 文件夹会在C:\Users{user}\AppDat">
+<meta property="og:description" content="Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式：12345678switch var1 &amp;#123;    case val1:        ...    case val2:        ...    default:        ...&amp;#125; 如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的123">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-05T13:09:25.000Z">
+<meta property="og:updated_time" content="2018-01-06T08:00:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="win的linux_location">
-<meta name="twitter:description" content="谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。里面说到 linux 存放位置在C:\Users{user}\AppData\Local\lxss{username}其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。以及你的 /home 文件夹会在C:\Users{user}\AppDat">
+<meta name="twitter:title" content="go结构switch">
+<meta name="twitter:description" content="Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式：12345678switch var1 &amp;#123;    case val1:        ...    case val2:        ...    default:        ...&amp;#125; 如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的123">
   
     <link rel="alternate" href="/atom.xml" title="我的博客" type="application/atom+xml">
   
@@ -69,14 +69,14 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-win的linux_location" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-go结构switch" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/15/win的linux_location/" class="article-date">
-  <time datetime="2017-06-15T05:10:00.000Z" itemprop="datePublished">2017-06-15</time>
+    <a href="/loresky.github.io/2018/01/06/go结构switch/" class="article-date">
+  <time datetime="2018-01-06T07:48:00.000Z" itemprop="datePublished">2018-01-06</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/win/">win</a>
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
   </div>
 
   </div>
@@ -87,7 +87,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      win的linux_location
+      go结构switch
     </h1>
   
 
@@ -95,15 +95,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。<br>里面说到 linux 存放位置在<br>C:\Users{user}\AppData\Local\lxss{username}<br>其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。<br>以及你的 /home 文件夹会在<br>C:\Users{user}\AppData\Local\lxss\home\</p>
-
+        <h3 id="Go-语言中的-switch-结构使用上更加灵活。它接受任意形式的表达式："><a href="#Go-语言中的-switch-结构使用上更加灵活。它接受任意形式的表达式：" class="headerlink" title="Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式："></a>Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式：</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> var1 &#123;</span><br><span class="line">    <span class="keyword">case</span> val1:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">case</span> val2:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用-fallthrough-关键字来达到目的"><a href="#如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用-fallthrough-关键字来达到目的" class="headerlink" title="如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的"></a>如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> i &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">0</span>: <span class="keyword">fallthrough</span></span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">        f() <span class="comment">// 当 i == 0 时函数也会被调用</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="switch-语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为-true）"><a href="#switch-语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为-true）" class="headerlink" title="switch 语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为 true）"></a>switch 语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为 true）</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> num1 <span class="keyword">int</span> = <span class="number">7</span></span><br><span class="line">    <span class="keyword">switch</span> &#123;</span><br><span class="line">        <span class="keyword">case</span> num1 &lt; <span class="number">0</span>:</span><br><span class="line">            fmt.Println(<span class="string">"Number is negative"</span>)</span><br><span class="line">        <span class="keyword">case</span> num1 &gt; <span class="number">0</span> &amp;&amp; num1 &lt; <span class="number">10</span>:</span><br><span class="line">            fmt.Println(<span class="string">"Number is between 0 and 10"</span>)</span><br><span class="line">        <span class="keyword">default</span>:</span><br><span class="line">            fmt.Println(<span class="string">"Number is 10 or greater"</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//Number is between 0 and 10</span></span><br></pre></td></tr></table></figure>
+<h2 id="switch-语句的第三种形式是包含一个初始化语句："><a href="#switch-语句的第三种形式是包含一个初始化语句：" class="headerlink" title="switch 语句的第三种形式是包含一个初始化语句："></a>switch 语句的第三种形式是包含一个初始化语句：</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> result := calculate(); &#123;</span><br><span class="line">    <span class="keyword">case</span> result &lt; <span class="number">0</span>:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">case</span> result &gt; <span class="number">0</span>:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="comment">// 0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/15/win的linux_location/" data-id="cjc3293ht0023nb3rq595w01a" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go结构switch/" data-id="cjc3293h3000rnb3r3clrw1bb" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/win/">win</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
 
     </footer>
   </div>
@@ -111,19 +113,10 @@
     
 <nav id="article-nav">
   
-    <a href="/loresky.github.io/2017/06/26/maven配置/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          maven配置
-        
-      </div>
-    </a>
   
-  
-    <a href="/loresky.github.io/2017/06/15/win软件/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/loresky.github.io/2018/01/06/go多返回值函数的错误/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">win软件</div>
+      <div class="article-nav-title">go多返回值函数的错误</div>
     </a>
   
 </nav>
