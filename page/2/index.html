@@ -69,6 +69,569 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-go基本类型和运算符" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go基本类型和运算符/" class="article-date">
+  <time datetime="2018-01-06T06:17:43.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go基本类型和运算符/">go基本类型和运算符</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-布尔类型-bool"><a href="#1-布尔类型-bool" class="headerlink" title="1.布尔类型 bool"></a>1.布尔类型 bool</h2><p>非运算符：!<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">!T -&gt; <span class="literal">false</span></span><br><span class="line">!F -&gt; <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<p>和运算符：&amp;&amp;<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">T &amp;&amp; T -&gt; <span class="literal">true</span></span><br><span class="line">T &amp;&amp; F -&gt; <span class="literal">false</span></span><br><span class="line">F &amp;&amp; T -&gt; <span class="literal">false</span></span><br><span class="line">F &amp;&amp; F -&gt; <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<p>或运算符：||<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">T || T -&gt; <span class="literal">true</span></span><br><span class="line">T || F -&gt; <span class="literal">true</span></span><br><span class="line">F || T -&gt; <span class="literal">true</span></span><br><span class="line">F || F -&gt; <span class="literal">false</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="2-数字类型"><a href="#2-数字类型" class="headerlink" title="2.数字类型"></a>2.数字类型</h2><p><strong>Go 语言支持整型和浮点型数字，并且原生支持复数。</strong><br><strong>Go 也有基于架构的类型，例如：int、uint 和 uintptr。</strong><br>这些类型的长度都是根据运行程序所在的操作系统类型所决定的：</p>
+<ul>
+<li>int 和 uint 在 32 位操作系统上，它们均使用 32 位（4 个字节），在 64 位操作系统上，它们均使用 64 位（8 个字节）。</li>
+<li>uintptr 的长度被设定为足够存放一个指针即可。</li>
+</ul>
+<h3 id="整数："><a href="#整数：" class="headerlink" title="整数："></a>整数：</h3><ul>
+<li>int8（-128 -&gt; 127）</li>
+<li>int16（-32768 -&gt; 32767）</li>
+<li>int32（-2,147,483,648 -&gt; 2,147,483,647）</li>
+<li>int64（-9,223,372,036,854,775,808 -&gt; 9,223,372,036,854,775,807）</li>
+</ul>
+<h3 id="无符号整数："><a href="#无符号整数：" class="headerlink" title="无符号整数："></a>无符号整数：</h3><ul>
+<li>uint8（0 -&gt; 255）</li>
+<li>uint16（0 -&gt; 65,535）</li>
+<li>uint32（0 -&gt; 4,294,967,295）</li>
+<li>uint64（0 -&gt; 18,446,744,073,709,551,615）</li>
+</ul>
+<p><strong>int 型是计算最快的一种类型。</strong><br>整型的零值为 0，浮点型的零值为 0.0。<br><strong>float32 精确到小数点后 7 位，float64 精确到小数点后 15 位。</strong>由于精确度的缘故，你在使用 == 或者 != 来比较浮点数时应当非常小心。你最好在正式使用前测试对于精确度要求较高的运算。<br>你应该尽可能地使用 float64，因为 math 包中所有有关数学运算的函数都会要求接收这个类型。<br>你可以通过增加前缀 0 来表示 8 进制数（如：077），增加前缀 0x 来表示 16 进制数（如：0xFF），以及使用 e 来表示 10 的连乘（如： 1e3 = 1000，或者 6.022e23 = 6.022 x 1e23）。<br>你可以使用 a := uint64(0) 来同时完成类型转换和赋值操作，这样 a 的类型就是 uint64。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> n <span class="keyword">int16</span> = <span class="number">34</span></span><br><span class="line">    <span class="keyword">var</span> m <span class="keyword">int32</span></span><br><span class="line">    <span class="comment">// compiler error: cannot use n (type int16) as type int32 in assignment</span></span><br><span class="line">    <span class="comment">//m = n</span></span><br><span class="line">    m = <span class="keyword">int32</span>(n)</span><br><span class="line"></span><br><span class="line">    fmt.Printf(<span class="string">"32 bit int is: %d\n"</span>, m)</span><br><span class="line">    fmt.Printf(<span class="string">"16 bit int is: %d\n"</span>, n)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出：</span></span><br><span class="line"><span class="number">32</span> bit <span class="keyword">int</span> is: <span class="number">34</span></span><br><span class="line"><span class="number">16</span> bit <span class="keyword">int</span> is: <span class="number">34</span></span><br></pre></td></tr></table></figure>
+<h4 id="格式化说明符"><a href="#格式化说明符" class="headerlink" title="格式化说明符"></a>格式化说明符</h4><p><strong>%d </strong>用于格式化整数（%x 和 %X 用于格式化 16 进制表示的数字<br><strong>%g </strong>用于格式化浮点型（%f 输出浮点数，%e 输出科学计数表示法）<br><strong>%0d </strong>用于规定输出定长的整数，其中开头的数字 0 是必须的</p>
+<h2 id="3-数字类型"><a href="#3-数字类型" class="headerlink" title="3.数字类型"></a>3.数字类型</h2><p>Go 拥有以下复数类型：<br>complex64 (32 位实数和虚数)<br>complex128 (64 位实数和虚数)<br><strong>复数使用 re+imI 来表示，其中 re 代表实数部分，im 代表虚数部分，I 代表根号负 1。</strong><br>在使用格式化说明符时，可以使用 %v 来表示复数，但当你希望只表示其中的一个部分的时候需要使用 %f</p>
+<h2 id="4-位运算"><a href="#4-位运算" class="headerlink" title="4.位运算"></a>4.位运算</h2><h3 id="二元运算符"><a href="#二元运算符" class="headerlink" title="二元运算符"></a>二元运算符</h3><ul>
+<li><p>按位与 &amp;：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> &amp; <span class="number">1</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">1</span> &amp; <span class="number">0</span> -&gt; <span class="number">0</span></span><br><span class="line"><span class="number">0</span> &amp; <span class="number">1</span> -&gt; <span class="number">0</span></span><br><span class="line"><span class="number">0</span> &amp; <span class="number">0</span> -&gt; <span class="number">0</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按位或 |：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> | <span class="number">1</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">1</span> | <span class="number">0</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">0</span> | <span class="number">1</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">0</span> | <span class="number">0</span> -&gt; <span class="number">0</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按位异或 ^：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> ^ <span class="number">1</span> -&gt; <span class="number">0</span></span><br><span class="line"><span class="number">1</span> ^ <span class="number">0</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">0</span> ^ <span class="number">1</span> -&gt; <span class="number">1</span></span><br><span class="line"><span class="number">0</span> ^ <span class="number">0</span> -&gt; <span class="number">0</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="二元运算符-1"><a href="#二元运算符-1" class="headerlink" title="二元运算符"></a>二元运算符</h3><ul>
+<li><p>按位补足 ^：<br>该运算符与异或运算符一同使用，即 m^x，对于无符号 x 使用“全部位设置为 1”，对于有符号 x 时使用 m=-1。例如：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">^<span class="number">2</span> = ^<span class="number">10</span> = <span class="number">-01</span> ^ <span class="number">10</span> = <span class="number">-11</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>位左移 &lt;&lt;：<br>用法：bitP &lt;&lt; n。<br>bitP 的位向左移动 n 位，右侧空白部分使用 0 填充；如果 n 等于 2，则结果是 2 的相应倍数，即 2 的 n 次方。例如：</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span> <span class="comment">// 等于 1 KB</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">20</span> <span class="comment">// 等于 1 MB</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">30</span> <span class="comment">// 等于 1 GB</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>位右移 &gt;&gt;：<br>用法：bitP &gt;&gt; n。<br>bitP 的位向右移动 n 位，左侧空白部分使用 0 填充；如果 n 等于 2，则结果是当前值除以 2 的 n 次方。</p>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">10</span> <span class="comment">// 等于 1 KB</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">20</span> <span class="comment">// 等于 1 MB</span></span><br><span class="line"><span class="number">1</span> &lt;&lt; <span class="number">30</span> <span class="comment">// 等于 1 GB</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="位左移常见实现存储单位的用例"><a href="#位左移常见实现存储单位的用例" class="headerlink" title="位左移常见实现存储单位的用例"></a>位左移常见实现存储单位的用例</h4><p><strong>使用位左移与 iota 计数配合可优雅地实现存储单位的常量枚举：</strong><br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> ByteSize <span class="keyword">float64</span></span><br><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    _ = <span class="literal">iota</span> <span class="comment">// 通过赋值给空白标识符来忽略值</span></span><br><span class="line">    KB ByteSize = <span class="number">1</span>&lt;&lt;(<span class="number">10</span>*<span class="literal">iota</span>)</span><br><span class="line">    MB</span><br><span class="line">    GB</span><br><span class="line">    TB</span><br><span class="line">    PB</span><br><span class="line">    EB</span><br><span class="line">    ZB</span><br><span class="line">    YB</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
+<h2 id="5-运算符与优先级"><a href="#5-运算符与优先级" class="headerlink" title="5.运算符与优先级"></a>5.运算符与优先级</h2><table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>运算符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>^ !</td>
+</tr>
+<tr>
+<td>6</td>
+<td>* / % &lt;&lt; &gt;&gt; &amp; &amp;^</td>
+</tr>
+<tr>
+<td>5</td>
+<td>+ - &#124; ^</td>
+</tr>
+<tr>
+<td>4</td>
+<td>== != &lt; &lt;= &gt;= &gt;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&lt;-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>&amp;&amp;</td>
+</tr>
+<tr>
+<td>1</td>
+<td>&#124;&#124;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-字符类型"><a href="#6-字符类型" class="headerlink" title="6.字符类型"></a>6.字符类型</h2><h4 id="格式化说明符-1"><a href="#格式化说明符-1" class="headerlink" title="格式化说明符"></a>格式化说明符</h4><p>%c 用于表示字符<br>当和字符配合使用时，%v 或 %d 会输出用于表示该字符的整数<br>%U 输出格式为 U+hhhh 的字符串</p>
+<ul>
+<li>判断是否为字母：unicode.IsLetter(ch)</li>
+<li>判断是否为数字：unicode.IsDigit(ch)</li>
+<li>判断是否为空白符号：unicode.IsSpace(ch)</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go基本类型和运算符/" data-id="cjc3cextj0010fb3rudo1jqye" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-go常量、变量、枚举" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go常量、变量、枚举/" class="article-date">
+  <time datetime="2018-01-06T04:38:30.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go常量、变量、枚举/">go常量、变量、枚举</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><h3 id="1-常量使用关键字-const-定义，用于存储不会改变的数据。"><a href="#1-常量使用关键字-const-定义，用于存储不会改变的数据。" class="headerlink" title="1. 常量使用关键字 const 定义，用于存储不会改变的数据。"></a>1. 常量使用关键字 const 定义，用于存储不会改变的数据。</h3><h3 id="2-存储在常量中的数据类型只可以是布尔型、数字型（整数型、浮点型和复数）和字符串型。"><a href="#2-存储在常量中的数据类型只可以是布尔型、数字型（整数型、浮点型和复数）和字符串型。" class="headerlink" title="2. 存储在常量中的数据类型只可以是布尔型、数字型（整数型、浮点型和复数）和字符串型。"></a>2. 存储在常量中的数据类型只可以是布尔型、数字型（整数型、浮点型和复数）和字符串型。</h3><h3 id="3-在-Go-语言中，你可以省略类型说明符-type-，因为编译器可以根据变量的值来推断其类型。"><a href="#3-在-Go-语言中，你可以省略类型说明符-type-，因为编译器可以根据变量的值来推断其类型。" class="headerlink" title="3. 在 Go 语言中，你可以省略类型说明符 [type]，因为编译器可以根据变量的值来推断其类型。"></a>3. 在 Go 语言中，你可以省略类型说明符 [type]，因为编译器可以根据变量的值来推断其类型。</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* 显式类型定义： <span class="keyword">const</span> b <span class="keyword">string</span> = <span class="string">"abc"</span></span><br><span class="line">* 隐式类型定义： <span class="keyword">const</span> b = <span class="string">"abc"</span></span><br></pre></td></tr></table></figure>
+<p><strong>常量还可以用作枚举：</strong><br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    Unknown = <span class="number">0</span></span><br><span class="line">    Female = <span class="number">1</span></span><br><span class="line">    Male = <span class="number">2</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
+<h1 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h1><h4 id="第一个-iota-等于-0，每当-iota-在新的一行被使用时，它的值都会自动加-1；所以-a-0-b-1-c-2-可以简写为如下形式："><a href="#第一个-iota-等于-0，每当-iota-在新的一行被使用时，它的值都会自动加-1；所以-a-0-b-1-c-2-可以简写为如下形式：" class="headerlink" title="第一个 iota 等于 0，每当 iota 在新的一行被使用时，它的值都会自动加 1；所以 a=0, b=1, c=2 可以简写为如下形式："></a>第一个 iota 等于 0，每当 iota 在新的一行被使用时，它的值都会自动加 1；所以 a=0, b=1, c=2 可以简写为如下形式：</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    a = <span class="literal">iota</span></span><br><span class="line">    b</span><br><span class="line">    c</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h4 id="一周中每天的名称"><a href="#一周中每天的名称" class="headerlink" title="一周中每天的名称"></a>一周中每天的名称</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    Sunday = <span class="literal">iota</span></span><br><span class="line">    Monday</span><br><span class="line">    Tuesday</span><br><span class="line">    Wednesday</span><br><span class="line">    Thursday</span><br><span class="line">    Friday</span><br><span class="line">    Saturday</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h4 id="使用某个类型作为枚举常量的类型："><a href="#使用某个类型作为枚举常量的类型：" class="headerlink" title="使用某个类型作为枚举常量的类型："></a>使用某个类型作为枚举常量的类型：</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> Color <span class="keyword">int</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> (</span><br><span class="line">    RED Color = <span class="literal">iota</span> <span class="comment">// 0</span></span><br><span class="line">    ORANGE <span class="comment">// 1</span></span><br><span class="line">    YELLOW <span class="comment">// 2</span></span><br><span class="line">    GREEN <span class="comment">// ..</span></span><br><span class="line">    BLUE</span><br><span class="line">    INDIGO</span><br><span class="line">    VIOLET <span class="comment">// 6</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">15</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="literal">false</span></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">"Go says hello to the world!"</span></span><br><span class="line"><span class="comment">//或：</span></span><br><span class="line"><span class="keyword">var</span> (</span><br><span class="line">    a = <span class="number">15</span></span><br><span class="line">    b = <span class="literal">false</span></span><br><span class="line">    str = <span class="string">"Go says hello to the world!"</span></span><br><span class="line">    numShips = <span class="number">50</span></span><br><span class="line">    city <span class="keyword">string</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go常量、变量、枚举/" data-id="cjc3cextk0014fb3rfxbe3f5h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-go文件名、关键字与标识符" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go文件名、关键字与标识符/" class="article-date">
+  <time datetime="2018-01-06T04:19:54.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go文件名、关键字与标识符/">go文件名、关键字与标识符</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Go-代码中会使用到的-25-个关键字或保留字"><a href="#Go-代码中会使用到的-25-个关键字或保留字" class="headerlink" title="Go 代码中会使用到的 25 个关键字或保留字"></a>Go 代码中会使用到的 25 个关键字或保留字</h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>break</td>
+<td>default</td>
+<td>func</td>
+<td>interface</td>
+<td>select</td>
+</tr>
+<tr>
+<td>case</td>
+<td>defer</td>
+<td>go</td>
+<td>map</td>
+<td>struct</td>
+</tr>
+<tr>
+<td>chan</td>
+<td>else</td>
+<td>goto</td>
+<td>package</td>
+<td>switch</td>
+</tr>
+<tr>
+<td>const</td>
+<td>fallthrough</td>
+<td>if</td>
+<td>range</td>
+<td>type</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>for</td>
+<td>import</td>
+<td>return</td>
+<td>var</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Go-语言还有-36-个预定义标识ss符"><a href="#Go-语言还有-36-个预定义标识ss符" class="headerlink" title="Go 语言还有 36 个预定义标识ss符"></a>Go 语言还有 36 个预定义标识ss符</h2><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>append</td>
+<td>bool</td>
+<td>byte</td>
+<td>cap</td>
+<td>close</td>
+<td>complex</td>
+<td>complex64</td>
+<td>complex128</td>
+<td>uint16</td>
+</tr>
+<tr>
+<td>copy</td>
+<td>false</td>
+<td>float32</td>
+<td>float64</td>
+<td>imag</td>
+<td>int</td>
+<td>int8</td>
+<td>int16</td>
+<td>uint32</td>
+</tr>
+<tr>
+<td>int32</td>
+<td>int64</td>
+<td>iota</td>
+<td>len</td>
+<td>make</td>
+<td>new</td>
+<td>nil</td>
+<td>panic</td>
+<td>uint64</td>
+</tr>
+<tr>
+<td>print</td>
+<td>println</td>
+<td>real</td>
+<td>recover</td>
+<td>string</td>
+<td>true</td>
+<td>uint</td>
+<td>uint8</td>
+<td>uintptr</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go文件名、关键字与标识符/" data-id="cjc3cexth000wfb3rrgzvp7wi" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-go生成代码文档" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go生成代码文档/" class="article-date">
+  <time datetime="2018-01-06T04:02:56.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go生成代码文档/">go生成代码文档</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>go doc 工具会从 Go 程序和包文件中提取顶级声明的首行注释以及每个对象的相关注释，并生成相关文档。</p>
+<h2 id="一般用法"><a href="#一般用法" class="headerlink" title="一般用法"></a>一般用法</h2><p><strong>go doc package </strong>获取包的文档注释，例如：go doc fmt 会显示使用 godoc 生成的 fmt 包的文档注释。<br><strong>go doc package/subpackage </strong>获取子包的文档注释，例如：go doc container/list。<br><strong>go doc package function </strong>获取某个函数在某个包中的文档注释，例如：go doc fmt Printf 会显示有关 fmt.Printf() 的使用说明。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go生成代码文档/" data-id="cjc3cextw001vfb3rwpzqk0ct" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-go打印Printf" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go打印Printf/" class="article-date">
+  <time datetime="2018-01-06T04:01:56.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/06/go打印Printf/">go打印Printf</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="General"><a href="#General" class="headerlink" title="General"></a>General</h1><h4 id="v-基本格式的值。当输出结构体时，扩展标志-v-添加成员的名字"><a href="#v-基本格式的值。当输出结构体时，扩展标志-v-添加成员的名字" class="headerlink" title=" %v 基本格式的值。当输出结构体时，扩展标志(%+v)添加成员的名字 "></a><strong> %v 基本格式的值。当输出结构体时，扩展标志(%+v)添加成员的名字 </strong></h4><h4 id="v-值"><a href="#v-值" class="headerlink" title=" %#v 值 "></a><strong> %#v 值 </strong></h4><h4 id="T-值的类型"><a href="#T-值的类型" class="headerlink" title=" %T 值的类型 "></a><strong> %T 值的类型 </strong></h4><h4 id="百分号"><a href="#百分号" class="headerlink" title=" %% 百分号 "></a><strong> %% 百分号 </strong></h4><h1 id="Integer"><a href="#Integer" class="headerlink" title="Integer"></a>Integer</h1><h4 id="b-二进制"><a href="#b-二进制" class="headerlink" title=" %b 二进制 "></a><strong> %b 二进制 </strong></h4><h4 id="c-数值对应的Unicode编码字符"><a href="#c-数值对应的Unicode编码字符" class="headerlink" title=" %c   数值对应的Unicode编码字符 "></a><strong> %c   数值对应的Unicode编码字符 </strong></h4><h4 id="d-十进制表示"><a href="#d-十进制表示" class="headerlink" title=" %d   十进制表示 "></a><strong> %d   十进制表示 </strong></h4><h4 id="d-带符号的整型，fmt-Printf-“-d”-255-输出-255"><a href="#d-带符号的整型，fmt-Printf-“-d”-255-输出-255" class="headerlink" title=" %+d 带符号的整型，fmt.Printf(“%+d”, 255)输出+255 "></a><strong> %+d 带符号的整型，fmt.Printf(“%+d”, 255)输出+255 </strong></h4><h4 id="o-不带零的八进制"><a href="#o-不带零的八进制" class="headerlink" title=" %o 不带零的八进制 "></a><strong> %o 不带零的八进制 </strong></h4><h4 id="q-单引号"><a href="#q-单引号" class="headerlink" title=" %q 单引号 "></a><strong> %q 单引号 </strong></h4><h4 id="x-小写的十六进制，使用a-f"><a href="#x-小写的十六进制，使用a-f" class="headerlink" title=" %x 小写的十六进制，使用a-f "></a><strong> %x 小写的十六进制，使用a-f </strong></h4><h4 id="x-带0x的十六进制"><a href="#x-带0x的十六进制" class="headerlink" title=" %#x 带0x的十六进制 "></a><strong> %#x 带0x的十六进制 </strong></h4><h4 id="X-大写的十六进制，使用A-F"><a href="#X-大写的十六进制，使用A-F" class="headerlink" title=" %X 大写的十六进制，使用A-F "></a><strong> %X 大写的十六进制，使用A-F </strong></h4><h4 id="U-Unicode格式：-U-1234，等价于”U-04X”"><a href="#U-Unicode格式：-U-1234，等价于”U-04X”" class="headerlink" title=" %U Unicode格式： U+1234，等价于”U+%04X” "></a><strong> %U Unicode格式： U+1234，等价于”U+%04X” </strong></h4><h4 id="U-带字符的Unicode"><a href="#U-带字符的Unicode" class="headerlink" title=" %#U 带字符的Unicode "></a><strong> %#U 带字符的Unicode </strong></h4><p> %5d 表示该整型最大长度是5，下面这段代码<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fmt.Printf(<span class="string">"|%5d|"</span>, <span class="number">1</span>)</span><br><span class="line">fmt.Printf(<span class="string">"|%5d|"</span>, <span class="number">1234567</span>)</span><br><span class="line">输出结果如下：</span><br><span class="line">|    <span class="number">1</span>|</span><br><span class="line">|<span class="number">1234567</span>|</span><br></pre></td></tr></table></figure></p>
+<p>%-5d则相反，打印结果会自动左对齐<br>%05d会在数字前面补零</p>
+<h1 id="Float"><a href="#Float" class="headerlink" title="Float"></a>Float</h1><h4 id="b-无小数部分、两位指数的科学计数法，和strconv-FormatFloat的’b’转换格式一致。举例：-123456p-78"><a href="#b-无小数部分、两位指数的科学计数法，和strconv-FormatFloat的’b’转换格式一致。举例：-123456p-78" class="headerlink" title=" %b 无小数部分、两位指数的科学计数法，和strconv.FormatFloat的’b’转换格式一致。举例：-123456p-78 "></a><strong> %b 无小数部分、两位指数的科学计数法，和strconv.FormatFloat的’b’转换格式一致。举例：-123456p-78 </strong></h4><h4 id="e-6e-科学计数法-6位小数点-举例：-1234-456e-78"><a href="#e-6e-科学计数法-6位小数点-举例：-1234-456e-78" class="headerlink" title=" %e (=%.6e) 科学计数法,6位小数点,举例：-1234.456e+78 "></a><strong> %e (=%.6e) 科学计数法,6位小数点,举例：-1234.456e+78 </strong></h4><h4 id="E-6e-科学计数法，举例：-1234-456E-78"><a href="#E-6e-科学计数法，举例：-1234-456E-78" class="headerlink" title=" %E (=%.6e) 科学计数法，举例：-1234.456E+78 "></a><strong> %E (=%.6e) 科学计数法，举例：-1234.456E+78 </strong></h4><h4 id="f-6f-6位小数点-有小数部分，但无指数部分，举例：123-456"><a href="#f-6f-6位小数点-有小数部分，但无指数部分，举例：123-456" class="headerlink" title=" %f (=%.6f) 6位小数点,有小数部分，但无指数部分，举例：123.456 "></a><strong> %f (=%.6f) 6位小数点,有小数部分，但无指数部分，举例：123.456 </strong></h4><h4 id="g-用最少的数字来表示-根据实际情况采用-e或-f格式（以获得更简洁的输出）"><a href="#g-用最少的数字来表示-根据实际情况采用-e或-f格式（以获得更简洁的输出）" class="headerlink" title=" %g 用最少的数字来表示,根据实际情况采用%e或%f格式（以获得更简洁的输出） "></a><strong> %g 用最少的数字来表示,根据实际情况采用%e或%f格式（以获得更简洁的输出） </strong></h4><h4 id="G-根据实际情况采用-e或-f格式（以获得更简洁的输出）"><a href="#G-根据实际情况采用-e或-f格式（以获得更简洁的输出）" class="headerlink" title=" %G 根据实际情况采用%e或%f格式（以获得更简洁的输出） "></a><strong> %G 根据实际情况采用%e或%f格式（以获得更简洁的输出） </strong></h4><h4 id="3g-最多3位数字来表示"><a href="#3g-最多3位数字来表示" class="headerlink" title=" %.3g 最多3位数字来表示 "></a><strong> %.3g 最多3位数字来表示 </strong></h4><h4 id="3f-最多3位小数来表示"><a href="#3f-最多3位小数来表示" class="headerlink" title=" %.3f 最多3位小数来表示 "></a><strong> %.3f 最多3位小数来表示 </strong></h4><h1 id="String和byte切片"><a href="#String和byte切片" class="headerlink" title="String和byte切片"></a>String和byte切片</h1><h4 id="s-直接输出字符串或者-byte"><a href="#s-直接输出字符串或者-byte" class="headerlink" title=" %s 直接输出字符串或者[]byte "></a><strong> %s 直接输出字符串或者[]byte </strong></h4><h4 id="q-字符串带双引号，字符串中的引号带转义符"><a href="#q-字符串带双引号，字符串中的引号带转义符" class="headerlink" title=" %q 字符串带双引号，字符串中的引号带转义符 "></a><strong> %q 字符串带双引号，字符串中的引号带转义符 </strong></h4><h4 id="q-字符串带反引号，如果字符串内有反引号，就用双引号代替"><a href="#q-字符串带反引号，如果字符串内有反引号，就用双引号代替" class="headerlink" title=" %#q 字符串带反引号，如果字符串内有反引号，就用双引号代替 "></a><strong> %#q 字符串带反引号，如果字符串内有反引号，就用双引号代替 </strong></h4><h4 id="x-将字符串转换为小写的16进制格式-每个字节用两字符十六进制数表示（使用小写a-f）"><a href="#x-将字符串转换为小写的16进制格式-每个字节用两字符十六进制数表示（使用小写a-f）" class="headerlink" title=" %x 将字符串转换为小写的16进制格式,每个字节用两字符十六进制数表示（使用小写a-f） "></a><strong> %x 将字符串转换为小写的16进制格式,每个字节用两字符十六进制数表示（使用小写a-f） </strong></h4><h4 id="x-将字符串转换为小写的16进制格式-每个字节用两字符十六进制数表示（使用小写A-F）"><a href="#x-将字符串转换为小写的16进制格式-每个字节用两字符十六进制数表示（使用小写A-F）" class="headerlink" title=" %x 将字符串转换为小写的16进制格式,每个字节用两字符十六进制数表示（使用小写A-F） "></a><strong> %x 将字符串转换为小写的16进制格式,每个字节用两字符十六进制数表示（使用小写A-F） </strong></h4><h4 id="X-将字符串转换为大写的16进制格式"><a href="#X-将字符串转换为大写的16进制格式" class="headerlink" title=" %X 将字符串转换为大写的16进制格式 "></a><strong> %X 将字符串转换为大写的16进制格式 </strong></h4><h4 id="x-带空格的16进制格式"><a href="#x-带空格的16进制格式" class="headerlink" title=" % x 带空格的16进制格式 "></a><strong> % x 带空格的16进制格式 </strong></h4><h1 id="String-Width-以5做例子）"><a href="#String-Width-以5做例子）" class="headerlink" title="String Width (以5做例子）"></a>String Width (以5做例子）</h1><h4 id="5s-最小宽度为5"><a href="#5s-最小宽度为5" class="headerlink" title=" %5s 最小宽度为5 "></a><strong> %5s 最小宽度为5 </strong></h4><h4 id="5s-最小宽度为5（左对齐）"><a href="#5s-最小宽度为5（左对齐）" class="headerlink" title=" %-5s 最小宽度为5（左对齐） "></a><strong> %-5s 最小宽度为5（左对齐） </strong></h4><h4 id="5s-最大宽度为5"><a href="#5s-最大宽度为5" class="headerlink" title=" %.5s 最大宽度为5 "></a><strong> %.5s 最大宽度为5 </strong></h4><h4 id="5-7s-最小宽度为5，最大宽度为7"><a href="#5-7s-最小宽度为5，最大宽度为7" class="headerlink" title=" %5.7s 最小宽度为5，最大宽度为7 "></a><strong> %5.7s 最小宽度为5，最大宽度为7 </strong></h4><h4 id="5-7s-最小宽度为5，最大宽度为7（左对齐）"><a href="#5-7s-最小宽度为5，最大宽度为7（左对齐）" class="headerlink" title=" %-5.7s 最小宽度为5，最大宽度为7（左对齐）"></a><strong> %-5.7s 最小宽度为5，最大宽度为7（左对齐）</strong></h4><h4 id="5-3s-如果宽度大于3，则截断"><a href="#5-3s-如果宽度大于3，则截断" class="headerlink" title=" %5.3s 如果宽度大于3，则截断 "></a><strong> %5.3s 如果宽度大于3，则截断 </strong></h4><h4 id="05s-如果宽度小于5，就会在字符串前面补零"><a href="#05s-如果宽度小于5，就会在字符串前面补零" class="headerlink" title=" %05s 如果宽度小于5，就会在字符串前面补零 "></a><strong> %05s 如果宽度小于5，就会在字符串前面补零 </strong></h4><h1 id="Struct"><a href="#Struct" class="headerlink" title="Struct"></a>Struct</h1><h4 id="v-正常打印。比如：-sam-12345-67890"><a href="#v-正常打印。比如：-sam-12345-67890" class="headerlink" title=" %v 正常打印。比如：{sam {12345 67890}} "></a><strong> %v 正常打印。比如：{sam {12345 67890}} </strong></h4><h4 id="v-带字段名称。比如：-name-sam-phone-mobile-12345-office-67890"><a href="#v-带字段名称。比如：-name-sam-phone-mobile-12345-office-67890" class="headerlink" title=" %+v 带字段名称。比如：{name:sam phone:{mobile:12345 office:67890} "></a><strong> %+v 带字段名称。比如：{name:sam phone:{mobile:12345 office:67890} </strong></h4><h4 id="v-用Go的语法打印。"><a href="#v-用Go的语法打印。" class="headerlink" title=" %#v 用Go的语法打印。 "></a><strong> %#v 用Go的语法打印。 </strong></h4><p>比如main.People{name:”sam”, phone:main.Phone{mobile:”12345”, office:”67890”}}</p>
+<h1 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h1><h4 id="t-打印true或false"><a href="#t-打印true或false" class="headerlink" title=" %t 打印true或false "></a><strong> %t 打印true或false </strong></h4><h1 id="Pointer"><a href="#Pointer" class="headerlink" title="Pointer"></a>Pointer</h1><h4 id="p-0x开头的十六进制数表示"><a href="#p-0x开头的十六进制数表示" class="headerlink" title=" %p 0x开头的十六进制数表示 "></a><strong> %p 0x开头的十六进制数表示 </strong></h4><h4 id="p-不带0x的指针"><a href="#p-不带0x的指针" class="headerlink" title=" %#p 不带0x的指针 "></a><strong> %#p 不带0x的指针 </strong></h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go打印Printf/" data-id="cjc3cextd000rfb3rkgp4yqoy" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/05/hello-world/" class="article-date">
+  <time datetime="2018-01-05T13:09:25.000Z" itemprop="datePublished">2018-01-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2018/01/05/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/05/hello-world/" data-id="cjc3cextu001rfb3rjom70jg0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Virtualbox中win7虚拟机中U盘不可用问题的解决" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/11/13/Virtualbox中win7虚拟机中U盘不可用问题的解决/" class="article-date">
+  <time datetime="2017-11-13T11:51:18.000Z" itemprop="datePublished">2017-11-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/win/">win</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/11/13/Virtualbox中win7虚拟机中U盘不可用问题的解决/">Virtualbox中win7虚拟机中U盘不可用问题的解决</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="主机运行多是Ubuntu17-04，虚拟机是Win7-U盘无反映"><a href="#主机运行多是Ubuntu17-04，虚拟机是Win7-U盘无反映" class="headerlink" title="主机运行多是Ubuntu17.04，虚拟机是Win7,U盘无反映"></a>主机运行多是Ubuntu17.04，虚拟机是Win7,U盘无反映</h3><p>安装‘Oracle VM VirtualBox Extension Pack’<br>下载地址：<a href="http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack" target="_blank" rel="noopener">http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack</a></p>
+<p>用户权限添加<br>添加usbfs 用户组（virtualbox 装完成后会有 vboxusers 和vboxsf ）<br>sudo groupadd usbfs   </p>
+<p>将你的linux常用用户添加到vboxusers、usbfs这个两个组中<br>sudo adduser kuein vboxusers<br>sudo adduser kuein usbfs  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/11/13/Virtualbox中win7虚拟机中U盘不可用问题的解决/" data-id="cjc3cexsq0000fb3rr34lvpjm" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/win/">win</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-openvpn" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/10/31/openvpn/" class="article-date">
+  <time datetime="2017-10-31T13:12:52.000Z" itemprop="datePublished">2017-10-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/vpn/">vpn</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/10/31/openvpn/">openvpn</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-打开终端并安装openvpn用以下命令"><a href="#1-打开终端并安装openvpn用以下命令" class="headerlink" title="1 打开终端并安装openvpn用以下命令"></a>1 打开终端并安装openvpn用以下命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openvpn network-manager-openvpn network-manager-openvpn-gnome</span><br></pre></td></tr></table></figure>
+<img src="/loresky.github.io/2017/10/31/openvpn/step1.png">
+<h3 id="2-打开网络菜单，转到“VPN连接”，然后点击“配置VPN…”。"><a href="#2-打开网络菜单，转到“VPN连接”，然后点击“配置VPN…”。" class="headerlink" title="2 打开网络菜单，转到“VPN连接”，然后点击“配置VPN…”。"></a>2 打开网络菜单，转到“VPN连接”，然后点击“配置VPN…”。</h3><img src="/loresky.github.io/2017/10/31/openvpn/step2.png">
+<h3 id="3-Click-on-“Add”"><a href="#3-Click-on-“Add”" class="headerlink" title="3 Click on “Add”."></a>3 Click on “Add”.</h3><img src="/loresky.github.io/2017/10/31/openvpn/step3.png">
+<h3 id="4-Click-on-“Import-a-saved-VPN-configuration…”"><a href="#4-Click-on-“Import-a-saved-VPN-configuration…”" class="headerlink" title="4 Click on “Import a saved VPN configuration…”."></a>4 Click on “Import a saved VPN configuration…”.</h3><img src="/loresky.github.io/2017/10/31/openvpn/step4.png">
+<h3 id="5-Click-on-“Create”"><a href="#5-Click-on-“Create”" class="headerlink" title="5 Click on “Create”."></a>5 Click on “Create”.</h3><img src="/loresky.github.io/2017/10/31/openvpn/step5.png">
+<h3 id="6-Download-the-OpenVPN-configuration-unzip-it-and-import-the-ovpn-file"><a href="#6-Download-the-OpenVPN-configuration-unzip-it-and-import-the-ovpn-file" class="headerlink" title="6 Download the OpenVPN configuration, unzip it and import the .ovpn file."></a>6 Download the OpenVPN configuration, unzip it and import the .ovpn file.</h3><img src="/loresky.github.io/2017/10/31/openvpn/step6.png">
+<h3 id="7-Enter-your-login-credentials-and-click-on-“Save…”"><a href="#7-Enter-your-login-credentials-and-click-on-“Save…”" class="headerlink" title="7 Enter your login credentials and click on “Save…”."></a>7 Enter your login credentials and click on “Save…”.</h3><img src="/loresky.github.io/2017/10/31/openvpn/step7.png">
+<h3 id="7a-Switch-to-“Advanced-Configuration”-and-in-the-tab-“TLS-Authentication”-check-“Use-additional-TLS-authentication”-Select-the-file-“StaticKey-pem”-from-the-configuration-and-set-the-“Key-Direction”-to-“0”-Confirm-with-“OK”"><a href="#7a-Switch-to-“Advanced-Configuration”-and-in-the-tab-“TLS-Authentication”-check-“Use-additional-TLS-authentication”-Select-the-file-“StaticKey-pem”-from-the-configuration-and-set-the-“Key-Direction”-to-“0”-Confirm-with-“OK”" class="headerlink" title="7a Switch to “Advanced Configuration” and in the tab “TLS Authentication” check “Use additional TLS authentication”. Select the file “StaticKey.pem” from the configuration and set the “Key Direction” to “0”. Confirm with “OK”."></a>7a Switch to “Advanced Configuration” and in the tab “TLS Authentication” check “Use additional TLS authentication”. Select the file “StaticKey.pem” from the configuration and set the “Key Direction” to “0”. Confirm with “OK”.</h3><img src="/loresky.github.io/2017/10/31/openvpn/step7a.png">
+<h3 id="8-Open-the-network-menu-to-establish-a-VPN-connection"><a href="#8-Open-the-network-menu-to-establish-a-VPN-connection" class="headerlink" title="8 Open the network menu to establish a VPN connection."></a>8 Open the network menu to establish a VPN connection.</h3><p>Switch to “Advanced Configuration” and in the tab “TLS Authentication” check “Use additional TLS authentication”. Select the file “StaticKey.pem” from the configuration and set the “Key Direction” to “0”. Confirm with “OK”.<br><img src="/loresky.github.io/2017/10/31/openvpn/step8.png"></p>
+<h3 id="9-If-connection-has-been-successfully-established-the-status-is-shown-in-the-menu-bar-You-can-manage-your-VPN-connection-in-the-network-settings"><a href="#9-If-connection-has-been-successfully-established-the-status-is-shown-in-the-menu-bar-You-can-manage-your-VPN-connection-in-the-network-settings" class="headerlink" title="9 If connection has been successfully established, the status is shown in the menu bar. You can manage your VPN connection in the network settings."></a>9 If connection has been successfully established, the status is shown in the menu bar. You can manage your VPN connection in the network settings.</h3><img src="/loresky.github.io/2017/10/31/openvpn/step9.png">
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/10/31/openvpn/" data-id="cjc3cexu8002tfb3rca38ppgo" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/vpn/">vpn</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-mongodb可视化" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/loresky.github.io/2017/09/26/mongodb可视化/" class="article-date">
@@ -104,7 +667,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/09/26/mongodb可视化/" data-id="cjc3293hj001inb3r0m7xgaej" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/09/26/mongodb可视化/" data-id="cjc3cexu6002qfb3rexjz2c5d" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/mongodb/">mongodb</a></li></ul>
@@ -162,7 +725,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/09/20/go环境和目录/" data-id="cjc3293gz000lnb3reuzce7if" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/09/20/go环境和目录/" data-id="cjc3cextq001jfb3rtbzojmls" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
@@ -174,353 +737,10 @@
 
 
   
-    <article id="post-linux查看端口" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/07/03/linux查看端口/" class="article-date">
-  <time datetime="2017-07-03T06:57:38.000Z" itemprop="datePublished">2017-07-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/07/03/linux查看端口/">linux程序端口占用情况</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><p><strong>lsof -i:port</strong><br><strong>netstat –apn | grep 8080</strong></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/linux查看端口/" data-id="cjc3293hd0016nb3rnfejd4nf" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux硬盘安装" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/07/03/linux硬盘安装/" class="article-date">
-  <time datetime="2017-07-03T06:56:38.000Z" itemprop="datePublished">2017-07-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/07/03/linux硬盘安装/">linux硬盘安装</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title Install Ubuntu</span><br><span class="line">root (hd0,0)</span><br><span class="line">kernel (hd0,0)/vmlinuz.efi boot=casper iso-scan/filename=/ubuntu.iso locale=zh_CN.UTF-8</span><br><span class="line">initrd (hd0,0)/initrd.lz</span><br><span class="line">title reboot</span><br><span class="line">reboot</span><br><span class="line">title halt</span><br><span class="line">halt</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/linux硬盘安装/" data-id="cjc3293hc0014nb3rnwikzu9i" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-grub2命令启动win7" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/07/03/grub2命令启动win7/" class="article-date">
-  <time datetime="2017-07-03T06:49:26.000Z" itemprop="datePublished">2017-07-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/07/03/grub2命令启动win7/">grub2命令启动win7</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="grub2命令启动win7"><a href="#grub2命令启动win7" class="headerlink" title="grub2命令启动win7"></a>grub2命令启动win7</h2><p><strong>假设win7安装在第一硬盘第一分区（即hd0,1，如果不是，自行修改）：</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">grub&gt;</span><span class="bash">insmod ntfs</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash"><span class="built_in">set</span> root=<span class="string">'hd0,1'</span></span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">chainloader +1</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">boot</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>或者试试：</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">grub&gt;</span><span class="bash">insmod ntfs</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">search --no-floppy --<span class="built_in">set</span>=root  /bootmgr</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">chainloader +1</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">boot</span></span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/grub2命令启动win7/" data-id="cjc3293h5000tnb3rmbu30lsu" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-xmind破解" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/30/xmind破解/" class="article-date">
-  <time datetime="2017-06-30T03:56:07.000Z" itemprop="datePublished">2017-06-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/win/">win</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/30/xmind破解/">xmind破解</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id=""><a href="#" class="headerlink" title=""></a><a href="/loresky.github.io/2017/06/30/xmind破解/XMindCrack_jb51.rar" title="下载XMindCrack的jar包">下载XMindCrack的jar包</a></h2><ul>
-<li>以文本格式打开安装目录中 XMind.ini</li>
-<li><strong>在 XMind.ini 最后追加 -javaagent:D:/Program Files (x86)/XMind 8 Update 1/XMindCrack.jar</strong></li>
-<li>在hosts最后添加 127.0.0.1 www.xmind.net 输入后，记得有个回车</li>
-</ul>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XAka34A2rVRYJ4XBIU35UZMUEEF64CMMIYZCK2FZZUQNODEKUHGJLFMSLIQMQUCUBXRENLK6NZL37JXP4PZXQFILMQ2RG5R7G4QNDO3PSOEUBOCDRYSSXZGRARV6MGA33TN2AMUBHEL4FXMWYTTJDEINJXUAV4BAYKBDCZQWVF3LWYXSDCXY546U3NBGOI3ZPAP2SO3CSQFNB7VVIY123456789012345</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/30/xmind破解/" data-id="cjc3293hw002anb3r2et9akgt" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/win/">win</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux常用命令" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/28/linux常用命令/" class="article-date">
-  <time datetime="2017-06-28T12:20:14.000Z" itemprop="datePublished">2017-06-28</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/28/linux常用命令/">linux常用命令</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">-A 新增压缩文件到已存在的压缩</span><br><span class="line">-B 设置区块大小</span><br><span class="line">-c 建立新的压缩文件</span><br><span class="line">-d 记录文件的差别</span><br><span class="line">-r 添加文件到已经压缩的文件</span><br><span class="line">-u 添加改变了和现有的文件到已经存在的压缩文件</span><br><span class="line">-x 从压缩的文件中提取文件</span><br><span class="line">-t 显示压缩文件的内容</span><br><span class="line">-z 支持gzip解压文件</span><br><span class="line">-j 支持bzip2解压文件</span><br><span class="line">-Z 支持compress解压文件</span><br><span class="line">-v 显示操作过程</span><br><span class="line">-l 文件系统边界设置</span><br><span class="line">-k 保留原有文件不覆盖</span><br><span class="line">-m 保留文件不被覆盖</span><br><span class="line">-W 确认压缩文件的正确性</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/28/linux常用命令/" data-id="cjc3293ha0010nb3rd5sfhndp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docker常用命令" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/27/docker常用命令/" class="article-date">
-  <time datetime="2017-06-27T05:12:12.000Z" itemprop="datePublished">2017-06-27</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/docker/">docker</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/27/docker常用命令/">docker常用命令</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="查看当前机器上的镜像："><a href="#查看当前机器上的镜像：" class="headerlink" title="查看当前机器上的镜像："></a>查看当前机器上的镜像：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
-<h2 id="下载镜像："><a href="#下载镜像：" class="headerlink" title="下载镜像："></a>下载镜像：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull <span class="tag">&lt;<span class="name">image</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="删除镜像："><a href="#删除镜像：" class="headerlink" title="删除镜像："></a>删除镜像：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi <span class="tag">&lt;<span class="name">image</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="运行镜像："><a href="#运行镜像：" class="headerlink" title="运行镜像："></a>运行镜像：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 3306:3306 hub.c.163.com/library/tomcat:latest</span><br></pre></td></tr></table></figure>
-<h2 id="查看容器列表及状态："><a href="#查看容器列表及状态：" class="headerlink" title="查看容器列表及状态："></a>查看容器列表及状态：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps -a</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/27/docker常用命令/" data-id="cjc3293gv000bnb3r1zbcolo3" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/docker/">docker</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-android配置" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/27/android配置/" class="article-date">
-  <time datetime="2017-06-27T03:30:39.000Z" itemprop="datePublished">2017-06-27</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/27/android配置/">android配置</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="app外build-gradle"><a href="#app外build-gradle" class="headerlink" title="app外build.gradle"></a>app外build.gradle</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ext &#123;</span><br><span class="line">    minSdkVersion = <span class="number">19</span></span><br><span class="line">    targetSdkVersion = <span class="number">23</span></span><br><span class="line">    compileSdkVersion = <span class="number">25</span></span><br><span class="line">    buildToolsVersion = <span class="string">"25.0.2"</span></span><br><span class="line">    supportLibraryVersion = <span class="string">"25.+"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="app内build-gradle"><a href="#app内build-gradle" class="headerlink" title="app内build.gradle"></a>app内build.gradle</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion rootProject.ext.compileSdkVersion</span><br><span class="line">    buildToolsVersion rootProject.ext.buildToolsVersion</span><br><span class="line">	</span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        minSdkVersion rootProject.ext.minSdkVersion</span><br><span class="line">        targetSdkVersion rootProject.ext.targetSdkVersion     </span><br><span class="line">    &#125;</span><br><span class="line">	</span><br><span class="line">	signingConfigs &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            <span class="function">storeFile <span class="title">file</span><span class="params">(<span class="string">"loresky.jks"</span>)</span></span></span><br><span class="line"><span class="function">            storePassword "123456"</span></span><br><span class="line"><span class="function">            keyAlias "loreskykey"</span></span><br><span class="line"><span class="function">            keyPassword "123456"</span></span><br><span class="line"><span class="function">        &#125;</span></span><br><span class="line"><span class="function">    &#125;</span></span><br><span class="line"><span class="function">	buildTypes </span>&#123;</span><br><span class="line">        release &#123;</span><br><span class="line"><span class="comment">//            signingConfig signingConfigs.release</span></span><br><span class="line">            <span class="comment">// 是否进行dex优化</span></span><br><span class="line">            zipAlignEnabled <span class="keyword">false</span></span><br><span class="line">            <span class="comment">// 支持删除一些没有用的资源</span></span><br><span class="line">            shrinkResources <span class="keyword">false</span></span><br><span class="line">            <span class="comment">// 是否进行混淆</span></span><br><span class="line">            minifyEnabled <span class="keyword">false</span></span><br><span class="line">            <span class="comment">// 混淆文件位置</span></span><br><span class="line">            <span class="function">proguardFiles <span class="title">getDefaultProguardFile</span><span class="params">(<span class="string">'proguard-android.txt'</span>)</span>, 'proguard-rules.pro'</span></span><br><span class="line"><span class="function">        &#125;</span></span><br><span class="line"><span class="function">        debug </span>&#123;</span><br><span class="line"><span class="comment">//            signingConfig signingConfigs.release</span></span><br><span class="line">            minifyEnabled <span class="keyword">false</span></span><br><span class="line">            shrinkResources <span class="keyword">false</span></span><br><span class="line">            <span class="function">proguardFiles <span class="title">getDefaultProguardFile</span><span class="params">(<span class="string">'proguard-android.txt'</span>)</span>, 'proguard-rules.pro'</span></span><br><span class="line"><span class="function">        &#125;</span></span><br><span class="line"><span class="function">    &#125;</span></span><br><span class="line"><span class="function">    <span class="comment">// 移除lint检查的error</span></span></span><br><span class="line"><span class="function">    lintOptions </span>&#123;</span><br><span class="line">        abortOnError <span class="keyword">false</span></span><br><span class="line">    &#125;</span><br><span class="line">    dataBinding &#123;</span><br><span class="line">        enabled = <span class="keyword">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">repositories &#123;</span><br><span class="line">    flatDir &#123;</span><br><span class="line">        <span class="comment">//就是你放aar的目录地址</span></span><br><span class="line">        dirs <span class="string">'libs'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">dependencies &#123;</span><br><span class="line">    compile <span class="string">"com.android.support:appcompat-v7:$supportLibraryVersion"</span></span><br><span class="line">    androidTestCompile(<span class="string">'com.android.support.test.espresso:espresso-core:2.2.2'</span>, &#123;</span><br><span class="line">        exclude group: <span class="string">'com.android.support'</span>, <span class="keyword">module</span>: <span class="string">'support-annotations'</span></span><br><span class="line">        exclude group: <span class="string">'com.google.code.findbugs'</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/27/android配置/" data-id="cjc3293gq0005nb3rlfubvhq6" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/android/">android</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-maven配置" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/26/maven配置/" class="article-date">
-  <time datetime="2017-06-26T00:23:45.000Z" itemprop="datePublished">2017-06-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/26/maven配置/">maven配置</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="本地仓库的配置"><a href="#本地仓库的配置" class="headerlink" title="本地仓库的配置"></a>本地仓库的配置</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/maven/repo<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="国内maven-repository"><a href="#国内maven-repository" class="headerlink" title="国内maven repository"></a>国内maven repository</h2><h3 id="在前添加"><a href="#在前添加" class="headerlink" title="在前添加"></a><strong>在前添加</strong></h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-aliyun<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/26/maven配置/" data-id="cjc3293ho001qnb3r22s99dpd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/loresky.github.io/">&laquo; __('prev')</a><a class="page-number" href="/loresky.github.io/">1</a><span class="page-number current">2</span><a class="page-number" href="/loresky.github.io/page/3/">3</a><a class="extend next" rel="next" href="/loresky.github.io/page/3/">__('next') &raquo;</a>
+    <a class="extend prev" rel="prev" href="/loresky.github.io/">&laquo; __('prev')</a><a class="page-number" href="/loresky.github.io/">1</a><span class="page-number current">2</span><a class="page-number" href="/loresky.github.io/page/3/">3</a><a class="page-number" href="/loresky.github.io/page/4/">4</a><a class="extend next" rel="next" href="/loresky.github.io/page/3/">__('next') &raquo;</a>
   </nav>
 </section>
         
@@ -572,23 +792,23 @@
       <ul>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go结构switch/">go结构switch</a>
+            <a href="/loresky.github.io/2018/01/06/go递归函数/">go递归函数</a>
           </li>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go多返回值函数的错误/">go多返回值函数的错误</a>
+            <a href="/loresky.github.io/2018/01/06/go内置函数/">go内置函数</a>
           </li>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go字符串/">go字符串</a>
+            <a href="/loresky.github.io/2018/01/06/go追踪和defer/">go追踪和defer</a>
           </li>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go基本类型和运算符/">go基本类型和运算符</a>
+            <a href="/loresky.github.io/2018/01/06/go传递变长参数/">go传递变长参数</a>
           </li>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go常量、变量、枚举/">go常量、变量、枚举</a>
+            <a href="/loresky.github.io/2018/01/06/go函数参数与返回值/">go函数参数与返回值</a>
           </li>
         
       </ul>

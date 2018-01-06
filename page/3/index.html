@@ -69,10 +69,139 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-win的linux_location" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-linux查看端口" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/15/win的linux_location/" class="article-date">
-  <time datetime="2017-06-15T05:10:00.000Z" itemprop="datePublished">2017-06-15</time>
+    <a href="/loresky.github.io/2017/07/03/linux查看端口/" class="article-date">
+  <time datetime="2017-07-03T06:57:38.000Z" itemprop="datePublished">2017-07-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/07/03/linux查看端口/">linux程序端口占用情况</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h2><p><strong>lsof -i:port</strong><br><strong>netstat –apn | grep 8080</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/linux查看端口/" data-id="cjc3cexu2002afb3rprkh9fvp" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-linux硬盘安装" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/07/03/linux硬盘安装/" class="article-date">
+  <time datetime="2017-07-03T06:56:38.000Z" itemprop="datePublished">2017-07-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/07/03/linux硬盘安装/">linux硬盘安装</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title Install Ubuntu</span><br><span class="line">root (hd0,0)</span><br><span class="line">kernel (hd0,0)/vmlinuz.efi boot=casper iso-scan/filename=/ubuntu.iso locale=zh_CN.UTF-8</span><br><span class="line">initrd (hd0,0)/initrd.lz</span><br><span class="line">title reboot</span><br><span class="line">reboot</span><br><span class="line">title halt</span><br><span class="line">halt</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/linux硬盘安装/" data-id="cjc3cexu3002dfb3rastu9jck" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-grub2命令启动win7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/07/03/grub2命令启动win7/" class="article-date">
+  <time datetime="2017-07-03T06:49:26.000Z" itemprop="datePublished">2017-07-03</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/07/03/grub2命令启动win7/">grub2命令启动win7</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="grub2命令启动win7"><a href="#grub2命令启动win7" class="headerlink" title="grub2命令启动win7"></a>grub2命令启动win7</h2><p><strong>假设win7安装在第一硬盘第一分区（即hd0,1，如果不是，自行修改）：</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">grub&gt;</span><span class="bash">insmod ntfs</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash"><span class="built_in">set</span> root=<span class="string">'hd0,1'</span></span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">chainloader +1</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">boot</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>或者试试：</strong><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">grub&gt;</span><span class="bash">insmod ntfs</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">search --no-floppy --<span class="built_in">set</span>=root  /bootmgr</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">chainloader +1</span></span><br><span class="line"><span class="meta">grub&gt;</span><span class="bash">boot</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/07/03/grub2命令启动win7/" data-id="cjc3cextx001yfb3r0u571g84" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-xmind破解" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/06/30/xmind破解/" class="article-date">
+  <time datetime="2017-06-30T03:56:07.000Z" itemprop="datePublished">2017-06-30</time>
 </a>
     
   <div class="article-category">
@@ -87,7 +216,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/15/win的linux_location/">win的linux_location</a>
+      <a class="article-title" href="/loresky.github.io/2017/06/30/xmind破解/">xmind破解</a>
     </h1>
   
 
@@ -95,16 +224,187 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。<br>里面说到 linux 存放位置在<br>C:\Users{user}\AppData\Local\lxss{username}<br>其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。<br>以及你的 /home 文件夹会在<br>C:\Users{user}\AppData\Local\lxss\home\</p>
+        <h2 id=""><a href="#" class="headerlink" title=""></a><a href="/loresky.github.io/2017/06/30/xmind破解/XMindCrack_jb51.rar" title="下载XMindCrack的jar包">下载XMindCrack的jar包</a></h2><ul>
+<li>以文本格式打开安装目录中 XMind.ini</li>
+<li><strong>在 XMind.ini 最后追加 -javaagent:D:/Program Files (x86)/XMind 8 Update 1/XMindCrack.jar</strong></li>
+<li>在hosts最后添加 127.0.0.1 www.xmind.net 输入后，记得有个回车</li>
+</ul>
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XAka34A2rVRYJ4XBIU35UZMUEEF64CMMIYZCK2FZZUQNODEKUHGJLFMSLIQMQUCUBXRENLK6NZL37JXP4PZXQFILMQ2RG5R7G4QNDO3PSOEUBOCDRYSSXZGRARV6MGA33TN2AMUBHEL4FXMWYTTJDEINJXUAV4BAYKBDCZQWVF3LWYXSDCXY546U3NBGOI3ZPAP2SO3CSQFNB7VVIY123456789012345</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/15/win的linux_location/" data-id="cjc3293ht0023nb3rq595w01a" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/30/xmind破解/" data-id="cjc3cexud0034fb3rdjueyy2q" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/win/">win</a></li></ul>
 
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-linux常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/06/28/linux常用命令/" class="article-date">
+  <time datetime="2017-06-28T12:20:14.000Z" itemprop="datePublished">2017-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/06/28/linux常用命令/">linux常用命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="tar"><a href="#tar" class="headerlink" title="tar"></a>tar</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">-A 新增压缩文件到已存在的压缩</span><br><span class="line">-B 设置区块大小</span><br><span class="line">-c 建立新的压缩文件</span><br><span class="line">-d 记录文件的差别</span><br><span class="line">-r 添加文件到已经压缩的文件</span><br><span class="line">-u 添加改变了和现有的文件到已经存在的压缩文件</span><br><span class="line">-x 从压缩的文件中提取文件</span><br><span class="line">-t 显示压缩文件的内容</span><br><span class="line">-z 支持gzip解压文件</span><br><span class="line">-j 支持bzip2解压文件</span><br><span class="line">-Z 支持compress解压文件</span><br><span class="line">-v 显示操作过程</span><br><span class="line">-l 文件系统边界设置</span><br><span class="line">-k 保留原有文件不覆盖</span><br><span class="line">-m 保留文件不被覆盖</span><br><span class="line">-W 确认压缩文件的正确性</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/28/linux常用命令/" data-id="cjc3cexu00026fb3ry4nr3mfr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/06/27/docker常用命令/" class="article-date">
+  <time datetime="2017-06-27T05:12:12.000Z" itemprop="datePublished">2017-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/docker/">docker</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/06/27/docker常用命令/">docker常用命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="查看当前机器上的镜像："><a href="#查看当前机器上的镜像：" class="headerlink" title="查看当前机器上的镜像："></a>查看当前机器上的镜像：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+<h2 id="下载镜像："><a href="#下载镜像：" class="headerlink" title="下载镜像："></a>下载镜像：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull <span class="tag">&lt;<span class="name">image</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="删除镜像："><a href="#删除镜像：" class="headerlink" title="删除镜像："></a>删除镜像：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi <span class="tag">&lt;<span class="name">image</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="运行镜像："><a href="#运行镜像：" class="headerlink" title="运行镜像："></a>运行镜像：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 3306:3306 hub.c.163.com/library/tomcat:latest</span><br></pre></td></tr></table></figure>
+<h2 id="查看容器列表及状态："><a href="#查看容器列表及状态：" class="headerlink" title="查看容器列表及状态："></a>查看容器列表及状态：</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps -a</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/27/docker常用命令/" data-id="cjc3cext8000hfb3rekjun3ce" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/docker/">docker</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-android配置" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/06/27/android配置/" class="article-date">
+  <time datetime="2017-06-27T03:30:39.000Z" itemprop="datePublished">2017-06-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/06/27/android配置/">android配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="app外build-gradle"><a href="#app外build-gradle" class="headerlink" title="app外build.gradle"></a>app外build.gradle</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ext &#123;</span><br><span class="line">    minSdkVersion = <span class="number">19</span></span><br><span class="line">    targetSdkVersion = <span class="number">23</span></span><br><span class="line">    compileSdkVersion = <span class="number">25</span></span><br><span class="line">    buildToolsVersion = <span class="string">"25.0.2"</span></span><br><span class="line">    supportLibraryVersion = <span class="string">"25.+"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="app内build-gradle"><a href="#app内build-gradle" class="headerlink" title="app内build.gradle"></a>app内build.gradle</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">android &#123;</span><br><span class="line">    compileSdkVersion rootProject.ext.compileSdkVersion</span><br><span class="line">    buildToolsVersion rootProject.ext.buildToolsVersion</span><br><span class="line">	</span><br><span class="line">    defaultConfig &#123;</span><br><span class="line">        minSdkVersion rootProject.ext.minSdkVersion</span><br><span class="line">        targetSdkVersion rootProject.ext.targetSdkVersion     </span><br><span class="line">    &#125;</span><br><span class="line">	</span><br><span class="line">	signingConfigs &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            <span class="function">storeFile <span class="title">file</span><span class="params">(<span class="string">"loresky.jks"</span>)</span></span></span><br><span class="line"><span class="function">            storePassword "123456"</span></span><br><span class="line"><span class="function">            keyAlias "loreskykey"</span></span><br><span class="line"><span class="function">            keyPassword "123456"</span></span><br><span class="line"><span class="function">        &#125;</span></span><br><span class="line"><span class="function">    &#125;</span></span><br><span class="line"><span class="function">	buildTypes </span>&#123;</span><br><span class="line">        release &#123;</span><br><span class="line"><span class="comment">//            signingConfig signingConfigs.release</span></span><br><span class="line">            <span class="comment">// 是否进行dex优化</span></span><br><span class="line">            zipAlignEnabled <span class="keyword">false</span></span><br><span class="line">            <span class="comment">// 支持删除一些没有用的资源</span></span><br><span class="line">            shrinkResources <span class="keyword">false</span></span><br><span class="line">            <span class="comment">// 是否进行混淆</span></span><br><span class="line">            minifyEnabled <span class="keyword">false</span></span><br><span class="line">            <span class="comment">// 混淆文件位置</span></span><br><span class="line">            <span class="function">proguardFiles <span class="title">getDefaultProguardFile</span><span class="params">(<span class="string">'proguard-android.txt'</span>)</span>, 'proguard-rules.pro'</span></span><br><span class="line"><span class="function">        &#125;</span></span><br><span class="line"><span class="function">        debug </span>&#123;</span><br><span class="line"><span class="comment">//            signingConfig signingConfigs.release</span></span><br><span class="line">            minifyEnabled <span class="keyword">false</span></span><br><span class="line">            shrinkResources <span class="keyword">false</span></span><br><span class="line">            <span class="function">proguardFiles <span class="title">getDefaultProguardFile</span><span class="params">(<span class="string">'proguard-android.txt'</span>)</span>, 'proguard-rules.pro'</span></span><br><span class="line"><span class="function">        &#125;</span></span><br><span class="line"><span class="function">    &#125;</span></span><br><span class="line"><span class="function">    <span class="comment">// 移除lint检查的error</span></span></span><br><span class="line"><span class="function">    lintOptions </span>&#123;</span><br><span class="line">        abortOnError <span class="keyword">false</span></span><br><span class="line">    &#125;</span><br><span class="line">    dataBinding &#123;</span><br><span class="line">        enabled = <span class="keyword">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">repositories &#123;</span><br><span class="line">    flatDir &#123;</span><br><span class="line">        <span class="comment">//就是你放aar的目录地址</span></span><br><span class="line">        dirs <span class="string">'libs'</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">dependencies &#123;</span><br><span class="line">    compile <span class="string">"com.android.support:appcompat-v7:$supportLibraryVersion"</span></span><br><span class="line">    androidTestCompile(<span class="string">'com.android.support.test.espresso:espresso-core:2.2.2'</span>, &#123;</span><br><span class="line">        exclude group: <span class="string">'com.android.support'</span>, <span class="keyword">module</span>: <span class="string">'support-annotations'</span></span><br><span class="line">        exclude group: <span class="string">'com.google.code.findbugs'</span></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/27/android配置/" data-id="cjc3cext00005fb3rz4g22dh8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/android/">android</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-maven配置" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2017/06/26/maven配置/" class="article-date">
+  <time datetime="2017-06-26T00:23:45.000Z" itemprop="datePublished">2017-06-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/loresky.github.io/2017/06/26/maven配置/">maven配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="本地仓库的配置"><a href="#本地仓库的配置" class="headerlink" title="本地仓库的配置"></a>本地仓库的配置</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/maven/repo<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="国内maven-repository"><a href="#国内maven-repository" class="headerlink" title="国内maven repository"></a>国内maven repository</h2><h3 id="在前添加"><a href="#在前添加" class="headerlink" title="在前添加"></a><strong>在前添加</strong></h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-aliyun<span class="tag">&lt;/<span class="name">id</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Nexus aliyun<span class="tag">&lt;/<span class="name">name</span>&gt;</span>  </span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/26/maven配置/" data-id="cjc3cexu5002lfb3ru49vy7zs" class="article-share-link">Share</a>
+      
+      
     </footer>
   </div>
   
@@ -223,7 +523,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/15/win软件/" data-id="cjc3293hv0025nb3runu8u8yi" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/15/win软件/" data-id="cjc3cexub0031fb3rdz7jy6p3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/win/">win</a></li></ul>
@@ -235,14 +535,14 @@
 
 
   
-    <article id="post-idea插件" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-win的linux_location" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/15/idea插件/" class="article-date">
-  <time datetime="2017-06-15T02:00:00.000Z" itemprop="datePublished">2017-06-15</time>
+    <a href="/loresky.github.io/2017/06/15/win的linux_location/" class="article-date">
+  <time datetime="2017-06-15T05:10:00.000Z" itemprop="datePublished">2017-06-15</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/idea插件/">idea插件</a>
+    <a class="article-category-link" href="/loresky.github.io/categories/win/">win</a>
   </div>
 
   </div>
@@ -253,7 +553,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/15/idea插件/">idea插件</a>
+      <a class="article-title" href="/loresky.github.io/2017/06/15/win的linux_location/">win的linux_location</a>
     </h1>
   
 
@@ -261,419 +561,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="官方插件官站"><a href="#官方插件官站" class="headerlink" title="官方插件官站"></a><a href="https://plugins.jetbrains.com/idea" target="_blank" rel="noopener">官方插件官站</a></h2><table>
-<thead>
-<tr>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Key Promoter</td>
-<td style="text-align:center">当你点击鼠标一个功能的时候，可以提示 你这个功能快捷键是什么 ，和这个按钮你的使用频率</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/zzz40500/GsonFormat">GsonFormat</a></td>
-<td style="text-align:center">JSONObject格式的字符串,自动生成实体类参数的插件</td>
-</tr>
-<tr>
-<td style="text-align:center"><a href="https://github.com/krasa/GrepConsole">Grep Console</a></td>
-<td style="text-align:center">控制台颜色</td>
-</tr>
-</tbody>
-</table>
+        <p>谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。<br>里面说到 linux 存放位置在<br>C:\Users{user}\AppData\Local\lxss{username}<br>其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。<br>以及你的 /home 文件夹会在<br>C:\Users{user}\AppData\Local\lxss\home\</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/15/idea插件/" data-id="cjc3293h9000znb3r46v505oh" class="article-share-link">Share</a>
+      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/15/win的linux_location/" data-id="cjc3cexua002xfb3rcuuthuk3" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/idea插件/">idea插件</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-docker安装设置" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/13/docker安装设置/" class="article-date">
-  <time datetime="2017-06-13T10:00:00.000Z" itemprop="datePublished">2017-06-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/docker/">docker</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/13/docker安装设置/">docker安装设置</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Docker-中国"><a href="#Docker-中国" class="headerlink" title="* Docker 中国"></a>* <a href="https://www.docker-cn.com/" target="_blank" rel="noopener">Docker 中国</a></h2><h2 id="官网安装教程"><a href="#官网安装教程" class="headerlink" title="* 官网安装教程"></a>* <a href="https://docs.docker.com/engine/installation/#supported-platforms" target="_blank" rel="noopener">官网安装教程</a></h2><h2 id="docker-engine地址"><a href="#docker-engine地址" class="headerlink" title="* docker-engine地址"></a>* <a href="https://apt.dockerproject.org/repo/pool/main/d/docker-engine/" target="_blank" rel="noopener">docker-engine地址</a></h2><hr>
-<h2 id="Docker-官方为了简化安装流程，提供了一套安装脚本，Ubuntu-和-Debian-系统可以使用这套脚本安装："><a href="#Docker-官方为了简化安装流程，提供了一套安装脚本，Ubuntu-和-Debian-系统可以使用这套脚本安装：" class="headerlink" title="Docker 官方为了简化安装流程，提供了一套安装脚本，Ubuntu 和 Debian 系统可以使用这套脚本安装："></a>Docker 官方为了简化安装流程，提供了一套安装脚本，Ubuntu 和 Debian 系统可以使用这套脚本安装：</h2><p><code>curl -sSL https://get.docker.com/ | sh</code></p>
-<h2 id="阿里云的安装脚本"><a href="#阿里云的安装脚本" class="headerlink" title="阿里云的安装脚本"></a>阿里云的安装脚本</h2><p><code>curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -</code></p>
-<h2 id="DaoCloud-的安装脚本"><a href="#DaoCloud-的安装脚本" class="headerlink" title="DaoCloud 的安装脚本"></a>DaoCloud 的安装脚本</h2><p><code>curl -sSL https://get.daocloud.io/docker | sh</code></p>
-<h2 id="docker添加用户到组"><a href="#docker添加用户到组" class="headerlink" title="docker添加用户到组"></a>docker添加用户到组</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo gpasswd -a <span class="variable">$&#123;USER&#125;</span> docker</span><br><span class="line">sudo service docker restart</span><br><span class="line">newgrp - docker</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/13/docker安装设置/" data-id="cjc3293gt000anb3rjnnz6yqp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/docker/">docker</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-git基本命令" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/06/13/git基本命令/" class="article-date">
-  <time datetime="2017-06-13T02:00:00.000Z" itemprop="datePublished">2017-06-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/git/">git</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/06/13/git基本命令/">git基本命令</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="创建git仓库"><a href="#创建git仓库" class="headerlink" title="创建git仓库"></a>创建git仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">mkdir Test</span><br><span class="line"><span class="built_in">cd</span> Test</span><br><span class="line">git init</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"# Test"</span> &gt;&gt; README.md</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line">git remote add origin https://git.coding.net/hccy/Test.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-<h2 id="已有项目"><a href="#已有项目" class="headerlink" title="已有项目"></a>已有项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加</span><br><span class="line">git remote add origin https://git.coding.net/hccy/Test.git</span><br><span class="line">主分支git push -u origin master</span><br><span class="line">分支git push -u origin branch</span><br></pre></td></tr></table></figure>
-<h2 id="git-clone-某个分支或所有分支"><a href="#git-clone-某个分支或所有分支" class="headerlink" title="git clone 某个分支或所有分支"></a>git clone 某个分支或所有分支</h2><h3 id="clone-某个分支："><a href="#clone-某个分支：" class="headerlink" title="clone 某个分支："></a>clone 某个分支：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b b1 https://github.com/...</span><br></pre></td></tr></table></figure>
-<h3 id="clone-所有分支："><a href="#clone-所有分支：" class="headerlink" title="clone 所有分支："></a>clone 所有分支：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/...</span><br><span class="line">git branch -r</span><br><span class="line">* <span class="built_in">source</span></span><br><span class="line">  remotes/origin/HEAD -&gt; origin/master</span><br><span class="line">  remotes/origin/master</span><br><span class="line">  remotes/origin/<span class="built_in">source</span></span><br></pre></td></tr></table></figure>
-<h2 id="git-checkout——检出"><a href="#git-checkout——检出" class="headerlink" title="git checkout——检出"></a>git checkout——检出</h2><h3 id="创建新分支："><a href="#创建新分支：" class="headerlink" title="创建新分支："></a>创建新分支：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch branchName</span><br></pre></td></tr></table></figure>
-<h3 id="切换到新分支："><a href="#切换到新分支：" class="headerlink" title="切换到新分支："></a>切换到新分支：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout branchName</span><br></pre></td></tr></table></figure>
-<h3 id="上面两个命令也可以合成为一个命令："><a href="#上面两个命令也可以合成为一个命令：" class="headerlink" title="上面两个命令也可以合成为一个命令："></a>上面两个命令也可以合成为一个命令：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b branchName</span><br></pre></td></tr></table></figure>
-<h2 id="git-status告诉你有文件被修改过，用git-diff可以查看修改内容"><a href="#git-status告诉你有文件被修改过，用git-diff可以查看修改内容" class="headerlink" title="git status告诉你有文件被修改过，用git diff可以查看修改内容"></a><strong>git status告诉你有文件被修改过，用git diff可以查看修改内容</strong></h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/06/13/git基本命令/" data-id="cjc3293gr0006nb3rl2k24sw0" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/git/">git</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-忘记root密码" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/04/23/忘记root密码/" class="article-date">
-  <time datetime="2017-04-23T02:56:13.000Z" itemprop="datePublished">2017-04-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/04/23/忘记root密码/">linux忘记root密码</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>进入grub的时候，按上下箭头<br>选择平时启动的那个内核<br>按 e 编辑这么一行：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kernel /vmlinuz root=/dev/sda2 init=/bin/bash rw</span><br></pre></td></tr></table></figure></p>
-<p><strong>注意黑体字，就是在你原有的内核选项上增加的内容</strong><br>按 enter 生效<br>按 b 启动<br>然后就在命令行了，输入passwd root 进行密码修改</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/04/23/忘记root密码/" data-id="cjc3293hx002dnb3rzaovp54r" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux配置" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/04/23/linux配置/" class="article-date">
-  <time datetime="2017-04-23T02:55:13.000Z" itemprop="datePublished">2017-04-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/04/23/linux配置/">linux配置</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">依赖: sudo apt-get install gdebi-core</span><br><span class="line">语言支持不见了: sudo apt-get install language-selector-gnome</span><br><span class="line">64位系统lib: sudo apt-get install lib32ncurses5</span><br><span class="line">配置lib: sudo apt-get install -f</span><br></pre></td></tr></table></figure>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> GOROOT=/opt/go</span><br><span class="line"><span class="built_in">export</span> GOPATH=/home/cy/GoProjects</span><br><span class="line"><span class="built_in">export</span> GRADLE_HOME=/opt/gradle</span><br><span class="line"><span class="built_in">export</span> NODE_HOME=/opt/node</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/opt/jdk1.8</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=/opt/jdk1.8/jre</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br><span class="line"><span class="built_in">export</span> ANDROID_HOME=/opt/android-sdk-linux</span><br><span class="line"><span class="built_in">export</span> PATH=:<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$JRE_HOME</span>/bin:<span class="variable">$ANDROID_HOME</span>/platform-tools:<span class="variable">$ANDROID_HOME</span>/tools:<span class="variable">$GRADLE_HOME</span>/bin:<span class="variable">$NODE_HOME</span>/bin:<span class="variable">$GOROOT</span>/bin:<span class="variable">$GOPATH</span>/bin:</span><br></pre></td></tr></table></figure>
-<h2 id="桌面图标"><a href="#桌面图标" class="headerlink" title="桌面图标"></a>桌面图标</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Name = Genymotion</span><br><span class="line">comment= genymotion</span><br><span class="line">Exec=/opt/genymotion/genymotion</span><br><span class="line">Icon=/opt/genymotion/icons/icon.png</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">Type=Application</span><br><span class="line">Categories=Utility;TextEditor;Development;IDE;</span><br><span class="line"></span><br><span class="line">[Desktop Entry]</span><br><span class="line">Version=1.0</span><br><span class="line">Type=Application</span><br><span class="line">Name=xmind</span><br><span class="line">Comment=</span><br><span class="line">Exec=/opt/xmind/XMind_amd64/XMind</span><br><span class="line">Icon=/opt/xmind/XMind_amd64/xmind_file.ico</span><br><span class="line">Path=/opt/xmind/XMind_amd64</span><br><span class="line">Terminal=<span class="literal">false</span></span><br><span class="line">StartupNotify=<span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<h2 id="五笔"><a href="#五笔" class="headerlink" title="五笔"></a>五笔</h2><p><code>sudo apt-get install fcitx-table-wbpy</code></p>
-<h2 id="Fcitx输入中文不显示候选词框的解决办法"><a href="#Fcitx输入中文不显示候选词框的解决办法" class="headerlink" title="Fcitx输入中文不显示候选词框的解决办法"></a>Fcitx输入中文不显示候选词框的解决办法</h2><p><code>sudo apt remove fcitx-module-kimpanel</code></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/04/23/linux配置/" data-id="cjc3293hm001nnb3rcvpuve48" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Tomcat设置" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/04/23/Tomcat设置/" class="article-date">
-  <time datetime="2017-04-23T02:49:47.000Z" itemprop="datePublished">2017-04-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/tomcat/">tomcat</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/04/23/Tomcat设置/">Tomcat设置</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="tomcat配置虚拟目录"><a href="#tomcat配置虚拟目录" class="headerlink" title="tomcat配置虚拟目录"></a>tomcat配置虚拟目录</h2><p><em>apache-tomcat-8.0.18\conf\Catalina\localhost  下建一个xml</em><br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">path</span>=<span class="string">"/qqq"</span>  <span class="attr">docBase</span>=<span class="string">"E:\qqq"</span> <span class="attr">reloadable</span>=<span class="string">"false"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>文件名改成你自己的譬如<a href="http://localhost:8080/qqq" target="_blank" rel="noopener">http://localhost:8080/qqq</a> ，文件名就为qqq.xml<br>再打开Tomcat安装目录,打开conf/web.xml 文件，在其中找到<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">param-name</span>&gt;</span>listings<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">param-value</span>&gt;</span>false<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>将false设成true保存，重启Tomcat。<br>在浏览器输入  <a href="http://localhost/demo/，就可以显示文件列表了。" target="_blank" rel="noopener">http://localhost/demo/，就可以显示文件列表了。</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/04/23/Tomcat设置/" data-id="cjc3293go0004nb3rdhvclni5" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/tomcat/">tomcat</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux软件" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/04/23/linux软件/" class="article-date">
-  <time datetime="2017-04-23T02:10:00.000Z" itemprop="datePublished">2017-04-23</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/04/23/linux软件/">linux软件</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <table>
-<thead>
-<tr>
-<th>名称</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>screenfetch</td>
-<td>酷炫Linux标志的基本硬件信息</td>
-</tr>
-<tr>
-<td>SimpleScreenRecorder</td>
-<td>桌面录制工具</td>
-</tr>
-<tr>
-<td>Silentcast</td>
-<td>GIF录制工具</td>
-</tr>
-<tr>
-<td>peek</td>
-<td>GIF录制工具</td>
-</tr>
-<tr>
-<td>Gifine</td>
-<td>GIF录制工具</td>
-</tr>
-<tr>
-<td>Shadowsocks-qt5</td>
-<td>科学上网</td>
-</tr>
-<tr>
-<td>electronic-wechat</td>
-<td>Linux系统微信</td>
-</tr>
-<tr>
-<td>XMind</td>
-<td>思维导图</td>
-</tr>
-<tr>
-<td>Remarkable</td>
-<td>markdown编辑器</td>
-</tr>
-<tr>
-<td>Guake Terminal</td>
-<td>下拉式的终端</td>
-</tr>
-<tr>
-<td>Remarkable</td>
-<td>markdown编辑器</td>
-</tr>
-<tr>
-<td>Remarkable</td>
-<td>markdown编辑器</td>
-</tr>
-<tr>
-<td>Remarkable</td>
-<td>markdown编辑器</td>
-</tr>
-<tr>
-<td>Remarkable</td>
-<td>markdown编辑器</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/04/23/linux软件/" data-id="cjc3293he001anb3rh6yckdih" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-MySQL配置文件详解" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/loresky.github.io/2017/04/18/MySQL配置文件详解/" class="article-date">
-  <time datetime="2017-04-18T04:16:18.000Z" itemprop="datePublished">2017-04-18</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/loresky.github.io/categories/数据库/">数据库</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/loresky.github.io/2017/04/18/MySQL配置文件详解/">MySQL配置文件详解</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>找到C:\Program Files\MariaDB 5.5\data\my.ini<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]下增加character-set-server=utf8</span><br><span class="line">[client]下增加default-character-set=utf8</span><br><span class="line">[MySQL] 下增加default-character-set=utf8</span><br></pre></td></tr></table></figure></p>
-<p>设置MySQL5.6的远程连接<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">use mysql; </span><br><span class="line">//为root添加远程连接的能力  </span><br><span class="line">GRANT ALL PRIVILEGES ON *.* TO root@&quot;%&quot; IDENTIFIED BY &quot;root&quot;;    </span><br><span class="line">//设置root用户密码 </span><br><span class="line">update user set Password = password(&apos;123456&apos;) where User=&apos;root&apos;;</span><br><span class="line">//刷新刚才的内容</span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://github.com/loresky/loresky.github.io/2017/04/18/MySQL配置文件详解/" data-id="cjc3293gg0000nb3rvv0aivrl" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/数据库/">数据库</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/win/">win</a></li></ul>
 
     </footer>
   </div>
@@ -685,7 +581,7 @@
 
 
   <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/loresky.github.io/page/2/">&laquo; __('prev')</a><a class="page-number" href="/loresky.github.io/">1</a><a class="page-number" href="/loresky.github.io/page/2/">2</a><span class="page-number current">3</span>
+    <a class="extend prev" rel="prev" href="/loresky.github.io/page/2/">&laquo; __('prev')</a><a class="page-number" href="/loresky.github.io/">1</a><a class="page-number" href="/loresky.github.io/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/loresky.github.io/page/4/">4</a><a class="extend next" rel="next" href="/loresky.github.io/page/4/">__('next') &raquo;</a>
   </nav>
 </section>
         
@@ -737,23 +633,23 @@
       <ul>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go结构switch/">go结构switch</a>
+            <a href="/loresky.github.io/2018/01/06/go递归函数/">go递归函数</a>
           </li>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go多返回值函数的错误/">go多返回值函数的错误</a>
+            <a href="/loresky.github.io/2018/01/06/go内置函数/">go内置函数</a>
           </li>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go字符串/">go字符串</a>
+            <a href="/loresky.github.io/2018/01/06/go追踪和defer/">go追踪和defer</a>
           </li>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go基本类型和运算符/">go基本类型和运算符</a>
+            <a href="/loresky.github.io/2018/01/06/go传递变长参数/">go传递变长参数</a>
           </li>
         
           <li>
-            <a href="/loresky.github.io/2018/01/06/go常量、变量、枚举/">go常量、变量、枚举</a>
+            <a href="/loresky.github.io/2018/01/06/go函数参数与返回值/">go函数参数与返回值</a>
           </li>
         
       </ul>

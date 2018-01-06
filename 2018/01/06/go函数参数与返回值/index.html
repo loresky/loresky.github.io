@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>go函数参数与返回值 | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1. 按值传递（call by value） 按引用传递（call by reference）Go 默认使用按值传递来传递参数，也就是传递参数的副本。指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递几乎在任何情况下，传递指针（一个32位或者64位的值）的消耗都比传递副本来得少。 在函数调用时，像切片（slice）、字典（map）、接口（interfa">
+<meta name="keywords" content="golang">
+<meta property="og:type" content="article">
+<meta property="og:title" content="go函数参数与返回值">
+<meta property="og:url" content="https://github.com/loresky/loresky.github.io/2018/01/06/go函数参数与返回值/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="1. 按值传递（call by value） 按引用传递（call by reference）Go 默认使用按值传递来传递参数，也就是传递参数的副本。指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递几乎在任何情况下，传递指针（一个32位或者64位的值）的消耗都比传递副本来得少。 在函数调用时，像切片（slice）、字典（map）、接口（interfa">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-01-06T09:35:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="go函数参数与返回值">
+<meta name="twitter:description" content="1. 按值传递（call by value） 按引用传递（call by reference）Go 默认使用按值传递来传递参数，也就是传递参数的副本。指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递几乎在任何情况下，传递指针（一个32位或者64位的值）的消耗都比传递副本来得少。 在函数调用时，像切片（slice）、字典（map）、接口（interfa">
+  
+    <link rel="alternate" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/loresky.github.io/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/loresky.github.io/" id="logo">我的博客</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/loresky.github.io/" id="subtitle">天天好新情</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/loresky.github.io/">Home</a>
+        
+          <a class="main-nav-link" href="/loresky.github.io/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://github.com/loresky/loresky.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-go函数参数与返回值" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/loresky.github.io/2018/01/06/go函数参数与返回值/" class="article-date">
+  <time datetime="2018-01-06T09:19:00.000Z" itemprop="datePublished">2018-01-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/loresky.github.io/categories/golang/">golang</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      go函数参数与返回值
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-按值传递（call-by-value）-按引用传递（call-by-reference）"><a href="#1-按值传递（call-by-value）-按引用传递（call-by-reference）" class="headerlink" title="1. 按值传递（call by value） 按引用传递（call by reference）"></a>1. 按值传递（call by value） 按引用传递（call by reference）</h2><h3 id="Go-默认使用按值传递来传递参数，也就是传递参数的副本。"><a href="#Go-默认使用按值传递来传递参数，也就是传递参数的副本。" class="headerlink" title="Go 默认使用按值传递来传递参数，也就是传递参数的副本。"></a>Go 默认使用按值传递来传递参数，也就是传递参数的副本。</h3><h3 id="指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递"><a href="#指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递" class="headerlink" title="指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递"></a>指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递</h3><p>几乎在任何情况下，传递指针（一个32位或者64位的值）的消耗都比传递副本来得少。</p>
+<p>在函数调用时，像切片（slice）、字典（map）、接口（interface）、通道（channel）这样的引用类型都是默认使用引用传递（即使没有显示的指出指针）。<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    fmt.Printf(<span class="string">"Multiply 2 * 5 * 6 = %d\n"</span>, MultiPly3Nums(<span class="number">2</span>, <span class="number">5</span>, <span class="number">6</span>))</span><br><span class="line">    <span class="comment">// var i1 int = MultiPly3Nums(2, 5, 6)</span></span><br><span class="line">    <span class="comment">// fmt.Printf("MultiPly 2 * 5 * 6 = %d\n", i1)</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">MultiPly3Nums</span><span class="params">(a <span class="keyword">int</span>, b <span class="keyword">int</span>, c <span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</span><br><span class="line">    <span class="comment">// var product int = a * b * c</span></span><br><span class="line">    <span class="comment">// return product</span></span><br><span class="line">    <span class="keyword">return</span> a * b * c</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="2-命名的返回值（named-return-variables）"><a href="#2-命名的返回值（named-return-variables）" class="headerlink" title="2. 命名的返回值（named return variables）"></a>2. 命名的返回值（named return variables）</h2><p>函数带有一个 int 参数，返回两个 int 值；其中一个函数的返回值在函数调用时就已经被赋予了一个初始零值。<br>getX2AndX3 与 getX2AndX3_2 两个函数演示了如何使用非命名返回值与命名返回值的特性。当需要返回多个非命名返回值时，需要使用 () 把它们括起来，比如 (int, int)。</p>
+<p>命名返回值作为结果形参（result parameters）被初始化为相应类型的零值，当需要返回的时候，我们只需要一条简单的不带参数的return语句。需要注意的是，即使只有一个命名返回值，也需要使用 () 括起来<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num <span class="keyword">int</span> = <span class="number">10</span></span><br><span class="line"><span class="keyword">var</span> numx2, numx3 <span class="keyword">int</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    numx2, numx3 = getX2AndX3(num)</span><br><span class="line">    PrintValues()</span><br><span class="line">    numx2, numx3 = getX2AndX3_2(num)</span><br><span class="line">    PrintValues()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">PrintValues</span><span class="params">()</span></span> &#123;</span><br><span class="line">    fmt.Printf(<span class="string">"num = %d, 2x num = %d, 3x num = %d\n"</span>, num, numx2, numx3)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">getX2AndX3</span><span class="params">(input <span class="keyword">int</span>)</span> <span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">2</span> * input, <span class="number">3</span> * input</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">getX2AndX3_2</span><span class="params">(input <span class="keyword">int</span>)</span> <span class="params">(x2 <span class="keyword">int</span>, x3 <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    x2 = <span class="number">2</span> * input</span><br><span class="line">    x3 = <span class="number">3</span> * input</span><br><span class="line">    <span class="comment">// return x2, x3</span></span><br><span class="line">    <span class="keyword">return</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//输出结果：</span></span><br><span class="line">num = <span class="number">10</span>, <span class="number">2</span>x num = <span class="number">20</span>, <span class="number">3</span>x num = <span class="number">30</span>    </span><br><span class="line">num = <span class="number">10</span>, <span class="number">2</span>x num = <span class="number">20</span>, <span class="number">3</span>x num = <span class="number">30</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>return 或 return var 都是可以的。<br>不过 return var = expression（表达式） 会引发一个编译错误：syntax error: unexpected =, expecting semicolon or newline or }。<br>即使函数使用了命名返回值，你依旧可以无视它而返回明确的值。<br>任何一个非命名返回值（使用非命名返回值是很糟的编程习惯）在 return 语句里面都要明确指出包含返回值的变量或是一个可计算的值（就像上面警告所指出的那样）。<br>尽量使用命名返回值：会使代码更清晰、更简短，同时更加容易读懂 </strong></p>
+<h2 id="3-空白符（blank-identifier）"><a href="#3-空白符（blank-identifier）" class="headerlink" title="3. 空白符（blank identifier）"></a>3. 空白符（blank identifier）</h2><p>空白符用来匹配一些不需要的值，然后丢弃掉<br>ThreeValues 是拥有三个返回值的不需要任何参数的函数，在下面的例子中，我们将第一个与第三个返回值赋给了 i1 与 f1。第二个返回值赋给了空白符 _，然后自动丢弃掉。<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">var</span> i1 <span class="keyword">int</span></span><br><span class="line">    <span class="keyword">var</span> f1 <span class="keyword">float32</span></span><br><span class="line">    i1, _, f1 = ThreeValues()</span><br><span class="line">    fmt.Printf(<span class="string">"The int: %d, the float: %f \n"</span>, i1, f1)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">ThreeValues</span><span class="params">()</span> <span class="params">(<span class="keyword">int</span>, <span class="keyword">int</span>, <span class="keyword">float32</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">5</span>, <span class="number">6</span>, <span class="number">7.5</span></span><br><span class="line">&#125;</span><br><span class="line">输出结果：</span><br><span class="line">The <span class="keyword">int</span>: <span class="number">5</span>, the float: <span class="number">7.500000</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="4-改变外部变量（outside-variable）"><a href="#4-改变外部变量（outside-variable）" class="headerlink" title="4. 改变外部变量（outside variable）"></a>4. 改变外部变量（outside variable）</h2><p>传递指针给函数不但可以节省内存（因为没有复制变量的值），而且赋予了函数直接修改外部变量的能力，所以被修改的变量不再需要使用 return 返回。如下的例子，reply 是一个指向 int 变量的指针，通过这个指针，我们在函数内修改了这个 int 变量的数值。<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">传递指针给函数不但可以节省内存（因为没有复制变量的值），而且赋予了函数直接修改外部变量的能力，所以被修改的变量不再需要使用 <span class="keyword">return</span> 返回。如下的例子，reply 是一个指向 <span class="keyword">int</span> 变量的指针，通过这个指针，我们在函数内修改了这个 <span class="keyword">int</span> 变量的数值。</span><br><span class="line"></span><br><span class="line">示例 <span class="number">6.6</span> side_effect.<span class="keyword">go</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">"fmt"</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">// this function changes reply:</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">Multiply</span><span class="params">(a, b <span class="keyword">int</span>, reply *<span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">    *reply = a * b</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">    n := <span class="number">0</span></span><br><span class="line">    reply := &amp;n</span><br><span class="line">    Multiply(<span class="number">10</span>, <span class="number">5</span>, reply)</span><br><span class="line">    fmt.Println(<span class="string">"Multiply:"</span>, *reply) <span class="comment">// Multiply: 50</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://github.com/loresky/loresky.github.io/2018/01/06/go函数参数与返回值/" data-id="cjc3cext5000bfb3r1rsgjsce" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/loresky.github.io/2018/01/06/go传递变长参数/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          go传递变长参数
+        
+      </div>
+    </a>
+  
+  
+    <a href="/loresky.github.io/2018/01/06/go标签与goto/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">go标签与goto</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/docker/">docker</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/golang/">golang</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/idea插件/">idea插件</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/mongodb/">mongodb</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/tomcat/">tomcat</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/vpn/">vpn</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/win/">win</a></li><li class="category-list-item"><a class="category-list-link" href="/loresky.github.io/categories/数据库/">数据库</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/golang/">golang</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/idea插件/">idea插件</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/mongodb/">mongodb</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/tomcat/">tomcat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/vpn/">vpn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/win/">win</a></li><li class="tag-list-item"><a class="tag-list-link" href="/loresky.github.io/tags/数据库/">数据库</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/loresky.github.io/tags/android/" style="font-size: 10px;">android</a> <a href="/loresky.github.io/tags/docker/" style="font-size: 12.5px;">docker</a> <a href="/loresky.github.io/tags/git/" style="font-size: 10px;">git</a> <a href="/loresky.github.io/tags/golang/" style="font-size: 20px;">golang</a> <a href="/loresky.github.io/tags/idea插件/" style="font-size: 10px;">idea插件</a> <a href="/loresky.github.io/tags/linux/" style="font-size: 17.5px;">linux</a> <a href="/loresky.github.io/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/loresky.github.io/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/loresky.github.io/tags/vpn/" style="font-size: 10px;">vpn</a> <a href="/loresky.github.io/tags/win/" style="font-size: 15px;">win</a> <a href="/loresky.github.io/tags/数据库/" style="font-size: 10px;">数据库</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/loresky.github.io/archives/2018/01/">一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/loresky.github.io/archives/2017/11/">十一月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/loresky.github.io/archives/2017/10/">十月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/loresky.github.io/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/loresky.github.io/archives/2017/07/">七月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/loresky.github.io/archives/2017/06/">六月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/loresky.github.io/archives/2017/04/">四月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/loresky.github.io/2018/01/06/go递归函数/">go递归函数</a>
+          </li>
+        
+          <li>
+            <a href="/loresky.github.io/2018/01/06/go内置函数/">go内置函数</a>
+          </li>
+        
+          <li>
+            <a href="/loresky.github.io/2018/01/06/go追踪和defer/">go追踪和defer</a>
+          </li>
+        
+          <li>
+            <a href="/loresky.github.io/2018/01/06/go传递变长参数/">go传递变长参数</a>
+          </li>
+        
+          <li>
+            <a href="/loresky.github.io/2018/01/06/go函数参数与返回值/">go函数参数与返回值</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 cy<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/loresky.github.io/" class="mobile-nav-link">Home</a>
+  
+    <a href="/loresky.github.io/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/loresky.github.io/fancybox/jquery.fancybox.css">
+  <script src="/loresky.github.io/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/loresky.github.io/js/script.js"></script>
+
+  </div>
+</body>
+</html>
