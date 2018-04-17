@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gits on </title>
+    <link>https://loresky.github.io/git/</link>
+    <description>Recent content in Gits on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 Jun 2017 10:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://loresky.github.io/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git基本命令</title>
+      <link>https://loresky.github.io/git/git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Tue, 13 Jun 2017 10:00:00 +0000</pubDate>
+      
+      <guid>https://loresky.github.io/git/git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid>
+      <description> 创建git仓库 mkdir Test cd Test git init echo &amp;quot;# Test&amp;quot; &amp;gt;&amp;gt; README.md git add README.md git commit -m &amp;quot;first commit&amp;quot; git remote add origin https://git.coding.net/hccy/Test.git git push -u origin master  已有项目 如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加 git remote add origin https://git.coding.net/hccy/Test.git 主分支git push -u origin master 分支git push -u origin branch  git clone 某个分支或所有分支 clone 某个分支： git clone -b b1 https://github.com/...  clone 所有分支： git clone https://github.com/... git branch -r * source remotes/origin/HEAD -&amp;gt; origin/master remotes/origin/master remotes/origin/source  git checkout——检出 创建新分支： git branch branchName  切换到新分支： git checkout branchName  上面两个命令也可以合成为一个命令： git checkout -b branchName  git status告诉你有文件被修改过，用git diff可以查看修改内容 </description>
+    </item>
+    
+  </channel>
+</rss>
