@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.38.2" />
     
-    <title>Golang &middot; </title>
-    <meta content="Golang - " property="og:title">
+    <title>mongodb可视化 &middot; </title>
+    <meta content="mongodb可视化 - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -32,9 +32,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="feed" type="application/rss+xml" title="" />
+    
 
 	</head>
     <body>
@@ -101,27 +99,78 @@
 </div>
 
         <div class="content container">
-            <h1 class="title">Golang</h1>
-<ul class="posts">
-    <li>
-        <span>
-            <a href="https://loresky.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+            <div class="post">
+  <h1>mongodb可视化</h1>
+  
+  <div class="col-sm-12 col-md-12">
+    <span class="text-left post-date meta">
             
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li><li>
-        <span>
-            <a href="https://loresky.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
-            
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li>
-</ul>
+       
+        <i class="fas fa-calendar-alt"></i> Sep 26, 2017
+      
+      
+      
+      
+      <br/>
+      <i class="fas fa-clock"></i> 1 min read 
+      </span>  
+  </div>    
+  
+  
 
+<h2 id="mongo-express">mongo-express</h2>
+
+<p><strong>复制创建配置文件</strong></p>
+
+<pre><code class="language-bash">cp config.default.js config.js
+</code></pre>
+
+<p><strong>配置Mongo数据库的连接信息：</strong></p>
+
+<pre><code>mongo = {
+    db:       'db',
+    host:     'localhost',
+    password: 'pass',
+    port:     27017,
+    ssl:      false,
+    url:      'mongodb://localhost:27017/db',
+    username: 'admin',
+  }
+</code></pre>
+
+<p><strong>配置Web服务的信息</strong>
+其中根据场景需求，可能需要把
+<code>
+host:             process.env.VCAP_APP_HOST                 || 'localhost'
+</code>
+修改为
+<code>
+host:             process.env.VCAP_APP_HOST                 || '0.0.0.0',
+</code></p>
+
+<p><strong>修改登录网页所需要的用户名、密码，默认为admin和pass：</strong></p>
+
+<pre><code>basicAuth: {
+    username: process.env.ME_CONFIG_BASICAUTH_USERNAME || 'admin',
+    password: process.env.ME_CONFIG_BASICAUTH_PASSWORD || 'pass',
+  }
+</code></pre>
+
+<p><strong>admin feature需要打开，才能够同时管理多个DB</strong></p>
+
+<pre><code>admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN.toLowerCase() === 'true' : false,
+</code></pre>
+
+</div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
+
+
             </div>
         </div>
         

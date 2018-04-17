@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.38.2" />
     
-    <title>Golang &middot; </title>
-    <meta content="Golang - " property="og:title">
+    <title>go环境和目录 &middot; </title>
+    <meta content="go环境和目录 - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -32,9 +32,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="feed" type="application/rss+xml" title="" />
+    
 
 	</head>
     <body>
@@ -101,27 +99,66 @@
 </div>
 
         <div class="content container">
-            <h1 class="title">Golang</h1>
-<ul class="posts">
-    <li>
-        <span>
-            <a href="https://loresky.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+            <div class="post">
+  <h1>go环境和目录</h1>
+  
+  <div class="col-sm-12 col-md-12">
+    <span class="text-left post-date meta">
             
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li><li>
-        <span>
-            <a href="https://loresky.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
-            
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li>
+       
+        <i class="fas fa-calendar-alt"></i> Sep 20, 2017
+      
+      
+      
+      
+      <br/>
+      <i class="fas fa-clock"></i> 1 min read 
+      </span>  
+  </div>    
+  
+  
+
+<h2 id="go-的源代码有以下三个分支">Go 的源代码有以下三个分支：</h2>
+
+<ul>
+<li>Go release：最新稳定版，实际开发最佳选择</li>
+<li>Go weekly：包含最近更新的版本，一般每周更新一次</li>
+<li>Go tip：永远保持最新的版本，相当于内测版</li>
 </ul>
 
+<h2 id="最为重要的环境变量">最为重要的环境变量:</h2>
+
+<p>**$GOROOT **表示 Go 在你的电脑上的安装位置,它的值一般都是$HOME/go,当然,你也可以安装在别的地方。
+**$GOARCH **表示目标机器的处理器架构,它的值可以是 386、amd64 或 arm。
+**$GOOS **表示目标机器的操作系统,它的值可以是 darwin、freebsd、linux 或 windows。
+**$GOBIN **表示编译器和链接器的安装位置,默认是$GOROOT/bin</p>
+
+<p>**$GOPATH ** 默认采用和 $GOROOT 一样的值，但从 Go 1.1 版本开始，你必须修改为其它路径。它可以包含多个包含 Go 语言源码文件、包文件和可执行文件的路径，而这些路径下又必须分别包含三个规定的目录：src、pkg 和 bin，这三个目录分别用于存放源码文件、包文件和可执行文件。
+**$GOARM **专门针对基于 arm 架构的处理器，它的值可以是 5 或 6，默认为 6。
+** $GOMAXPROCS **用于设置应用程序可使用的处理器个数与核数。</p>
+
+<h2 id="go-安装目录">Go 安装目录</h2>
+
+<ul>
+<li>/bin :包含可执行文件,如:编译器,Go 工具</li>
+<li>/doc :包含示例程序,代码工具,本地文档等</li>
+<li>/lib :包含文档模版</li>
+<li>/misc:包含与支持 Go 编辑器有关的配置文件以及 cgo 的示例</li>
+<li>/os_arch</li>
+<li>/src:包含标准库的包的对象文件(.a):包含源代码构建脚本和标准库的包的完整源代码(Go 是一门开源语言)</li>
+<li>/src/cmd:包含 Go 和 C 的编译器和命令行脚本</li>
+</ul>
+
+</div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
+
+
             </div>
         </div>
         

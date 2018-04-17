@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.38.2" />
     
-    <title>Golang &middot; </title>
-    <meta content="Golang - " property="og:title">
+    <title>go生成代码文档 &middot; </title>
+    <meta content="go生成代码文档 - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -32,9 +32,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="feed" type="application/rss+xml" title="" />
+    
 
 	</head>
     <body>
@@ -101,27 +99,43 @@
 </div>
 
         <div class="content container">
-            <h1 class="title">Golang</h1>
-<ul class="posts">
-    <li>
-        <span>
-            <a href="https://loresky.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+            <div class="post">
+  <h1>go生成代码文档</h1>
+  
+  <div class="col-sm-12 col-md-12">
+    <span class="text-left post-date meta">
             
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li><li>
-        <span>
-            <a href="https://loresky.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
-            
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li>
-</ul>
+       
+        <i class="fas fa-calendar-alt"></i> Jan 6, 2018
+      
+      
+      
+      
+      <br/>
+      <i class="fas fa-clock"></i> 1 min read 
+      </span>  
+  </div>    
+  
+  
 
+<p>go doc 工具会从 Go 程序和包文件中提取顶级声明的首行注释以及每个对象的相关注释，并生成相关文档。</p>
+
+<h2 id="一般用法">一般用法</h2>
+
+<p>**go doc package **获取包的文档注释，例如：go doc fmt 会显示使用 godoc 生成的 fmt 包的文档注释。
+**go doc package/subpackage **获取子包的文档注释，例如：go doc container/list。
+**go doc package function **获取某个函数在某个包中的文档注释，例如：go doc fmt Printf 会显示有关 fmt.Printf() 的使用说明。</p>
+
+</div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
+
+
             </div>
         </div>
         

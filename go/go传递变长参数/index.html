@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.38.2" />
     
-    <title>Golang &middot; </title>
-    <meta content="Golang - " property="og:title">
+    <title>go传递变长参数 &middot; </title>
+    <meta content="go传递变长参数 - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -32,9 +32,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="feed" type="application/rss+xml" title="" />
+    
 
 	</head>
     <body>
@@ -101,27 +99,70 @@
 </div>
 
         <div class="content container">
-            <h1 class="title">Golang</h1>
-<ul class="posts">
-    <li>
-        <span>
-            <a href="https://loresky.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+            <div class="post">
+  <h1>go传递变长参数</h1>
+  
+  <div class="col-sm-12 col-md-12">
+    <span class="text-left post-date meta">
             
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li><li>
-        <span>
-            <a href="https://loresky.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
-            
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li>
-</ul>
+       
+        <i class="fas fa-calendar-alt"></i> Jan 6, 2018
+      
+      
+      
+      
+      <br/>
+      <i class="fas fa-clock"></i> 1 min read 
+      </span>  
+  </div>    
+  
+  <p>如果函数的最后一个参数是采用 &hellip;type 的形式，那么这个函数就可以处理一个变长的参数，这个长度可以为 0，这样的函数称为变参函数。
+<code>func myFunc(a, b, arg ...int) {}</code>
+示例函数和调用：</p>
 
+<pre><code class="language-go">func Greeting(prefix string, who ...string)
+Greeting(&quot;hello:&quot;, &quot;Joe&quot;, &quot;Anna&quot;, &quot;Eileen&quot;)
+</code></pre>
+
+<p>在 Greeting 函数中，变量 who 的值为 []string{&ldquo;Joe&rdquo;, &ldquo;Anna&rdquo;, &ldquo;Eileen&rdquo;}。
+如果参数被存储在一个数组 arr 中，则可以通过 arr&hellip; 的形式来传递参数调用变参函数。
+1. 使用结构
+定义一个结构类型，假设它叫 Options，用以存储所有可能的参数：</p>
+
+<pre><code class="language-go">  type Options struct {
+      par1 type1,
+      par2 type2,
+      ...
+  }
+</code></pre>
+
+<p>函数 F1 可以使用正常的参数 a 和 b，以及一个没有任何初始化的 Options 结构： F1(a, b, Options {})。如果需要对选项进行初始化，则可以使用 F1(a, b, Options {par1:val1, par2:val2})。
+2. 使用空接口
+如果一个变长参数的类型没有被指定，则可以使用默认的空接口 interface{}，这样就可以接受任何类型的参数。该方案不仅可以用于长度未知的参数，还可以用于任何不确定类型的参数。一般而言我们会使用一个 for-range 循环以及 switch 结构对每个参数的类型进行判断：</p>
+
+<pre><code class="language-go">  func typecheck(..,..,values … interface{}) {
+      for _, value := range values {
+          switch v := value.(type) {
+              case int: …
+              case float: …
+              case string: …
+              case bool: …
+              default: …
+          }
+      }
+  }
+</code></pre>
+
+</div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
+
+
             </div>
         </div>
         

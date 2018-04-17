@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.38.2" />
     
-    <title>Golang &middot; </title>
-    <meta content="Golang - " property="og:title">
+    <title>go标签与goto &middot; </title>
+    <meta content="go标签与goto - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -32,9 +32,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="feed" type="application/rss+xml" title="" />
+    
 
 	</head>
     <body>
@@ -101,27 +99,69 @@
 </div>
 
         <div class="content container">
-            <h1 class="title">Golang</h1>
-<ul class="posts">
-    <li>
-        <span>
-            <a href="https://loresky.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+            <div class="post">
+  <h1>go标签与goto</h1>
+  
+  <div class="col-sm-12 col-md-12">
+    <span class="text-left post-date meta">
             
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li><li>
-        <span>
-            <a href="https://loresky.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
-            
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li>
-</ul>
+       
+        <i class="fas fa-calendar-alt"></i> Jan 6, 2018
+      
+      
+      
+      
+      <br/>
+      <i class="fas fa-clock"></i> 1 min read 
+      </span>  
+  </div>    
+  
+  <p>for、switch 或 select 语句都可以配合标签（label）形式的标识符使用，即某一行第一个以冒号（:）结尾的单词（gofmt 会将后续代码自动移至下一行）。
+**标签的名称是大小写敏感的，为了提升可读性，一般建议使用全部大写字母） **</p>
 
+<pre><code class="language-go">package main
+
+import &quot;fmt&quot;
+
+func main() {
+
+LABEL1:
+    for i := 0; i &lt;= 5; i++ {
+        for j := 0; j &lt;= 5; j++ {
+            if j == 4 {
+                continue LABEL1
+            }
+            fmt.Printf(&quot;i is: %d, and j is: %d\n&quot;, i, j)
+        }
+    }
+
+}
+</code></pre>
+
+<pre><code class="language-go">package main
+
+func main() {
+    i:=0
+    HERE:
+        print(i)
+        i++
+        if i==5 {
+            return
+        }
+        goto HERE
+}
+</code></pre>
+
+</div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
+
+
             </div>
         </div>
         

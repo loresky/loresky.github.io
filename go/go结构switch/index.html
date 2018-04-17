@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.38.2" />
     
-    <title>Golang &middot; </title>
-    <meta content="Golang - " property="og:title">
+    <title>go结构switch &middot; </title>
+    <meta content="go结构switch - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -32,9 +32,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="feed" type="application/rss+xml" title="" />
+    
 
 	</head>
     <body>
@@ -101,27 +99,88 @@
 </div>
 
         <div class="content container">
-            <h1 class="title">Golang</h1>
-<ul class="posts">
-    <li>
-        <span>
-            <a href="https://loresky.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+            <div class="post">
+  <h1>go结构switch</h1>
+  
+  <div class="col-sm-12 col-md-12">
+    <span class="text-left post-date meta">
             
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li><li>
-        <span>
-            <a href="https://loresky.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
-            
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li>
-</ul>
+       
+        <i class="fas fa-calendar-alt"></i> Jan 6, 2018
+      
+      
+      
+      
+      <br/>
+      <i class="fas fa-clock"></i> 1 min read 
+      </span>  
+  </div>    
+  
+  
 
+<h3 id="go-语言中的-switch-结构使用上更加灵活-它接受任意形式的表达式">Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式：</h3>
+
+<pre><code class="language-go">switch var1 {
+    case val1:
+        ...
+    case val2:
+        ...
+    default:
+        ...
+}
+</code></pre>
+
+<h3 id="如果执行完每个分支的代码后-还希望继续执行后续分支的代码-可以使用-fallthrough-关键字来达到目的">如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的</h3>
+
+<pre><code class="language-go">switch i {
+    case 0: fallthrough
+    case 1:
+        f() // 当 i == 0 时函数也会被调用
+}
+</code></pre>
+
+<h2 id="switch-语句的第二种形式是不提供任何被判断的值-实际上默认为判断是否为-true">switch 语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为 true）</h2>
+
+<pre><code class="language-go">package main
+
+import &quot;fmt&quot;
+
+func main() {
+    var num1 int = 7
+    switch {
+        case num1 &lt; 0:
+            fmt.Println(&quot;Number is negative&quot;)
+        case num1 &gt; 0 &amp;&amp; num1 &lt; 10:
+            fmt.Println(&quot;Number is between 0 and 10&quot;)
+        default:
+            fmt.Println(&quot;Number is 10 or greater&quot;)
+    }
+}
+//Number is between 0 and 10
+</code></pre>
+
+<h2 id="switch-语句的第三种形式是包含一个初始化语句">switch 语句的第三种形式是包含一个初始化语句：</h2>
+
+<pre><code class="language-go">switch result := calculate(); {
+    case result &lt; 0:
+        ...
+    case result &gt; 0:
+        ...
+    default:
+        // 0
+}
+</code></pre>
+
+</div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
+
+
             </div>
         </div>
         

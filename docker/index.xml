@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dockers on </title>
+    <link>https://loresky.github.io/docker/</link>
+    <description>Recent content in Dockers on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Jun 2017 13:12:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://loresky.github.io/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>docker常用命令</title>
+      <link>https://loresky.github.io/docker/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Tue, 27 Jun 2017 13:12:12 +0000</pubDate>
+      
+      <guid>https://loresky.github.io/docker/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description> 查看当前机器上的镜像： docker images  下载镜像： docker pull &amp;lt;image&amp;gt;  删除镜像： docker rmi &amp;lt;image&amp;gt;  运行镜像： docker run -d -p 3306:3306 hub.c.163.com/library/tomcat:latest  查看容器列表及状态： docker ps -a  </description>
+    </item>
+    
+    <item>
+      <title>docker安装设置</title>
+      <link>https://loresky.github.io/docker/docker%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Tue, 13 Jun 2017 18:00:00 +0000</pubDate>
+      
+      <guid>https://loresky.github.io/docker/docker%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE/</guid>
+      <description> * Docker 中国 * 官网安装教程 Docker 官方为了简化安装流程，提供了一套安装脚本，Ubuntu 和 Debian 系统可以使用这套脚本安装： curl -sSL https://get.docker.com/ | sh
+阿里云的安装脚本 curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
+阿里服务器安装Docker
+DaoCloud 的安装脚本 curl -sSL https://get.daocloud.io/docker | sh
+docker添加用户到组 sudo gpasswd -a ${USER} docker sudo service docker restart newgrp - docker  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.38.2" />
     
-    <title>Golang &middot; </title>
-    <meta content="Golang - " property="og:title">
+    <title>go常量、变量、枚举 &middot; </title>
+    <meta content="go常量、变量、枚举 - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -32,9 +32,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="feed" type="application/rss+xml" title="" />
+    
 
 	</head>
     <body>
@@ -101,27 +99,110 @@
 </div>
 
         <div class="content container">
-            <h1 class="title">Golang</h1>
-<ul class="posts">
-    <li>
-        <span>
-            <a href="https://loresky.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+            <div class="post">
+  <h1>go常量、变量、枚举</h1>
+  
+  <div class="col-sm-12 col-md-12">
+    <span class="text-left post-date meta">
             
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li><li>
-        <span>
-            <a href="https://loresky.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
-            
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li>
-</ul>
+       
+        <i class="fas fa-calendar-alt"></i> Jan 6, 2018
+      
+      
+      
+      
+      <br/>
+      <i class="fas fa-clock"></i> 1 min read 
+      </span>  
+  </div>    
+  
+  
 
+<h1 id="常量">常量</h1>
+
+<h3 id="1-常量使用关键字-const-定义-用于存储不会改变的数据">1. 常量使用关键字 const 定义，用于存储不会改变的数据。</h3>
+
+<h3 id="2-存储在常量中的数据类型只可以是布尔型-数字型-整数型-浮点型和复数-和字符串型">2. 存储在常量中的数据类型只可以是布尔型、数字型（整数型、浮点型和复数）和字符串型。</h3>
+
+<h3 id="3-在-go-语言中-你可以省略类型说明符-type-因为编译器可以根据变量的值来推断其类型">3. 在 Go 语言中，你可以省略类型说明符 [type]，因为编译器可以根据变量的值来推断其类型。</h3>
+
+<pre><code class="language-go">* 显式类型定义： const b string = &quot;abc&quot;
+* 隐式类型定义： const b = &quot;abc&quot;
+</code></pre>
+
+<p><strong>常量还可以用作枚举：</strong></p>
+
+<pre><code class="language-go">const (
+    Unknown = 0
+    Female = 1
+    Male = 2
+)
+</code></pre>
+
+<h1 id="枚举">枚举</h1>
+
+<h4 id="第一个-iota-等于-0-每当-iota-在新的一行被使用时-它的值都会自动加-1-所以-a-0-b-1-c-2-可以简写为如下形式">第一个 iota 等于 0，每当 iota 在新的一行被使用时，它的值都会自动加 1；所以 a=0, b=1, c=2 可以简写为如下形式：</h4>
+
+<pre><code class="language-go">const (
+    a = iota
+    b
+    c
+)
+</code></pre>
+
+<h4 id="一周中每天的名称">一周中每天的名称</h4>
+
+<pre><code class="language-go">const (
+    Sunday = iota
+    Monday
+    Tuesday
+    Wednesday
+    Thursday
+    Friday
+    Saturday
+)
+</code></pre>
+
+<h4 id="使用某个类型作为枚举常量的类型">使用某个类型作为枚举常量的类型：</h4>
+
+<pre><code class="language-go">type Color int
+
+const (
+    RED Color = iota // 0
+    ORANGE // 1
+    YELLOW // 2
+    GREEN // ..
+    BLUE
+    INDIGO
+    VIOLET // 6
+)
+</code></pre>
+
+<h1 id="变量">变量</h1>
+
+<pre><code class="language-go">var a = 15
+var b = false
+var str = &quot;Go says hello to the world!&quot;
+//或：
+var (
+    a = 15
+    b = false
+    str = &quot;Go says hello to the world!&quot;
+    numShips = 50
+    city string
+)
+</code></pre>
+
+</div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
+
+
             </div>
         </div>
         

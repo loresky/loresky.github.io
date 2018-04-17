@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.38.2" />
     
-    <title>Golang &middot; </title>
-    <meta content="Golang - " property="og:title">
+    <title>Tomcat设置 &middot; </title>
+    <meta content="Tomcat设置 - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -32,9 +32,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <!-- RSS -->
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="alternate" type="application/rss+xml" title="" />
-    <link href="https://loresky.github.io/categories/golang/index.xml" rel="feed" type="application/rss+xml" title="" />
+    
 
 	</head>
     <body>
@@ -101,27 +99,55 @@
 </div>
 
         <div class="content container">
-            <h1 class="title">Golang</h1>
-<ul class="posts">
-    <li>
-        <span>
-            <a href="https://loresky.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+            <div class="post">
+  <h1>Tomcat设置</h1>
+  
+  <div class="col-sm-12 col-md-12">
+    <span class="text-left post-date meta">
             
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li><li>
-        <span>
-            <a href="https://loresky.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
-            
-            <time class="pull-right post-list">Apr 02, 2014</time>    
-            
-        </span>
-    </li>
-</ul>
+       
+        <i class="fas fa-calendar-alt"></i> Apr 23, 2017
+      
+      
+      
+      
+      <br/>
+      <i class="fas fa-clock"></i> 1 min read 
+      </span>  
+  </div>    
+  
+  
 
+<h2 id="tomcat配置虚拟目录">tomcat配置虚拟目录</h2>
+
+<p><em>apache-tomcat-8.0.18\conf\Catalina\localhost  下建一个xml</em></p>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;Context path=&quot;/qqq&quot;  docBase=&quot;E:\qqq&quot; reloadable=&quot;false&quot; /&gt;
+</code></pre>
+
+<p>文件名改成你自己的譬如<a href="http://localhost:8080/qqq">http://localhost:8080/qqq</a> ，文件名就为qqq.xml
+再打开Tomcat安装目录,打开conf/web.xml 文件，在其中找到</p>
+
+<pre><code class="language-xml">&lt;init-param&gt;
+&lt;param-name&gt;listings&lt;/param-name&gt;
+&lt;param-value&gt;false&lt;/param-value&gt;
+&lt;/init-param&gt;
+</code></pre>
+
+<p>将false设成true保存，重启Tomcat。
+在浏览器输入  <a href="http://localhost/demo/，就可以显示文件列表了。">http://localhost/demo/，就可以显示文件列表了。</a></p>
+
+</div>
             <div class="footer">
-                
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script type="text/javascript">
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+</script>
+
+
             </div>
         </div>
         
