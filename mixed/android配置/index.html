@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     
     
-    <meta name="generator" content="Hugo 0.38.2" />
+    <meta name="generator" content="Hugo 0.40.1" />
     
     <title>android配置 &middot; </title>
     <meta content="android配置 - " property="og:title">
@@ -134,13 +134,13 @@
 <pre><code class="language-java">android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
-	
+    
     defaultConfig {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion     
     }
-	
-	signingConfigs {
+    
+    signingConfigs {
         release {
             storeFile file(&quot;loresky.jks&quot;)
             storePassword &quot;123456&quot;
@@ -148,7 +148,7 @@
             keyPassword &quot;123456&quot;
         }
     }
-	buildTypes {
+    buildTypes {
         release {
 //            signingConfig signingConfigs.release
             // 是否进行dex优化

@@ -6,10 +6,30 @@
     <description>Recent content in Gos on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Jan 2018 20:08:49 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Apr 2018 21:32:46 +0800</lastBuildDate>
     
 	<atom:link href="https://loresky.github.io/go/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go第三方包</title>
+      <link>https://loresky.github.io/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</link>
+      <pubDate>Mon, 30 Apr 2018 21:32:46 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</guid>
+      <description>日志 github.com/sirupsen/logrus
+toml github.com/BurntSushi/toml
+github.com/pelletier/go-toml
+json github.com/json-iterator/go
+github.com/tidwall/gjson
+jwt github.com/dgrijalva/jwt-go
+orm github.com/jinzhu/gorm
+mysql github.com/go-sql-driver/mysql
+pgsql github.com/lib/pq
+mongodb http://labix.org/mgo
+时间工具 github.com/jinzhu/now
+模板引擎 github.com/shiyanhui/hero</description>
+    </item>
     
     <item>
       <title>go递归函数</title>

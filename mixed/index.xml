@@ -6,10 +6,28 @@
     <description>Recent content in Mixeds on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 31 Oct 2017 21:12:52 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Apr 2018 19:57:00 +0800</lastBuildDate>
     
 	<atom:link href="https://loresky.github.io/mixed/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>全球可用的NTP服务器</title>
+      <link>https://loresky.github.io/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Sat, 28 Apr 2018 19:57:00 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>http://ntp.org.cn/</description>
+    </item>
+    
+    <item>
+      <title>Vps</title>
+      <link>https://loresky.github.io/mixed/vps/</link>
+      <pubDate>Sat, 28 Apr 2018 18:12:27 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/vps/</guid>
+      <description>Vultr : https://www.vultr.com/</description>
+    </item>
     
     <item>
       <title>openvpn</title>

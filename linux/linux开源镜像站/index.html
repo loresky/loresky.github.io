@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.40.1" />
     
-    <title>Tomcat设置 &middot; </title>
-    <meta content="Tomcat设置 - " property="og:title">
+    <title>Linux开源镜像站 &middot; </title>
+    <meta content="Linux开源镜像站 - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -100,13 +100,13 @@
 
         <div class="content container">
             <div class="post">
-  <h1>Tomcat设置</h1>
+  <h1>Linux开源镜像站</h1>
   
   <div class="col-sm-12 col-md-12">
     <span class="text-left post-date meta">
             
        
-        <i class="fas fa-calendar-alt"></i> Apr 23, 2017
+        <i class="fas fa-calendar-alt"></i> Apr 29, 2018
       
       
       
@@ -116,27 +116,56 @@
       </span>  
   </div>    
   
-  
+  <table>
+<thead>
+<tr>
+<th>名称</th>
+<th>地址</th>
+</tr>
+</thead>
 
-<h2 id="tomcat配置虚拟目录">tomcat配置虚拟目录</h2>
+<tbody>
+<tr>
+<td>We-Cloud 维云技术小组 - 东软校园</td>
+<td><a href="http://mirrors.neusoft.edu.cn/">http://mirrors.neusoft.edu.cn/</a></td>
+</tr>
 
-<p><em>apache-tomcat-8.0.18\conf\Catalina\localhost  下建一个xml</em></p>
+<tr>
+<td>清华大学 TUNA 镜像源</td>
+<td><a href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a></td>
+</tr>
 
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;Context path=&quot;/qqq&quot;  docBase=&quot;E:\qqq&quot; reloadable=&quot;false&quot; /&gt;
-</code></pre>
+<tr>
+<td>USTC 科大开源镜像</td>
+<td><a href="http://mirrors.ustc.edu.cn/">http://mirrors.ustc.edu.cn/</a></td>
+</tr>
 
-<p>文件名改成你自己的譬如<a href="http://localhost:8080/qqq">http://localhost:8080/qqq</a> ，文件名就为qqq.xml
-再打开Tomcat安装目录,打开conf/web.xml 文件，在其中找到</p>
+<tr>
+<td>郑州大学开源镜像站</td>
+<td><a href="http://mirrors.zzu.edu.cn/">http://mirrors.zzu.edu.cn/</a></td>
+</tr>
 
-<pre><code class="language-xml">&lt;init-param&gt;
-&lt;param-name&gt;listings&lt;/param-name&gt;
-&lt;param-value&gt;false&lt;/param-value&gt;
-&lt;/init-param&gt;
-</code></pre>
+<tr>
+<td>OPSX 阿里云开源镜像</td>
+<td><a href="https://opsx.alibaba.com/">https://opsx.alibaba.com/</a></td>
+</tr>
 
-<p>将false设成true保存，重启Tomcat。
-在浏览器输入  <a href="http://localhost/demo/，就可以显示文件列表了。">http://localhost/demo/，就可以显示文件列表了。</a></p>
+<tr>
+<td>网易开源镜像站</td>
+<td><a href="http://mirrors.163.com/">http://mirrors.163.com/</a></td>
+</tr>
+
+<tr>
+<td>兰州大学开源社区镜像站</td>
+<td><a href="http://mirror.lzu.edu.cn/">http://mirror.lzu.edu.cn/</a></td>
+</tr>
+
+<tr>
+<td>北京交通大学开源镜像站</td>
+<td><a href="https://mirror.bjtu.edu.cn/cn/">https://mirror.bjtu.edu.cn/cn/</a></td>
+</tr>
+</tbody>
+</table>
 
 </div>
             <div class="footer">

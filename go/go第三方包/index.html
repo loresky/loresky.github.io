@@ -10,8 +10,8 @@
     
     <meta name="generator" content="Hugo 0.40.1" />
     
-    <title>Tomcat设置 &middot; </title>
-    <meta content="Tomcat设置 - " property="og:title">
+    <title>Go第三方包 &middot; </title>
+    <meta content="Go第三方包 - " property="og:title">
     <meta content=" - " property="og:description">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i|Roboto+Mono:300,300i,400,400i" rel="stylesheet">
@@ -100,13 +100,13 @@
 
         <div class="content container">
             <div class="post">
-  <h1>Tomcat设置</h1>
+  <h1>Go第三方包</h1>
   
   <div class="col-sm-12 col-md-12">
     <span class="text-left post-date meta">
             
        
-        <i class="fas fa-calendar-alt"></i> Apr 23, 2017
+        <i class="fas fa-calendar-alt"></i> Apr 30, 2018
       
       
       
@@ -118,25 +118,47 @@
   
   
 
-<h2 id="tomcat配置虚拟目录">tomcat配置虚拟目录</h2>
+<h2 id="日志">日志</h2>
 
-<p><em>apache-tomcat-8.0.18\conf\Catalina\localhost  下建一个xml</em></p>
+<p><code>github.com/sirupsen/logrus</code></p>
 
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;Context path=&quot;/qqq&quot;  docBase=&quot;E:\qqq&quot; reloadable=&quot;false&quot; /&gt;
-</code></pre>
+<h2 id="toml">toml</h2>
 
-<p>文件名改成你自己的譬如<a href="http://localhost:8080/qqq">http://localhost:8080/qqq</a> ，文件名就为qqq.xml
-再打开Tomcat安装目录,打开conf/web.xml 文件，在其中找到</p>
+<p><code>github.com/BurntSushi/toml</code><br />
+<code>github.com/pelletier/go-toml</code></p>
 
-<pre><code class="language-xml">&lt;init-param&gt;
-&lt;param-name&gt;listings&lt;/param-name&gt;
-&lt;param-value&gt;false&lt;/param-value&gt;
-&lt;/init-param&gt;
-</code></pre>
+<h2 id="json">json</h2>
 
-<p>将false设成true保存，重启Tomcat。
-在浏览器输入  <a href="http://localhost/demo/，就可以显示文件列表了。">http://localhost/demo/，就可以显示文件列表了。</a></p>
+<p><code>github.com/json-iterator/go</code><br />
+<code>github.com/tidwall/gjson</code></p>
+
+<h2 id="jwt">jwt</h2>
+
+<p><code>github.com/dgrijalva/jwt-go</code></p>
+
+<h2 id="orm">orm</h2>
+
+<p><code>github.com/jinzhu/gorm</code></p>
+
+<h2 id="mysql">mysql</h2>
+
+<p><code>github.com/go-sql-driver/mysql</code></p>
+
+<h2 id="pgsql">pgsql</h2>
+
+<p><code>github.com/lib/pq</code></p>
+
+<h2 id="mongodb">mongodb</h2>
+
+<p><code>http://labix.org/mgo</code></p>
+
+<h2 id="时间工具">时间工具</h2>
+
+<p><code>github.com/jinzhu/now</code></p>
+
+<h2 id="模板引擎">模板引擎</h2>
+
+<p><code>github.com/shiyanhui/hero</code></p>
 
 </div>
             <div class="footer">

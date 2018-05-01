@@ -6,10 +6,29 @@
     <description>Recent content in Linuxes on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Jul 2017 14:57:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Apr 2018 12:25:36 +0800</lastBuildDate>
     
 	<atom:link href="https://loresky.github.io/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux开源镜像站</title>
+      <link>https://loresky.github.io/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/</link>
+      <pubDate>Sun, 29 Apr 2018 12:25:36 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/</guid>
+      <description>   名称 地址     We-Cloud 维云技术小组 - 东软校园 http://mirrors.neusoft.edu.cn/   清华大学 TUNA 镜像源 https://mirrors.tuna.tsinghua.edu.cn/   USTC 科大开源镜像 http://mirrors.ustc.edu.cn/   郑州大学开源镜像站 http://mirrors.zzu.edu.cn/   OPSX 阿里云开源镜像 https://opsx.alibaba.com/   网易开源镜像站 http://mirrors.163.com/   兰州大学开源社区镜像站 http://mirror.lzu.edu.cn/   北京交通大学开源镜像站 https://mirror.bjtu.edu.cn/cn/    </description>
+    </item>
+    
+    <item>
+      <title>Linux和Windows双启动带来的时间同步问题</title>
+      <link>https://loresky.github.io/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Sat, 28 Apr 2018 17:48:31 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</guid>
+      <description>via:http://www.theitstuff.com/how-to-sync-time-between-linux-and-windows-dual-boot-2
+ 点击 Windows 系统中的开始菜单，然后搜索 regedit HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation。 在右边窗口，右键点击空白位置，然后选择 New &amp;gt;&amp;gt; DWORD(32 bit) Value。 之后，你会新生成一个条目，而且这个条目默认是高亮的。将这个条目重命名为 RealTimeIsUniversal 并设置值为 1 所有的配置就完成了，下次重启，就不会再有时间同步问题了。  </description>
+    </item>
     
     <item>
       <title>linux程序端口占用情况</title>
@@ -74,7 +93,7 @@ kernel /vmlinuz root=/dev/sda2 init=/bin/bash rw  注意黑体字，就是在你
       <pubDate>Sun, 23 Apr 2017 10:10:00 +0000</pubDate>
       
       <guid>https://loresky.github.io/linux/linux%E8%BD%AF%E4%BB%B6/</guid>
-      <description>   名称 描述 地址     screenfetch 酷炫Linux标志的基本硬件信息    SimpleScreenRecorder 桌面录制工具    Silentcast GIF录制工具    peek GIF录制工具    Gifine GIF录制工具    Shadowsocks-qt5 科学上网    electronic-wechat Linux系统微信    XMind 思维导图    Remarkable markdown编辑器    Guake Terminal 下拉式的终端    charles 抓包    flameshot markdown编辑器 进入   WebTorrent 在线播放视频的 BT 下载 进入   Remarkable markdown编辑器     </description>
+      <description>   名称 描述 地址     screenfetch 酷炫Linux标志的基本硬件信息    SimpleScreenRecorder 桌面录制工具    Silentcast GIF录制工具    peek GIF录制工具    Gifine GIF录制工具    Shadowsocks-qt5 科学上网    v2ray Project V定制网络体系 进入   XMind 思维导图    Remarkable markdown编辑器 进入   Guake Terminal 下拉式的终端    charles 抓包 进入   flameshot 超强Linux截图软件 进入   FlareGet 下载 进入   WebTorrent 在线播放视频的 BT 下载 进入   FreeTube Youtube 播放器 进入   obs 录屏推流 进入    </description>
     </item>
     
   </channel>
