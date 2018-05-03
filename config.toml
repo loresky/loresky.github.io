@@ -55,3 +55,9 @@ theme = "hyde-hyde"
     weight = 100
     identifier = "mixed"
     url = "/mixed/"   
+
+[[menu.main]]
+    name = "web"
+    weight = 100
+    identifier = "web"
+    url = "/web/" 

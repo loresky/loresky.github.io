@@ -37,3 +37,9 @@ description = ""
 
 ## 模板引擎
 `github.com/shiyanhui/hero`
+
+## 缓存库
+`github.com/golang/groupcache`
+
+## 任意精度的定点小数
+`github.com/shopspring/decimal`
