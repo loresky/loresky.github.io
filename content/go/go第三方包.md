@@ -43,3 +43,6 @@ description = ""
 
 ## 任意精度的定点小数
 `github.com/shopspring/decimal`
+
+## 资源嵌入
+`github.com/GeertJohan/go.rice`
