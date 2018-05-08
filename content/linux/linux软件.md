@@ -21,6 +21,13 @@ date: 2017-04-23 10:10:00
 |WebTorrent          |在线播放视频的 BT 下载|[进入](https://webtorrent.io/)|
 |FreeTube          | Youtube 播放器|[进入](https://github.com/FreeTubeApp/FreeTube)|
 |obs          | 录屏推流|[进入](https://obsproject.com/)|
+|flareGet|下载||
+|vivaldi|浏览器||
+|robot3t|mongodb gui||
+|dbeaver|数据库连接||
+
+
+
 
 
 

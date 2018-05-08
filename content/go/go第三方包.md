@@ -44,5 +44,9 @@ description = ""
 ## 任意精度的定点小数
 `github.com/shopspring/decimal`
 
-## 资源嵌入
-`github.com/GeertJohan/go.rice`
+## 资源嵌入([地址](https://studygolang.com/articles/5068))
+`github.com/GeertJohan/go.rice`  
+`github.com/jteeuwen/go-bindata`  
+`github.com/elazarl/go-bindata-assetfs`  
+`github.com/mjibson/esc`  
+

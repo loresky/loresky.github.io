@@ -18,3 +18,6 @@ date: 2017-06-26 08:23:45
         <url>http://maven.aliyun.com/nexus/content/groups/public</url>  
 </mirror>  
 ```
+
+
+打包不测试idea-->maven-->package-->Command line:    clean package -DskipTests
