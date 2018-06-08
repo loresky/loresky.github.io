@@ -20,7 +20,8 @@ date: 2017-06-15 13:10:00
 |iDocDown|文库免费下载软件|
 |SumatraPDF|pdf软件|
 |[genymotion](https://www.genymotion.com/download/) |genymotion模拟器|
-|[Mydm](http://mydownload.ml/) |轻量级下载软件|
+|[Mydm](http://mydownload.ml/) |轻量级下载软件|-*/*--*
+|[MobaXterm](https://mobaxterm.mobatek.net/) |XShell和Xftp|
 
 
 
