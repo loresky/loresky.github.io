@@ -26,4 +26,6 @@ date: 2017-04-23 10:10:00
 |vivaldi|浏览器||
 |robot3t|mongodb gui||
 |dbeaver|数据库连接||
-|upterm          | 终端仿真器和交互式shell|[进入](https://github.com/railsware/upterm)|
+|upterm          |终端仿真器和交互式shell|[进入](https://github.com/railsware/upterm)|
+|mpv          |播放器|[进入](https://github.com/mpv-player/mpv)|
+|Baka-MPlayer          |播放器|[进入](http://bakamplayer.u8sand.net/)|
