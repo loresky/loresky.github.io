@@ -5,8 +5,8 @@ date: 2017-06-15 13:10:00
 
 
  
-|名称|描述|
-|:---:|:---|
+|名称|描述|地址|
+|:---:|:---|:---|
 |Wise Care 365|智能系统优化工具|
 |Uninstall Tool|软件删除|
 |[TeamViewer](https://www.teamviewer.com/zhCN/)|远程|
@@ -20,11 +20,14 @@ date: 2017-06-15 13:10:00
 |iDocDown|文库免费下载软件|
 |SumatraPDF|pdf软件|
 |[genymotion](https://www.genymotion.com/download/) |genymotion模拟器|
-|[Mydm](http://mydownload.ml/) |轻量级下载软件|-*/*--*
+|[Mydm](http://mydownload.ml/) |轻量级下载软件|
 |[MobaXterm](https://mobaxterm.mobatek.net/) |XShell和Xftp|
-
-
-
+|charles             |抓包|[进入](https://www.zzzmode.com/mytools/charles/)|
+|obs          | 录屏推流|[进入](https://obsproject.com/)|
+|vivaldi|浏览器||
+|robot3t|mongodb gui||
+|jmeter          | 压力测试|[进入](https://jmeter.apache.org/)|
+|dbeaver|数据库连接||
 
 
 
