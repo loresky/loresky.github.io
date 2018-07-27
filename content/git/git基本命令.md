@@ -53,3 +53,9 @@ git checkout -b branchName
 ```
 
 ## **git status告诉你有文件被修改过，用git diff可以查看修改内容**
+
+
+## 回退到某个版本
+1. git reset –hard：彻底回退到某个版本
+2. git reset –soft：回退到某个版本，只回退了commit的信息，不会恢复到index file一级。
+3. git reset –mixed：此为默认方式，不带任何参数的git reset，即时这种方式，它回退到某个版本，只保留源码，回退commit和index信息。 
