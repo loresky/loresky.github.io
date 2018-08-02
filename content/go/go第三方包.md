@@ -16,6 +16,7 @@ description = ""
 ## json
 `github.com/json-iterator/go`  
 `github.com/tidwall/gjson`
+`github.com/thedevsaddam/gojsonq`
 
 ## jwt
 `github.com/dgrijalva/jwt-go`

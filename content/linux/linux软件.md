@@ -23,3 +23,4 @@ date: 2017-04-23 10:10:00
 |mpv          |播放器|[进入](https://github.com/mpv-player/mpv)|
 |Baka-MPlayer          |播放器|[进入](http://bakamplayer.u8sand.net/)|
 |fd|快速和用户友好的find替代|[进入](https://github.com/sharkdp/fd)|
+|RetroArch|全能游戏模拟器|[进入](https://github.com/libretro/RetroArch)|
