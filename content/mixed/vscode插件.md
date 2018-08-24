@@ -44,9 +44,11 @@ description = ""
 |SVG Viewer|SVG 图像预览|[进入](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)|
 |TODO Highlight|TODO高亮显示|[进入](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight)|
 |TODO Parser|解析 TODO，TODO 计数器|[进入](https://marketplace.visualstudio.com/items?itemName=minhthai.vscode-todo-parser)|
+|Todo Tree|资源管理器窗格的树视图中显示器|[进入](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)|
 |TypeLens|查看引用数量|[进入](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.typelens)|
 |Trailing Spaces|高亮那些冗余的空格，可以快速删掉|[进入](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)|
 |WakaTime|从你的使用习惯中生成数据报表|[进入](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)|
+|Turbo Console Log|自动执行编写日志消息的操作js|[进入](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)|
 
 
 
