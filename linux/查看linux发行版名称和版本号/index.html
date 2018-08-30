@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.47.1" />
+
+    
+    
+    
+
+<title>查看Linux发行版名称和版本号 • </title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="查看Linux发行版名称和版本号"/>
+<meta name="twitter:description" content=" 方法总览  lsb_release 命令 /etc/*-release 文件 uname 命令 /proc/version 文件 dmesg 命令 YUM 或 DNF 命令 RPM 命令 APT-GET 命令  "/>
+
+<meta property="og:title" content="查看Linux发行版名称和版本号" />
+<meta property="og:description" content=" 方法总览  lsb_release 命令 /etc/*-release 文件 uname 命令 /proc/version 文件 dmesg 命令 YUM 或 DNF 命令 RPM 命令 APT-GET 命令  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://loresky.github.io/linux/%E6%9F%A5%E7%9C%8Blinux%E5%8F%91%E8%A1%8C%E7%89%88%E5%90%8D%E7%A7%B0%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%B7/" /><meta property="article:published_time" content="2018-06-07T10:37:07&#43;08:00"/>
+<meta property="article:modified_time" content="2018-06-07T10:37:07&#43;08:00"/><meta property="og:site_name" content="Title" />
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="/css/hyde-hyde.css">
+<link rel="stylesheet" href="/css/print.min.css" media="print">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+
+</head>
+
+
+    <body >
+        
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://loresky.github.io/"></a>
+      </span>
+      
+      
+      
+      <div class="author-image">
+        <img src="https://loresky.github.io/img/hugo.png" alt="Author Image" class="img--circle img--headshot element--center"> 
+      </div>
+      
+      <p class="site__description">
+         生面 
+      </p>
+    </div>
+    <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/docker/">
+						<span>Docker</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/git/">
+						<span>Git</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/go/">
+						<span>Go</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/linux/">
+						<span>Linux</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/mixed/">
+						<span>Mixed</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/web/">
+						<span>Web</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/win/">
+						<span>Win</span>
+					</a>
+				</li>
+			 
+		
+		</li>
+	</ul>
+</div>
+
+    <p>
+      <section class="social">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+    </p>
+    <p class="copyright">
+      &copy; 2018 Author.
+      <a href="https://creativecommons.org/licenses/by-sa/4.0">Some Rights Reserved</a>.
+      <br/>Built with
+      <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+      
+    </p>
+  </div>
+  <div>
+  </div>
+</div>
+
+        <div class="content container">
+            
+    <article>
+  <header>
+    <h1>查看Linux发行版名称和版本号</h1>
+     
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Jun 7, 2018
+    
+    
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 1 min read
+</div>
+
+
+  </header>
+  <div class="post">
+    
+
+<h2 id="方法总览">方法总览</h2>
+
+<ul>
+<li>lsb_release 命令</li>
+<li>/etc/*-release 文件</li>
+<li>uname 命令</li>
+<li>/proc/version 文件</li>
+<li>dmesg 命令</li>
+<li>YUM 或 DNF 命令</li>
+<li>RPM 命令</li>
+<li>APT-GET 命令</li>
+</ul>
+
+  </div>
+  
+
+<div class="post--navigation post--navigation-single">
+    
+    <a href="/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/" class="post--navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Linux开源镜像站</span>
+    </a>
+    
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+  integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
+  crossorigin="anonymous">
+</script>
+
+
+    
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        <script type="text/javascript">
+            hljs.configure({languages: []});
+            hljs.initHighlightingOnLoad();
+        </script>
+        
+        
+
+
+
+    
+
+
+
+    </body>
+</html>

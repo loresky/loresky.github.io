@@ -6,10 +6,83 @@
     <description>Recent content in Mixeds on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Apr 2018 19:57:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 29 Aug 2018 17:20:57 +0800</lastBuildDate>
     
 	<atom:link href="https://loresky.github.io/mixed/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浏览器插件</title>
+      <link>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Wed, 29 Aug 2018 17:20:57 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
+      <description>    名称 描述 地址     Tampermonkey 脚本管理器 进入   Proxy SwitchyOmega 代理设置 进入   Adblock Plus 广告拦截 进入   uBlock Origin 广告拦截 进入   Awesome Screenshot 网页截图:注释&amp;amp;录屏 进入   OneTab 减轻标签页混乱 进入   Wappalyzer 网站技术分析 进入   SimilarWeb 流量分析 进入   Ghostery 强大的隐私保护 进入   LastPass 密码管理器 进入   Sourcegraph 代码搜索浏览 进入   Octotree github目录树形结构 进入   GiteeTree 码云 Gitee目录树形结构 进入    chrome    名称 描述 地址     广告终结者 广告拦截 进入   Chrono 下载管理器    crxMouse Chrome™ 鼠标手势    易撤销 历史关闭助手    IP Whois 显示网站国家标志    Fatkun 图片批量下载    oscnews 开源中国     firefox    名称 描述 地址     Flagfox 显示网站国家标志     </description>
+    </item>
+    
+    <item>
+      <title>Vscode插件</title>
+      <link>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Tue, 14 Aug 2018 17:05:48 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</guid>
+      <description>   名称 描述 地址     Auto Close Tag 自动闭合HTML标签 进入   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签 进入   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全） 进入   Beautify HTML、CSS、JS、JSON语法高亮 进入   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释 进入   Better TOML TOML语言支持 进入   Bracket Pair Colorizer 对括号对进行着色 进入   indent-rainbow 缩进显示不同颜色交替 进入   change-case 快速更改当前选择或当前单词的大小写 进入   Settings Sync VSCode设置同步到Gist 进入   Color Highlight 颜色值在代码中高亮显示 进入   Document This 在TypeScript和JavaScript文件中添加注释 进入   Git History 查看git日志，文件历史记录，比较分支或提交 进入   GitLens 显示文件最近的commit和作者，显示当前行commit信息 进入   Guides 代码对齐辅助线 进入   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示 进入   HTMLHint HTML格式提示 进入   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器 进入   Local History 本地文件修改记录 进入   markdownlint Markdown格式提示 进入   Markdown All in One Markdown自动预览 进入   Output Colorizer 彩色输出日志信息 进入   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择 进入   Path Intellisense 文件路径补全 进入   Mermaid Preview 流程图 进入   PlantUML 流程图 UML图 进入   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹 进入   REST Client 发送REST风格的HTTP请求 进入   Color Picker 拾色器 进入   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间 进入   File Peek 根据路径字符串，快速定位到文件 进入   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间 进入   Image preview 显示图像预览 进入   SVG Viewer SVG 图像预览 进入   TODO Highlight TODO高亮显示 进入   TODO Parser 解析 TODO，TODO 计数器 进入   Todo Tree 资源管理器窗格的树视图中显示器 进入   TypeLens 查看引用数量 进入   Trailing Spaces 高亮那些冗余的空格，可以快速删掉 进入   WakaTime 从你的使用习惯中生成数据报表 进入   Turbo Console Log 自动执行编写日志消息的操作js 进入   Paste JSON as Code 速地将JSON数据转为JavaScript代码 进入    </description>
+    </item>
+    
+    <item>
+      <title>Cron</title>
+      <link>https://loresky.github.io/mixed/cron/</link>
+      <pubDate>Thu, 14 Jun 2018 16:33:06 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/cron/</guid>
+      <description>cron表达式  按顺序依次为 1 秒（0~59） 2 分钟（0~59） 3 小时（0~23） 4 天（0~31） 5 月（0~11） 6 星期（1~7 1=SUN 或 SUN，MON，TUE，WED，THU，FRI，SAT） 7.年份（1970－2099） 其中每个元素可以是一个值(如6),一个连续区间(9-12),一个间隔时间(8-18/4)(/表示每隔4小时),一个列表(1,3,5),通配符。由于&amp;quot;月份中的日期&amp;quot;和&amp;quot;星期中的日期&amp;quot;这两个元素互斥的,必须要对其中一个设置?. 0 0 10,14,16 * * ? 每天上午10点，下午2点，4点 0 0/30 9-17 * * ? 朝九晚五工作时间内每半小时 0 0 12 ? * WED 表示每个星期三中午12点 &amp;quot;0 0 12 * * ?&amp;quot; 每天中午12点触发 &amp;quot;0 15 10 ? * *&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ?&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ? *&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ?</description>
+    </item>
+    
+    <item>
+      <title>Ftp服务器</title>
+      <link>https://loresky.github.io/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Tue, 08 May 2018 16:12:44 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description> sudo apt-get install vsftpd 运行 sudo service vsftpd status sudo service vsftpd stop sudo service vsftpd restart sudo service vsftpd status  配置vsftpd.conf sudo gedit /etc/vsftpd.conf
+listen=YES local_root=/ anon_root=/ #允许匿名访问 anonymous_enable=YES #允许本地用户对FTP服务器文件有写权限 write_enable=YES #系统自动维护上传和下载日志 xferlog_enable=YES #设定FTP服务器将启用FTP数据端口的连接请求 connect_from_port_20=YES #标准格式写日志文件 xferlog_std_format=YES #设置本地用户默认掩码 local_umask=022 #不允许匿名用户上传文件 anon_upload_enable=YES #不允许匿名用户写文件 anon_mkdir_write_enable=YES #打开匿名用户删除和重命名的权 anon_other_write_enable=YES #设置PAM外挂模块提供的认证服务所使用的配置文件名 pam_service_name=vsftpd #是否允许ftpusers文件中得用户登录FTP服务器，默认为NO userlist_enable=YES #是否使用tcp_wrappers作为主机访问控制方式 tcp_wrappers=YES idle_session_timeout=600 data_connection_timeout=120 max_clients=10 max_per_ip=5 local_max_rate=50000 utf8_filesystem=YES  </description>
+    </item>
+    
+    <item>
+      <title>云服务</title>
+      <link>https://loresky.github.io/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Mon, 07 May 2018 10:02:15 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</guid>
+      <description>https://www.heroku.com/ https://blog.csdn.net/cancer94/article/details/54838871</description>
+    </item>
+    
+    <item>
+      <title>时间</title>
+      <link>https://loresky.github.io/mixed/%E6%97%B6%E9%97%B4/</link>
+      <pubDate>Fri, 04 May 2018 09:03:13 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/%E6%97%B6%E9%97%B4/</guid>
+      <description>1小时(h)=60分钟(min) 1分钟(m)=60秒(s) 1秒(s)=1000毫秒(ms) 1毫秒(ms)=1000微秒(μs) 1微秒(μs)=1000纳秒(ns) 1纳秒(ns)=1000皮秒(ps)</description>
+    </item>
+    
+    <item>
+      <title>Api规范</title>
+      <link>https://loresky.github.io/mixed/api%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Thu, 03 May 2018 10:38:56 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/api%E8%A7%84%E8%8C%83/</guid>
+      <description>   名称 地址     http-status-codes http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml   http-api-design https://github.com/ZhangBohan/http-api-design-ZH_CN   jsonapi http://jsonapi.org.cn/   微软 https://github.com/Microsoft/api-guidelines   PayPal https://segmentfault.com/a/119000000592473    </description>
+    </item>
+    
+    <item>
+      <title>文件系统</title>
+      <link>https://loresky.github.io/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Wed, 02 May 2018 16:27:24 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <description>   名称 地址     seaweedfs https://github.com/chrislusf/glow    </description>
+    </item>
     
     <item>
       <title>全球可用的NTP服务器</title>
@@ -58,7 +131,7 @@ admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGOD
       <pubDate>Tue, 27 Jun 2017 11:30:39 +0000</pubDate>
       
       <guid>https://loresky.github.io/mixed/android%E9%85%8D%E7%BD%AE/</guid>
-      <description>app外build.gradle ext { minSdkVersion = 19 targetSdkVersion = 23 compileSdkVersion = 25 buildToolsVersion = &amp;quot;25.0.2&amp;quot; supportLibraryVersion = &amp;quot;25.+&amp;quot; }  app内build.gradle android { compileSdkVersion rootProject.ext.compileSdkVersion buildToolsVersion rootProject.ext.buildToolsVersion defaultConfig { minSdkVersion rootProject.ext.minSdkVersion targetSdkVersion rootProject.ext.targetSdkVersion } signingConfigs { release { storeFile file(&amp;quot;loresky.jks&amp;quot;) storePassword &amp;quot;123456&amp;quot; keyAlias &amp;quot;loreskykey&amp;quot; keyPassword &amp;quot;123456&amp;quot; } } buildTypes { release { // signingConfig signingConfigs.release // 是否进行dex优化 zipAlignEnabled false // 支持删除一些没有用的资源 shrinkResources false // 是否进行混淆 minifyEnabled false // 混淆文件位置 proguardFiles getDefaultProguardFile(&#39;proguard-android.</description>
+      <description>app外build.gradle ext { minSdkVersion = 19 targetSdkVersion = 23 compileSdkVersion = 25 buildToolsVersion = &amp;quot;25.0.2&amp;quot; supportLibraryVersion = &amp;quot;25.+&amp;quot; }  app内build.gradle android { compileSdkVersion rootProject.ext.compileSdkVersion defaultConfig { minSdkVersion rootProject.ext.minSdkVersion targetSdkVersion rootProject.ext.targetSdkVersion } signingConfigs { release { storeFile file(&amp;quot;loresky.jks&amp;quot;) storePassword &amp;quot;123456&amp;quot; keyAlias &amp;quot;loreskykey&amp;quot; keyPassword &amp;quot;123456&amp;quot; } } buildTypes { release { // signingConfig signingConfigs.release // 是否进行dex优化 zipAlignEnabled false // 支持删除一些没有用的资源 shrinkResources false // 是否进行混淆 minifyEnabled false // 混淆文件位置 proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.</description>
     </item>
     
     <item>
@@ -67,7 +140,7 @@ admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGOD
       <pubDate>Mon, 26 Jun 2017 08:23:45 +0000</pubDate>
       
       <guid>https://loresky.github.io/mixed/maven%E9%85%8D%E7%BD%AE/</guid>
-      <description> 本地仓库的配置 &amp;lt;localRepository&amp;gt;/opt/maven/repo&amp;lt;/localRepository&amp;gt;  国内maven repository 在前添加 &amp;lt;mirror&amp;gt; &amp;lt;id&amp;gt;nexus-aliyun&amp;lt;/id&amp;gt; &amp;lt;mirrorOf&amp;gt;*&amp;lt;/mirrorOf&amp;gt; &amp;lt;name&amp;gt;Nexus aliyun&amp;lt;/name&amp;gt; &amp;lt;url&amp;gt;http://maven.aliyun.com/nexus/content/groups/public&amp;lt;/url&amp;gt; &amp;lt;/mirror&amp;gt;  </description>
+      <description>本地仓库的配置 &amp;lt;localRepository&amp;gt;/opt/maven/repo&amp;lt;/localRepository&amp;gt;  国内maven repository 在前添加 &amp;lt;mirror&amp;gt; &amp;lt;id&amp;gt;nexus-aliyun&amp;lt;/id&amp;gt; &amp;lt;mirrorOf&amp;gt;*&amp;lt;/mirrorOf&amp;gt; &amp;lt;name&amp;gt;Nexus aliyun&amp;lt;/name&amp;gt; &amp;lt;url&amp;gt;http://maven.aliyun.com/nexus/content/groups/public&amp;lt;/url&amp;gt; &amp;lt;/mirror&amp;gt;  打包不测试idea&amp;ndash;&amp;gt;maven&amp;ndash;&amp;gt;package&amp;ndash;&amp;gt;Command line: clean package -DskipTests</description>
     </item>
     
     <item>

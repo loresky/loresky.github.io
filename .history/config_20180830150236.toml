@@ -1,0 +1,64 @@
+## Basic Configuration
+baseurl = "https://loresky.github.io/"
+languageCode = "en"
+
+# theme = "hyde-hyde"
+theme = "jeffprod"
+
+## Site Settings
+[params]
+    author = "Author"
+    title = "Title"
+    description = "生面"
+    authorimage = "/img/hugo.png"
+    dateformat = "Jan 2, 2006"
+    highlightjs = true
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+ 
+[[menu.main]]
+    name = "linux"
+    weight = 100
+    identifier = "linux"
+    url = "/linux/"
+
+[[menu.main]]
+    name = "docker"
+    weight = 100
+    identifier = "docker"
+    url = "/docker/"
+
+[[menu.main]]
+    name = "git"
+    weight = 100
+    identifier = "git"
+    url = "/git/"
+
+[[menu.main]]
+    name = "go"
+    weight = 100
+    identifier = "go"
+    url = "/go/"
+
+[[menu.main]]
+    name = "win"
+    weight = 100
+    identifier = "win"
+    url = "/win/"
+
+[[menu.main]]
+    name = "mixed"
+    weight = 100
+    identifier = "mixed"
+    url = "/mixed/"   
+
+[[menu.main]]
+    name = "web"
+    weight = 100
+    identifier = "web"
+    url = "/web/" 
