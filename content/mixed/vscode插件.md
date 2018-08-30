@@ -15,7 +15,7 @@ description = ""
 |Better Comments|更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释|[进入](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)|
 |Better TOML|TOML语言支持|[进入](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)|
 |Bracket Pair Colorizer|对括号对进行着色|[进入](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)|
-|indent-rainbow|缩进显示不同颜色交替|[进入](https://marketplace.visualstudio.com/items?itemName=derwat.indent-rainbow)|
+|indent-rainbow|缩进显示不同颜色交替|[进入](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)|
 |change-case|快速更改当前选择或当前单词的大小写|[进入](https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case)|
 |Settings Sync|VSCode设置同步到Gist|[进入](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)|
 |Color Highlight|颜色值在代码中高亮显示|[进入](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)|
@@ -49,6 +49,7 @@ description = ""
 |Trailing Spaces|高亮那些冗余的空格，可以快速删掉|[进入](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)|
 |WakaTime|从你的使用习惯中生成数据报表|[进入](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)|
 |Turbo Console Log|自动执行编写日志消息的操作js|[进入](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)|
+|Paste JSON as Code|速地将JSON数据转为JavaScript代码|[进入](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)|
 
 
 
