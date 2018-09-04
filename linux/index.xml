@@ -96,14 +96,5 @@ kernel /vmlinuz root=/dev/sda2 init=/bin/bash rw  注意黑体字，就是在你
       <description>依赖: sudo apt-get install gdebi-core 语言支持不见了: sudo apt-get install language-selector-gnome 64位系统lib: sudo apt-get install lib32ncurses5 配置lib: sudo apt-get install -f  环境 export GOROOT=/opt/go export GOPATH=/home/cy/GoProjects export GRADLE_HOME=/opt/gradle export NODE_HOME=/opt/node export JAVA_HOME=/opt/jdk1.8 export JRE_HOME=/opt/jdk1.8/jre export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export ANDROID_HOME=/opt/android-sdk-linux export PATH=:$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GRADLE_HOME/bin:$NODE_HOME/bin:$GOROOT/bin:$GOPATH/bin:  桌面图标 [Desktop Entry] Name = Genymotion comment= genymotion Exec=/opt/genymotion/genymotion Icon=/opt/genymotion/icons/icon.png Terminal=false Type=Application Categories=Utility;TextEditor;Development;IDE; [Desktop Entry] Version=1.0 Type=Application Name=xmind Comment= Exec=/opt/xmind/XMind_amd64/XMind Icon=/opt/xmind/XMind_amd64/xmind_file.ico Path=/opt/xmind/XMind_amd64 Terminal=false StartupNotify=false  五笔 sudo apt-get install fcitx-table-wbpy</description>
     </item>
     
-    <item>
-      <title>linux软件</title>
-      <link>https://loresky.github.io/linux/linux%E8%BD%AF%E4%BB%B6/</link>
-      <pubDate>Sun, 23 Apr 2017 10:10:00 +0000</pubDate>
-      
-      <guid>https://loresky.github.io/linux/linux%E8%BD%AF%E4%BB%B6/</guid>
-      <description>   名称 描述 地址     screenfetch 酷炫Linux标志的基本硬件信息    SimpleScreenRecorder 桌面录制工具    Silentcast GIF录制工具    peek GIF录制工具    Gifine GIF录制工具    Guake Terminal 下拉式的终端    Shadowsocks-qt5 科学上网    v2ray Project V定制网络体系 进入   Remarkable markdown编辑器 进入   flameshot 超强Linux截图软件 进入   WebTorrent 在线播放视频的 BT 下载 进入   FreeTube Youtube 播放器 进入   FlareGet 下载 进入   uGet 下载    upterm 终端仿真器和交互式shell 进入   mpv 播放器 进入   Baka-MPlayer 播放器 进入   fd 快速和用户友好的find替代 进入   RetroArch 全能游戏模拟器 进入    </description>
-    </item>
-    
   </channel>
 </rss>

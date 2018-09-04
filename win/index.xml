@@ -25,21 +25,21 @@ sudo adduser kuein usbfs</description>
     </item>
     
     <item>
+      <title>xmind破解</title>
+      <link>https://loresky.github.io/win/xmind%E7%A0%B4%E8%A7%A3/</link>
+      <pubDate>Fri, 30 Jun 2017 11:56:07 +0000</pubDate>
+      
+      <guid>https://loresky.github.io/win/xmind%E7%A0%B4%E8%A7%A3/</guid>
+      <description> XMindCrack.zip  以文本格式打开安装目录中 XMind.ini 在 XMind.ini 最后追加 -javaagent:D:/Program Files (x86)/XMind 8 Update 1/XMindCrack.jar 在hosts最后添加 127.0.0.1 www.xmind.net 输入后，记得有个回车 ***  XAka34A2rVRYJ4XBIU35UZMUEEF64CMMIYZCK2FZZUQNODEKUHGJLFMSLIQMQUCUBXRENLK6NZL37JXP4PZXQFILMQ2RG5R7G4QNDO3PSOEUBOCDRYSSXZGRARV6MGA33TN2AMUBHEL4FXMWYTTJDEINJXUAV4BAYKBDCZQWVF3LWYXSDCXY546U3NBGOI3ZPAP2SO3CSQFNB7VVIY123456789012345   </description>
+    </item>
+    
+    <item>
       <title>win的linux_location</title>
       <link>https://loresky.github.io/win/win%E7%9A%84linux_location/</link>
       <pubDate>Thu, 15 Jun 2017 13:10:00 +0000</pubDate>
       
       <guid>https://loresky.github.io/win/win%E7%9A%84linux_location/</guid>
       <description>谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。 里面说到 linux 存放位置在 C:\Users{user}\AppData\Local\lxss{username} 其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。 以及你的 /home 文件夹会在 C:\Users{user}\AppData\Local\lxss\home</description>
-    </item>
-    
-    <item>
-      <title>win软件</title>
-      <link>https://loresky.github.io/win/win%E8%BD%AF%E4%BB%B6/</link>
-      <pubDate>Thu, 15 Jun 2017 13:10:00 +0000</pubDate>
-      
-      <guid>https://loresky.github.io/win/win%E8%BD%AF%E4%BB%B6/</guid>
-      <description>   名称 描述 地址     Wise Care 365 智能系统优化工具    Uninstall Tool 软件删除    TeamViewer 远程    java java官网下载    obs 免费的屏幕录制和视频直播软件    VirtualBox 虚拟机    rufus 创建USB启动盘    mariadb 数据库    XMind 思维导图    oCam 免费的屏幕录制软件    iDocDown 文库免费下载软件    SumatraPDF pdf软件    genymotion genymotion模拟器    Mydm 轻量级下载软件    MobaXterm XShell和Xftp    charles 抓包 进入   obs 录屏推流 进入   vivaldi 浏览器    robot3t mongodb gui    jmeter 压力测试 进入   dbeaver 数据库连接     </description>
     </item>
     
   </channel>

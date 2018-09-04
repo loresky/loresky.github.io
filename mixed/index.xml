@@ -6,28 +6,10 @@
     <description>Recent content in Mixeds on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 29 Aug 2018 17:20:57 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 14 Jun 2018 16:33:06 +0800</lastBuildDate>
     
 	<atom:link href="https://loresky.github.io/mixed/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>浏览器插件</title>
-      <link>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link>
-      <pubDate>Wed, 29 Aug 2018 17:20:57 +0800</pubDate>
-      
-      <guid>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
-      <description>    名称 描述 地址     Tampermonkey 脚本管理器 进入   Proxy SwitchyOmega 代理设置 进入   Adblock Plus 广告拦截 进入   uBlock Origin 广告拦截 进入   Awesome Screenshot 网页截图:注释&amp;amp;录屏 进入   OneTab 减轻标签页混乱 进入   Wappalyzer 网站技术分析 进入   SimilarWeb 流量分析 进入   Ghostery 强大的隐私保护 进入   LastPass 密码管理器 进入   Sourcegraph 代码搜索浏览 进入   Octotree github目录树形结构 进入   GiteeTree 码云 Gitee目录树形结构 进入    chrome    名称 描述 地址     广告终结者 广告拦截 进入   Chrono 下载管理器    crxMouse Chrome™ 鼠标手势    易撤销 历史关闭助手    IP Whois 显示网站国家标志    Fatkun 图片批量下载    oscnews 开源中国     firefox    名称 描述 地址     Flagfox 显示网站国家标志     </description>
-    </item>
-    
-    <item>
-      <title>Vscode插件</title>
-      <link>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</link>
-      <pubDate>Tue, 14 Aug 2018 17:05:48 +0800</pubDate>
-      
-      <guid>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</guid>
-      <description>   名称 描述 地址     Auto Close Tag 自动闭合HTML标签 进入   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签 进入   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全） 进入   Beautify HTML、CSS、JS、JSON语法高亮 进入   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释 进入   Better TOML TOML语言支持 进入   Bracket Pair Colorizer 对括号对进行着色 进入   indent-rainbow 缩进显示不同颜色交替 进入   change-case 快速更改当前选择或当前单词的大小写 进入   Settings Sync VSCode设置同步到Gist 进入   Color Highlight 颜色值在代码中高亮显示 进入   Document This 在TypeScript和JavaScript文件中添加注释 进入   Git History 查看git日志，文件历史记录，比较分支或提交 进入   GitLens 显示文件最近的commit和作者，显示当前行commit信息 进入   Guides 代码对齐辅助线 进入   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示 进入   HTMLHint HTML格式提示 进入   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器 进入   Local History 本地文件修改记录 进入   markdownlint Markdown格式提示 进入   Markdown All in One Markdown自动预览 进入   Output Colorizer 彩色输出日志信息 进入   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择 进入   Path Intellisense 文件路径补全 进入   Mermaid Preview 流程图 进入   PlantUML 流程图 UML图 进入   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹 进入   REST Client 发送REST风格的HTTP请求 进入   Color Picker 拾色器 进入   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间 进入   File Peek 根据路径字符串，快速定位到文件 进入   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间 进入   Image preview 显示图像预览 进入   SVG Viewer SVG 图像预览 进入   TODO Highlight TODO高亮显示 进入   TODO Parser 解析 TODO，TODO 计数器 进入   Todo Tree 资源管理器窗格的树视图中显示器 进入   TypeLens 查看引用数量 进入   Trailing Spaces 高亮那些冗余的空格，可以快速删掉 进入   WakaTime 从你的使用习惯中生成数据报表 进入   Turbo Console Log 自动执行编写日志消息的操作js 进入   Paste JSON as Code 速地将JSON数据转为JavaScript代码 进入    </description>
-    </item>
     
     <item>
       <title>Cron</title>
@@ -163,6 +145,33 @@ admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGOD
       <description>找到C:\Program Files\MariaDB 5.5\data\my.ini
 [mysqld]下增加character-set-server=utf8 [client]下增加default-character-set=utf8 [MySQL] 下增加default-character-set=utf8  设置MySQL5.6的远程连接
 use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO root@&amp;quot;%&amp;quot; IDENTIFIED BY &amp;quot;root&amp;quot;; //设置root用户密码 update user set Password = password(&#39;123456&#39;) where User=&#39;root&#39;; //刷新刚才的内容 flush privileges;  </description>
+    </item>
+    
+    <item>
+      <title>Vscode插件</title>
+      <link>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Mon, 13 Mar 2017 17:05:48 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</guid>
+      <description>   名称 描述 地址     Auto Close Tag 自动闭合HTML标签 进入   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签 进入   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全） 进入   Beautify HTML、CSS、JS、JSON语法高亮 进入   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释 进入   Better TOML TOML语言支持 进入   Bracket Pair Colorizer 对括号对进行着色 进入   indent-rainbow 缩进显示不同颜色交替 进入   change-case 快速更改当前选择或当前单词的大小写 进入   Settings Sync VSCode设置同步到Gist 进入   Color Highlight 颜色值在代码中高亮显示 进入   Document This 在TypeScript和JavaScript文件中添加注释 进入   Git History 查看git日志，文件历史记录，比较分支或提交 进入   GitLens 显示文件最近的commit和作者，显示当前行commit信息 进入   Guides 代码对齐辅助线 进入   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示 进入   HTMLHint HTML格式提示 进入   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器 进入   Local History 本地文件修改记录 进入   markdownlint Markdown格式提示 进入   Markdown All in One Markdown自动预览 进入   Output Colorizer 彩色输出日志信息 进入   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择 进入   Path Intellisense 文件路径补全 进入   Mermaid Preview 流程图 进入   PlantUML 流程图 UML图 进入   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹 进入   REST Client 发送REST风格的HTTP请求 进入   Color Picker 拾色器 进入   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间 进入   File Peek 根据路径字符串，快速定位到文件 进入   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间 进入   Image preview 显示图像预览 进入   SVG Viewer SVG 图像预览 进入   TODO Highlight TODO高亮显示 进入   TODO Parser 解析 TODO，TODO 计数器 进入   Todo Tree 资源管理器窗格的树视图中显示器 进入   TypeLens 查看引用数量 进入   Trailing Spaces 高亮那些冗余的空格，可以快速删掉 进入   WakaTime 从你的使用习惯中生成数据报表 进入   Turbo Console Log 自动执行编写日志消息的操作js 进入   Paste JSON as Code 速地将JSON数据转为JavaScript代码 进入    </description>
+    </item>
+    
+    <item>
+      <title>浏览器插件</title>
+      <link>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Mon, 06 Mar 2017 17:20:57 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
+      <description>    名称 描述 地址     Tampermonkey 脚本管理器 进入   Proxy SwitchyOmega 代理设置 进入   Adblock Plus 广告拦截 进入   uBlock Origin 广告拦截 进入   Awesome Screenshot 网页截图:注释&amp;amp;录屏 进入   OneTab 减轻标签页混乱 进入   Wappalyzer 网站技术分析 进入   SimilarWeb 流量分析 进入   Ghostery 强大的隐私保护 进入   LastPass 密码管理器 进入   Sourcegraph 代码搜索浏览 进入   Octotree github目录树形结构 进入   GiteeTree 码云 Gitee目录树形结构 进入    chrome    名称 描述 地址     广告终结者 广告拦截 进入   Chrono 下载管理器    crxMouse Chrome™ 鼠标手势    易撤销 历史关闭助手    IP Whois 显示网站国家标志    Fatkun 图片批量下载    oscnews 开源中国     firefox    名称 描述 地址     Flagfox 显示网站国家标志     </description>
+    </item>
+    
+    <item>
+      <title>常用软件</title>
+      <link>https://loresky.github.io/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Fri, 03 Mar 2017 09:40:19 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
+      <description>名称 描述     obs 免费的屏幕录制和视频直播软件   TeamViewer 远程   fd 快速和用户友好的find替代   httpie 类似于cURL的HTTP命令行客户端   SwitchHosts 快速切换hosts   shadowsocks 科学上网   v2ray Project V定制网络体系   WebTorrent 在线播放视频的 BT 下载   FreeTube Youtube 播放器   FlareGet 下载   uGet 下载   RetroArch 全能游戏模拟器   vivaldi 浏览器   Krita 绘画软件   Anki 记忆辅助   Arctime 跨平台字幕软件   PicGo 图片上传+管理   f.</description>
     </item>
     
   </channel>

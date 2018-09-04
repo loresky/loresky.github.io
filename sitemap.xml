@@ -13,16 +13,6 @@
   </url>
   
   <url>
-    <loc>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2018-08-29T17:20:57+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</loc>
-    <lastmod>2018-08-14T17:05:48+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://loresky.github.io/git/%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2018-07-04T10:16:42+08:00</lastmod>
   </url>
@@ -218,6 +208,11 @@
   </url>
   
   <url>
+    <loc>https://loresky.github.io/win/xmind%E7%A0%B4%E8%A7%A3/</loc>
+    <lastmod>2017-06-30T11:56:07+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://loresky.github.io/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2017-06-28T20:20:14+00:00</lastmod>
   </url>
@@ -239,11 +234,6 @@
   
   <url>
     <loc>https://loresky.github.io/win/win%E7%9A%84linux_location/</loc>
-    <lastmod>2017-06-15T13:10:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://loresky.github.io/win/win%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2017-06-15T13:10:00+00:00</lastmod>
   </url>
   
@@ -273,13 +263,23 @@
   </url>
   
   <url>
-    <loc>https://loresky.github.io/linux/linux%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2017-04-23T10:10:00+00:00</lastmod>
+    <loc>https://loresky.github.io/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2017-04-18T12:16:18+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://loresky.github.io/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2017-04-18T12:16:18+00:00</lastmod>
+    <loc>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2017-03-13T17:05:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2017-03-06T17:20:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://loresky.github.io/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2017-03-03T09:40:19+08:00</lastmod>
   </url>
   
   <url>
@@ -365,7 +365,7 @@
   
   <url>
     <loc>https://loresky.github.io/mixed/</loc>
-    <lastmod>2018-08-29T17:20:57+08:00</lastmod>
+    <lastmod>2018-06-14T16:33:06+08:00</lastmod>
     <priority>0</priority>
   </url>
   
