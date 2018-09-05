@@ -7,47 +7,67 @@ description = ""
 +++
 
 ## 日志
-`github.com/sirupsen/logrus`
+
+- [logrus](https://github.com/sirupsen/logrus)
+
 
 ## toml
-`github.com/BurntSushi/toml`  
-`github.com/pelletier/go-toml`
+
+- [toml](https://github.com/BurntSushi/toml)
+- [go-toml](https://github.com/pelletier/go-toml)
+
 
 ## json
-`github.com/json-iterator/go`  
-`github.com/tidwall/gjson`
-`github.com/thedevsaddam/gojsonq`
+
+- [go](https://github.com/json-iterator/go)
+- [gjson](https://github.com/tidwall/gjson)
+- [gojsonq](https://github.com/thedevsaddam/gojsonq)
+
 
 ## jwt
-`github.com/dgrijalva/jwt-go`
+
+- [jwt-go](https://github.com/dgrijalva/jwt-go)
+
 
 ## orm
-`github.com/jinzhu/gorm`
+- [gorm](https://github.com/jinzhu/gorm)
 
-## mysql
-`github.com/go-sql-driver/mysql`
 
-## pgsql
-`github.com/lib/pq`
+## sql驱动
 
-## mongodb
-`http://labix.org/mgo`
+- mysql
+    - [mysql](https://github.com/go-sql-driver/mysql)
+- pgsql
+    - [pq](https://github.com/lib/pq)
+- mongodb
+    - [mgo](http://labix.org/mgo)
+
 
 ## 时间工具
-`github.com/jinzhu/now`
+
+- [now](https://github.com/jinzhu/now)
+
 
 ## 模板引擎
-`github.com/shiyanhui/hero`
+
+- [hero](https://github.com/shiyanhui/hero)
+
 
 ## 缓存库
-`github.com/golang/groupcache`
+
+- [groupcache](https://github.com/golang/groupcache)
+
 
 ## 任意精度的定点小数
-`github.com/shopspring/decimal`
+
+- [decimal](https://github.com/shopspring/decimal)
+
 
 ## 资源嵌入([地址](https://studygolang.com/articles/5068))
-`github.com/GeertJohan/go.rice`  
-`github.com/jteeuwen/go-bindata`  
-`github.com/elazarl/go-bindata-assetfs`  
-`github.com/mjibson/esc`  
+
+- [go.rice](https://github.com/GeertJohan/go.rice)
+- [go-bindata](https://github.com/jteeuwen/go-bindata)
+- [go-bindata-assetfs](https://github.com/elazarl/go-bindata-assetfs)
+- [esc](https://github.com/mjibson/esc)
+
 
