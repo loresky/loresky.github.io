@@ -46,6 +46,11 @@ description = ""
 - [logger](https://github.com/orhanobut/logger)
 
 
+## 图片压缩
+
+- [Luban](https://github.com/Curzibn/Luban)：图片压缩工具，仿微信朋友圈压缩策略.
+  
+
 ## Sql
 
 - [Realm](https://github.com/realm)：移动数据库https://realm.io/cn.
@@ -75,11 +80,6 @@ description = ""
 ## 计算方法数
 
 - [Dexcount](https://github.com/KeepSafe/dexcount-gradle-plugin)
-
-
-## 节码优化器
-
-- [ReDex](https://github.com/facebook/redex)
 
 
 ## 节码优化器

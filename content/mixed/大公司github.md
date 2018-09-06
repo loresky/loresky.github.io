@@ -18,8 +18,9 @@ https://github.com/trending
 
 - [ecomfe](https://github.com/ecomfe)：百度EFE.
 - [Alibaba](https://github.com/alibaba)：阿里巴巴.
-- [amfe](https://github.com/amfe)：手机淘宝(前端).
+- [AntV team](https://github.com/antvis)：蚂蚁金服(前端).
 - [ant-design](https://github.com/ant-design)：服务于企业级产品的设计体系(前端).
+- [amfe](https://github.com/amfe)：手机淘宝(前端).
 - [Tencent](https://github.com/Tencent)：腾讯.
 - [AlloyTeam](https://github.com/AlloyTeam)：腾讯 AlloyTeam(前端).
 - [meituan-dianping](https://github.com/meituan-dianping)：美团点评.
