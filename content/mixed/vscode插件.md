@@ -49,7 +49,8 @@ description = ""
 |[Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)|高亮那些冗余的空格，可以快速删掉|
 |[WakaTime](https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime)|从你的使用习惯中生成数据报表|
 |[Turbo Console Log](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)|自动执行编写日志消息的操作js|
-|[Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)|速地将JSON数据转为JavaScript代码|
+|[Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)|快速地将JSON数据转为JavaScript代码|
+|[Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)|代码片段生成一个高清图片|
 
 
 
