@@ -13,6 +13,16 @@
   </url>
   
   <url>
+    <loc>https://loresky.github.io/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</loc>
+    <lastmod>2018-09-05T15:04:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://loresky.github.io/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</loc>
+    <lastmod>2018-09-05T14:51:34+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://loresky.github.io/git/%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB/</loc>
     <lastmod>2018-07-04T10:16:42+08:00</lastmod>
   </url>
@@ -208,11 +218,6 @@
   </url>
   
   <url>
-    <loc>https://loresky.github.io/win/xmind%E7%A0%B4%E8%A7%A3/</loc>
-    <lastmod>2017-06-30T11:56:07+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://loresky.github.io/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2017-06-28T20:20:14+00:00</lastmod>
   </url>
@@ -365,7 +370,7 @@
   
   <url>
     <loc>https://loresky.github.io/mixed/</loc>
-    <lastmod>2018-06-14T16:33:06+08:00</lastmod>
+    <lastmod>2018-09-05T15:04:44+08:00</lastmod>
     <priority>0</priority>
   </url>
   

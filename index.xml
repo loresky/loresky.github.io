@@ -33,6 +33,43 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
+      <title>大公司github</title>
+      <link>https://loresky.github.io/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</link>
+      <pubDate>Wed, 05 Sep 2018 15:04:44 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</guid>
+      <description> 公司开源导航页 https://www.oschina.net/company
+github 趋势 https://github.com/trending
+ Square Facebook LinkedIn：全球最大职业社交网站. NHN：NHN娱乐(前端).
+ ecomfe：百度EFE.
+ Alibaba：阿里巴巴.
+ AntV team：蚂蚁金服(前端).
+ ant-design：服务于企业级产品的设计体系(前端).
+ amfe：手机淘宝(前端).
+ Tencent：腾讯.
+ AlloyTeam：腾讯 AlloyTeam(前端).
+ meituan-dianping：美团点评.
+ DiDi：滴滴.
+ Jsoniter：滴滴出行平台技术部.
+ easy-mock：杭州大搜车汽车服务有限公司(前端).
+ HnDeveloper：红鸟网络.
+ Sheet JS：excel表格(前端).
+ fecshop：开源电商商城(php).
+ TeamStuQ：极客邦科技(程序员技能图谱).
+ ApacheCN：专注于优秀项目维护的开源组织.
+  </description>
+    </item>
+    
+    <item>
+      <title>Java第三方</title>
+      <link>https://loresky.github.io/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</link>
+      <pubDate>Wed, 05 Sep 2018 14:51:34 +0800</pubDate>
+      
+      <guid>https://loresky.github.io/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</guid>
+      <description> Json  Gson：谷歌官方推出的JSON处理库. Fastjson：阿里巴巴的开源JSON解析库.  加密库  tink：Java and Android, C++ and Obj-C.  日期时间  joda-time  java规范  p3c  Java反编译器  jadx  Android 工具类  AndroidUtilCode  日志  logger  图片压缩  Luban：图片压缩工具，仿微信朋友圈压缩策略.   Sql  Realm：移动数据库https://realm.io/cn. ObjectBox：NoSQL移动数据库.  Webview  AgentWeb：基于Android WebView轻量和极度灵活.  内存泄露  LeakCanary  资源混淆  AndResGuard：缩小APK大小的工具.  防混淆  FreeProGuard：Android防混淆配置.  计算方法数  Dexcount  节码优化器  ReDex  </description>
+    </item>
+    
+    <item>
       <title>项目迁移</title>
       <link>https://loresky.github.io/git/%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB/</link>
       <pubDate>Wed, 04 Jul 2018 10:16:42 +0800</pubDate>
@@ -141,24 +178,7 @@ GOARCH：目标平台的体系架构 386、amd64、arm
       <pubDate>Mon, 30 Apr 2018 21:32:46 +0800</pubDate>
       
       <guid>https://loresky.github.io/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</guid>
-      <description>日志 github.com/sirupsen/logrus
-toml github.com/BurntSushi/toml
-github.com/pelletier/go-toml
-json github.com/json-iterator/go
-github.com/tidwall/gjson github.com/thedevsaddam/gojsonq
-jwt github.com/dgrijalva/jwt-go
-orm github.com/jinzhu/gorm
-mysql github.com/go-sql-driver/mysql
-pgsql github.com/lib/pq
-mongodb http://labix.org/mgo
-时间工具 github.com/jinzhu/now
-模板引擎 github.com/shiyanhui/hero
-缓存库 github.com/golang/groupcache
-任意精度的定点小数 github.com/shopspring/decimal
-资源嵌入(地址) github.com/GeertJohan/go.rice
-github.com/jteeuwen/go-bindata
-github.com/elazarl/go-bindata-assetfs
-github.com/mjibson/esc</description>
+      <description> 日志  logrus  toml  toml go-toml  json  go gjson gojsonq  jwt  jwt-go  orm  gorm  sql驱动  mysql  mysql  pgsql  pq  mongodb  mgo   时间工具  now  模板引擎  hero  缓存库  groupcache  任意精度的定点小数  decimal  资源嵌入(地址)  go.rice go-bindata go-bindata-assetfs esc  </description>
     </item>
     
     <item>
@@ -438,15 +458,6 @@ grub&amp;gt;insmod ntfs grub&amp;gt;search --no-floppy --set=root /bootmgr grub&
     </item>
     
     <item>
-      <title>xmind破解</title>
-      <link>https://loresky.github.io/win/xmind%E7%A0%B4%E8%A7%A3/</link>
-      <pubDate>Fri, 30 Jun 2017 11:56:07 +0000</pubDate>
-      
-      <guid>https://loresky.github.io/win/xmind%E7%A0%B4%E8%A7%A3/</guid>
-      <description> XMindCrack.zip  以文本格式打开安装目录中 XMind.ini 在 XMind.ini 最后追加 -javaagent:D:/Program Files (x86)/XMind 8 Update 1/XMindCrack.jar 在hosts最后添加 127.0.0.1 www.xmind.net 输入后，记得有个回车 ***  XAka34A2rVRYJ4XBIU35UZMUEEF64CMMIYZCK2FZZUQNODEKUHGJLFMSLIQMQUCUBXRENLK6NZL37JXP4PZXQFILMQ2RG5R7G4QNDO3PSOEUBOCDRYSSXZGRARV6MGA33TN2AMUBHEL4FXMWYTTJDEINJXUAV4BAYKBDCZQWVF3LWYXSDCXY546U3NBGOI3ZPAP2SO3CSQFNB7VVIY123456789012345   </description>
-    </item>
-    
-    <item>
       <title>linux常用命令</title>
       <link>https://loresky.github.io/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 28 Jun 2017 20:20:14 +0000</pubDate>
@@ -560,7 +571,7 @@ use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO r
       <pubDate>Mon, 13 Mar 2017 17:05:48 +0800</pubDate>
       
       <guid>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</guid>
-      <description>   名称 描述 地址     Auto Close Tag 自动闭合HTML标签 进入   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签 进入   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全） 进入   Beautify HTML、CSS、JS、JSON语法高亮 进入   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释 进入   Better TOML TOML语言支持 进入   Bracket Pair Colorizer 对括号对进行着色 进入   indent-rainbow 缩进显示不同颜色交替 进入   change-case 快速更改当前选择或当前单词的大小写 进入   Settings Sync VSCode设置同步到Gist 进入   Color Highlight 颜色值在代码中高亮显示 进入   Document This 在TypeScript和JavaScript文件中添加注释 进入   Git History 查看git日志，文件历史记录，比较分支或提交 进入   GitLens 显示文件最近的commit和作者，显示当前行commit信息 进入   Guides 代码对齐辅助线 进入   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示 进入   HTMLHint HTML格式提示 进入   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器 进入   Local History 本地文件修改记录 进入   markdownlint Markdown格式提示 进入   Markdown All in One Markdown自动预览 进入   Output Colorizer 彩色输出日志信息 进入   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择 进入   Path Intellisense 文件路径补全 进入   Mermaid Preview 流程图 进入   PlantUML 流程图 UML图 进入   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹 进入   REST Client 发送REST风格的HTTP请求 进入   Color Picker 拾色器 进入   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间 进入   File Peek 根据路径字符串，快速定位到文件 进入   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间 进入   Image preview 显示图像预览 进入   SVG Viewer SVG 图像预览 进入   TODO Highlight TODO高亮显示 进入   TODO Parser 解析 TODO，TODO 计数器 进入   Todo Tree 资源管理器窗格的树视图中显示器 进入   TypeLens 查看引用数量 进入   Trailing Spaces 高亮那些冗余的空格，可以快速删掉 进入   WakaTime 从你的使用习惯中生成数据报表 进入   Turbo Console Log 自动执行编写日志消息的操作js 进入   Paste JSON as Code 速地将JSON数据转为JavaScript代码 进入    </description>
+      <description>   名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片    </description>
     </item>
     
     <item>
@@ -569,7 +580,7 @@ use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO r
       <pubDate>Mon, 06 Mar 2017 17:20:57 +0800</pubDate>
       
       <guid>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
-      <description>    名称 描述 地址     Tampermonkey 脚本管理器 进入   Proxy SwitchyOmega 代理设置 进入   Adblock Plus 广告拦截 进入   uBlock Origin 广告拦截 进入   Awesome Screenshot 网页截图:注释&amp;amp;录屏 进入   OneTab 减轻标签页混乱 进入   Wappalyzer 网站技术分析 进入   SimilarWeb 流量分析 进入   Ghostery 强大的隐私保护 进入   LastPass 密码管理器 进入   Sourcegraph 代码搜索浏览 进入   Octotree github目录树形结构 进入   GiteeTree 码云 Gitee目录树形结构 进入    chrome    名称 描述 地址     广告终结者 广告拦截 进入   Chrono 下载管理器    crxMouse Chrome™ 鼠标手势    易撤销 历史关闭助手    IP Whois 显示网站国家标志    Fatkun 图片批量下载    oscnews 开源中国     firefox    名称 描述 地址     Flagfox 显示网站国家标志     </description>
+      <description>    名称 描述     Tampermonkey 脚本管理器   Proxy SwitchyOmega 代理设置   Adblock Plus 广告拦截   uBlock Origin 广告拦截   Awesome Screenshot 网页截图:注释&amp;amp;录屏   OneTab 减轻标签页混乱   Wappalyzer 网站技术分析   SimilarWeb 流量分析   Ghostery 强大的隐私保护   LastPass 密码管理器   Sourcegraph 代码搜索浏览   Octotree github目录树形结构   GiteeTree 码云 Gitee目录树形结构    chrome    名称 描述     广告终结者 广告拦截   Chrono 下载管理器   crxMouse Chrome™ 鼠标手势   易撤销 历史关闭助手   IP Whois 显示网站国家标志   Fatkun 图片批量下载   oscnews 开源中国    firefox    名称 描述     Flagfox 显示网站国家标志    </description>
     </item>
     
     <item>
@@ -578,7 +589,7 @@ use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO r
       <pubDate>Fri, 03 Mar 2017 09:40:19 +0800</pubDate>
       
       <guid>https://loresky.github.io/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
-      <description>名称 描述     obs 免费的屏幕录制和视频直播软件   TeamViewer 远程   fd 快速和用户友好的find替代   httpie 类似于cURL的HTTP命令行客户端   SwitchHosts 快速切换hosts   shadowsocks 科学上网   v2ray Project V定制网络体系   WebTorrent 在线播放视频的 BT 下载   FreeTube Youtube 播放器   FlareGet 下载   uGet 下载   RetroArch 全能游戏模拟器   vivaldi 浏览器   Krita 绘画软件   Anki 记忆辅助   Arctime 跨平台字幕软件   PicGo 图片上传+管理   f.</description>
+      <description>名称 描述     obs 免费的屏幕录制和视频直播软件   TeamViewer 远程   fd 快速和用户友好的find替代   fzf 模糊搜索神器   httpie 类似于cURL的HTTP命令行客户端﹑中文   SwitchHosts 快速切换hosts   shadowsocks 科学上网   v2ray Project V定制网络体系   WebTorrent 在线播放视频的 BT 下载   FreeTube Youtube 播放器   FlareGet 下载   uGet 下载   RetroArch 全能游戏模拟器   Tor 匿名浏览器﹑网桥   vivaldi 浏览器   Krita 绘画软件   Anki 记忆辅助   Arctime 跨平台字幕软件   PicGo 图片上传+管理   f.</description>
     </item>
     
     <item>

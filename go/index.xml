@@ -37,24 +37,7 @@ GOARCH：目标平台的体系架构 386、amd64、arm
       <pubDate>Mon, 30 Apr 2018 21:32:46 +0800</pubDate>
       
       <guid>https://loresky.github.io/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</guid>
-      <description>日志 github.com/sirupsen/logrus
-toml github.com/BurntSushi/toml
-github.com/pelletier/go-toml
-json github.com/json-iterator/go
-github.com/tidwall/gjson github.com/thedevsaddam/gojsonq
-jwt github.com/dgrijalva/jwt-go
-orm github.com/jinzhu/gorm
-mysql github.com/go-sql-driver/mysql
-pgsql github.com/lib/pq
-mongodb http://labix.org/mgo
-时间工具 github.com/jinzhu/now
-模板引擎 github.com/shiyanhui/hero
-缓存库 github.com/golang/groupcache
-任意精度的定点小数 github.com/shopspring/decimal
-资源嵌入(地址) github.com/GeertJohan/go.rice
-github.com/jteeuwen/go-bindata
-github.com/elazarl/go-bindata-assetfs
-github.com/mjibson/esc</description>
+      <description> 日志  logrus  toml  toml go-toml  json  go gjson gojsonq  jwt  jwt-go  orm  gorm  sql驱动  mysql  mysql  pgsql  pq  mongodb  mgo   时间工具  now  模板引擎  hero  缓存库  groupcache  任意精度的定点小数  decimal  资源嵌入(地址)  go.rice go-bindata go-bindata-assetfs esc  </description>
     </item>
     
     <item>
