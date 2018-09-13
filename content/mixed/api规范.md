@@ -12,6 +12,6 @@ description = ""
 |http-api-design|https://github.com/ZhangBohan/http-api-design-ZH_CN|
 |jsonapi|http://jsonapi.org.cn/|
 |微软|https://github.com/Microsoft/api-guidelines|
-|PayPal|https://segmentfault.com/a/119000000592473|3
+|PayPal|https://segmentfault.com/a/1190000005924733|
 
 
