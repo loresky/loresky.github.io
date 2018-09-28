@@ -1,6 +1,6 @@
 +++
 title= "大公司github"
-date= "2018-09-05T15:04:44+08:00"
+date= "2017-03-13T17:05:50+08:00"
 tags = []
 featured_image = ""
 description = ""
@@ -23,6 +23,7 @@ https://github.com/trending
 - [amfe](https://github.com/amfe)：手机淘宝(前端).
 - [Tencent](https://github.com/Tencent)：腾讯.
 - [AlloyTeam](https://github.com/AlloyTeam)：腾讯 AlloyTeam(前端).
+- [meituan](https://github.com/meituan)：美团.
 - [meituan-dianping](https://github.com/meituan-dianping)：美团点评.
 - [DiDi](https://github.com/didi)：滴滴.
 - [Jsoniter](https://github.com/json-iterator)：滴滴出行平台技术部.
