@@ -14,6 +14,7 @@ https://github.com/trending
 - [Square](https://github.com/square)
 - [Facebook](https://github.com/facebook)
 - [LinkedIn](https://github.com/linkedin)：全球最大职业社交网站.
+- [VRG Soft](https://github.com/VRGsoftUA)：VRG Soft.
 - [NHN](https://github.com/nhnent)：NHN娱乐(前端).
 
 - [ecomfe](https://github.com/ecomfe)：百度EFE.
@@ -22,6 +23,7 @@ https://github.com/trending
 - [ant-design](https://github.com/ant-design)：服务于企业级产品的设计体系(前端).
 - [amfe](https://github.com/amfe)：手机淘宝(前端).
 - [Tencent](https://github.com/Tencent)：腾讯.
+- [tencentyun](https://github.com/tencentyun)：腾讯云.
 - [AlloyTeam](https://github.com/AlloyTeam)：腾讯 AlloyTeam(前端).
 - [meituan](https://github.com/meituan)：美团.
 - [meituan-dianping](https://github.com/meituan-dianping)：美团点评.
