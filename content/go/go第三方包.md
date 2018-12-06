@@ -8,8 +8,8 @@ description = ""
 
 ## 日志
 
+- [zap](https://github.com/uber-go/zap)
 - [logrus](https://github.com/sirupsen/logrus)
-
 
 ## toml
 
