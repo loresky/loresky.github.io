@@ -43,6 +43,11 @@ description = ""
     - [mgo](http://labix.org/mgo)
 
 
+## 权限
+
+- [casbin](https://github.com/casbin/casbin)
+
+
 ## 时间工具
 
 - [now](https://github.com/jinzhu/now)
