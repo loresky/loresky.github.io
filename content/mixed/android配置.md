@@ -7,10 +7,9 @@ date: 2017-06-27 11:30:39
 ```java
 ext {
     minSdkVersion = 19
-    targetSdkVersion = 23
-    compileSdkVersion = 25
-    buildToolsVersion = "25.0.2"
-    supportLibraryVersion = "25.+"
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    supportLibraryVersion = "28.+"
 }
 ```
 ## app内build.gradle
@@ -24,6 +23,12 @@ android {
 	
 	signingConfigs {
         release {
+            storeFile file("loresky.jks")
+            storePassword "123456"
+            keyAlias "loreskykey"
+            keyPassword "123456"
+        }
+        debug {
             storeFile file("loresky.jks")
             storePassword "123456"
             keyAlias "loreskykey"
@@ -115,12 +120,14 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.7.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
 
+    implementation 'com.zhihu.android:matisse:0.5.2-beta3'
+
     implementation('com.github.qingmei2:rximagepicker:2.2.0-alpha', {
         exclude group: 'io.reactivex.rxjava2'
     })
     implementation 'com.github.qingmei2:rximagepicker_support_zhihu:2.2.0-alpha'
 
-    implementation('com.blankj:rxbus:1.2', {
+    implementation('com.blankj:rxbus:1.5', {
         exclude group: 'io.reactivex.rxjava2'
     })
 
@@ -136,5 +143,9 @@ dependencies {
         exclude group: 'com.squareup.okhttp3'
         exclude group: 'com.squareup.okio'
     })
+
+    implementation "com.liulishuo.okdownload:okhttp:1.0.5"
+
+//    implementation 'me.yokeyword:fragmentation:1.3.6'
 }
 ```

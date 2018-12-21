@@ -37,6 +37,7 @@ description = ""
 
 - mysql
     - [mysql](https://github.com/go-sql-driver/mysql)
+    - [kingshard](https://github.com/flike/kingshard):MySQL Proxy项目
 - pgsql
     - [pq](https://github.com/lib/pq)
 - mongodb
@@ -76,3 +77,6 @@ description = ""
 - [esc](https://github.com/mjibson/esc)
 
 
+## excel
+
+- [xlsx](https://github.com/tealeg/xlsx)
