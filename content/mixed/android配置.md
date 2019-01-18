@@ -247,6 +247,9 @@ dependencies {
     //微信
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
 
+    //圆角，边框，Gradient背景渐变，控件State各个状态UI样式
+    implementation 'com.ruffian.library:RWidgetHelper:1.0.7'
+
 
 //    implementation 'com.jakewharton:butterknife:10.0.0'
 //    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
@@ -312,4 +315,10 @@ dependencies {
  -keep class com.allenliu.versionchecklib.** {
    *;
 }
+
+#AgentWeb
+-keep class com.just.agentweb.** {
+    *;
+}
+-dontwarn com.just.agentweb.**
 ```
