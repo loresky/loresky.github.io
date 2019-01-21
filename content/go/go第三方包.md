@@ -33,15 +33,19 @@ description = ""
 - [gorm](https://github.com/jinzhu/gorm)
 
 
-## sql驱动
+## sql
 
 - mysql
-    - [mysql](https://github.com/go-sql-driver/mysql)
-    - [kingshard](https://github.com/flike/kingshard):MySQL Proxy项目
+    - [mysql](https://github.com/go-sql-driver/mysql)-orm
+    - [sqlx](https://github.com/jmoiron/sqlx)-数据库操作包
+    - [kingshard](https://github.com/flike/kingshard)-MySQL Proxy项目
+    - [vitess](https://github.com/vitessio/vitess)-分布式MySQL工具
 - pgsql
     - [pq](https://github.com/lib/pq)
 - mongodb
     - [mgo](http://labix.org/mgo)
+- redis
+    - [redigo](github.com/garyburd/redigo)
 
 
 ## 权限
@@ -80,3 +84,7 @@ description = ""
 ## excel
 
 - [xlsx](https://github.com/tealeg/xlsx)
+
+## excel
+
+- [base64Captcha](https://github.com/mojocn/base64Captcha)-生成base64编码图片验证码
