@@ -85,6 +85,10 @@ description = ""
 
 - [xlsx](https://github.com/tealeg/xlsx)
 
-## excel
+## 验证码
 
 - [base64Captcha](https://github.com/mojocn/base64Captcha)-生成base64编码图片验证码
+
+## swagger
+
+- [echo-swagger](https://github.com/swaggo/echo-swagger)
