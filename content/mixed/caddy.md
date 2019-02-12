@@ -11,8 +11,6 @@ Caddyfile
 ```
 192.168.10.185:8081
 
-filemanager / ./zoom {
-    no_auth
-    locale zh-cn
-}
+filebrowser / ./zoom 
+
 ```
