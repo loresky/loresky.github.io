@@ -3,6 +3,26 @@ title: android配置
 date: 2017-06-27 11:30:39
 ---
 
+
+```
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+    }
+}
+ 
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+    }
+```
+
 ## app外build.gradle
 ```java
 ext {
