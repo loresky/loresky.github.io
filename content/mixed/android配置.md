@@ -152,6 +152,7 @@ dependencies {
     })
 
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.github.iammert:PhotoViewIndicator:0.1'
 
     implementation 'com.sunfusheng:marqueeview:1.3.3'
 
