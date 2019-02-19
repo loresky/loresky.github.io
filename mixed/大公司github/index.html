@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.47.1" />
+<meta name="generator" content="Hugo 0.53" />
 
     
     
@@ -24,14 +24,17 @@
 <meta name="twitter:title" content="大公司github"/>
 <meta name="twitter:description" content=" 公司开源导航页 https://www.oschina.net/company
 github 趋势 https://github.com/trending
- Square Facebook LinkedIn：全球最大职业社交网站. NHN：NHN娱乐(前端).
+ Square Facebook LinkedIn：全球最大职业社交网站. VRG Soft：VRG Soft. NHN：NHN娱乐(前端).
  ecomfe：百度EFE.
  Alibaba：阿里巴巴.
  AntV team：蚂蚁金服(前端).
  ant-design：服务于企业级产品的设计体系(前端).
  amfe：手机淘宝(前端).
  Tencent：腾讯.
+ TarsCloud：腾讯Tars高性能RPC框架.
+ tencentyun：腾讯云.
  AlloyTeam：腾讯 AlloyTeam(前端).
+ meituan：美团.
  meituan-dianping：美团点评.
  DiDi：滴滴.
  Jsoniter：滴滴出行平台技术部.
@@ -46,14 +49,17 @@ github 趋势 https://github.com/trending
 <meta property="og:title" content="大公司github" />
 <meta property="og:description" content=" 公司开源导航页 https://www.oschina.net/company
 github 趋势 https://github.com/trending
- Square Facebook LinkedIn：全球最大职业社交网站. NHN：NHN娱乐(前端).
+ Square Facebook LinkedIn：全球最大职业社交网站. VRG Soft：VRG Soft. NHN：NHN娱乐(前端).
  ecomfe：百度EFE.
  Alibaba：阿里巴巴.
  AntV team：蚂蚁金服(前端).
  ant-design：服务于企业级产品的设计体系(前端).
  amfe：手机淘宝(前端).
  Tencent：腾讯.
+ TarsCloud：腾讯Tars高性能RPC框架.
+ tencentyun：腾讯云.
  AlloyTeam：腾讯 AlloyTeam(前端).
+ meituan：美团.
  meituan-dianping：美团点评.
  DiDi：滴滴.
  Jsoniter：滴滴出行平台技术部.
@@ -65,8 +71,9 @@ github 趋势 https://github.com/trending
  ApacheCN：专注于优秀项目维护的开源组织.
   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://loresky.github.io/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/" /><meta property="article:published_time" content="2018-09-05T15:04:44&#43;08:00"/>
-<meta property="article:modified_time" content="2018-09-05T15:04:44&#43;08:00"/><meta property="og:site_name" content="Title" />
+<meta property="og:url" content="serve/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/" /><meta property="article:published_time" content="2017-03-13T17:05:50&#43;08:00"/>
+<meta property="article:modified_time" content="2017-03-13T17:05:50&#43;08:00"/><meta property="og:site_name" content="Title" />
+
 
     
 
@@ -76,8 +83,16 @@ github 趋势 https://github.com/trending
 
 
 
-<link rel="stylesheet" href="/css/hyde-hyde.css">
-<link rel="stylesheet" href="/css/print.min.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -92,32 +107,39 @@ github 趋势 https://github.com/trending
 </head>
 
 
-    <body >
-        
+    <body class=" ">
+    
 <div class="sidebar">
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://loresky.github.io/"></a>
+        <a href="serve"></a>
       </span>
       
+        
+        
+        
+        <div class="author-image">
+          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
       
-      
-      <div class="author-image">
-        <img src="https://loresky.github.io/img/hugo.png" alt="Author Image" class="img--circle img--headshot element--center"> 
-      </div>
       
       <p class="site__description">
          生面 
       </p>
     </div>
-    <div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
 	<ul class="sidebar-nav">
 		 
 		 
 			 
 				<li>
-					<a href="/posts/">
+					<a href="serve/posts/">
 						<span>Posts</span>
 					</a>
 				</li>
@@ -125,7 +147,7 @@ github 趋势 https://github.com/trending
 		 
 			 
 				<li>
-					<a href="/docker/">
+					<a href="serve/docker/">
 						<span>Docker</span>
 					</a>
 				</li>
@@ -133,7 +155,7 @@ github 趋势 https://github.com/trending
 		 
 			 
 				<li>
-					<a href="/git/">
+					<a href="serve/git/">
 						<span>Git</span>
 					</a>
 				</li>
@@ -141,7 +163,7 @@ github 趋势 https://github.com/trending
 		 
 			 
 				<li>
-					<a href="/go/">
+					<a href="serve/go/">
 						<span>Go</span>
 					</a>
 				</li>
@@ -149,7 +171,7 @@ github 趋势 https://github.com/trending
 		 
 			 
 				<li>
-					<a href="/linux/">
+					<a href="serve/linux/">
 						<span>Linux</span>
 					</a>
 				</li>
@@ -157,7 +179,7 @@ github 趋势 https://github.com/trending
 		 
 			 
 				<li>
-					<a href="/mixed/">
+					<a href="serve/mixed/">
 						<span>Mixed</span>
 					</a>
 				</li>
@@ -165,7 +187,7 @@ github 趋势 https://github.com/trending
 		 
 			 
 				<li>
-					<a href="/web/">
+					<a href="serve/web/">
 						<span>Web</span>
 					</a>
 				</li>
@@ -173,7 +195,7 @@ github 趋势 https://github.com/trending
 		 
 			 
 				<li>
-					<a href="/win/">
+					<a href="serve/win/">
 						<span>Win</span>
 					</a>
 				</li>
@@ -183,8 +205,8 @@ github 趋势 https://github.com/trending
 	</ul>
 </div>
 
-    <p>
-      <section class="social">
+        <section class="social">
+	
 	
 	
 	
@@ -200,16 +222,11 @@ github 趋势 https://github.com/trending
 	
 </section>
 
-    </p>
-    <p class="copyright">
-      &copy; 2018 Author.
-      <a href="https://creativecommons.org/licenses/by-sa/4.0">Some Rights Reserved</a>.
-      <br/>Built with
-      <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
-      
-    </p>
-  </div>
-  <div>
+      </div>
+    </div>
+    
+
+
   </div>
 </div>
 
@@ -218,12 +235,12 @@ github 趋势 https://github.com/trending
     <article>
   <header>
     <h1>大公司github</h1>
-     
+    
     
 <div class="post__meta">
     
     
-      <i class="fas fa-calendar-alt"></i> Sep 5, 2018
+      <i class="fas fa-calendar-alt"></i> Mar 13, 2017
     
     
     
@@ -235,6 +252,8 @@ github 趋势 https://github.com/trending
 
 
   </header>
+  
+  
   <div class="post">
     
 
@@ -250,6 +269,7 @@ github 趋势 https://github.com/trending
 <li><a href="https://github.com/square">Square</a></li>
 <li><a href="https://github.com/facebook">Facebook</a></li>
 <li><a href="https://github.com/linkedin">LinkedIn</a>：全球最大职业社交网站.</li>
+<li><a href="https://github.com/VRGsoftUA">VRG Soft</a>：VRG Soft.</li>
 
 <li><p><a href="https://github.com/nhnent">NHN</a>：NHN娱乐(前端).</p></li>
 
@@ -265,7 +285,13 @@ github 趋势 https://github.com/trending
 
 <li><p><a href="https://github.com/Tencent">Tencent</a>：腾讯.</p></li>
 
+<li><p><a href="https://github.com/Tencent">TarsCloud</a>：腾讯Tars高性能RPC框架.</p></li>
+
+<li><p><a href="https://github.com/tencentyun">tencentyun</a>：腾讯云.</p></li>
+
 <li><p><a href="https://github.com/AlloyTeam">AlloyTeam</a>：腾讯 AlloyTeam(前端).</p></li>
+
+<li><p><a href="https://github.com/meituan">meituan</a>：美团.</p></li>
 
 <li><p><a href="https://github.com/meituan-dianping">meituan-dianping</a>：美团点评.</p></li>
 
@@ -289,13 +315,18 @@ github 趋势 https://github.com/trending
   </div>
   
 
-<div class="post--navigation post--navigation-single">
+<div class="navigation navigation-single">
     
-    <a href="/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/" class="post--navigation-prev">
+    <a href="serve/mixed/vscode%E6%8F%92%E4%BB%B6/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Java第三方</span>
+      <span class="navigation-tittle">Vscode插件</span>
     </a>
     
+    
+    <a href="serve/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/" class="navigation-next">
+      <span class="navigation-tittle">MySQL配置文件详解</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
     
 </div>
 
@@ -312,23 +343,20 @@ github 趋势 https://github.com/trending
         </div>
         
     
-<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
-  integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
-  crossorigin="anonymous">
-</script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 
     
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
         
+    
+    <script type="text/javascript">
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        
-        <script type="text/javascript">
-            hljs.configure({languages: []});
-            hljs.initHighlightingOnLoad();
-        </script>
-        
-        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
 
 
 

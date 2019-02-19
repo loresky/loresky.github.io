@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.47.1" />
+<meta name="generator" content="Hugo 0.53" />
 
     
     
@@ -31,8 +31,9 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 在函数调用时，像切片（slice）、字典（map）、接口（interface）、通道（channel）这样的引用类型都是默认使用引用传递（即使没有显示的指出指针）。
 package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 5 * 6 = %d\n&quot;, MultiPly3Nums(2, 5, 6)) // var i1 int = MultiPly3Nums(2, 5, 6) // fmt.Printf(&quot;MultiPly 2 * 5 * 6 = %d\n&quot;, i1) } func MultiPly3Nums(a int, b int, c int) int { // var product int = a * b * c // return product return a * b * c }  2." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://loresky.github.io/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/" /><meta property="article:published_time" content="2018-01-06T17:19:00&#43;00:00"/>
+<meta property="og:url" content="serve/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/" /><meta property="article:published_time" content="2018-01-06T17:19:00&#43;00:00"/>
 <meta property="article:modified_time" content="2018-01-06T17:19:00&#43;00:00"/><meta property="og:site_name" content="Title" />
+
 
     
 
@@ -42,8 +43,16 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 
 
 
-<link rel="stylesheet" href="/css/hyde-hyde.css">
-<link rel="stylesheet" href="/css/print.min.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -58,32 +67,39 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 </head>
 
 
-    <body >
-        
+    <body class=" ">
+    
 <div class="sidebar">
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://loresky.github.io/"></a>
+        <a href="serve"></a>
       </span>
       
+        
+        
+        
+        <div class="author-image">
+          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
       
-      
-      <div class="author-image">
-        <img src="https://loresky.github.io/img/hugo.png" alt="Author Image" class="img--circle img--headshot element--center"> 
-      </div>
       
       <p class="site__description">
          生面 
       </p>
     </div>
-    <div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
 	<ul class="sidebar-nav">
 		 
 		 
 			 
 				<li>
-					<a href="/posts/">
+					<a href="serve/posts/">
 						<span>Posts</span>
 					</a>
 				</li>
@@ -91,7 +107,7 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 		 
 			 
 				<li>
-					<a href="/docker/">
+					<a href="serve/docker/">
 						<span>Docker</span>
 					</a>
 				</li>
@@ -99,7 +115,7 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 		 
 			 
 				<li>
-					<a href="/git/">
+					<a href="serve/git/">
 						<span>Git</span>
 					</a>
 				</li>
@@ -107,7 +123,7 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 		 
 			 
 				<li>
-					<a href="/go/">
+					<a href="serve/go/">
 						<span>Go</span>
 					</a>
 				</li>
@@ -115,7 +131,7 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 		 
 			 
 				<li>
-					<a href="/linux/">
+					<a href="serve/linux/">
 						<span>Linux</span>
 					</a>
 				</li>
@@ -123,7 +139,7 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 		 
 			 
 				<li>
-					<a href="/mixed/">
+					<a href="serve/mixed/">
 						<span>Mixed</span>
 					</a>
 				</li>
@@ -131,7 +147,7 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 		 
 			 
 				<li>
-					<a href="/web/">
+					<a href="serve/web/">
 						<span>Web</span>
 					</a>
 				</li>
@@ -139,7 +155,7 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 		 
 			 
 				<li>
-					<a href="/win/">
+					<a href="serve/win/">
 						<span>Win</span>
 					</a>
 				</li>
@@ -149,8 +165,8 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 	</ul>
 </div>
 
-    <p>
-      <section class="social">
+        <section class="social">
+	
 	
 	
 	
@@ -166,16 +182,11 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 	
 </section>
 
-    </p>
-    <p class="copyright">
-      &copy; 2018 Author.
-      <a href="https://creativecommons.org/licenses/by-sa/4.0">Some Rights Reserved</a>.
-      <br/>Built with
-      <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
-      
-    </p>
-  </div>
-  <div>
+      </div>
+    </div>
+    
+
+
   </div>
 </div>
 
@@ -184,7 +195,7 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
     <article>
   <header>
     <h1>go函数参数与返回值</h1>
-     
+    
     
 <div class="post__meta">
     
@@ -201,6 +212,8 @@ package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 
 
 
   </header>
+  
+  
   <div class="post">
     
 
@@ -330,15 +343,15 @@ func main() {
   </div>
   
 
-<div class="post--navigation post--navigation-single">
+<div class="navigation navigation-single">
     
-    <a href="/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/" class="post--navigation-prev">
+    <a href="serve/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
       <span class="navigation-tittle">go标签与goto</span>
     </a>
     
     
-    <a href="/go/go%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/" class="post--navigation-next">
+    <a href="serve/go/go%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/" class="navigation-next">
       <span class="navigation-tittle">go传递变长参数</span>
       <i aria-hidden="true" class="fa fa-chevron-right"></i>
     </a>
@@ -358,23 +371,20 @@ func main() {
         </div>
         
     
-<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
-  integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
-  crossorigin="anonymous">
-</script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 
     
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
         
+    
+    <script type="text/javascript">
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        
-        <script type="text/javascript">
-            hljs.configure({languages: []});
-            hljs.initHighlightingOnLoad();
-        </script>
-        
-        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
 
 
 

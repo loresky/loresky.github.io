@@ -8,7 +8,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.47.1" />
+<meta name="generator" content="Hugo 0.53" />
 
     
 
@@ -22,8 +22,9 @@
 <meta property="og:title" content="" />
 <meta property="og:description" content="生面" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://loresky.github.io/" />
+<meta property="og:url" content="serve/" />
 <meta property="og:updated_time" content="2014-09-28T00:00:00&#43;00:00"/><meta property="og:site_name" content="Title" />
+
 
     
 
@@ -33,8 +34,16 @@
 
 
 
-<link rel="stylesheet" href="/css/hyde-hyde.css">
-<link rel="stylesheet" href="/css/print.min.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -46,39 +55,46 @@
     <link rel="shortcut icon" href="/favicon.png">
     
 
-<link href="https://loresky.github.io/index.xml" rel="alternate" type="application/rss+xml" title="" />
-<link href="https://loresky.github.io/index.xml" rel="feed" type="application/rss+xml" title="" />
+<link href="serve/index.xml" rel="alternate" type="application/rss+xml" title="" />
+<link href="serve/index.xml" rel="feed" type="application/rss+xml" title="" />
 
 
 </head>
 
 
-    <body >
-        
+    <body class=" ">
+    
 <div class="sidebar">
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://loresky.github.io/"></a>
+        <a href="serve"></a>
       </span>
       
+        
+        
+        
+        <div class="author-image">
+          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
       
-      
-      <div class="author-image">
-        <img src="https://loresky.github.io/img/hugo.png" alt="Author Image" class="img--circle img--headshot element--center"> 
-      </div>
       
       <p class="site__description">
          生面 
       </p>
     </div>
-    <div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
 	<ul class="sidebar-nav">
 		 
 		 
 			 
 				<li>
-					<a href="/posts/">
+					<a href="serve/posts/">
 						<span>Posts</span>
 					</a>
 				</li>
@@ -86,7 +102,7 @@
 		 
 			 
 				<li>
-					<a href="/docker/">
+					<a href="serve/docker/">
 						<span>Docker</span>
 					</a>
 				</li>
@@ -94,7 +110,7 @@
 		 
 			 
 				<li>
-					<a href="/git/">
+					<a href="serve/git/">
 						<span>Git</span>
 					</a>
 				</li>
@@ -102,7 +118,7 @@
 		 
 			 
 				<li>
-					<a href="/go/">
+					<a href="serve/go/">
 						<span>Go</span>
 					</a>
 				</li>
@@ -110,7 +126,7 @@
 		 
 			 
 				<li>
-					<a href="/linux/">
+					<a href="serve/linux/">
 						<span>Linux</span>
 					</a>
 				</li>
@@ -118,7 +134,7 @@
 		 
 			 
 				<li>
-					<a href="/mixed/">
+					<a href="serve/mixed/">
 						<span>Mixed</span>
 					</a>
 				</li>
@@ -126,7 +142,7 @@
 		 
 			 
 				<li>
-					<a href="/web/">
+					<a href="serve/web/">
 						<span>Web</span>
 					</a>
 				</li>
@@ -134,7 +150,7 @@
 		 
 			 
 				<li>
-					<a href="/win/">
+					<a href="serve/win/">
 						<span>Win</span>
 					</a>
 				</li>
@@ -144,8 +160,8 @@
 	</ul>
 </div>
 
-    <p>
-      <section class="social">
+        <section class="social">
+	
 	
 	
 	
@@ -161,16 +177,11 @@
 	
 </section>
 
-    </p>
-    <p class="copyright">
-      &copy; 2018 Author.
-      <a href="https://creativecommons.org/licenses/by-sa/4.0">Some Rights Reserved</a>.
-      <br/>Built with
-      <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
-      
-    </p>
-  </div>
-  <div>
+      </div>
+    </div>
+    
+
+
   </div>
 </div>
 
@@ -179,875 +190,104 @@
   <div class="post-list">
     
     
+      
+        
+      
       <div class="post-list__item">
         <span class="item__title--big">
-          <a href="/docker/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">docker常用命令</a>
-        </span>
-        <span class="item__date">
-          Jun 27, 2017
-        </span>
-        
-         查看当前机器上的镜像： docker images  下载镜像： docker pull &lt;image&gt;  删除镜像： docker rmi &lt;image&gt;  运行镜像： docker run -d -p 3306:3306 hub.c.163.com/library/tomcat:latest  查看容器列表及状态： docker ps -a  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/docker/docker%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE/">docker安装设置</a>
-        </span>
-        <span class="item__date">
-          Jun 13, 2017
-        </span>
-        
-         * Docker 中国 * 官网安装教程 Docker 官方为了简化安装流程，提供了一套安装脚本，Ubuntu 和 Debian 系统可以使用这套脚本安装： curl -sSL https://get.docker.com/ | sh
-阿里云的安装脚本 curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
-阿里服务器安装Docker
-DaoCloud 的安装脚本 curl -sSL https://get.daocloud.io/docker | sh
-docker添加用户到组 sudo gpasswd -a ${USER} docker sudo service docker restart newgrp - docker  
-        
-        
-        </div>
-        
-     
-    
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/git/%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB/">项目迁移</a>
-        </span>
-        <span class="item__date">
-          Jul 4, 2018
-        </span>
-        
-        将远程配置删除 git remote rm origin 添加远程地址
-git remote add origin 分支重命名 git branch -m oldbranch newbranch
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/git/git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">git基本命令</a>
-        </span>
-        <span class="item__date">
-          Jun 13, 2017
-        </span>
-        
-         创建git仓库 mkdir Test cd Test git init echo &quot;# Test&quot; &gt;&gt; README.md git add README.md git commit -m &quot;first commit&quot; git remote add origin https://git.coding.net/hccy/Test.git git push -u origin master  已有项目 如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加 git remote add origin https://git.coding.net/hccy/Test.git 主分支git push -u origin master 分支git push -u origin branch  git clone 某个分支或所有分支 clone 某个分支： git clone -b b1 https://github.com/...  clone 所有分支： git clone https://github.com/... git branch -r * source remotes/origin/HEAD -&gt; origin/master remotes/origin/master remotes/origin/source  git checkout——检出 创建新分支： git branch branchName  切换到新分支： git checkout branchName  上面两个命令也可以合成为一个命令： git checkout -b branchName  git status告诉你有文件被修改过，用git diff可以查看修改内容 回退到某个版本  git reset –hard：彻底回退到某个版本 git reset –soft：回退到某个版本，只回退了commit的信息，不会恢复到index file一级。 git reset –mixed：此为默认方式，不带任何参数的git reset，即时这种方式，它回退到某个版本，只保留源码，回退commit和index信息。  
-        
-        
-        </div>
-        
-     
-    
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/">定时删除文件</a>
-        </span>
-        <span class="item__date">
-          Jun 12, 2018
-        </span>
-        
-        package main import ( &quot;fmt&quot; &quot;log&quot; &quot;os&quot; &quot;strconv&quot; &quot;github.com/BurntSushi/toml&quot; &quot;github.com/robfig/cron&quot; ) type config struct { Dirurl string `toml:&quot;dirurl&quot;` } var ( Config config ) func main() { // var a interface{} // var b int // a = 1 // b = a.(int) // fmt.Println(a, b) // aa() // os.RemoveAll(&quot;/home/cat/goProjects/src/test/aa/aaa&quot;) if _, err := toml.DecodeFile(&quot;./conf.toml&quot;, &amp;Config); err != nil { fmt.Println(&quot;config decode err:&quot; + err.Error()) return } fmt.Println(Config.Dirurl) // os.RemoveAll(Config.Dirurl) c := cron.
-        
-        
-        <div class="read-more-link">
-            <a href="/go/%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E6%89%93%E5%8C%85/">Go打包</a>
-        </span>
-        <span class="item__date">
-          May 8, 2018
-        </span>
-        
-        CGO_ENABLED=0 GOOS=windows GOARCH=386 go build main.go  GOOS：目标平台的操作系统 darwin、freebsd、linux、windows
-GOARCH：目标平台的体系架构 386、amd64、arm
-交叉编译不支持 CGO 所以要禁用它
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/">Go第三方包</a>
-        </span>
-        <span class="item__date">
-          Apr 30, 2018
-        </span>
-        
-         日志  logrus  toml  toml go-toml  json  go gjson gojsonq  jwt  jwt-go  orm  gorm  sql驱动  mysql  mysql  pgsql  pq  mongodb  mgo   时间工具  now  模板引擎  hero  缓存库  groupcache  任意精度的定点小数  decimal  资源嵌入(地址)  go.rice go-bindata go-bindata-assetfs esc  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0/">go递归函数</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-         当一个函数在其函数体内调用自身，则称之为递归。最经典的例子便是计算斐波那契数列，即每个数均为前两个数之和 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
-package main import &quot;fmt&quot; func main() { result := 0 for i := 0; i &lt;= 10; i++ { result = fibonacci(i) fmt.Printf(&quot;fibonacci(%d) is: %d\n&quot;, i, result) } } func fibonacci(n int) (res int) { if n &lt;= 1 { res = 1 } else { res = fibonacci(n-1) + fibonacci(n-2) } return } //输出： fibonacci(0) is: 1 fibonacci(1) is: 1 fibonacci(2) is: 2 fibonacci(3) is: 3 fibonacci(4) is: 5 fibonacci(5) is: 8 fibonacci(6) is: 13 fibonacci(7) is: 21 fibonacci(8) is: 34 fibonacci(9) is: 55 fibonacci(10) is: 89  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/">go内置函数</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-         Go 语言拥有一些不需要进行导入操作就可以使用的内置函数。它们有时可以针对不同的类型进行操作，例如：len、cap 和 append，或必须用于系统级的操作，例如：panic。因此，它们需要直接获得编译器的支持。    名称 说明     close 用于管道通信   len/cap len 用于返回某个类型的长度或数量（字符串、数组、切片、map 和管道）；cap 是容量的意思，用于返回某个类型的最大容量（只能用于切片和 map）   new/make new 和 make 均是用于分配内存：new 用于值类型和用户定义的类型，如自定义结构，make 用户内置引用类型（切片、map 和管道）。它们的用法就像是函数，但是将类型作为参数：new(type)、make(type)。new(T) 分配类型 T 的零值并返回其地址，也就是指向类型 T 的指针。它也可以被用于基本类型：v := new(int)。make(T) 返回类型 T 的初始化之后的值，因此它比 new 进行更多的工作,new() 是一个函数，不要忘记它的括号   copy/append 用于复制和连接切片   panic/recover 两者均用于错误处理机制   print/println 底层打印函数，在部署环境中建议使用 fmt 包   complex/realimag 用于创建和操作复数    
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E8%BF%BD%E8%B8%AA%E5%92%8Cdefer/">go追踪和defer</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        关键字 defer 允许我们推迟到函数返回之前（或任意位置执行 return 语句之后）一刻才执行某个语句或函数（为什么要在返回之后才执行这些语句？因为 return 语句同样可以包含一些操作，而不是单纯地返回某个值）。 关键字 defer 的用法类似于面向对象编程语言 Java 和 C# 的 finally 语句块，它一般用于释放某些已分配的资源。
-package main import &quot;fmt&quot; func main() { function1() } func function1() { fmt.Printf(&quot;In function1 at the top\n&quot;) defer function2() fmt.Printf(&quot;In function1 at the bottom!\n&quot;) } func function2() { fmt.Printf(&quot;function2: Deferred until the end of the calling function!&quot;) } //输出： In Function1 at the top In Function1 at the bottom! Function2: Deferred until the end of the calling function!
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E8%BF%BD%E8%B8%AA%E5%92%8Cdefer/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/">go传递变长参数</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        如果函数的最后一个参数是采用 &hellip;type 的形式，那么这个函数就可以处理一个变长的参数，这个长度可以为 0，这样的函数称为变参函数。 func myFunc(a, b, arg ...int) {} 示例函数和调用：
-func Greeting(prefix string, who ...string) Greeting(&quot;hello:&quot;, &quot;Joe&quot;, &quot;Anna&quot;, &quot;Eileen&quot;)  在 Greeting 函数中，变量 who 的值为 []string{&ldquo;Joe&rdquo;, &ldquo;Anna&rdquo;, &ldquo;Eileen&rdquo;}。 如果参数被存储在一个数组 arr 中，则可以通过 arr&hellip; 的形式来传递参数调用变参函数。 1. 使用结构 定义一个结构类型，假设它叫 Options，用以存储所有可能的参数：
-type Options struct { par1 type1, par2 type2, ... }  函数 F1 可以使用正常的参数 a 和 b，以及一个没有任何初始化的 Options 结构： F1(a, b, Options {})。如果需要对选项进行初始化，则可以使用 F1(a, b, Options {par1:val1, par2:val2})。 2. 使用空接口 如果一个变长参数的类型没有被指定，则可以使用默认的空接口 interface{}，这样就可以接受任何类型的参数。该方案不仅可以用于长度未知的参数，还可以用于任何不确定类型的参数。一般而言我们会使用一个 for-range 循环以及 switch 结构对每个参数的类型进行判断：
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/">go函数参数与返回值</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        1. 按值传递（call by value） 按引用传递（call by reference） Go 默认使用按值传递来传递参数，也就是传递参数的副本。 指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递 几乎在任何情况下，传递指针（一个32位或者64位的值）的消耗都比传递副本来得少。
-在函数调用时，像切片（slice）、字典（map）、接口（interface）、通道（channel）这样的引用类型都是默认使用引用传递（即使没有显示的指出指针）。
-package main import &quot;fmt&quot; func main() { fmt.Printf(&quot;Multiply 2 * 5 * 6 = %d\n&quot;, MultiPly3Nums(2, 5, 6)) // var i1 int = MultiPly3Nums(2, 5, 6) // fmt.Printf(&quot;MultiPly 2 * 5 * 6 = %d\n&quot;, i1) } func MultiPly3Nums(a int, b int, c int) int { // var product int = a * b * c // return product return a * b * c }  2.
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/">go标签与goto</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        for、switch 或 select 语句都可以配合标签（label）形式的标识符使用，即某一行第一个以冒号（:）结尾的单词（gofmt 会将后续代码自动移至下一行）。 **标签的名称是大小写敏感的，为了提升可读性，一般建议使用全部大写字母） **
-package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5; i++ { for j := 0; j &lt;= 5; j++ { if j == 4 { continue LABEL1 } fmt.Printf(&quot;i is: %d, and j is: %d\n&quot;, i, j) } } }  package main func main() { i:=0 HERE: print(i) i++ if i==5 { return } goto HERE }  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E7%BB%93%E6%9E%84for/">go结构for</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        1. 基于计数器的迭代 for 初始化语句; 条件语句; 修饰语句 {}
-package main import &quot;fmt&quot; func main() { for i := 0; i &lt; 5; i++ { fmt.Printf(&quot;This is the %d iteration\n&quot;, i) } }  循环中同时使用多个计数器：
-**for i, j := 0, N; i &lt; j; i, j = i+1, j-1 {} ** 2. 基于条件判断的迭代 for 结构的第二种形式是没有头部的条件判断迭代（类似其它语言中的 while 循环），基本形式为：for 条件语句 {}。 您也可以认为这是没有初始化语句和修饰语句的 for 结构，因此 ;; 便是多余的了。
-package main import &quot;fmt&quot; func main() { var i int = 5 for i &gt;= 0 { i = i - 1 fmt.
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E7%BB%93%E6%9E%84for/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E7%BB%93%E6%9E%84switch/">go结构switch</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式： switch var1 { case val1: ... case val2: ... default: ... }  如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的 switch i { case 0: fallthrough case 1: f() // 当 i == 0 时函数也会被调用 }  switch 语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为 true） package main import &quot;fmt&quot; func main() { var num1 int = 7 switch { case num1 &lt; 0: fmt.Println(&quot;Number is negative&quot;) case num1 &gt; 0 &amp;&amp; num1 &lt; 10: fmt.
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E7%BB%93%E6%9E%84switch/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E5%A4%9A%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF/">go多返回值函数的错误</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        anInt, _ = strconv.Atoi(origStr)  如果 origStr 不能被转换为整数，anInt 的值会变成 0 而 _ 无视了错误，程序会继续运行。
-package main import ( &quot;fmt&quot; &quot;strconv&quot; ) func main() { var orig string = &quot;ABC&quot; // var an int var newS string // var err error fmt.Printf(&quot;The size of ints is: %d\n&quot;, strconv.IntSize) // anInt, err = strconv.Atoi(origStr) an, err := strconv.Atoi(orig) if err != nil { fmt.Printf(&quot;orig %s is not an integer - exiting with error\n&quot;, orig) return } // 未发生错误，继续执行： fmt.
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E5%A4%9A%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E5%AD%97%E7%AC%A6%E4%B8%B2/">go字符串</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        Go 支持以下 2 种形式的字面值： * 解释字符串： **该类字符串使用双引号括起来，其中的相关的转义字符将被替换，这些转义字符包括： ** 1. \n：换行符 2. \r：回车符 3. \t：tab 键 4. \u 或 \U：Unicode 字符 5. \：反斜杠自身 * 非解释字符串： 该类字符串使用反引号括起来，支持换行，例如：
- `This is a raw string \n` 中的 `\n\` 会被原样输出。  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/">go基本类型和运算符</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        1.布尔类型 bool 非运算符：!
-!T -&gt; false !F -&gt; true  和运算符：&amp;&amp;
-T &amp;&amp; T -&gt; true T &amp;&amp; F -&gt; false F &amp;&amp; T -&gt; false F &amp;&amp; F -&gt; false  或运算符：||
-T || T -&gt; true T || F -&gt; true F || T -&gt; true F || F -&gt; false  2.数字类型 Go 语言支持整型和浮点型数字，并且原生支持复数。 Go 也有基于架构的类型，例如：int、uint 和 uintptr。 这些类型的长度都是根据运行程序所在的操作系统类型所决定的： * int 和 uint 在 32 位操作系统上，它们均使用 32 位（4 个字节），在 64 位操作系统上，它们均使用 64 位（8 个字节）。 * uintptr 的长度被设定为足够存放一个指针即可。
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E5%B8%B8%E9%87%8F%E5%8F%98%E9%87%8F%E6%9E%9A%E4%B8%BE/">go常量、变量、枚举</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        常量 1. 常量使用关键字 const 定义，用于存储不会改变的数据。 2. 存储在常量中的数据类型只可以是布尔型、数字型（整数型、浮点型和复数）和字符串型。 3. 在 Go 语言中，你可以省略类型说明符 [type]，因为编译器可以根据变量的值来推断其类型。 * 显式类型定义： const b string = &quot;abc&quot; * 隐式类型定义： const b = &quot;abc&quot;  常量还可以用作枚举：
-const ( Unknown = 0 Female = 1 Male = 2 )  枚举 第一个 iota 等于 0，每当 iota 在新的一行被使用时，它的值都会自动加 1；所以 a=0, b=1, c=2 可以简写为如下形式： const ( a = iota b c )  一周中每天的名称 const ( Sunday = iota Monday Tuesday Wednesday Thursday Friday Saturday )  使用某个类型作为枚举常量的类型： type Color int const ( RED Color = iota // 0 ORANGE // 1 YELLOW // 2 GREEN // .
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E5%B8%B8%E9%87%8F%E5%8F%98%E9%87%8F%E6%9E%9A%E4%B8%BE/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E6%96%87%E4%BB%B6%E5%90%8D%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E6%A0%87%E8%AF%86%E7%AC%A6/">go文件名、关键字与标识符</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-         Go 代码中会使用到的 25 个关键字或保留字             break default func interface select   case defer go map struct   chan else goto package switch   const fallthrough if range type   continue for import return var    Go 语言还有 36 个预定义标识ss符                 append bool byte cap close complex complex64 complex128 uint16   copy false float32 float64 imag int int8 int16 uint32   int32 int64 iota len make new nil panic uint64   print println real recover string true uint uint8 uintptr    
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E6%96%87%E6%A1%A3/">go生成代码文档</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        go doc 工具会从 Go 程序和包文件中提取顶级声明的首行注释以及每个对象的相关注释，并生成相关文档。
-一般用法 **go doc package **获取包的文档注释，例如：go doc fmt 会显示使用 godoc 生成的 fmt 包的文档注释。 **go doc package/subpackage **获取子包的文档注释，例如：go doc container/list。 **go doc package function **获取某个函数在某个包中的文档注释，例如：go doc fmt Printf 会显示有关 fmt.Printf() 的使用说明。
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E6%89%93%E5%8D%B0printf/">go打印Printf</a>
-        </span>
-        <span class="item__date">
-          Jan 6, 2018
-        </span>
-        
-        General ** %v 基本格式的值。当输出结构体时，扩展标志(%+v)添加成员的名字 ** ** %#v 值 ** ** %T 值的类型 ** ** %% 百分号 ** Integer ** %b 二进制 ** ** %c 数值对应的Unicode编码字符 ** ** %d 十进制表示 ** ** %+d 带符号的整型，fmt.Printf(&ldquo;%+d&rdquo;, 255)输出+255 ** ** %o 不带零的八进制 ** ** %q 单引号 ** ** %x 小写的十六进制，使用a-f ** ** %#x 带0x的十六进制 ** ** %X 大写的十六进制，使用A-F ** ** %U Unicode格式： U+1234，等价于&rdquo;U+%04X&rdquo; ** ** %#U 带字符的Unicode ** %5d 表示该整型最大长度是5，下面这段代码
-fmt.Printf(&quot;|%5d|&quot;, 1) fmt.Printf(&quot;|%5d|&quot;, 1234567) 输出结果如下： | 1| |1234567|  %-5d则相反，打印结果会自动左对齐 %05d会在数字前面补零
-        
-        
-        <div class="read-more-link">
-            <a href="/go/go%E6%89%93%E5%8D%B0printf/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/go/go%E7%8E%AF%E5%A2%83%E5%92%8C%E7%9B%AE%E5%BD%95/">go环境和目录</a>
-        </span>
-        <span class="item__date">
-          Sep 20, 2017
-        </span>
-        
-         Go 的源代码有以下三个分支：  Go release：最新稳定版，实际开发最佳选择 Go weekly：包含最近更新的版本，一般每周更新一次 Go tip：永远保持最新的版本，相当于内测版  最为重要的环境变量: **$GOROOT **表示 Go 在你的电脑上的安装位置,它的值一般都是$HOME/go,当然,你也可以安装在别的地方。 **$GOARCH **表示目标机器的处理器架构,它的值可以是 386、amd64 或 arm。 **$GOOS **表示目标机器的操作系统,它的值可以是 darwin、freebsd、linux 或 windows。 **$GOBIN **表示编译器和链接器的安装位置,默认是$GOROOT/bin
-**$GOPATH ** 默认采用和 $GOROOT 一样的值，但从 Go 1.1 版本开始，你必须修改为其它路径。它可以包含多个包含 Go 语言源码文件、包文件和可执行文件的路径，而这些路径下又必须分别包含三个规定的目录：src、pkg 和 bin，这三个目录分别用于存放源码文件、包文件和可执行文件。 **$GOARM **专门针对基于 arm 架构的处理器，它的值可以是 5 或 6，默认为 6。 ** $GOMAXPROCS **用于设置应用程序可使用的处理器个数与核数。
-Go 安装目录  /bin :包含可执行文件,如:编译器,Go 工具 /doc :包含示例程序,代码工具,本地文档等 /lib :包含文档模版 /misc:包含与支持 Go 编辑器有关的配置文件以及 cgo 的示例 /os_arch /src:包含标准库的包的对象文件(.a):包含源代码构建脚本和标准库的包的完整源代码(Go 是一门开源语言) /src/cmd:包含 Go 和 C 的编译器和命令行脚本  
-        
-        
-        </div>
-        
-     
-    
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/%E6%9F%A5%E7%9C%8Blinux%E5%8F%91%E8%A1%8C%E7%89%88%E5%90%8D%E7%A7%B0%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%B7/">查看Linux发行版名称和版本号</a>
-        </span>
-        <span class="item__date">
-          Jun 7, 2018
-        </span>
-        
-         方法总览  lsb_release 命令 /etc/*-release 文件 uname 命令 /proc/version 文件 dmesg 命令 YUM 或 DNF 命令 RPM 命令 APT-GET 命令  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/">Linux开源镜像站</a>
-        </span>
-        <span class="item__date">
-          Apr 29, 2018
-        </span>
-        
-           名称 地址     We-Cloud 维云技术小组 - 东软校园 http://mirrors.neusoft.edu.cn/   清华大学 TUNA 镜像源 https://mirrors.tuna.tsinghua.edu.cn/   USTC 科大开源镜像 http://mirrors.ustc.edu.cn/   郑州大学开源镜像站 http://mirrors.zzu.edu.cn/   OPSX 阿里云开源镜像 https://opsx.alibaba.com/   网易开源镜像站 http://mirrors.163.com/   兰州大学开源社区镜像站 http://mirror.lzu.edu.cn/   北京交通大学开源镜像站 https://mirror.bjtu.edu.cn/cn/    
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/">Linux和Windows双启动带来的时间同步问题</a>
-        </span>
-        <span class="item__date">
-          Apr 28, 2018
-        </span>
-        
-        via:http://www.theitstuff.com/how-to-sync-time-between-linux-and-windows-dual-boot-2
- 点击 Windows 系统中的开始菜单，然后搜索 regedit HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation。 在右边窗口，右键点击空白位置，然后选择 New &gt;&gt; DWORD(32 bit) Value。 之后，你会新生成一个条目，而且这个条目默认是高亮的。将这个条目重命名为 RealTimeIsUniversal 并设置值为 1 所有的配置就完成了，下次重启，就不会再有时间同步问题了。  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/">linux程序端口占用情况</a>
-        </span>
-        <span class="item__date">
-          Jul 3, 2017
-        </span>
-        
-        端口 lsof -i:port netstat –apn | grep 8080
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/linux%E7%A1%AC%E7%9B%98%E5%AE%89%E8%A3%85/">linux硬盘安装</a>
-        </span>
-        <span class="item__date">
-          Jul 3, 2017
-        </span>
-        
-         Ubuntu title Install Ubuntu root (hd0,0) kernel (hd0,0)/vmlinuz.efi boot=casper iso-scan/filename=/ubuntu.iso locale=zh_CN.UTF-8 initrd (hd0,0)/initrd.lz title reboot reboot title halt halt  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/grub2%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8win7/">grub2命令启动win7</a>
-        </span>
-        <span class="item__date">
-          Jul 3, 2017
-        </span>
-        
-         grub2命令启动win7 假设win7安装在第一硬盘第一分区（即hd0,1，如果不是，自行修改）：
-grub&gt;insmod ntfs grub&gt;set root='hd0,1' grub&gt;chainloader +1 grub&gt;boot  或者试试：
-grub&gt;insmod ntfs grub&gt;search --no-floppy --set=root /bootmgr grub&gt;chainloader +1 grub&gt;boot  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">linux常用命令</a>
-        </span>
-        <span class="item__date">
-          Jun 28, 2017
-        </span>
-        
-         tar -A 新增压缩文件到已存在的压缩 -B 设置区块大小 -c 建立新的压缩文件 -d 记录文件的差别 -r 添加文件到已经压缩的文件 -u 添加改变了和现有的文件到已经存在的压缩文件 -x 从压缩的文件中提取文件 -t 显示压缩文件的内容 -z 支持gzip解压文件 -j 支持bzip2解压文件 -Z 支持compress解压文件 -v 显示操作过程 -l 文件系统边界设置 -k 保留原有文件不覆盖 -m 保留文件不被覆盖 -W 确认压缩文件的正确性  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/">linux忘记root密码</a>
-        </span>
-        <span class="item__date">
-          Apr 23, 2017
-        </span>
-        
-        进入grub的时候，按上下箭头 选择平时启动的那个内核 按 e 编辑这么一行：
-kernel /vmlinuz root=/dev/sda2 init=/bin/bash rw  注意黑体字，就是在你原有的内核选项上增加的内容 按 enter 生效 按 b 启动 然后就在命令行了，输入passwd root 进行密码修改
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/linux/linux%E9%85%8D%E7%BD%AE/">linux配置</a>
-        </span>
-        <span class="item__date">
-          Apr 23, 2017
-        </span>
-        
-        依赖: sudo apt-get install gdebi-core 语言支持不见了: sudo apt-get install language-selector-gnome 64位系统lib: sudo apt-get install lib32ncurses5 配置lib: sudo apt-get install -f  环境 export GOROOT=/opt/go export GOPATH=/home/cy/GoProjects export GRADLE_HOME=/opt/gradle export NODE_HOME=/opt/node export JAVA_HOME=/opt/jdk1.8 export JRE_HOME=/opt/jdk1.8/jre export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export ANDROID_HOME=/opt/android-sdk-linux export PATH=:$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GRADLE_HOME/bin:$NODE_HOME/bin:$GOROOT/bin:$GOPATH/bin:  桌面图标 [Desktop Entry] Name = Genymotion comment= genymotion Exec=/opt/genymotion/genymotion Icon=/opt/genymotion/icons/icon.png Terminal=false Type=Application Categories=Utility;TextEditor;Development;IDE; [Desktop Entry] Version=1.0 Type=Application Name=xmind Comment= Exec=/opt/xmind/XMind_amd64/XMind Icon=/opt/xmind/XMind_amd64/xmind_file.ico Path=/opt/xmind/XMind_amd64 Terminal=false StartupNotify=false  五笔 sudo apt-get install fcitx-table-wbpy
-        
-        
-        <div class="read-more-link">
-            <a href="/linux/linux%E9%85%8D%E7%BD%AE/">Read More…</a>
-        </div>
-        
-        </div>
-        
-     
-    
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/">大公司github</a>
-        </span>
-        <span class="item__date">
-          Sep 5, 2018
-        </span>
-        
-         公司开源导航页 https://www.oschina.net/company
-github 趋势 https://github.com/trending
- Square Facebook LinkedIn：全球最大职业社交网站. NHN：NHN娱乐(前端).
- ecomfe：百度EFE.
- Alibaba：阿里巴巴.
- AntV team：蚂蚁金服(前端).
- ant-design：服务于企业级产品的设计体系(前端).
- amfe：手机淘宝(前端).
- Tencent：腾讯.
- AlloyTeam：腾讯 AlloyTeam(前端).
- meituan-dianping：美团点评.
- DiDi：滴滴.
- Jsoniter：滴滴出行平台技术部.
- easy-mock：杭州大搜车汽车服务有限公司(前端).
- HnDeveloper：红鸟网络.
- Sheet JS：excel表格(前端).
- fecshop：开源电商商城(php).
- TeamStuQ：极客邦科技(程序员技能图谱).
- ApacheCN：专注于优秀项目维护的开源组织.
-  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/">Java第三方</a>
-        </span>
-        <span class="item__date">
-          Sep 5, 2018
-        </span>
-        
-         Json  Gson：谷歌官方推出的JSON处理库. Fastjson：阿里巴巴的开源JSON解析库.  加密库  tink：Java and Android, C++ and Obj-C.  日期时间  joda-time  java规范  p3c  Java反编译器  jadx  Android 工具类  AndroidUtilCode  日志  logger  图片压缩  Luban：图片压缩工具，仿微信朋友圈压缩策略.   Sql  Realm：移动数据库https://realm.io/cn. ObjectBox：NoSQL移动数据库.  Webview  AgentWeb：基于Android WebView轻量和极度灵活.  内存泄露  LeakCanary  资源混淆  AndResGuard：缩小APK大小的工具.  防混淆  FreeProGuard：Android防混淆配置.  计算方法数  Dexcount  节码优化器  ReDex  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/cron/">Cron</a>
-        </span>
-        <span class="item__date">
-          Jun 14, 2018
-        </span>
-        
-        cron表达式  按顺序依次为 1 秒（0~59） 2 分钟（0~59） 3 小时（0~23） 4 天（0~31） 5 月（0~11） 6 星期（1~7 1=SUN 或 SUN，MON，TUE，WED，THU，FRI，SAT） 7.年份（1970－2099） 其中每个元素可以是一个值(如6),一个连续区间(9-12),一个间隔时间(8-18/4)(/表示每隔4小时),一个列表(1,3,5),通配符。由于&quot;月份中的日期&quot;和&quot;星期中的日期&quot;这两个元素互斥的,必须要对其中一个设置?. 0 0 10,14,16 * * ? 每天上午10点，下午2点，4点 0 0/30 9-17 * * ? 朝九晚五工作时间内每半小时 0 0 12 ? * WED 表示每个星期三中午12点 &quot;0 0 12 * * ?&quot; 每天中午12点触发 &quot;0 15 10 ? * *&quot; 每天上午10:15触发 &quot;0 15 10 * * ?&quot; 每天上午10:15触发 &quot;0 15 10 * * ? *&quot; 每天上午10:15触发 &quot;0 15 10 * * ?
-        
-        
-        <div class="read-more-link">
-            <a href="/mixed/cron/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/">Ftp服务器</a>
-        </span>
-        <span class="item__date">
-          May 8, 2018
-        </span>
-        
-         sudo apt-get install vsftpd 运行 sudo service vsftpd status sudo service vsftpd stop sudo service vsftpd restart sudo service vsftpd status  配置vsftpd.conf sudo gedit /etc/vsftpd.conf
-listen=YES local_root=/ anon_root=/ #允许匿名访问 anonymous_enable=YES #允许本地用户对FTP服务器文件有写权限 write_enable=YES #系统自动维护上传和下载日志 xferlog_enable=YES #设定FTP服务器将启用FTP数据端口的连接请求 connect_from_port_20=YES #标准格式写日志文件 xferlog_std_format=YES #设置本地用户默认掩码 local_umask=022 #不允许匿名用户上传文件 anon_upload_enable=YES #不允许匿名用户写文件 anon_mkdir_write_enable=YES #打开匿名用户删除和重命名的权 anon_other_write_enable=YES #设置PAM外挂模块提供的认证服务所使用的配置文件名 pam_service_name=vsftpd #是否允许ftpusers文件中得用户登录FTP服务器，默认为NO userlist_enable=YES #是否使用tcp_wrappers作为主机访问控制方式 tcp_wrappers=YES idle_session_timeout=600 data_connection_timeout=120 max_clients=10 max_per_ip=5 local_max_rate=50000 utf8_filesystem=YES  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/">云服务</a>
-        </span>
-        <span class="item__date">
-          May 7, 2018
-        </span>
-        
-        https://www.heroku.com/ https://blog.csdn.net/cancer94/article/details/54838871
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/%E6%97%B6%E9%97%B4/">时间</a>
-        </span>
-        <span class="item__date">
-          May 4, 2018
-        </span>
-        
-        1小时(h)=60分钟(min) 1分钟(m)=60秒(s) 1秒(s)=1000毫秒(ms) 1毫秒(ms)=1000微秒(μs) 1微秒(μs)=1000纳秒(ns) 1纳秒(ns)=1000皮秒(ps)
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/api%E8%A7%84%E8%8C%83/">Api规范</a>
-        </span>
-        <span class="item__date">
-          May 3, 2018
-        </span>
-        
-           名称 地址     http-status-codes http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml   http-api-design https://github.com/ZhangBohan/http-api-design-ZH_CN   jsonapi http://jsonapi.org.cn/   微软 https://github.com/Microsoft/api-guidelines   PayPal https://segmentfault.com/a/1190000005924733    
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/">文件系统</a>
-        </span>
-        <span class="item__date">
-          May 2, 2018
-        </span>
-        
-           名称 地址     seaweedfs https://github.com/chrislusf/glow    
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/">全球可用的NTP服务器</a>
-        </span>
-        <span class="item__date">
-          Apr 28, 2018
-        </span>
-        
-        http://ntp.org.cn/
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/vps/">Vps</a>
-        </span>
-        <span class="item__date">
-          Apr 28, 2018
-        </span>
-        
-        Vultr : https://www.vultr.com/
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/openvpn/">openvpn</a>
-        </span>
-        <span class="item__date">
-          Oct 31, 2017
-        </span>
-        
-        1 打开终端并安装openvpn用以下命令 sudo apt-get install openvpn network-manager-openvpn  2 打开网络菜单，转到“VPN连接”，然后点击“配置VPN…”。 3 Click on &ldquo;Add&rdquo;. 4 Click on &ldquo;Import a saved VPN configuration&hellip;&rdquo;. 5 Click on &ldquo;Create&rdquo;. 6 Download the OpenVPN configuration, unzip it and import the .ovpn file. 7 Enter your login credentials and click on &ldquo;Save&hellip;&rdquo;. 7a Switch to &ldquo;Advanced Configuration&rdquo; and in the tab &ldquo;TLS Authentication&rdquo; check &ldquo;Use additional TLS authentication&rdquo;. Select the file &ldquo;StaticKey.pem&rdquo; from the configuration and set the &ldquo;Key Direction&rdquo; to &ldquo;0&rdquo;.
-        
-        
-        <div class="read-more-link">
-            <a href="/mixed/openvpn/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/">mongodb可视化</a>
-        </span>
-        <span class="item__date">
-          Sep 26, 2017
-        </span>
-        
-         mongo-express 复制创建配置文件
-cp config.default.js config.js  配置Mongo数据库的连接信息：
-mongo = { db: 'db', host: 'localhost', password: 'pass', port: 27017, ssl: false, url: 'mongodb://localhost:27017/db', username: 'admin', }  配置Web服务的信息 其中根据场景需求，可能需要把  host: process.env.VCAP_APP_HOST || 'localhost'  修改为  host: process.env.VCAP_APP_HOST || '0.0.0.0', 
-修改登录网页所需要的用户名、密码，默认为admin和pass：
-basicAuth: { username: process.env.ME_CONFIG_BASICAUTH_USERNAME || 'admin', password: process.env.ME_CONFIG_BASICAUTH_PASSWORD || 'pass', }  admin feature需要打开，才能够同时管理多个DB
-admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN.toLowerCase() === 'true' : false,  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/android%E9%85%8D%E7%BD%AE/">android配置</a>
-        </span>
-        <span class="item__date">
-          Jun 27, 2017
-        </span>
-        
-        app外build.gradle ext { minSdkVersion = 19 targetSdkVersion = 23 compileSdkVersion = 25 buildToolsVersion = &quot;25.0.2&quot; supportLibraryVersion = &quot;25.+&quot; }  app内build.gradle android { compileSdkVersion rootProject.ext.compileSdkVersion defaultConfig { minSdkVersion rootProject.ext.minSdkVersion targetSdkVersion rootProject.ext.targetSdkVersion } signingConfigs { release { storeFile file(&quot;loresky.jks&quot;) storePassword &quot;123456&quot; keyAlias &quot;loreskykey&quot; keyPassword &quot;123456&quot; } } buildTypes { release { // signingConfig signingConfigs.release // 是否进行dex优化 zipAlignEnabled false // 支持删除一些没有用的资源 shrinkResources false // 是否进行混淆 minifyEnabled false // 混淆文件位置 proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.
-        
-        
-        <div class="read-more-link">
-            <a href="/mixed/android%E9%85%8D%E7%BD%AE/">Read More…</a>
-        </div>
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/maven%E9%85%8D%E7%BD%AE/">maven配置</a>
-        </span>
-        <span class="item__date">
-          Jun 26, 2017
-        </span>
-        
-        本地仓库的配置 &lt;localRepository&gt;/opt/maven/repo&lt;/localRepository&gt;  国内maven repository 在前添加 &lt;mirror&gt; &lt;id&gt;nexus-aliyun&lt;/id&gt; &lt;mirrorOf&gt;*&lt;/mirrorOf&gt; &lt;name&gt;Nexus aliyun&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt; &lt;/mirror&gt;  打包不测试idea&ndash;&gt;maven&ndash;&gt;package&ndash;&gt;Command line: clean package -DskipTests
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/tomcat%E8%AE%BE%E7%BD%AE/">Tomcat设置</a>
-        </span>
-        <span class="item__date">
-          Apr 23, 2017
-        </span>
-        
-        tomcat配置虚拟目录 apache-tomcat-8.0.18\conf\Catalina\localhost 下建一个xml
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;Context path=&quot;/qqq&quot; docBase=&quot;E:\qqq&quot; reloadable=&quot;false&quot; /&gt;  文件名改成你自己的譬如http://localhost:8080/qqq ，文件名就为qqq.xml 再打开Tomcat安装目录,打开conf/web.xml 文件，在其中找到
-&lt;init-param&gt; &lt;param-name&gt;listings&lt;/param-name&gt; &lt;param-value&gt;false&lt;/param-value&gt; &lt;/init-param&gt;  将false设成true保存，重启Tomcat。 在浏览器输入 http://localhost/demo/，就可以显示文件列表了。
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/">MySQL配置文件详解</a>
-        </span>
-        <span class="item__date">
-          Apr 18, 2017
-        </span>
-        
-        找到C:\Program Files\MariaDB 5.5\data\my.ini
-[mysqld]下增加character-set-server=utf8 [client]下增加default-character-set=utf8 [MySQL] 下增加default-character-set=utf8  设置MySQL5.6的远程连接
-use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO root@&quot;%&quot; IDENTIFIED BY &quot;root&quot;; //设置root用户密码 update user set Password = password('123456') where User='root'; //刷新刚才的内容 flush privileges;  
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/vscode%E6%8F%92%E4%BB%B6/">Vscode插件</a>
-        </span>
-        <span class="item__date">
-          Mar 13, 2017
-        </span>
-        
-           名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片    
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/">浏览器插件</a>
-        </span>
-        <span class="item__date">
-          Mar 6, 2017
-        </span>
-        
-            名称 描述     Tampermonkey 脚本管理器   Proxy SwitchyOmega 代理设置   Adblock Plus 广告拦截   uBlock Origin 广告拦截   Awesome Screenshot 网页截图:注释&amp;录屏   OneTab 减轻标签页混乱   Wappalyzer 网站技术分析   SimilarWeb 流量分析   Ghostery 强大的隐私保护   LastPass 密码管理器   Sourcegraph 代码搜索浏览   Octotree github目录树形结构   GiteeTree 码云 Gitee目录树形结构    chrome    名称 描述     广告终结者 广告拦截   Chrono 下载管理器   crxMouse Chrome™ 鼠标手势   易撤销 历史关闭助手   IP Whois 显示网站国家标志   Fatkun 图片批量下载   oscnews 开源中国    firefox    名称 描述     Flagfox 显示网站国家标志    
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/">常用软件</a>
-        </span>
-        <span class="item__date">
-          Mar 3, 2017
-        </span>
-        
-        名称 描述     obs 免费的屏幕录制和视频直播软件   TeamViewer 远程   fd 快速和用户友好的find替代   fzf 模糊搜索神器   ripgrep 一款命令行下最快的文本搜索神器   httpie 类似于cURL的HTTP命令行客户端﹑中文   cloc 统计代码的行数.能够统计空行﹑注释行   transfer.sh 从命令行轻松共享文件   croc 一个能够轻松在互联网上两台电脑之间安全传输文件的工具   SwitchHosts 快速切换hosts   shadowsocks 科学上网   v2ray Project V定制网络体系   WebTorrent 在线播放视频的 BT 下载   FreeTube Youtube 播放器   FlareGet 下载   uGet 下载   RetroArch 全能游戏模拟器   Tor 匿名浏览器﹑网桥   vivaldi 浏览器   Krita 绘画软件   Anki 记忆辅助   Arctime 跨平台字幕软件   PicGo 图片上传+管理   f.
-        
-        
-        <div class="read-more-link">
-            <a href="/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/">Read More…</a>
-        </div>
-        
-        </div>
-        
-     
-    
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/posts/creating-a-new-theme/">Creating a New Theme</a>
+          <a href="serve/posts/creating-a-new-theme/" >Creating a New Theme</a>
         </span>
         <span class="item__date">
           Sep 28, 2014
         </span>
+        <span >
         
         Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
 We&rsquo;ll start with creating a new site with a very basic template.
         
+        </span>
         
-        <div class="read-more-link">
-            <a href="/posts/creating-a-new-theme/">Read More…</a>
+          ... <a class="read-more-symbol" href="serve/posts/creating-a-new-theme/">➦</a>
+        
         </div>
         
-        </div>
+     
+      
         
+      
       <div class="post-list__item">
         <span class="item__title--big">
-          <a href="/posts/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
+          <a href="serve/posts/migrate-from-jekyll/" >Migrate to Hugo from Jekyll</a>
         </span>
         <span class="item__date">
           Mar 10, 2014
         </span>
+        <span >
         
         Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &lt;root&gt;/ ▾ images/ logo.png  should become
 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
         
+        </span>
         
-        <div class="read-more-link">
-            <a href="/posts/migrate-from-jekyll/">Read More…</a>
+          ... <a class="read-more-symbol" href="serve/posts/migrate-from-jekyll/">➦</a>
+        
         </div>
         
-        </div>
+     
+      
         
+      
       <div class="post-list__item">
         <span class="item__title--big">
-          <a href="/posts/openvpn/">openvpn</a>
+          <a href="serve/posts/openvpn/" >openvpn</a>
         </span>
         <span class="item__date">
           Oct 31, 2017
         </span>
+        <span >
         
         1 打开终端并安装openvpn用以下命令 sudo apt-get install openvpn network-manager-openvpn
 here&rsquo;s my link
         
+        </span>
         
         </div>
         
+     
+      
+        
+      
       <div class="post-list__item">
         <span class="item__title--big">
-          <a href="/posts/goisforlovers/">(Hu)go Template Primer</a>
+          <a href="serve/posts/goisforlovers/" >(Hu)go Template Primer</a>
         </span>
         <span class="item__date">
           Apr 2, 2014
         </span>
+        <span >
         
         Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.
         
+        </span>
         
-        <div class="read-more-link">
-            <a href="/posts/goisforlovers/">Read More…</a>
+          ... <a class="read-more-symbol" href="serve/posts/goisforlovers/">➦</a>
+        
         </div>
         
-        </div>
+     
+      
         
+      
       <div class="post-list__item">
         <span class="item__title--big">
-          <a href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
+          <a href="serve/posts/hugoisforlovers/" >Getting Started with Hugo</a>
         </span>
         <span class="item__date">
           Apr 2, 2014
         </span>
+        <span >
         
         Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
@@ -1056,70 +296,21 @@ Step 2. Build the Docs Hugo has its own example site which happens to also be th
 Follow the following steps:
  Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:
         
-        
-        <div class="read-more-link">
-            <a href="/posts/hugoisforlovers/">Read More…</a>
-        </div>
-        
-        </div>
-        
-     
-    
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/web/%E7%A7%BB%E5%8A%A8css%E6%A1%86%E6%9E%B6/">移动CSS框架</a>
-        </span>
-        <span class="item__date">
-          May 3, 2018
         </span>
         
-           名称 地址     基于 Material Design 的前端框架 MDU https://gitee.com/zdhxiong/mdui   BootEWA https://boot-web.tk/   移动前端框架 AUI https://gitee.com/liulangnan/aui   移动 UI 框架 Hui https://gitee.com/baisoft_org/Hui   基于 CSS 的动画库 https://gitee.com/xulongchang/animate.css    
-        
-        
-        </div>
-        
-     
-    
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/win/virtualbox%E4%B8%ADwin7%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%ADu%E7%9B%98%E4%B8%8D%E5%8F%AF%E7%94%A8%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/">Virtualbox中win7虚拟机中U盘不可用问题的解决</a>
-        </span>
-        <span class="item__date">
-          Nov 13, 2017
-        </span>
-        
-        主机运行多是Ubuntu17.04，虚拟机是Win7,U盘无反映 安装‘Oracle VM VirtualBox Extension Pack’ 下载地址：http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack
-用户权限添加 添加usbfs 用户组（virtualbox 装完成后会有 vboxusers 和vboxsf ）
-sudo groupadd usbfs
-将你的linux常用用户添加到vboxusers、usbfs这个两个组中 sudo adduser kuein vboxusers
-sudo adduser kuein usbfs
-        
-        
-        </div>
-        
-      <div class="post-list__item">
-        <span class="item__title--big">
-          <a href="/win/win%E7%9A%84linux_location/">win的linux_location</a>
-        </span>
-        <span class="item__date">
-          Jun 15, 2017
-        </span>
-        
-        谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。 里面说到 linux 存放位置在 C:\Users{user}\AppData\Local\lxss{username} 其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。 以及你的 /home 文件夹会在 C:\Users{user}\AppData\Local\lxss\home
-        
+          ... <a class="read-more-symbol" href="serve/posts/hugoisforlovers/">➦</a>
         
         </div>
         
      
   </div>
+  
+
 
         </div>
         
-
-<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
-  integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
-  crossorigin="anonymous">
-</script>
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 
     </body>

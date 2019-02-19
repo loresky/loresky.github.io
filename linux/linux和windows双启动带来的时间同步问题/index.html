@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.47.1" />
+<meta name="generator" content="Hugo 0.53" />
 
     
     
@@ -29,8 +29,9 @@
 <meta property="og:description" content="via:http://www.theitstuff.com/how-to-sync-time-between-linux-and-windows-dual-boot-2
  点击 Windows 系统中的开始菜单，然后搜索 regedit HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation。 在右边窗口，右键点击空白位置，然后选择 New &gt;&gt; DWORD(32 bit) Value。 之后，你会新生成一个条目，而且这个条目默认是高亮的。将这个条目重命名为 RealTimeIsUniversal 并设置值为 1 所有的配置就完成了，下次重启，就不会再有时间同步问题了。  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://loresky.github.io/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/" /><meta property="article:published_time" content="2018-04-28T17:48:31&#43;08:00"/>
+<meta property="og:url" content="serve/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/" /><meta property="article:published_time" content="2018-04-28T17:48:31&#43;08:00"/>
 <meta property="article:modified_time" content="2018-04-28T17:48:31&#43;08:00"/><meta property="og:site_name" content="Title" />
+
 
     
 
@@ -40,8 +41,16 @@
 
 
 
-<link rel="stylesheet" href="/css/hyde-hyde.css">
-<link rel="stylesheet" href="/css/print.min.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -56,32 +65,39 @@
 </head>
 
 
-    <body >
-        
+    <body class=" ">
+    
 <div class="sidebar">
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://loresky.github.io/"></a>
+        <a href="serve"></a>
       </span>
       
+        
+        
+        
+        <div class="author-image">
+          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
       
-      
-      <div class="author-image">
-        <img src="https://loresky.github.io/img/hugo.png" alt="Author Image" class="img--circle img--headshot element--center"> 
-      </div>
       
       <p class="site__description">
          生面 
       </p>
     </div>
-    <div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
 	<ul class="sidebar-nav">
 		 
 		 
 			 
 				<li>
-					<a href="/posts/">
+					<a href="serve/posts/">
 						<span>Posts</span>
 					</a>
 				</li>
@@ -89,7 +105,7 @@
 		 
 			 
 				<li>
-					<a href="/docker/">
+					<a href="serve/docker/">
 						<span>Docker</span>
 					</a>
 				</li>
@@ -97,7 +113,7 @@
 		 
 			 
 				<li>
-					<a href="/git/">
+					<a href="serve/git/">
 						<span>Git</span>
 					</a>
 				</li>
@@ -105,7 +121,7 @@
 		 
 			 
 				<li>
-					<a href="/go/">
+					<a href="serve/go/">
 						<span>Go</span>
 					</a>
 				</li>
@@ -113,7 +129,7 @@
 		 
 			 
 				<li>
-					<a href="/linux/">
+					<a href="serve/linux/">
 						<span>Linux</span>
 					</a>
 				</li>
@@ -121,7 +137,7 @@
 		 
 			 
 				<li>
-					<a href="/mixed/">
+					<a href="serve/mixed/">
 						<span>Mixed</span>
 					</a>
 				</li>
@@ -129,7 +145,7 @@
 		 
 			 
 				<li>
-					<a href="/web/">
+					<a href="serve/web/">
 						<span>Web</span>
 					</a>
 				</li>
@@ -137,7 +153,7 @@
 		 
 			 
 				<li>
-					<a href="/win/">
+					<a href="serve/win/">
 						<span>Win</span>
 					</a>
 				</li>
@@ -147,8 +163,8 @@
 	</ul>
 </div>
 
-    <p>
-      <section class="social">
+        <section class="social">
+	
 	
 	
 	
@@ -164,16 +180,11 @@
 	
 </section>
 
-    </p>
-    <p class="copyright">
-      &copy; 2018 Author.
-      <a href="https://creativecommons.org/licenses/by-sa/4.0">Some Rights Reserved</a>.
-      <br/>Built with
-      <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
-      
-    </p>
-  </div>
-  <div>
+      </div>
+    </div>
+    
+
+
   </div>
 </div>
 
@@ -182,7 +193,7 @@
     <article>
   <header>
     <h1>Linux和Windows双启动带来的时间同步问题</h1>
-     
+    
     
 <div class="post__meta">
     
@@ -199,6 +210,8 @@
 
 
   </header>
+  
+  
   <div class="post">
     <p><strong>via:</strong><a href="http://www.theitstuff.com/how-to-sync-time-between-linux-and-windows-dual-boot-2">http://www.theitstuff.com/how-to-sync-time-between-linux-and-windows-dual-boot-2</a></p>
 
@@ -213,15 +226,15 @@
   </div>
   
 
-<div class="post--navigation post--navigation-single">
+<div class="navigation navigation-single">
     
-    <a href="/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/" class="post--navigation-prev">
+    <a href="serve/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
       <span class="navigation-tittle">linux程序端口占用情况</span>
     </a>
     
     
-    <a href="/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/" class="post--navigation-next">
+    <a href="serve/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/" class="navigation-next">
       <span class="navigation-tittle">Linux开源镜像站</span>
       <i aria-hidden="true" class="fa fa-chevron-right"></i>
     </a>
@@ -241,23 +254,20 @@
         </div>
         
     
-<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
-  integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
-  crossorigin="anonymous">
-</script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 
     
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
         
+    
+    <script type="text/javascript">
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        
-        <script type="text/javascript">
-            hljs.configure({languages: []});
-            hljs.initHighlightingOnLoad();
-        </script>
-        
-        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
 
 
 

@@ -8,7 +8,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.47.1" />
+<meta name="generator" content="Hugo 0.53" />
 
     
     
@@ -24,8 +24,9 @@
 <meta property="og:title" content="Linuxes" />
 <meta property="og:description" content="生面" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://loresky.github.io/linux/" />
+<meta property="og:url" content="serve/linux/" />
 <meta property="og:updated_time" content="2018-06-07T10:37:07&#43;08:00"/><meta property="og:site_name" content="Title" />
+
 
     
 
@@ -35,8 +36,16 @@
 
 
 
-<link rel="stylesheet" href="/css/hyde-hyde.css">
-<link rel="stylesheet" href="/css/print.min.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,39 +57,46 @@
     <link rel="shortcut icon" href="/favicon.png">
     
 
-<link href="https://loresky.github.io/linux/index.xml" rel="alternate" type="application/rss+xml" title="" />
-<link href="https://loresky.github.io/linux/index.xml" rel="feed" type="application/rss+xml" title="" />
+<link href="serve/linux/index.xml" rel="alternate" type="application/rss+xml" title="" />
+<link href="serve/linux/index.xml" rel="feed" type="application/rss+xml" title="" />
 
 
 </head>
 
 
-    <body >
-        
+    <body class=" ">
+    
 <div class="sidebar">
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://loresky.github.io/"></a>
+        <a href="serve"></a>
       </span>
       
+        
+        
+        
+        <div class="author-image">
+          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
       
-      
-      <div class="author-image">
-        <img src="https://loresky.github.io/img/hugo.png" alt="Author Image" class="img--circle img--headshot element--center"> 
-      </div>
       
       <p class="site__description">
          生面 
       </p>
     </div>
-    <div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
 	<ul class="sidebar-nav">
 		 
 		 
 			 
 				<li>
-					<a href="/posts/">
+					<a href="serve/posts/">
 						<span>Posts</span>
 					</a>
 				</li>
@@ -88,7 +104,7 @@
 		 
 			 
 				<li>
-					<a href="/docker/">
+					<a href="serve/docker/">
 						<span>Docker</span>
 					</a>
 				</li>
@@ -96,7 +112,7 @@
 		 
 			 
 				<li>
-					<a href="/git/">
+					<a href="serve/git/">
 						<span>Git</span>
 					</a>
 				</li>
@@ -104,7 +120,7 @@
 		 
 			 
 				<li>
-					<a href="/go/">
+					<a href="serve/go/">
 						<span>Go</span>
 					</a>
 				</li>
@@ -112,7 +128,7 @@
 		 
 			 
 				<li>
-					<a href="/linux/">
+					<a href="serve/linux/">
 						<span>Linux</span>
 					</a>
 				</li>
@@ -120,7 +136,7 @@
 		 
 			 
 				<li>
-					<a href="/mixed/">
+					<a href="serve/mixed/">
 						<span>Mixed</span>
 					</a>
 				</li>
@@ -128,7 +144,7 @@
 		 
 			 
 				<li>
-					<a href="/web/">
+					<a href="serve/web/">
 						<span>Web</span>
 					</a>
 				</li>
@@ -136,7 +152,7 @@
 		 
 			 
 				<li>
-					<a href="/win/">
+					<a href="serve/win/">
 						<span>Win</span>
 					</a>
 				</li>
@@ -146,8 +162,8 @@
 	</ul>
 </div>
 
-    <p>
-      <section class="social">
+        <section class="social">
+	
 	
 	
 	
@@ -163,16 +179,11 @@
 	
 </section>
 
-    </p>
-    <p class="copyright">
-      &copy; 2018 Author.
-      <a href="https://creativecommons.org/licenses/by-sa/4.0">Some Rights Reserved</a>.
-      <br/>Built with
-      <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
-      
-    </p>
-  </div>
-  <div>
+      </div>
+    </div>
+    
+
+
   </div>
 </div>
 
@@ -184,84 +195,85 @@
         
 <li>
   <span class="list__title--small">
-    <a href="/linux/%E6%9F%A5%E7%9C%8Blinux%E5%8F%91%E8%A1%8C%E7%89%88%E5%90%8D%E7%A7%B0%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%B7/">查看Linux发行版名称和版本号</a>
+    <a href="serve/linux/%E6%9F%A5%E7%9C%8Blinux%E5%8F%91%E8%A1%8C%E7%89%88%E5%90%8D%E7%A7%B0%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%B7/" >查看Linux发行版名称和版本号</a>
       
-      <time class="pull-right hidden-tablet">Jun 07 &#39;18</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/">Linux开源镜像站</a>
-      
-      <time class="pull-right hidden-tablet">Apr 29 &#39;18</time>
+      <time class="pull-right hidden-tablet">Jun 7, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/">Linux和Windows双启动带来的时间同步问题</a>
+    <a href="serve/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/" >Linux开源镜像站</a>
       
-      <time class="pull-right hidden-tablet">Apr 28 &#39;18</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/">linux程序端口占用情况</a>
-      
-      <time class="pull-right hidden-tablet">Jul 03 &#39;17</time>
+      <time class="pull-right hidden-tablet">Apr 29, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/linux/linux%E7%A1%AC%E7%9B%98%E5%AE%89%E8%A3%85/">linux硬盘安装</a>
+    <a href="serve/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/" >Linux和Windows双启动带来的时间同步问题</a>
       
-      <time class="pull-right hidden-tablet">Jul 03 &#39;17</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/linux/grub2%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8win7/">grub2命令启动win7</a>
-      
-      <time class="pull-right hidden-tablet">Jul 03 &#39;17</time>
+      <time class="pull-right hidden-tablet">Apr 28, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">linux常用命令</a>
+    <a href="serve/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/" >linux程序端口占用情况</a>
       
-      <time class="pull-right hidden-tablet">Jun 28 &#39;17</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/linux/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/">linux忘记root密码</a>
-      
-      <time class="pull-right hidden-tablet">Apr 23 &#39;17</time>
+      <time class="pull-right hidden-tablet">Jul 3, 2017</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/linux/linux%E9%85%8D%E7%BD%AE/">linux配置</a>
+    <a href="serve/linux/linux%E7%A1%AC%E7%9B%98%E5%AE%89%E8%A3%85/" >linux硬盘安装</a>
       
-      <time class="pull-right hidden-tablet">Apr 23 &#39;17</time>
+      <time class="pull-right hidden-tablet">Jul 3, 2017</time>
       
   </span>
 </li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/linux/grub2%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8win7/" >grub2命令启动win7</a>
+      
+      <time class="pull-right hidden-tablet">Jul 3, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" >linux常用命令</a>
+      
+      <time class="pull-right hidden-tablet">Jun 28, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/linux/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/" >linux忘记root密码</a>
+      
+      <time class="pull-right hidden-tablet">Apr 23, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/linux/linux%E9%85%8D%E7%BD%AE/" >linux配置</a>
+      
+      <time class="pull-right hidden-tablet">Apr 23, 2017</time>
+      
+  </span>
+</li>
+
 
     
 </ul>
@@ -270,10 +282,7 @@
         </div>
         
     
-<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
-  integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
-  crossorigin="anonymous">
-</script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 
 

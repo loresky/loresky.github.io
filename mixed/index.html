@@ -8,7 +8,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.47.1" />
+<meta name="generator" content="Hugo 0.53" />
 
     
     
@@ -24,8 +24,9 @@
 <meta property="og:title" content="Mixeds" />
 <meta property="og:description" content="生面" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://loresky.github.io/mixed/" />
-<meta property="og:updated_time" content="2018-09-05T15:04:44&#43;08:00"/><meta property="og:site_name" content="Title" />
+<meta property="og:url" content="serve/mixed/" />
+<meta property="og:updated_time" content="2019-02-15T14:53:09&#43;08:00"/><meta property="og:site_name" content="Title" />
+
 
     
 
@@ -35,8 +36,16 @@
 
 
 
-<link rel="stylesheet" href="/css/hyde-hyde.css">
-<link rel="stylesheet" href="/css/print.min.css" media="print">
+
+
+
+
+<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,39 +57,46 @@
     <link rel="shortcut icon" href="/favicon.png">
     
 
-<link href="https://loresky.github.io/mixed/index.xml" rel="alternate" type="application/rss+xml" title="" />
-<link href="https://loresky.github.io/mixed/index.xml" rel="feed" type="application/rss+xml" title="" />
+<link href="serve/mixed/index.xml" rel="alternate" type="application/rss+xml" title="" />
+<link href="serve/mixed/index.xml" rel="feed" type="application/rss+xml" title="" />
 
 
 </head>
 
 
-    <body >
-        
+    <body class=" ">
+    
 <div class="sidebar">
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://loresky.github.io/"></a>
+        <a href="serve"></a>
       </span>
       
+        
+        
+        
+        <div class="author-image">
+          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
       
-      
-      <div class="author-image">
-        <img src="https://loresky.github.io/img/hugo.png" alt="Author Image" class="img--circle img--headshot element--center"> 
-      </div>
       
       <p class="site__description">
          生面 
       </p>
     </div>
-    <div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
 	<ul class="sidebar-nav">
 		 
 		 
 			 
 				<li>
-					<a href="/posts/">
+					<a href="serve/posts/">
 						<span>Posts</span>
 					</a>
 				</li>
@@ -88,7 +104,7 @@
 		 
 			 
 				<li>
-					<a href="/docker/">
+					<a href="serve/docker/">
 						<span>Docker</span>
 					</a>
 				</li>
@@ -96,7 +112,7 @@
 		 
 			 
 				<li>
-					<a href="/git/">
+					<a href="serve/git/">
 						<span>Git</span>
 					</a>
 				</li>
@@ -104,7 +120,7 @@
 		 
 			 
 				<li>
-					<a href="/go/">
+					<a href="serve/go/">
 						<span>Go</span>
 					</a>
 				</li>
@@ -112,7 +128,7 @@
 		 
 			 
 				<li>
-					<a href="/linux/">
+					<a href="serve/linux/">
 						<span>Linux</span>
 					</a>
 				</li>
@@ -120,7 +136,7 @@
 		 
 			 
 				<li>
-					<a href="/mixed/">
+					<a href="serve/mixed/">
 						<span>Mixed</span>
 					</a>
 				</li>
@@ -128,7 +144,7 @@
 		 
 			 
 				<li>
-					<a href="/web/">
+					<a href="serve/web/">
 						<span>Web</span>
 					</a>
 				</li>
@@ -136,7 +152,7 @@
 		 
 			 
 				<li>
-					<a href="/win/">
+					<a href="serve/win/">
 						<span>Win</span>
 					</a>
 				</li>
@@ -146,8 +162,8 @@
 	</ul>
 </div>
 
-    <p>
-      <section class="social">
+        <section class="social">
+	
 	
 	
 	
@@ -163,16 +179,11 @@
 	
 </section>
 
-    </p>
-    <p class="copyright">
-      &copy; 2018 Author.
-      <a href="https://creativecommons.org/licenses/by-sa/4.0">Some Rights Reserved</a>.
-      <br/>Built with
-      <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
-      
-    </p>
-  </div>
-  <div>
+      </div>
+    </div>
+    
+
+
   </div>
 </div>
 
@@ -184,174 +195,211 @@
         
 <li>
   <span class="list__title--small">
-    <a href="/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/">大公司github</a>
+    <a href="serve/mixed/vue/" >Vue</a>
       
-      <time class="pull-right hidden-tablet">Sep 05 &#39;18</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/">Java第三方</a>
-      
-      <time class="pull-right hidden-tablet">Sep 05 &#39;18</time>
+      <time class="pull-right hidden-tablet">Feb 15, 2019</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/cron/">Cron</a>
+    <a href="serve/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/" >Vegeta负载测试工具</a>
       
-      <time class="pull-right hidden-tablet">Jun 14 &#39;18</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/">Ftp服务器</a>
-      
-      <time class="pull-right hidden-tablet">May 08 &#39;18</time>
+      <time class="pull-right hidden-tablet">Jan 29, 2019</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/">云服务</a>
+    <a href="serve/mixed/caddy/" >Caddy</a>
       
-      <time class="pull-right hidden-tablet">May 07 &#39;18</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/%E6%97%B6%E9%97%B4/">时间</a>
-      
-      <time class="pull-right hidden-tablet">May 04 &#39;18</time>
+      <time class="pull-right hidden-tablet">Jan 28, 2019</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/api%E8%A7%84%E8%8C%83/">Api规范</a>
+    <a href="serve/mixed/game/" >Game</a>
       
-      <time class="pull-right hidden-tablet">May 03 &#39;18</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/">文件系统</a>
-      
-      <time class="pull-right hidden-tablet">May 02 &#39;18</time>
+      <time class="pull-right hidden-tablet">Nov 13, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/">全球可用的NTP服务器</a>
+    <a href="serve/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/" >Java第三方</a>
       
-      <time class="pull-right hidden-tablet">Apr 28 &#39;18</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/vps/">Vps</a>
-      
-      <time class="pull-right hidden-tablet">Apr 28 &#39;18</time>
+      <time class="pull-right hidden-tablet">Sep 5, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/openvpn/">openvpn</a>
+    <a href="serve/mixed/cron/" >Cron</a>
       
-      <time class="pull-right hidden-tablet">Oct 31 &#39;17</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/">mongodb可视化</a>
-      
-      <time class="pull-right hidden-tablet">Sep 26 &#39;17</time>
+      <time class="pull-right hidden-tablet">Jun 14, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/android%E9%85%8D%E7%BD%AE/">android配置</a>
+    <a href="serve/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/" >Ftp服务器</a>
       
-      <time class="pull-right hidden-tablet">Jun 27 &#39;17</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/maven%E9%85%8D%E7%BD%AE/">maven配置</a>
-      
-      <time class="pull-right hidden-tablet">Jun 26 &#39;17</time>
+      <time class="pull-right hidden-tablet">May 8, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/tomcat%E8%AE%BE%E7%BD%AE/">Tomcat设置</a>
+    <a href="serve/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/" >云服务</a>
       
-      <time class="pull-right hidden-tablet">Apr 23 &#39;17</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/">MySQL配置文件详解</a>
-      
-      <time class="pull-right hidden-tablet">Apr 18 &#39;17</time>
+      <time class="pull-right hidden-tablet">May 7, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/vscode%E6%8F%92%E4%BB%B6/">Vscode插件</a>
+    <a href="serve/mixed/%E6%97%B6%E9%97%B4/" >时间</a>
       
-      <time class="pull-right hidden-tablet">Mar 13 &#39;17</time>
-      
-  </span>
-</li>
-
-<li>
-  <span class="list__title--small">
-    <a href="/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/">浏览器插件</a>
-      
-      <time class="pull-right hidden-tablet">Mar 06 &#39;17</time>
+      <time class="pull-right hidden-tablet">May 4, 2018</time>
       
   </span>
 </li>
 
 <li>
   <span class="list__title--small">
-    <a href="/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/">常用软件</a>
+    <a href="serve/mixed/api%E8%A7%84%E8%8C%83/" >Api规范</a>
       
-      <time class="pull-right hidden-tablet">Mar 03 &#39;17</time>
+      <time class="pull-right hidden-tablet">May 3, 2018</time>
       
   </span>
 </li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" >文件系统</a>
+      
+      <time class="pull-right hidden-tablet">May 2, 2018</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/" >全球可用的NTP服务器</a>
+      
+      <time class="pull-right hidden-tablet">Apr 28, 2018</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/vps/" >Vps</a>
+      
+      <time class="pull-right hidden-tablet">Apr 28, 2018</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/openvpn/" >openvpn</a>
+      
+      <time class="pull-right hidden-tablet">Oct 31, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/" >mongodb可视化</a>
+      
+      <time class="pull-right hidden-tablet">Sep 26, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/android%E9%85%8D%E7%BD%AE/" >android配置</a>
+      
+      <time class="pull-right hidden-tablet">Jun 27, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/maven%E9%85%8D%E7%BD%AE/" >maven配置</a>
+      
+      <time class="pull-right hidden-tablet">Jun 26, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/tomcat%E8%AE%BE%E7%BD%AE/" >Tomcat设置</a>
+      
+      <time class="pull-right hidden-tablet">Apr 23, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/" >MySQL配置文件详解</a>
+      
+      <time class="pull-right hidden-tablet">Apr 18, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/" >大公司github</a>
+      
+      <time class="pull-right hidden-tablet">Mar 13, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/vscode%E6%8F%92%E4%BB%B6/" >Vscode插件</a>
+      
+      <time class="pull-right hidden-tablet">Mar 13, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" >浏览器插件</a>
+      
+      <time class="pull-right hidden-tablet">Mar 6, 2017</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="serve/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/" >常用软件</a>
+      
+      <time class="pull-right hidden-tablet">Mar 3, 2017</time>
+      
+  </span>
+</li>
+
 
     
 </ul>
@@ -360,10 +408,7 @@
         </div>
         
     
-<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
-  integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
-  crossorigin="anonymous">
-</script>
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 
 

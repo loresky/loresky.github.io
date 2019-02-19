@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.53" />
+
+    
+    
+    
+
+<title>docker库命令 • </title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="docker库命令"/>
+<meta name="twitter:description" content=" nginx docker run -idt -p 80:80 -v /www:/usr/share/nginx/html:ro -v /config/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx  mysql  docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -v ~/mysql/conf:/etc/mysql/conf.d -v ~/mysql/data:/var/lib/mysql -d mysql  redis docker run -d -p 6379:6379 -v ~/redis/data:/data -d redis:latest redis-server --appendonly yes --requirepass &quot;123456&quot;  "/>
+
+<meta property="og:title" content="docker库命令" />
+<meta property="og:description" content=" nginx docker run -idt -p 80:80 -v /www:/usr/share/nginx/html:ro -v /config/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx  mysql  docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -v ~/mysql/conf:/etc/mysql/conf.d -v ~/mysql/data:/var/lib/mysql -d mysql  redis docker run -d -p 6379:6379 -v ~/redis/data:/data -d redis:latest redis-server --appendonly yes --requirepass &quot;123456&quot;  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="serve/docker/docker%E5%BA%93%E5%91%BD%E4%BB%A4/" /><meta property="article:published_time" content="2019-01-21T10:39:11&#43;08:00"/>
+<meta property="article:modified_time" content="2019-01-21T10:39:11&#43;08:00"/><meta property="og:site_name" content="Title" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="serve"></a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+         生面 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="serve/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="serve/docker/">
+						<span>Docker</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="serve/git/">
+						<span>Git</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="serve/go/">
+						<span>Go</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="serve/linux/">
+						<span>Linux</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="serve/mixed/">
+						<span>Mixed</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="serve/web/">
+						<span>Web</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="serve/win/">
+						<span>Win</span>
+					</a>
+				</li>
+			 
+		
+		</li>
+	</ul>
+</div>
+
+        <section class="social">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    <article>
+  <header>
+    <h1>docker库命令</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Jan 21, 2019
+    
+    
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 1 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    
+
+<h2 id="nginx">nginx</h2>
+
+<pre><code>docker run  -idt -p 80:80 -v /www:/usr/share/nginx/html:ro  -v /config/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+</code></pre>
+
+<h2 id="mysql">mysql</h2>
+
+<pre><code> docker run  -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456  -v ~/mysql/conf:/etc/mysql/conf.d  -v ~/mysql/data:/var/lib/mysql -d mysql
+</code></pre>
+
+<h2 id="redis">redis</h2>
+
+<pre><code>docker run -d -p 6379:6379 -v ~/redis/data:/data -d redis:latest redis-server --appendonly yes --requirepass &quot;123456&quot;
+</code></pre>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="serve/docker/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">docker常用命令</span>
+    </a>
+    
+    
+</div>
+
+
+  
+
+  
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
+</html>
