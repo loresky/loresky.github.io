@@ -167,13 +167,16 @@ dependencies {
 
     implementation "com.liulishuo.okdownload:okhttp:1.0.5"
 
+    implementation 'com.github.GrenderG:Toasty:1.4.0'
+    implementation 'com.tencent:mmkv:1.0.17'
+
 //    implementation 'me.yokeyword:fragmentation:1.3.6'
 }
 ```
 
 
 ******
-```
+```java
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
@@ -277,6 +280,9 @@ dependencies {
 
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+
+    implementation 'com.github.GrenderG:Toasty:1.4.0'
+    implementation 'com.tencent:mmkv:1.0.17'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
