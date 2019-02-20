@@ -27,7 +27,7 @@
 <meta property="og:title" content="go内置函数" />
 <meta property="og:description" content=" Go 语言拥有一些不需要进行导入操作就可以使用的内置函数。它们有时可以针对不同的类型进行操作，例如：len、cap 和 append，或必须用于系统级的操作，例如：panic。因此，它们需要直接获得编译器的支持。    名称 说明     close 用于管道通信   len/cap len 用于返回某个类型的长度或数量（字符串、数组、切片、map 和管道）；cap 是容量的意思，用于返回某个类型的最大容量（只能用于切片和 map）   new/make new 和 make 均是用于分配内存：new 用于值类型和用户定义的类型，如自定义结构，make 用户内置引用类型（切片、map 和管道）。它们的用法就像是函数，但是将类型作为参数：new(type)、make(type)。new(T) 分配类型 T 的零值并返回其地址，也就是指向类型 T 的指针。它也可以被用于基本类型：v := new(int)。make(T) 返回类型 T 的初始化之后的值，因此它比 new 进行更多的工作,new() 是一个函数，不要忘记它的括号   copy/append 用于复制和连接切片   panic/recover 两者均用于错误处理机制   print/println 底层打印函数，在部署环境中建议使用 fmt 包   complex/realimag 用于创建和操作复数    " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="serve/go/go%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" /><meta property="article:published_time" content="2018-01-06T19:54:28&#43;00:00"/>
+<meta property="og:url" content="https://loresky.github.io/go/go%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/" /><meta property="article:published_time" content="2018-01-06T19:54:28&#43;00:00"/>
 <meta property="article:modified_time" content="2018-01-06T19:54:28&#43;00:00"/><meta property="og:site_name" content="Title" />
 
 
@@ -43,10 +43,10 @@
 
 
 
-<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
 
 
-<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -69,14 +69,14 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="serve"></a>
+        <a href="https://loresky.github.io"></a>
       </span>
       
         
         
         
         <div class="author-image">
-          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+          <img src="https://loresky.github.ioimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
         </div>
         
       
@@ -95,7 +95,7 @@
 		 
 			 
 				<li>
-					<a href="serve/posts/">
+					<a href="/posts/">
 						<span>Posts</span>
 					</a>
 				</li>
@@ -103,7 +103,7 @@
 		 
 			 
 				<li>
-					<a href="serve/docker/">
+					<a href="/docker/">
 						<span>Docker</span>
 					</a>
 				</li>
@@ -111,7 +111,7 @@
 		 
 			 
 				<li>
-					<a href="serve/git/">
+					<a href="/git/">
 						<span>Git</span>
 					</a>
 				</li>
@@ -119,7 +119,7 @@
 		 
 			 
 				<li>
-					<a href="serve/go/">
+					<a href="/go/">
 						<span>Go</span>
 					</a>
 				</li>
@@ -127,7 +127,7 @@
 		 
 			 
 				<li>
-					<a href="serve/linux/">
+					<a href="/linux/">
 						<span>Linux</span>
 					</a>
 				</li>
@@ -135,7 +135,7 @@
 		 
 			 
 				<li>
-					<a href="serve/mixed/">
+					<a href="/mixed/">
 						<span>Mixed</span>
 					</a>
 				</li>
@@ -143,7 +143,7 @@
 		 
 			 
 				<li>
-					<a href="serve/web/">
+					<a href="/web/">
 						<span>Web</span>
 					</a>
 				</li>
@@ -151,7 +151,7 @@
 		 
 			 
 				<li>
-					<a href="serve/win/">
+					<a href="/win/">
 						<span>Win</span>
 					</a>
 				</li>
@@ -266,13 +266,13 @@
 
 <div class="navigation navigation-single">
     
-    <a href="serve/go/go%E8%BF%BD%E8%B8%AA%E5%92%8Cdefer/" class="navigation-prev">
+    <a href="/go/go%E8%BF%BD%E8%B8%AA%E5%92%8Cdefer/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
       <span class="navigation-tittle">go追踪和defer</span>
     </a>
     
     
-    <a href="serve/go/go%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0/" class="navigation-next">
+    <a href="/go/go%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0/" class="navigation-next">
       <span class="navigation-tittle">go递归函数</span>
       <i aria-hidden="true" class="fa fa-chevron-right"></i>
     </a>

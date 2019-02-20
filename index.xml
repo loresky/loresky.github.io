@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>serve/</link>
+    <link>https://loresky.github.io/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="serve/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loresky.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating a New Theme</title>
-      <link>serve/posts/creating-a-new-theme/</link>
+      <link>https://loresky.github.io/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>serve/posts/creating-a-new-theme/</guid>
+      <guid>https://loresky.github.io/posts/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>serve/posts/migrate-from-jekyll/</link>
+      <link>https://loresky.github.io/posts/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>serve/posts/migrate-from-jekyll/</guid>
+      <guid>https://loresky.github.io/posts/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
@@ -34,112 +34,112 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     
     <item>
       <title>Vue</title>
-      <link>serve/mixed/vue/</link>
+      <link>https://loresky.github.io/mixed/vue/</link>
       <pubDate>Fri, 15 Feb 2019 14:53:09 +0800</pubDate>
       
-      <guid>serve/mixed/vue/</guid>
+      <guid>https://loresky.github.io/mixed/vue/</guid>
       <description> log  vuejs-logger  mock  mockjs  </description>
     </item>
     
     <item>
       <title>Vegeta负载测试工具</title>
-      <link>serve/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
+      <link>https://loresky.github.io/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Tue, 29 Jan 2019 14:28:42 +0800</pubDate>
       
-      <guid>serve/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://loresky.github.io/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
       <description>$ vegeta --help Usage: vegeta [global flags] &amp;lt;command&amp;gt; [command flags] global flags: -cpus int 使用 CPU 的数量 (默认为 4 个) -profile string 指定在执行期间启用哪个分析器，支持 cpu 和 heap。 -version 打印版本并退出。 attack command: -body string 指定请求主体文件里的内容。 -cert string 指定用于 HTTPS 请求的 PEM 格式的客户端证书文件。如果 -key 未指定，它会被设置为这个标志的值。 -connections int 指定每个目标主机打开的空闲连接的最大数目，默认值为 10000。 -duration duration 指定发送请求到目标主机的时长，用 0 表示永久。 -header value 指定目标的请求头，可以重复指定多个请求头。 -http2 指定是否向支持的服务器发送 HTTP/2 请求，默认为：true。 -insecure 指定是否忽略无效的服务器 TLS 证书。 -keepalive 指定是否使用持久链接，默认值为：true。 -key string 指定 HTTPS 请求中使用的 PEM 编码的 SSL 客户端证书私钥文件。 -laddr value 指定要使用的本地 I P地址，默认值为：0.</description>
     </item>
     
     <item>
       <title>Caddy</title>
-      <link>serve/mixed/caddy/</link>
+      <link>https://loresky.github.io/mixed/caddy/</link>
       <pubDate>Mon, 28 Jan 2019 16:05:01 +0800</pubDate>
       
-      <guid>serve/mixed/caddy/</guid>
+      <guid>https://loresky.github.io/mixed/caddy/</guid>
       <description> 文件管理 Caddyfile
 192.168.10.185:8081 filebrowser / ./zoom  </description>
     </item>
     
     <item>
       <title>docker库命令</title>
-      <link>serve/docker/docker%E5%BA%93%E5%91%BD%E4%BB%A4/</link>
+      <link>https://loresky.github.io/docker/docker%E5%BA%93%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Mon, 21 Jan 2019 10:39:11 +0800</pubDate>
       
-      <guid>serve/docker/docker%E5%BA%93%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://loresky.github.io/docker/docker%E5%BA%93%E5%91%BD%E4%BB%A4/</guid>
       <description> nginx docker run -idt -p 80:80 -v /www:/usr/share/nginx/html:ro -v /config/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx  mysql  docker run -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -v ~/mysql/conf:/etc/mysql/conf.d -v ~/mysql/data:/var/lib/mysql -d mysql  redis docker run -d -p 6379:6379 -v ~/redis/data:/data -d redis:latest redis-server --appendonly yes --requirepass &amp;quot;123456&amp;quot;  </description>
     </item>
     
     <item>
       <title>Game</title>
-      <link>serve/mixed/game/</link>
+      <link>https://loresky.github.io/mixed/game/</link>
       <pubDate>Tue, 13 Nov 2018 11:03:01 +0800</pubDate>
       
-      <guid>serve/mixed/game/</guid>
+      <guid>https://loresky.github.io/mixed/game/</guid>
       <description>   名称 描述     flightgear 飞行模拟器   坎巴拉太空计划 航空航天模拟游戏    </description>
     </item>
     
     <item>
       <title>Java第三方</title>
-      <link>serve/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</link>
+      <link>https://loresky.github.io/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</link>
       <pubDate>Wed, 05 Sep 2018 14:51:34 +0800</pubDate>
       
-      <guid>serve/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</guid>
+      <guid>https://loresky.github.io/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</guid>
       <description> Json  Gson：谷歌官方推出的JSON处理库. Fastjson：阿里巴巴的开源JSON解析库.  加密库  tink：Java and Android, C++ and Obj-C.  日期时间  joda-time  java规范  p3c  Java反编译器  jadx  Android 工具类  AndroidUtilCode  日志  logger  图片压缩  Luban：图片压缩工具，仿微信朋友圈压缩策略.   Sql  Realm：移动数据库https://realm.io/cn. ObjectBox：NoSQL移动数据库.  Webview  AgentWeb：基于Android WebView轻量和极度灵活.  内存泄露  LeakCanary  资源混淆  AndResGuard：缩小APK大小的工具.  防混淆  FreeProGuard：Android防混淆配置.  计算方法数  Dexcount  节码优化器  ReDex  </description>
     </item>
     
     <item>
       <title>项目迁移</title>
-      <link>serve/git/%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB/</link>
+      <link>https://loresky.github.io/git/%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB/</link>
       <pubDate>Wed, 04 Jul 2018 10:16:42 +0800</pubDate>
       
-      <guid>serve/git/%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB/</guid>
+      <guid>https://loresky.github.io/git/%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB/</guid>
       <description>将远程配置删除 git remote rm origin 添加远程地址
 git remote add origin 分支重命名 git branch -m oldbranch newbranch</description>
     </item>
     
     <item>
       <title>Cron</title>
-      <link>serve/mixed/cron/</link>
+      <link>https://loresky.github.io/mixed/cron/</link>
       <pubDate>Thu, 14 Jun 2018 16:33:06 +0800</pubDate>
       
-      <guid>serve/mixed/cron/</guid>
+      <guid>https://loresky.github.io/mixed/cron/</guid>
       <description>cron表达式  按顺序依次为 1 秒（0~59） 2 分钟（0~59） 3 小时（0~23） 4 天（0~31） 5 月（0~11） 6 星期（1~7 1=SUN 或 SUN，MON，TUE，WED，THU，FRI，SAT） 7.年份（1970－2099） 其中每个元素可以是一个值(如6),一个连续区间(9-12),一个间隔时间(8-18/4)(/表示每隔4小时),一个列表(1,3,5),通配符。由于&amp;quot;月份中的日期&amp;quot;和&amp;quot;星期中的日期&amp;quot;这两个元素互斥的,必须要对其中一个设置?. 0 0 10,14,16 * * ? 每天上午10点，下午2点，4点 0 0/30 9-17 * * ? 朝九晚五工作时间内每半小时 0 0 12 ? * WED 表示每个星期三中午12点 &amp;quot;0 0 12 * * ?&amp;quot; 每天中午12点触发 &amp;quot;0 15 10 ? * *&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ?&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ? *&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ?</description>
     </item>
     
     <item>
       <title>定时删除文件</title>
-      <link>serve/go/%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</link>
+      <link>https://loresky.github.io/go/%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</link>
       <pubDate>Tue, 12 Jun 2018 17:13:23 +0800</pubDate>
       
-      <guid>serve/go/%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</guid>
+      <guid>https://loresky.github.io/go/%E5%AE%9A%E6%97%B6%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6/</guid>
       <description>package main import ( &amp;quot;fmt&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; &amp;quot;strconv&amp;quot; &amp;quot;github.com/BurntSushi/toml&amp;quot; &amp;quot;github.com/robfig/cron&amp;quot; ) type config struct { Dirurl string `toml:&amp;quot;dirurl&amp;quot;` } var ( Config config ) func main() { // var a interface{} // var b int // a = 1 // b = a.(int) // fmt.Println(a, b) // aa() // os.RemoveAll(&amp;quot;/home/cat/goProjects/src/test/aa/aaa&amp;quot;) if _, err := toml.DecodeFile(&amp;quot;./conf.toml&amp;quot;, &amp;amp;Config); err != nil { fmt.Println(&amp;quot;config decode err:&amp;quot; + err.Error()) return } fmt.Println(Config.Dirurl) // os.RemoveAll(Config.Dirurl) c := cron.</description>
     </item>
     
     <item>
       <title>查看Linux发行版名称和版本号</title>
-      <link>serve/linux/%E6%9F%A5%E7%9C%8Blinux%E5%8F%91%E8%A1%8C%E7%89%88%E5%90%8D%E7%A7%B0%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%B7/</link>
+      <link>https://loresky.github.io/linux/%E6%9F%A5%E7%9C%8Blinux%E5%8F%91%E8%A1%8C%E7%89%88%E5%90%8D%E7%A7%B0%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%B7/</link>
       <pubDate>Thu, 07 Jun 2018 10:37:07 +0800</pubDate>
       
-      <guid>serve/linux/%E6%9F%A5%E7%9C%8Blinux%E5%8F%91%E8%A1%8C%E7%89%88%E5%90%8D%E7%A7%B0%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%B7/</guid>
+      <guid>https://loresky.github.io/linux/%E6%9F%A5%E7%9C%8Blinux%E5%8F%91%E8%A1%8C%E7%89%88%E5%90%8D%E7%A7%B0%E5%92%8C%E7%89%88%E6%9C%AC%E5%8F%B7/</guid>
       <description> 方法总览  lsb_release 命令 /etc/*-release 文件 uname 命令 /proc/version 文件 dmesg 命令 YUM 或 DNF 命令 RPM 命令 APT-GET 命令  </description>
     </item>
     
     <item>
       <title>Ftp服务器</title>
-      <link>serve/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://loresky.github.io/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Tue, 08 May 2018 16:12:44 +0800</pubDate>
       
-      <guid>serve/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://loresky.github.io/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description> sudo apt-get install vsftpd 运行 sudo service vsftpd status sudo service vsftpd stop sudo service vsftpd restart sudo service vsftpd status  配置vsftpd.conf sudo gedit /etc/vsftpd.conf
 listen=YES local_root=/ anon_root=/ #允许匿名访问 anonymous_enable=YES #允许本地用户对FTP服务器文件有写权限 write_enable=YES #系统自动维护上传和下载日志 xferlog_enable=YES #设定FTP服务器将启用FTP数据端口的连接请求 connect_from_port_20=YES #标准格式写日志文件 xferlog_std_format=YES #设置本地用户默认掩码 local_umask=022 #不允许匿名用户上传文件 anon_upload_enable=YES #不允许匿名用户写文件 anon_mkdir_write_enable=YES #打开匿名用户删除和重命名的权 anon_other_write_enable=YES #设置PAM外挂模块提供的认证服务所使用的配置文件名 pam_service_name=vsftpd #是否允许ftpusers文件中得用户登录FTP服务器，默认为NO userlist_enable=YES #是否使用tcp_wrappers作为主机访问控制方式 tcp_wrappers=YES idle_session_timeout=600 data_connection_timeout=120 max_clients=10 max_per_ip=5 local_max_rate=50000 utf8_filesystem=YES  </description>
     </item>
     
     <item>
       <title>Go打包</title>
-      <link>serve/go/go%E6%89%93%E5%8C%85/</link>
+      <link>https://loresky.github.io/go/go%E6%89%93%E5%8C%85/</link>
       <pubDate>Tue, 08 May 2018 14:42:56 +0800</pubDate>
       
-      <guid>serve/go/go%E6%89%93%E5%8C%85/</guid>
+      <guid>https://loresky.github.io/go/go%E6%89%93%E5%8C%85/</guid>
       <description>CGO_ENABLED=0 GOOS=windows GOARCH=386 go build main.go  GOOS：目标平台的操作系统 darwin、freebsd、linux、windows
 GOARCH：目标平台的体系架构 386、amd64、arm
 交叉编译不支持 CGO 所以要禁用它</description>
@@ -147,130 +147,130 @@ GOARCH：目标平台的体系架构 386、amd64、arm
     
     <item>
       <title>云服务</title>
-      <link>serve/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</link>
+      <link>https://loresky.github.io/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</link>
       <pubDate>Mon, 07 May 2018 10:02:15 +0800</pubDate>
       
-      <guid>serve/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</guid>
+      <guid>https://loresky.github.io/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</guid>
       <description>https://www.heroku.com/ https://blog.csdn.net/cancer94/article/details/54838871</description>
     </item>
     
     <item>
       <title>时间</title>
-      <link>serve/mixed/%E6%97%B6%E9%97%B4/</link>
+      <link>https://loresky.github.io/mixed/%E6%97%B6%E9%97%B4/</link>
       <pubDate>Fri, 04 May 2018 09:03:13 +0800</pubDate>
       
-      <guid>serve/mixed/%E6%97%B6%E9%97%B4/</guid>
+      <guid>https://loresky.github.io/mixed/%E6%97%B6%E9%97%B4/</guid>
       <description>1小时(h)=60分钟(min) 1分钟(m)=60秒(s) 1秒(s)=1000毫秒(ms) 1毫秒(ms)=1000微秒(μs) 1微秒(μs)=1000纳秒(ns) 1纳秒(ns)=1000皮秒(ps)</description>
     </item>
     
     <item>
       <title>Api规范</title>
-      <link>serve/mixed/api%E8%A7%84%E8%8C%83/</link>
+      <link>https://loresky.github.io/mixed/api%E8%A7%84%E8%8C%83/</link>
       <pubDate>Thu, 03 May 2018 10:38:56 +0800</pubDate>
       
-      <guid>serve/mixed/api%E8%A7%84%E8%8C%83/</guid>
+      <guid>https://loresky.github.io/mixed/api%E8%A7%84%E8%8C%83/</guid>
       <description>   名称 地址     http-status-codes http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml   http-api-design https://github.com/ZhangBohan/http-api-design-ZH_CN   jsonapi http://jsonapi.org.cn/   微软 https://github.com/Microsoft/api-guidelines   PayPal https://segmentfault.com/a/1190000005924733    </description>
     </item>
     
     <item>
       <title>移动CSS框架</title>
-      <link>serve/web/%E7%A7%BB%E5%8A%A8css%E6%A1%86%E6%9E%B6/</link>
+      <link>https://loresky.github.io/web/%E7%A7%BB%E5%8A%A8css%E6%A1%86%E6%9E%B6/</link>
       <pubDate>Thu, 03 May 2018 09:08:20 +0800</pubDate>
       
-      <guid>serve/web/%E7%A7%BB%E5%8A%A8css%E6%A1%86%E6%9E%B6/</guid>
+      <guid>https://loresky.github.io/web/%E7%A7%BB%E5%8A%A8css%E6%A1%86%E6%9E%B6/</guid>
       <description>   名称 地址     基于 Material Design 的前端框架 MDU https://gitee.com/zdhxiong/mdui   BootEWA https://boot-web.tk/   移动前端框架 AUI https://gitee.com/liulangnan/aui   移动 UI 框架 Hui https://gitee.com/baisoft_org/Hui   基于 CSS 的动画库 https://gitee.com/xulongchang/animate.css    </description>
     </item>
     
     <item>
       <title>文件系统</title>
-      <link>serve/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://loresky.github.io/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Wed, 02 May 2018 16:27:24 +0800</pubDate>
       
-      <guid>serve/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://loresky.github.io/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
       <description>   名称 地址     seaweedfs https://github.com/chrislusf/glow    </description>
     </item>
     
     <item>
       <title>Go第三方包</title>
-      <link>serve/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</link>
+      <link>https://loresky.github.io/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</link>
       <pubDate>Mon, 30 Apr 2018 21:32:46 +0800</pubDate>
       
-      <guid>serve/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</guid>
+      <guid>https://loresky.github.io/go/go%E7%AC%AC%E4%B8%89%E6%96%B9%E5%8C%85/</guid>
       <description>日志  zap logrus  toml  toml go-toml  json  go gjson gojsonq  jwt  jwt-go  orm  gorm  sql  mysql  mysql-orm sqlx-数据库操作包 kingshard-MySQL Proxy项目 vitess-分布式MySQL工具  pgsql  pq  mongodb  mgo  redis  redigo   权限  casbin  时间工具  now  模板引擎  hero  缓存库  groupcache  任意精度的定点小数  decimal  资源嵌入(地址)  go.</description>
     </item>
     
     <item>
       <title>Linux开源镜像站</title>
-      <link>serve/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/</link>
+      <link>https://loresky.github.io/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/</link>
       <pubDate>Sun, 29 Apr 2018 12:25:36 +0800</pubDate>
       
-      <guid>serve/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/</guid>
+      <guid>https://loresky.github.io/linux/linux%E5%BC%80%E6%BA%90%E9%95%9C%E5%83%8F%E7%AB%99/</guid>
       <description>   名称 地址     We-Cloud 维云技术小组 - 东软校园 http://mirrors.neusoft.edu.cn/   清华大学 TUNA 镜像源 https://mirrors.tuna.tsinghua.edu.cn/   USTC 科大开源镜像 http://mirrors.ustc.edu.cn/   郑州大学开源镜像站 http://mirrors.zzu.edu.cn/   OPSX 阿里云开源镜像 https://opsx.alibaba.com/   网易开源镜像站 http://mirrors.163.com/   兰州大学开源社区镜像站 http://mirror.lzu.edu.cn/   北京交通大学开源镜像站 https://mirror.bjtu.edu.cn/cn/    </description>
     </item>
     
     <item>
       <title>全球可用的NTP服务器</title>
-      <link>serve/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://loresky.github.io/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Sat, 28 Apr 2018 19:57:00 +0800</pubDate>
       
-      <guid>serve/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://loresky.github.io/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>http://ntp.org.cn/</description>
     </item>
     
     <item>
       <title>Vps</title>
-      <link>serve/mixed/vps/</link>
+      <link>https://loresky.github.io/mixed/vps/</link>
       <pubDate>Sat, 28 Apr 2018 18:12:27 +0800</pubDate>
       
-      <guid>serve/mixed/vps/</guid>
+      <guid>https://loresky.github.io/mixed/vps/</guid>
       <description>Vultr : https://www.vultr.com/</description>
     </item>
     
     <item>
       <title>Linux和Windows双启动带来的时间同步问题</title>
-      <link>serve/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</link>
+      <link>https://loresky.github.io/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</link>
       <pubDate>Sat, 28 Apr 2018 17:48:31 +0800</pubDate>
       
-      <guid>serve/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://loresky.github.io/linux/linux%E5%92%8Cwindows%E5%8F%8C%E5%90%AF%E5%8A%A8%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98/</guid>
       <description>via:http://www.theitstuff.com/how-to-sync-time-between-linux-and-windows-dual-boot-2
  点击 Windows 系统中的开始菜单，然后搜索 regedit HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\TimeZoneInformation。 在右边窗口，右键点击空白位置，然后选择 New &amp;gt;&amp;gt; DWORD(32 bit) Value。 之后，你会新生成一个条目，而且这个条目默认是高亮的。将这个条目重命名为 RealTimeIsUniversal 并设置值为 1 所有的配置就完成了，下次重启，就不会再有时间同步问题了。  </description>
     </item>
     
     <item>
       <title>go递归函数</title>
-      <link>serve/go/go%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0/</link>
+      <link>https://loresky.github.io/go/go%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0/</link>
       <pubDate>Sat, 06 Jan 2018 20:08:49 +0000</pubDate>
       
-      <guid>serve/go/go%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://loresky.github.io/go/go%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0/</guid>
       <description> 当一个函数在其函数体内调用自身，则称之为递归。最经典的例子便是计算斐波那契数列，即每个数均为前两个数之和 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
 package main import &amp;quot;fmt&amp;quot; func main() { result := 0 for i := 0; i &amp;lt;= 10; i++ { result = fibonacci(i) fmt.Printf(&amp;quot;fibonacci(%d) is: %d\n&amp;quot;, i, result) } } func fibonacci(n int) (res int) { if n &amp;lt;= 1 { res = 1 } else { res = fibonacci(n-1) + fibonacci(n-2) } return } //输出： fibonacci(0) is: 1 fibonacci(1) is: 1 fibonacci(2) is: 2 fibonacci(3) is: 3 fibonacci(4) is: 5 fibonacci(5) is: 8 fibonacci(6) is: 13 fibonacci(7) is: 21 fibonacci(8) is: 34 fibonacci(9) is: 55 fibonacci(10) is: 89  </description>
     </item>
     
     <item>
       <title>go内置函数</title>
-      <link>serve/go/go%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</link>
+      <link>https://loresky.github.io/go/go%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</link>
       <pubDate>Sat, 06 Jan 2018 19:54:28 +0000</pubDate>
       
-      <guid>serve/go/go%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://loresky.github.io/go/go%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</guid>
       <description> Go 语言拥有一些不需要进行导入操作就可以使用的内置函数。它们有时可以针对不同的类型进行操作，例如：len、cap 和 append，或必须用于系统级的操作，例如：panic。因此，它们需要直接获得编译器的支持。    名称 说明     close 用于管道通信   len/cap len 用于返回某个类型的长度或数量（字符串、数组、切片、map 和管道）；cap 是容量的意思，用于返回某个类型的最大容量（只能用于切片和 map）   new/make new 和 make 均是用于分配内存：new 用于值类型和用户定义的类型，如自定义结构，make 用户内置引用类型（切片、map 和管道）。它们的用法就像是函数，但是将类型作为参数：new(type)、make(type)。new(T) 分配类型 T 的零值并返回其地址，也就是指向类型 T 的指针。它也可以被用于基本类型：v := new(int)。make(T) 返回类型 T 的初始化之后的值，因此它比 new 进行更多的工作,new() 是一个函数，不要忘记它的括号   copy/append 用于复制和连接切片   panic/recover 两者均用于错误处理机制   print/println 底层打印函数，在部署环境中建议使用 fmt 包   complex/realimag 用于创建和操作复数    </description>
     </item>
     
     <item>
       <title>go追踪和defer</title>
-      <link>serve/go/go%E8%BF%BD%E8%B8%AA%E5%92%8Cdefer/</link>
+      <link>https://loresky.github.io/go/go%E8%BF%BD%E8%B8%AA%E5%92%8Cdefer/</link>
       <pubDate>Sat, 06 Jan 2018 19:04:21 +0000</pubDate>
       
-      <guid>serve/go/go%E8%BF%BD%E8%B8%AA%E5%92%8Cdefer/</guid>
+      <guid>https://loresky.github.io/go/go%E8%BF%BD%E8%B8%AA%E5%92%8Cdefer/</guid>
       <description>关键字 defer 允许我们推迟到函数返回之前（或任意位置执行 return 语句之后）一刻才执行某个语句或函数（为什么要在返回之后才执行这些语句？因为 return 语句同样可以包含一些操作，而不是单纯地返回某个值）。 关键字 defer 的用法类似于面向对象编程语言 Java 和 C# 的 finally 语句块，它一般用于释放某些已分配的资源。
 package main import &amp;quot;fmt&amp;quot; func main() { function1() } func function1() { fmt.Printf(&amp;quot;In function1 at the top\n&amp;quot;) defer function2() fmt.Printf(&amp;quot;In function1 at the bottom!\n&amp;quot;) } func function2() { fmt.Printf(&amp;quot;function2: Deferred until the end of the calling function!&amp;quot;) } //输出： In Function1 at the top In Function1 at the bottom! Function2: Deferred until the end of the calling function!</description>
     </item>
     
     <item>
       <title>go传递变长参数</title>
-      <link>serve/go/go%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/</link>
+      <link>https://loresky.github.io/go/go%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/</link>
       <pubDate>Sat, 06 Jan 2018 18:45:46 +0000</pubDate>
       
-      <guid>serve/go/go%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/</guid>
+      <guid>https://loresky.github.io/go/go%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/</guid>
       <description>如果函数的最后一个参数是采用 &amp;hellip;type 的形式，那么这个函数就可以处理一个变长的参数，这个长度可以为 0，这样的函数称为变参函数。 func myFunc(a, b, arg ...int) {} 示例函数和调用：
 func Greeting(prefix string, who ...string) Greeting(&amp;quot;hello:&amp;quot;, &amp;quot;Joe&amp;quot;, &amp;quot;Anna&amp;quot;, &amp;quot;Eileen&amp;quot;)  在 Greeting 函数中，变量 who 的值为 []string{&amp;ldquo;Joe&amp;rdquo;, &amp;ldquo;Anna&amp;rdquo;, &amp;ldquo;Eileen&amp;rdquo;}。 如果参数被存储在一个数组 arr 中，则可以通过 arr&amp;hellip; 的形式来传递参数调用变参函数。 1. 使用结构 定义一个结构类型，假设它叫 Options，用以存储所有可能的参数：
 type Options struct { par1 type1, par2 type2, ... }  函数 F1 可以使用正常的参数 a 和 b，以及一个没有任何初始化的 Options 结构： F1(a, b, Options {})。如果需要对选项进行初始化，则可以使用 F1(a, b, Options {par1:val1, par2:val2})。 2. 使用空接口 如果一个变长参数的类型没有被指定，则可以使用默认的空接口 interface{}，这样就可以接受任何类型的参数。该方案不仅可以用于长度未知的参数，还可以用于任何不确定类型的参数。一般而言我们会使用一个 for-range 循环以及 switch 结构对每个参数的类型进行判断：</description>
@@ -278,10 +278,10 @@ type Options struct { par1 type1, par2 type2, ... }  函数 F1 可以使用正�
     
     <item>
       <title>go函数参数与返回值</title>
-      <link>serve/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/</link>
+      <link>https://loresky.github.io/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/</link>
       <pubDate>Sat, 06 Jan 2018 17:19:00 +0000</pubDate>
       
-      <guid>serve/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/</guid>
+      <guid>https://loresky.github.io/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/</guid>
       <description>1. 按值传递（call by value） 按引用传递（call by reference） Go 默认使用按值传递来传递参数，也就是传递参数的副本。 指针也是变量类型，有自己的地址和值，通常指针的值指向一个变量的地址。所以，按引用传递也是按值传递 几乎在任何情况下，传递指针（一个32位或者64位的值）的消耗都比传递副本来得少。
 在函数调用时，像切片（slice）、字典（map）、接口（interface）、通道（channel）这样的引用类型都是默认使用引用传递（即使没有显示的指出指针）。
 package main import &amp;quot;fmt&amp;quot; func main() { fmt.Printf(&amp;quot;Multiply 2 * 5 * 6 = %d\n&amp;quot;, MultiPly3Nums(2, 5, 6)) // var i1 int = MultiPly3Nums(2, 5, 6) // fmt.Printf(&amp;quot;MultiPly 2 * 5 * 6 = %d\n&amp;quot;, i1) } func MultiPly3Nums(a int, b int, c int) int { // var product int = a * b * c // return product return a * b * c }  2.</description>
@@ -289,20 +289,20 @@ package main import &amp;quot;fmt&amp;quot; func main() { fmt.Printf(&amp;quot;M
     
     <item>
       <title>go标签与goto</title>
-      <link>serve/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/</link>
+      <link>https://loresky.github.io/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/</link>
       <pubDate>Sat, 06 Jan 2018 16:50:02 +0000</pubDate>
       
-      <guid>serve/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/</guid>
+      <guid>https://loresky.github.io/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/</guid>
       <description>for、switch 或 select 语句都可以配合标签（label）形式的标识符使用，即某一行第一个以冒号（:）结尾的单词（gofmt 会将后续代码自动移至下一行）。 **标签的名称是大小写敏感的，为了提升可读性，一般建议使用全部大写字母） **
 package main import &amp;quot;fmt&amp;quot; func main() { LABEL1: for i := 0; i &amp;lt;= 5; i++ { for j := 0; j &amp;lt;= 5; j++ { if j == 4 { continue LABEL1 } fmt.Printf(&amp;quot;i is: %d, and j is: %d\n&amp;quot;, i, j) } } }  package main func main() { i:=0 HERE: print(i) i++ if i==5 { return } goto HERE }  </description>
     </item>
     
     <item>
       <title>go结构for</title>
-      <link>serve/go/go%E7%BB%93%E6%9E%84for/</link>
+      <link>https://loresky.github.io/go/go%E7%BB%93%E6%9E%84for/</link>
       <pubDate>Sat, 06 Jan 2018 16:26:28 +0000</pubDate>
       
-      <guid>serve/go/go%E7%BB%93%E6%9E%84for/</guid>
+      <guid>https://loresky.github.io/go/go%E7%BB%93%E6%9E%84for/</guid>
       <description>1. 基于计数器的迭代 for 初始化语句; 条件语句; 修饰语句 {}
 package main import &amp;quot;fmt&amp;quot; func main() { for i := 0; i &amp;lt; 5; i++ { fmt.Printf(&amp;quot;This is the %d iteration\n&amp;quot;, i) } }  循环中同时使用多个计数器：
 **for i, j := 0, N; i &amp;lt; j; i, j = i+1, j-1 {} ** 2. 基于条件判断的迭代 for 结构的第二种形式是没有头部的条件判断迭代（类似其它语言中的 while 循环），基本形式为：for 条件语句 {}。 您也可以认为这是没有初始化语句和修饰语句的 for 结构，因此 ;; 便是多余的了。
@@ -311,39 +311,39 @@ package main import &amp;quot;fmt&amp;quot; func main() { var i int = 5 for i &a
     
     <item>
       <title>go结构switch</title>
-      <link>serve/go/go%E7%BB%93%E6%9E%84switch/</link>
+      <link>https://loresky.github.io/go/go%E7%BB%93%E6%9E%84switch/</link>
       <pubDate>Sat, 06 Jan 2018 15:48:00 +0000</pubDate>
       
-      <guid>serve/go/go%E7%BB%93%E6%9E%84switch/</guid>
+      <guid>https://loresky.github.io/go/go%E7%BB%93%E6%9E%84switch/</guid>
       <description>Go 语言中的 switch 结构使用上更加灵活。它接受任意形式的表达式： switch var1 { case val1: ... case val2: ... default: ... }  如果执行完每个分支的代码后，还希望继续执行后续分支的代码，可以使用 fallthrough 关键字来达到目的 switch i { case 0: fallthrough case 1: f() // 当 i == 0 时函数也会被调用 }  switch 语句的第二种形式是不提供任何被判断的值（实际上默认为判断是否为 true） package main import &amp;quot;fmt&amp;quot; func main() { var num1 int = 7 switch { case num1 &amp;lt; 0: fmt.Println(&amp;quot;Number is negative&amp;quot;) case num1 &amp;gt; 0 &amp;amp;&amp;amp; num1 &amp;lt; 10: fmt.</description>
     </item>
     
     <item>
       <title>go多返回值函数的错误</title>
-      <link>serve/go/go%E5%A4%9A%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
+      <link>https://loresky.github.io/go/go%E5%A4%9A%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF/</link>
       <pubDate>Sat, 06 Jan 2018 15:34:47 +0000</pubDate>
       
-      <guid>serve/go/go%E5%A4%9A%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
+      <guid>https://loresky.github.io/go/go%E5%A4%9A%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF/</guid>
       <description>anInt, _ = strconv.Atoi(origStr)  如果 origStr 不能被转换为整数，anInt 的值会变成 0 而 _ 无视了错误，程序会继续运行。
 package main import ( &amp;quot;fmt&amp;quot; &amp;quot;strconv&amp;quot; ) func main() { var orig string = &amp;quot;ABC&amp;quot; // var an int var newS string // var err error fmt.Printf(&amp;quot;The size of ints is: %d\n&amp;quot;, strconv.IntSize) // anInt, err = strconv.Atoi(origStr) an, err := strconv.Atoi(orig) if err != nil { fmt.Printf(&amp;quot;orig %s is not an integer - exiting with error\n&amp;quot;, orig) return } // 未发生错误，继续执行： fmt.</description>
     </item>
     
     <item>
       <title>go字符串</title>
-      <link>serve/go/go%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <link>https://loresky.github.io/go/go%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
       <pubDate>Sat, 06 Jan 2018 15:06:42 +0000</pubDate>
       
-      <guid>serve/go/go%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <guid>https://loresky.github.io/go/go%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
       <description>Go 支持以下 2 种形式的字面值： * 解释字符串： **该类字符串使用双引号括起来，其中的相关的转义字符将被替换，这些转义字符包括： ** 1. \n：换行符 2. \r：回车符 3. \t：tab 键 4. \u 或 \U：Unicode 字符 5. \：反斜杠自身 * 非解释字符串： 该类字符串使用反引号括起来，支持换行，例如：
  `This is a raw string \n` 中的 `\n\` 会被原样输出。  </description>
     </item>
     
     <item>
       <title>go基本类型和运算符</title>
-      <link>serve/go/go%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+      <link>https://loresky.github.io/go/go%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
       <pubDate>Sat, 06 Jan 2018 14:17:43 +0000</pubDate>
       
-      <guid>serve/go/go%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
+      <guid>https://loresky.github.io/go/go%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</guid>
       <description>1.布尔类型 bool 非运算符：!
 !T -&amp;gt; false !F -&amp;gt; true  和运算符：&amp;amp;&amp;amp;
 T &amp;amp;&amp;amp; T -&amp;gt; true T &amp;amp;&amp;amp; F -&amp;gt; false F &amp;amp;&amp;amp; T -&amp;gt; false F &amp;amp;&amp;amp; F -&amp;gt; false  或运算符：||
@@ -352,49 +352,49 @@ T || T -&amp;gt; true T || F -&amp;gt; true F || T -&amp;gt; true F || F -&amp;g
     
     <item>
       <title>go常量、变量、枚举</title>
-      <link>serve/go/go%E5%B8%B8%E9%87%8F%E5%8F%98%E9%87%8F%E6%9E%9A%E4%B8%BE/</link>
+      <link>https://loresky.github.io/go/go%E5%B8%B8%E9%87%8F%E5%8F%98%E9%87%8F%E6%9E%9A%E4%B8%BE/</link>
       <pubDate>Sat, 06 Jan 2018 12:38:30 +0000</pubDate>
       
-      <guid>serve/go/go%E5%B8%B8%E9%87%8F%E5%8F%98%E9%87%8F%E6%9E%9A%E4%B8%BE/</guid>
+      <guid>https://loresky.github.io/go/go%E5%B8%B8%E9%87%8F%E5%8F%98%E9%87%8F%E6%9E%9A%E4%B8%BE/</guid>
       <description>常量 1. 常量使用关键字 const 定义，用于存储不会改变的数据。 2. 存储在常量中的数据类型只可以是布尔型、数字型（整数型、浮点型和复数）和字符串型。 3. 在 Go 语言中，你可以省略类型说明符 [type]，因为编译器可以根据变量的值来推断其类型。 * 显式类型定义： const b string = &amp;quot;abc&amp;quot; * 隐式类型定义： const b = &amp;quot;abc&amp;quot;  常量还可以用作枚举：
 const ( Unknown = 0 Female = 1 Male = 2 )  枚举 第一个 iota 等于 0，每当 iota 在新的一行被使用时，它的值都会自动加 1；所以 a=0, b=1, c=2 可以简写为如下形式： const ( a = iota b c )  一周中每天的名称 const ( Sunday = iota Monday Tuesday Wednesday Thursday Friday Saturday )  使用某个类型作为枚举常量的类型： type Color int const ( RED Color = iota // 0 ORANGE // 1 YELLOW // 2 GREEN // .</description>
     </item>
     
     <item>
       <title>go文件名、关键字与标识符</title>
-      <link>serve/go/go%E6%96%87%E4%BB%B6%E5%90%8D%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E6%A0%87%E8%AF%86%E7%AC%A6/</link>
+      <link>https://loresky.github.io/go/go%E6%96%87%E4%BB%B6%E5%90%8D%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E6%A0%87%E8%AF%86%E7%AC%A6/</link>
       <pubDate>Sat, 06 Jan 2018 12:19:54 +0000</pubDate>
       
-      <guid>serve/go/go%E6%96%87%E4%BB%B6%E5%90%8D%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E6%A0%87%E8%AF%86%E7%AC%A6/</guid>
+      <guid>https://loresky.github.io/go/go%E6%96%87%E4%BB%B6%E5%90%8D%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E6%A0%87%E8%AF%86%E7%AC%A6/</guid>
       <description> Go 代码中会使用到的 25 个关键字或保留字             break default func interface select   case defer go map struct   chan else goto package switch   const fallthrough if range type   continue for import return var    Go 语言还有 36 个预定义标识ss符                 append bool byte cap close complex complex64 complex128 uint16   copy false float32 float64 imag int int8 int16 uint32   int32 int64 iota len make new nil panic uint64   print println real recover string true uint uint8 uintptr    </description>
     </item>
     
     <item>
       <title>go生成代码文档</title>
-      <link>serve/go/go%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E6%96%87%E6%A1%A3/</link>
+      <link>https://loresky.github.io/go/go%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E6%96%87%E6%A1%A3/</link>
       <pubDate>Sat, 06 Jan 2018 12:02:56 +0000</pubDate>
       
-      <guid>serve/go/go%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E6%96%87%E6%A1%A3/</guid>
+      <guid>https://loresky.github.io/go/go%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E6%96%87%E6%A1%A3/</guid>
       <description>go doc 工具会从 Go 程序和包文件中提取顶级声明的首行注释以及每个对象的相关注释，并生成相关文档。
 一般用法 **go doc package **获取包的文档注释，例如：go doc fmt 会显示使用 godoc 生成的 fmt 包的文档注释。 **go doc package/subpackage **获取子包的文档注释，例如：go doc container/list。 **go doc package function **获取某个函数在某个包中的文档注释，例如：go doc fmt Printf 会显示有关 fmt.Printf() 的使用说明。</description>
     </item>
     
     <item>
       <title>go打印Printf</title>
-      <link>serve/go/go%E6%89%93%E5%8D%B0printf/</link>
+      <link>https://loresky.github.io/go/go%E6%89%93%E5%8D%B0printf/</link>
       <pubDate>Sat, 06 Jan 2018 12:01:56 +0000</pubDate>
       
-      <guid>serve/go/go%E6%89%93%E5%8D%B0printf/</guid>
+      <guid>https://loresky.github.io/go/go%E6%89%93%E5%8D%B0printf/</guid>
       <description>General ** %v 基本格式的值。当输出结构体时，扩展标志(%+v)添加成员的名字 ** ** %#v 值 ** ** %T 值的类型 ** ** %% 百分号 ** Integer ** %b 二进制 ** ** %c 数值对应的Unicode编码字符 ** ** %d 十进制表示 ** ** %+d 带符号的整型，fmt.Printf(&amp;ldquo;%+d&amp;rdquo;, 255)输出+255 ** ** %o 不带零的八进制 ** ** %q 单引号 ** ** %x 小写的十六进制，使用a-f ** ** %#x 带0x的十六进制 ** ** %X 大写的十六进制，使用A-F ** ** %U Unicode格式： U+1234，等价于&amp;rdquo;U+%04X&amp;rdquo; ** ** %#U 带字符的Unicode ** %5d 表示该整型最大长度是5，下面这段代码
 fmt.Printf(&amp;quot;|%5d|&amp;quot;, 1) fmt.Printf(&amp;quot;|%5d|&amp;quot;, 1234567) 输出结果如下： | 1| |1234567|  %-5d则相反，打印结果会自动左对齐 %05d会在数字前面补零</description>
     </item>
     
     <item>
       <title>Virtualbox中win7虚拟机中U盘不可用问题的解决</title>
-      <link>serve/win/virtualbox%E4%B8%ADwin7%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%ADu%E7%9B%98%E4%B8%8D%E5%8F%AF%E7%94%A8%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</link>
+      <link>https://loresky.github.io/win/virtualbox%E4%B8%ADwin7%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%ADu%E7%9B%98%E4%B8%8D%E5%8F%AF%E7%94%A8%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</link>
       <pubDate>Mon, 13 Nov 2017 19:51:18 +0000</pubDate>
       
-      <guid>serve/win/virtualbox%E4%B8%ADwin7%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%ADu%E7%9B%98%E4%B8%8D%E5%8F%AF%E7%94%A8%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</guid>
+      <guid>https://loresky.github.io/win/virtualbox%E4%B8%ADwin7%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B8%ADu%E7%9B%98%E4%B8%8D%E5%8F%AF%E7%94%A8%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</guid>
       <description>主机运行多是Ubuntu17.04，虚拟机是Win7,U盘无反映 安装‘Oracle VM VirtualBox Extension Pack’ 下载地址：http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack
 用户权限添加 添加usbfs 用户组（virtualbox 装完成后会有 vboxusers 和vboxsf ）
 sudo groupadd usbfs
@@ -404,29 +404,29 @@ sudo adduser kuein usbfs</description>
     
     <item>
       <title>openvpn</title>
-      <link>serve/mixed/openvpn/</link>
+      <link>https://loresky.github.io/mixed/openvpn/</link>
       <pubDate>Tue, 31 Oct 2017 21:12:52 +0000</pubDate>
       
-      <guid>serve/mixed/openvpn/</guid>
+      <guid>https://loresky.github.io/mixed/openvpn/</guid>
       <description>1 打开终端并安装openvpn用以下命令 sudo apt-get install openvpn network-manager-openvpn  2 打开网络菜单，转到“VPN连接”，然后点击“配置VPN…”。 3 Click on &amp;ldquo;Add&amp;rdquo;. 4 Click on &amp;ldquo;Import a saved VPN configuration&amp;hellip;&amp;rdquo;. 5 Click on &amp;ldquo;Create&amp;rdquo;. 6 Download the OpenVPN configuration, unzip it and import the .ovpn file. 7 Enter your login credentials and click on &amp;ldquo;Save&amp;hellip;&amp;rdquo;. 7a Switch to &amp;ldquo;Advanced Configuration&amp;rdquo; and in the tab &amp;ldquo;TLS Authentication&amp;rdquo; check &amp;ldquo;Use additional TLS authentication&amp;rdquo;. Select the file &amp;ldquo;StaticKey.pem&amp;rdquo; from the configuration and set the &amp;ldquo;Key Direction&amp;rdquo; to &amp;ldquo;0&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>openvpn</title>
-      <link>serve/posts/openvpn/</link>
+      <link>https://loresky.github.io/posts/openvpn/</link>
       <pubDate>Tue, 31 Oct 2017 21:12:52 +0000</pubDate>
       
-      <guid>serve/posts/openvpn/</guid>
+      <guid>https://loresky.github.io/posts/openvpn/</guid>
       <description>1 打开终端并安装openvpn用以下命令 sudo apt-get install openvpn network-manager-openvpn
 here&amp;rsquo;s my link</description>
     </item>
     
     <item>
       <title>mongodb可视化</title>
-      <link>serve/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <link>https://loresky.github.io/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Tue, 26 Sep 2017 10:17:09 +0000</pubDate>
       
-      <guid>serve/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <guid>https://loresky.github.io/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       <description> mongo-express 复制创建配置文件
 cp config.default.js config.js  配置Mongo数据库的连接信息：
 mongo = { db: &#39;db&#39;, host: &#39;localhost&#39;, password: &#39;pass&#39;, port: 27017, ssl: false, url: &#39;mongodb://localhost:27017/db&#39;, username: &#39;admin&#39;, }  配置Web服务的信息 其中根据场景需求，可能需要把  host: process.env.VCAP_APP_HOST || &#39;localhost&#39;  修改为  host: process.env.VCAP_APP_HOST || &#39;0.0.0.0&#39;, 
@@ -437,10 +437,10 @@ admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGOD
     
     <item>
       <title>go环境和目录</title>
-      <link>serve/go/go%E7%8E%AF%E5%A2%83%E5%92%8C%E7%9B%AE%E5%BD%95/</link>
+      <link>https://loresky.github.io/go/go%E7%8E%AF%E5%A2%83%E5%92%8C%E7%9B%AE%E5%BD%95/</link>
       <pubDate>Wed, 20 Sep 2017 01:53:21 +0000</pubDate>
       
-      <guid>serve/go/go%E7%8E%AF%E5%A2%83%E5%92%8C%E7%9B%AE%E5%BD%95/</guid>
+      <guid>https://loresky.github.io/go/go%E7%8E%AF%E5%A2%83%E5%92%8C%E7%9B%AE%E5%BD%95/</guid>
       <description> Go 的源代码有以下三个分支：  Go release：最新稳定版，实际开发最佳选择 Go weekly：包含最近更新的版本，一般每周更新一次 Go tip：永远保持最新的版本，相当于内测版  最为重要的环境变量: **$GOROOT **表示 Go 在你的电脑上的安装位置,它的值一般都是$HOME/go,当然,你也可以安装在别的地方。 **$GOARCH **表示目标机器的处理器架构,它的值可以是 386、amd64 或 arm。 **$GOOS **表示目标机器的操作系统,它的值可以是 darwin、freebsd、linux 或 windows。 **$GOBIN **表示编译器和链接器的安装位置,默认是$GOROOT/bin
 **$GOPATH ** 默认采用和 $GOROOT 一样的值，但从 Go 1.1 版本开始，你必须修改为其它路径。它可以包含多个包含 Go 语言源码文件、包文件和可执行文件的路径，而这些路径下又必须分别包含三个规定的目录：src、pkg 和 bin，这三个目录分别用于存放源码文件、包文件和可执行文件。 **$GOARM **专门针对基于 arm 架构的处理器，它的值可以是 5 或 6，默认为 6。 ** $GOMAXPROCS **用于设置应用程序可使用的处理器个数与核数。
 Go 安装目录  /bin :包含可执行文件,如:编译器,Go 工具 /doc :包含示例程序,代码工具,本地文档等 /lib :包含文档模版 /misc:包含与支持 Go 编辑器有关的配置文件以及 cgo 的示例 /os_arch /src:包含标准库的包的对象文件(.a):包含源代码构建脚本和标准库的包的完整源代码(Go 是一门开源语言) /src/cmd:包含 Go 和 C 的编译器和命令行脚本  </description>
@@ -448,28 +448,28 @@ Go 安装目录  /bin :包含可执行文件,如:编译器,Go 工具 /doc :包�
     
     <item>
       <title>linux程序端口占用情况</title>
-      <link>serve/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/</link>
+      <link>https://loresky.github.io/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/</link>
       <pubDate>Mon, 03 Jul 2017 14:57:38 +0000</pubDate>
       
-      <guid>serve/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/</guid>
+      <guid>https://loresky.github.io/linux/linux%E6%9F%A5%E7%9C%8B%E7%AB%AF%E5%8F%A3/</guid>
       <description>端口 lsof -i:port netstat –apn | grep 8080</description>
     </item>
     
     <item>
       <title>linux硬盘安装</title>
-      <link>serve/linux/linux%E7%A1%AC%E7%9B%98%E5%AE%89%E8%A3%85/</link>
+      <link>https://loresky.github.io/linux/linux%E7%A1%AC%E7%9B%98%E5%AE%89%E8%A3%85/</link>
       <pubDate>Mon, 03 Jul 2017 14:56:38 +0000</pubDate>
       
-      <guid>serve/linux/linux%E7%A1%AC%E7%9B%98%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://loresky.github.io/linux/linux%E7%A1%AC%E7%9B%98%E5%AE%89%E8%A3%85/</guid>
       <description> Ubuntu title Install Ubuntu root (hd0,0) kernel (hd0,0)/vmlinuz.efi boot=casper iso-scan/filename=/ubuntu.iso locale=zh_CN.UTF-8 initrd (hd0,0)/initrd.lz title reboot reboot title halt halt  </description>
     </item>
     
     <item>
       <title>grub2命令启动win7</title>
-      <link>serve/linux/grub2%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8win7/</link>
+      <link>https://loresky.github.io/linux/grub2%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8win7/</link>
       <pubDate>Mon, 03 Jul 2017 14:49:26 +0000</pubDate>
       
-      <guid>serve/linux/grub2%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8win7/</guid>
+      <guid>https://loresky.github.io/linux/grub2%E5%91%BD%E4%BB%A4%E5%90%AF%E5%8A%A8win7/</guid>
       <description> grub2命令启动win7 假设win7安装在第一硬盘第一分区（即hd0,1，如果不是，自行修改）：
 grub&amp;gt;insmod ntfs grub&amp;gt;set root=&#39;hd0,1&#39; grub&amp;gt;chainloader +1 grub&amp;gt;boot  或者试试：
 grub&amp;gt;insmod ntfs grub&amp;gt;search --no-floppy --set=root /bootmgr grub&amp;gt;chainloader +1 grub&amp;gt;boot  </description>
@@ -477,55 +477,55 @@ grub&amp;gt;insmod ntfs grub&amp;gt;search --no-floppy --set=root /bootmgr grub&
     
     <item>
       <title>linux常用命令</title>
-      <link>serve/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://loresky.github.io/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Wed, 28 Jun 2017 20:20:14 +0000</pubDate>
       
-      <guid>serve/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://loresky.github.io/linux/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description> tar -A 新增压缩文件到已存在的压缩 -B 设置区块大小 -c 建立新的压缩文件 -d 记录文件的差别 -r 添加文件到已经压缩的文件 -u 添加改变了和现有的文件到已经存在的压缩文件 -x 从压缩的文件中提取文件 -t 显示压缩文件的内容 -z 支持gzip解压文件 -j 支持bzip2解压文件 -Z 支持compress解压文件 -v 显示操作过程 -l 文件系统边界设置 -k 保留原有文件不覆盖 -m 保留文件不被覆盖 -W 确认压缩文件的正确性  </description>
     </item>
     
     <item>
       <title>docker常用命令</title>
-      <link>serve/docker/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://loresky.github.io/docker/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Tue, 27 Jun 2017 13:12:12 +0000</pubDate>
       
-      <guid>serve/docker/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://loresky.github.io/docker/docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description> 查看当前机器上的镜像： docker images  下载镜像： docker pull &amp;lt;image&amp;gt;  删除镜像： docker rmi &amp;lt;image&amp;gt;  运行镜像： docker run -d -p 3306:3306 hub.c.163.com/library/tomcat:latest  查看容器列表及状态： docker ps -a  </description>
     </item>
     
     <item>
       <title>android配置</title>
-      <link>serve/mixed/android%E9%85%8D%E7%BD%AE/</link>
+      <link>https://loresky.github.io/mixed/android%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Tue, 27 Jun 2017 11:30:39 +0000</pubDate>
       
-      <guid>serve/mixed/android%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://loresky.github.io/mixed/android%E9%85%8D%E7%BD%AE/</guid>
       <description>buildscript { repositories { maven { url &#39;https://maven.aliyun.com/repository/public&#39; } maven { url &#39;https://maven.aliyun.com/repository/google } maven { url &#39;https://maven.aliyun.com/repository/jcenter&#39; } maven { url &#39;https://maven.aliyun.com/repository/gradle-plugin&#39; } } } allprojects { repositories { maven { url &#39;https://maven.aliyun.com/repository/public&#39; } maven { url &#39;https://maven.aliyun.com/repository/google } maven { url &#39;https://maven.aliyun.com/repository/jcenter&#39; } }  app外build.gradle ext { minSdkVersion = 19 targetSdkVersion = 28 compileSdkVersion = 28 supportLibraryVersion = &amp;quot;28.+&amp;quot; }  app内build.gradle android { compileSdkVersion rootProject.</description>
     </item>
     
     <item>
       <title>maven配置</title>
-      <link>serve/mixed/maven%E9%85%8D%E7%BD%AE/</link>
+      <link>https://loresky.github.io/mixed/maven%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 26 Jun 2017 08:23:45 +0000</pubDate>
       
-      <guid>serve/mixed/maven%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://loresky.github.io/mixed/maven%E9%85%8D%E7%BD%AE/</guid>
       <description>本地仓库的配置 &amp;lt;localRepository&amp;gt;/opt/maven/repo&amp;lt;/localRepository&amp;gt;  国内maven repository 在前添加 &amp;lt;mirror&amp;gt; &amp;lt;id&amp;gt;nexus-aliyun&amp;lt;/id&amp;gt; &amp;lt;mirrorOf&amp;gt;*&amp;lt;/mirrorOf&amp;gt; &amp;lt;name&amp;gt;Nexus aliyun&amp;lt;/name&amp;gt; &amp;lt;url&amp;gt;http://maven.aliyun.com/nexus/content/groups/public&amp;lt;/url&amp;gt; &amp;lt;/mirror&amp;gt;  打包不测试idea&amp;ndash;&amp;gt;maven&amp;ndash;&amp;gt;package&amp;ndash;&amp;gt;Command line: clean package -DskipTests</description>
     </item>
     
     <item>
       <title>win的linux_location</title>
-      <link>serve/win/win%E7%9A%84linux_location/</link>
+      <link>https://loresky.github.io/win/win%E7%9A%84linux_location/</link>
       <pubDate>Thu, 15 Jun 2017 13:10:00 +0000</pubDate>
       
-      <guid>serve/win/win%E7%9A%84linux_location/</guid>
+      <guid>https://loresky.github.io/win/win%E7%9A%84linux_location/</guid>
       <description>谷歌搜索 win10 linux location,然后里面有 stackoverflow 的几个链接。 里面说到 linux 存放位置在 C:\Users{user}\AppData\Local\lxss{username} 其中 {user} 指的是 windows 的用户，{username} 指的是 linux 里的用户。 以及你的 /home 文件夹会在 C:\Users{user}\AppData\Local\lxss\home</description>
     </item>
     
     <item>
       <title>docker安装设置</title>
-      <link>serve/docker/docker%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://loresky.github.io/docker/docker%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Tue, 13 Jun 2017 18:00:00 +0000</pubDate>
       
-      <guid>serve/docker/docker%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://loresky.github.io/docker/docker%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE/</guid>
       <description> * Docker 中国 * 官网安装教程 Docker 官方为了简化安装流程，提供了一套安装脚本，Ubuntu 和 Debian 系统可以使用这套脚本安装： curl -sSL https://get.docker.com/ | sh
 阿里云的安装脚本 curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
 阿里服务器安装Docker
@@ -535,38 +535,38 @@ docker添加用户到组 sudo gpasswd -a ${USER} docker sudo service docker rest
     
     <item>
       <title>git基本命令</title>
-      <link>serve/git/git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</link>
+      <link>https://loresky.github.io/git/git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Tue, 13 Jun 2017 10:00:00 +0000</pubDate>
       
-      <guid>serve/git/git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://loresky.github.io/git/git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</guid>
       <description> 创建git仓库 mkdir Test cd Test git init echo &amp;quot;# Test&amp;quot; &amp;gt;&amp;gt; README.md git add README.md git commit -m &amp;quot;first commit&amp;quot; git remote add origin https://git.coding.net/hccy/Test.git git push -u origin master  已有项目 如果你还没有克隆现有仓库，并欲将你的仓库连接到某个远程服务器，你可以使用如下命令添加 git remote add origin https://git.coding.net/hccy/Test.git 主分支git push -u origin master 分支git push -u origin branch  git clone 某个分支或所有分支 clone 某个分支： git clone -b b1 https://github.com/...  clone 所有分支： git clone https://github.com/... git branch -r * source remotes/origin/HEAD -&amp;gt; origin/master remotes/origin/master remotes/origin/source  git checkout——检出 创建新分支： git branch branchName  切换到新分支： git checkout branchName  上面两个命令也可以合成为一个命令： git checkout -b branchName  git status告诉你有文件被修改过，用git diff可以查看修改内容 回退到某个版本  git reset –hard：彻底回退到某个版本 git reset –soft：回退到某个版本，只回退了commit的信息，不会恢复到index file一级。 git reset –mixed：此为默认方式，不带任何参数的git reset，即时这种方式，它回退到某个版本，只保留源码，回退commit和index信息。  </description>
     </item>
     
     <item>
       <title>linux忘记root密码</title>
-      <link>serve/linux/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/</link>
+      <link>https://loresky.github.io/linux/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/</link>
       <pubDate>Sun, 23 Apr 2017 10:56:13 +0000</pubDate>
       
-      <guid>serve/linux/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/</guid>
+      <guid>https://loresky.github.io/linux/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/</guid>
       <description>进入grub的时候，按上下箭头 选择平时启动的那个内核 按 e 编辑这么一行：
 kernel /vmlinuz root=/dev/sda2 init=/bin/bash rw  注意黑体字，就是在你原有的内核选项上增加的内容 按 enter 生效 按 b 启动 然后就在命令行了，输入passwd root 进行密码修改</description>
     </item>
     
     <item>
       <title>linux配置</title>
-      <link>serve/linux/linux%E9%85%8D%E7%BD%AE/</link>
+      <link>https://loresky.github.io/linux/linux%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 23 Apr 2017 10:55:13 +0000</pubDate>
       
-      <guid>serve/linux/linux%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://loresky.github.io/linux/linux%E9%85%8D%E7%BD%AE/</guid>
       <description>依赖: sudo apt-get install gdebi-core 语言支持不见了: sudo apt-get install language-selector-gnome 64位系统lib: sudo apt-get install lib32ncurses5 配置lib: sudo apt-get install -f  环境 export GOROOT=/opt/go export GOPATH=/home/cy/GoProjects export GRADLE_HOME=/opt/gradle export NODE_HOME=/opt/node export JAVA_HOME=/opt/jdk1.8 export JRE_HOME=/opt/jdk1.8/jre export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export ANDROID_HOME=/opt/android-sdk-linux export PATH=:$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GRADLE_HOME/bin:$NODE_HOME/bin:$GOROOT/bin:$GOPATH/bin:  桌面图标 [Desktop Entry] Name = Genymotion comment= genymotion Exec=/opt/genymotion/genymotion Icon=/opt/genymotion/icons/icon.png Terminal=false Type=Application Categories=Utility;TextEditor;Development;IDE; [Desktop Entry] Version=1.0 Type=Application Name=xmind Comment= Exec=/opt/xmind/XMind_amd64/XMind Icon=/opt/xmind/XMind_amd64/xmind_file.ico Path=/opt/xmind/XMind_amd64 Terminal=false StartupNotify=false  五笔 sudo apt-get install fcitx-table-wbpy</description>
     </item>
     
     <item>
       <title>Tomcat设置</title>
-      <link>serve/mixed/tomcat%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://loresky.github.io/mixed/tomcat%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Sun, 23 Apr 2017 10:49:47 +0000</pubDate>
       
-      <guid>serve/mixed/tomcat%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://loresky.github.io/mixed/tomcat%E8%AE%BE%E7%BD%AE/</guid>
       <description>tomcat配置虚拟目录 apache-tomcat-8.0.18\conf\Catalina\localhost 下建一个xml
 &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;Context path=&amp;quot;/qqq&amp;quot; docBase=&amp;quot;E:\qqq&amp;quot; reloadable=&amp;quot;false&amp;quot; /&amp;gt;  文件名改成你自己的譬如http://localhost:8080/qqq ，文件名就为qqq.xml 再打开Tomcat安装目录,打开conf/web.xml 文件，在其中找到
 &amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;listings&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;false&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt;  将false设成true保存，重启Tomcat。 在浏览器输入 http://localhost/demo/，就可以显示文件列表了。</description>
@@ -574,10 +574,10 @@ kernel /vmlinuz root=/dev/sda2 init=/bin/bash rw  注意黑体字，就是在你
     
     <item>
       <title>MySQL配置文件详解</title>
-      <link>serve/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
+      <link>https://loresky.github.io/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Tue, 18 Apr 2017 12:16:18 +0000</pubDate>
       
-      <guid>serve/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>https://loresky.github.io/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</guid>
       <description>找到C:\Program Files\MariaDB 5.5\data\my.ini
 [mysqld]下增加character-set-server=utf8 [client]下增加default-character-set=utf8 [MySQL] 下增加default-character-set=utf8  设置MySQL5.6的远程连接
 use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO root@&amp;quot;%&amp;quot; IDENTIFIED BY &amp;quot;root&amp;quot;; //设置root用户密码 update user set Password = password(&#39;123456&#39;) where User=&#39;root&#39;; //刷新刚才的内容 flush privileges;  </description>
@@ -585,10 +585,10 @@ use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO r
     
     <item>
       <title>大公司github</title>
-      <link>serve/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</link>
+      <link>https://loresky.github.io/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</link>
       <pubDate>Mon, 13 Mar 2017 17:05:50 +0800</pubDate>
       
-      <guid>serve/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</guid>
+      <guid>https://loresky.github.io/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</guid>
       <description> 公司开源导航页 https://www.oschina.net/company
 github 趋势 https://github.com/trending
  Square Facebook LinkedIn：全球最大职业社交网站. VRG Soft：VRG Soft. NHN：NHN娱乐(前端).
@@ -616,47 +616,47 @@ github 趋势 https://github.com/trending
     
     <item>
       <title>Vscode插件</title>
-      <link>serve/mixed/vscode%E6%8F%92%E4%BB%B6/</link>
+      <link>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Mon, 13 Mar 2017 17:05:48 +0800</pubDate>
       
-      <guid>serve/mixed/vscode%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</guid>
       <description>   名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片    </description>
     </item>
     
     <item>
       <title>浏览器插件</title>
-      <link>serve/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link>
+      <link>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Mon, 06 Mar 2017 17:20:57 +0800</pubDate>
       
-      <guid>serve/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
       <description>    名称 描述     Tampermonkey 脚本管理器   Proxy SwitchyOmega 代理设置   Adblock Plus 广告拦截   uBlock Origin 广告拦截   Awesome Screenshot 网页截图:注释&amp;amp;录屏   OneTab 减轻标签页混乱   Wappalyzer 网站技术分析   SimilarWeb 流量分析   Ghostery 强大的隐私保护   LastPass 密码管理器   Sourcegraph 代码搜索浏览   Octotree github目录树形结构   GiteeTree 码云 Gitee目录树形结构    chrome    名称 描述     广告终结者 广告拦截   Chrono 下载管理器   crxMouse Chrome™ 鼠标手势   易撤销 历史关闭助手   IP Whois 显示网站国家标志   Fatkun 图片批量下载   oscnews 开源中国    firefox    名称 描述     Flagfox 显示网站国家标志    </description>
     </item>
     
     <item>
       <title>常用软件</title>
-      <link>serve/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
+      <link>https://loresky.github.io/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Fri, 03 Mar 2017 09:40:19 +0800</pubDate>
       
-      <guid>serve/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
+      <guid>https://loresky.github.io/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
       <description>名称 描述     refind 引导多系统   obs 免费的屏幕录制和视频直播软件   TeamViewer 远程   fd 快速和用户友好的find替代﹑中文   fzf 模糊搜索神器﹑中文   ripgrep 一款命令行下最快的文本搜索神器   httpie 类似于cURL的HTTP命令行客户端﹑中文   cloc 统计代码的行数.能够统计空行﹑注释行   transfer.sh 从命令行轻松共享文件   croc 一个能够轻松在互联网上两台电脑之间安全传输文件的工具   SwitchHosts 快速切换hosts   shadowsocks 科学上网   v2ray Project V定制网络体系   WebTorrent 在线播放视频的 BT 下载   FreeTube Youtube 播放器   FlareGet 下载   uGet 下载   Photon 支持 HTTP/HTTPS，磁力链，BT 和 Metalink 下载   RetroArch 全能游戏模拟器   Tor 匿名浏览器﹑网桥   vivaldi 浏览器   Krita 绘画软件   Anki 记忆辅助   Arctime 跨平台字幕软件   PicGo 图片上传+管理   f.</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>serve/posts/goisforlovers/</link>
+      <link>https://loresky.github.io/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>serve/posts/goisforlovers/</guid>
+      <guid>https://loresky.github.io/posts/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>serve/posts/hugoisforlovers/</link>
+      <link>https://loresky.github.io/posts/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>serve/posts/hugoisforlovers/</guid>
+      <guid>https://loresky.github.io/posts/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo

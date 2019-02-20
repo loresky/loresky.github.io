@@ -29,7 +29,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 <meta property="og:description" content="for、switch 或 select 语句都可以配合标签（label）形式的标识符使用，即某一行第一个以冒号（:）结尾的单词（gofmt 会将后续代码自动移至下一行）。 **标签的名称是大小写敏感的，为了提升可读性，一般建议使用全部大写字母） **
 package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5; i&#43;&#43; { for j := 0; j &lt;= 5; j&#43;&#43; { if j == 4 { continue LABEL1 } fmt.Printf(&quot;i is: %d, and j is: %d\n&quot;, i, j) } } }  package main func main() { i:=0 HERE: print(i) i&#43;&#43; if i==5 { return } goto HERE }  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="serve/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/" /><meta property="article:published_time" content="2018-01-06T16:50:02&#43;00:00"/>
+<meta property="og:url" content="https://loresky.github.io/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/" /><meta property="article:published_time" content="2018-01-06T16:50:02&#43;00:00"/>
 <meta property="article:modified_time" content="2018-01-06T16:50:02&#43;00:00"/><meta property="og:site_name" content="Title" />
 
 
@@ -45,10 +45,10 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 
 
 
-<link rel="stylesheet" href="/serve/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
 
 
-<link rel="stylesheet" href="/serve/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -71,14 +71,14 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="serve"></a>
+        <a href="https://loresky.github.io"></a>
       </span>
       
         
         
         
         <div class="author-image">
-          <img src="serveimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
+          <img src="https://loresky.github.ioimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
         </div>
         
       
@@ -97,7 +97,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 		 
 			 
 				<li>
-					<a href="serve/posts/">
+					<a href="/posts/">
 						<span>Posts</span>
 					</a>
 				</li>
@@ -105,7 +105,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 		 
 			 
 				<li>
-					<a href="serve/docker/">
+					<a href="/docker/">
 						<span>Docker</span>
 					</a>
 				</li>
@@ -113,7 +113,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 		 
 			 
 				<li>
-					<a href="serve/git/">
+					<a href="/git/">
 						<span>Git</span>
 					</a>
 				</li>
@@ -121,7 +121,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 		 
 			 
 				<li>
-					<a href="serve/go/">
+					<a href="/go/">
 						<span>Go</span>
 					</a>
 				</li>
@@ -129,7 +129,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 		 
 			 
 				<li>
-					<a href="serve/linux/">
+					<a href="/linux/">
 						<span>Linux</span>
 					</a>
 				</li>
@@ -137,7 +137,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 		 
 			 
 				<li>
-					<a href="serve/mixed/">
+					<a href="/mixed/">
 						<span>Mixed</span>
 					</a>
 				</li>
@@ -145,7 +145,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 		 
 			 
 				<li>
-					<a href="serve/web/">
+					<a href="/web/">
 						<span>Web</span>
 					</a>
 				</li>
@@ -153,7 +153,7 @@ package main import &quot;fmt&quot; func main() { LABEL1: for i := 0; i &lt;= 5;
 		 
 			 
 				<li>
-					<a href="serve/win/">
+					<a href="/win/">
 						<span>Win</span>
 					</a>
 				</li>
@@ -254,13 +254,13 @@ func main() {
 
 <div class="navigation navigation-single">
     
-    <a href="serve/go/go%E7%BB%93%E6%9E%84for/" class="navigation-prev">
+    <a href="/go/go%E7%BB%93%E6%9E%84for/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
       <span class="navigation-tittle">go结构for</span>
     </a>
     
     
-    <a href="serve/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/" class="navigation-next">
+    <a href="/go/go%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/" class="navigation-next">
       <span class="navigation-tittle">go函数参数与返回值</span>
       <i aria-hidden="true" class="fa fa-chevron-right"></i>
     </a>

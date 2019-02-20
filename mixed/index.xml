@@ -2,149 +2,149 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mixeds on </title>
-    <link>serve/mixed/</link>
+    <link>https://loresky.github.io/mixed/</link>
     <description>Recent content in Mixeds on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 15 Feb 2019 14:53:09 +0800</lastBuildDate>
     
-	<atom:link href="serve/mixed/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loresky.github.io/mixed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Vue</title>
-      <link>serve/mixed/vue/</link>
+      <link>https://loresky.github.io/mixed/vue/</link>
       <pubDate>Fri, 15 Feb 2019 14:53:09 +0800</pubDate>
       
-      <guid>serve/mixed/vue/</guid>
+      <guid>https://loresky.github.io/mixed/vue/</guid>
       <description> log  vuejs-logger  mock  mockjs  </description>
     </item>
     
     <item>
       <title>Vegeta负载测试工具</title>
-      <link>serve/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
+      <link>https://loresky.github.io/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Tue, 29 Jan 2019 14:28:42 +0800</pubDate>
       
-      <guid>serve/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://loresky.github.io/mixed/vegeta%E8%B4%9F%E8%BD%BD%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
       <description>$ vegeta --help Usage: vegeta [global flags] &amp;lt;command&amp;gt; [command flags] global flags: -cpus int 使用 CPU 的数量 (默认为 4 个) -profile string 指定在执行期间启用哪个分析器，支持 cpu 和 heap。 -version 打印版本并退出。 attack command: -body string 指定请求主体文件里的内容。 -cert string 指定用于 HTTPS 请求的 PEM 格式的客户端证书文件。如果 -key 未指定，它会被设置为这个标志的值。 -connections int 指定每个目标主机打开的空闲连接的最大数目，默认值为 10000。 -duration duration 指定发送请求到目标主机的时长，用 0 表示永久。 -header value 指定目标的请求头，可以重复指定多个请求头。 -http2 指定是否向支持的服务器发送 HTTP/2 请求，默认为：true。 -insecure 指定是否忽略无效的服务器 TLS 证书。 -keepalive 指定是否使用持久链接，默认值为：true。 -key string 指定 HTTPS 请求中使用的 PEM 编码的 SSL 客户端证书私钥文件。 -laddr value 指定要使用的本地 I P地址，默认值为：0.</description>
     </item>
     
     <item>
       <title>Caddy</title>
-      <link>serve/mixed/caddy/</link>
+      <link>https://loresky.github.io/mixed/caddy/</link>
       <pubDate>Mon, 28 Jan 2019 16:05:01 +0800</pubDate>
       
-      <guid>serve/mixed/caddy/</guid>
+      <guid>https://loresky.github.io/mixed/caddy/</guid>
       <description> 文件管理 Caddyfile
 192.168.10.185:8081 filebrowser / ./zoom  </description>
     </item>
     
     <item>
       <title>Game</title>
-      <link>serve/mixed/game/</link>
+      <link>https://loresky.github.io/mixed/game/</link>
       <pubDate>Tue, 13 Nov 2018 11:03:01 +0800</pubDate>
       
-      <guid>serve/mixed/game/</guid>
+      <guid>https://loresky.github.io/mixed/game/</guid>
       <description>   名称 描述     flightgear 飞行模拟器   坎巴拉太空计划 航空航天模拟游戏    </description>
     </item>
     
     <item>
       <title>Java第三方</title>
-      <link>serve/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</link>
+      <link>https://loresky.github.io/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</link>
       <pubDate>Wed, 05 Sep 2018 14:51:34 +0800</pubDate>
       
-      <guid>serve/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</guid>
+      <guid>https://loresky.github.io/mixed/java%E7%AC%AC%E4%B8%89%E6%96%B9/</guid>
       <description> Json  Gson：谷歌官方推出的JSON处理库. Fastjson：阿里巴巴的开源JSON解析库.  加密库  tink：Java and Android, C++ and Obj-C.  日期时间  joda-time  java规范  p3c  Java反编译器  jadx  Android 工具类  AndroidUtilCode  日志  logger  图片压缩  Luban：图片压缩工具，仿微信朋友圈压缩策略.   Sql  Realm：移动数据库https://realm.io/cn. ObjectBox：NoSQL移动数据库.  Webview  AgentWeb：基于Android WebView轻量和极度灵活.  内存泄露  LeakCanary  资源混淆  AndResGuard：缩小APK大小的工具.  防混淆  FreeProGuard：Android防混淆配置.  计算方法数  Dexcount  节码优化器  ReDex  </description>
     </item>
     
     <item>
       <title>Cron</title>
-      <link>serve/mixed/cron/</link>
+      <link>https://loresky.github.io/mixed/cron/</link>
       <pubDate>Thu, 14 Jun 2018 16:33:06 +0800</pubDate>
       
-      <guid>serve/mixed/cron/</guid>
+      <guid>https://loresky.github.io/mixed/cron/</guid>
       <description>cron表达式  按顺序依次为 1 秒（0~59） 2 分钟（0~59） 3 小时（0~23） 4 天（0~31） 5 月（0~11） 6 星期（1~7 1=SUN 或 SUN，MON，TUE，WED，THU，FRI，SAT） 7.年份（1970－2099） 其中每个元素可以是一个值(如6),一个连续区间(9-12),一个间隔时间(8-18/4)(/表示每隔4小时),一个列表(1,3,5),通配符。由于&amp;quot;月份中的日期&amp;quot;和&amp;quot;星期中的日期&amp;quot;这两个元素互斥的,必须要对其中一个设置?. 0 0 10,14,16 * * ? 每天上午10点，下午2点，4点 0 0/30 9-17 * * ? 朝九晚五工作时间内每半小时 0 0 12 ? * WED 表示每个星期三中午12点 &amp;quot;0 0 12 * * ?&amp;quot; 每天中午12点触发 &amp;quot;0 15 10 ? * *&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ?&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ? *&amp;quot; 每天上午10:15触发 &amp;quot;0 15 10 * * ?</description>
     </item>
     
     <item>
       <title>Ftp服务器</title>
-      <link>serve/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://loresky.github.io/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Tue, 08 May 2018 16:12:44 +0800</pubDate>
       
-      <guid>serve/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://loresky.github.io/mixed/ftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description> sudo apt-get install vsftpd 运行 sudo service vsftpd status sudo service vsftpd stop sudo service vsftpd restart sudo service vsftpd status  配置vsftpd.conf sudo gedit /etc/vsftpd.conf
 listen=YES local_root=/ anon_root=/ #允许匿名访问 anonymous_enable=YES #允许本地用户对FTP服务器文件有写权限 write_enable=YES #系统自动维护上传和下载日志 xferlog_enable=YES #设定FTP服务器将启用FTP数据端口的连接请求 connect_from_port_20=YES #标准格式写日志文件 xferlog_std_format=YES #设置本地用户默认掩码 local_umask=022 #不允许匿名用户上传文件 anon_upload_enable=YES #不允许匿名用户写文件 anon_mkdir_write_enable=YES #打开匿名用户删除和重命名的权 anon_other_write_enable=YES #设置PAM外挂模块提供的认证服务所使用的配置文件名 pam_service_name=vsftpd #是否允许ftpusers文件中得用户登录FTP服务器，默认为NO userlist_enable=YES #是否使用tcp_wrappers作为主机访问控制方式 tcp_wrappers=YES idle_session_timeout=600 data_connection_timeout=120 max_clients=10 max_per_ip=5 local_max_rate=50000 utf8_filesystem=YES  </description>
     </item>
     
     <item>
       <title>云服务</title>
-      <link>serve/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</link>
+      <link>https://loresky.github.io/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</link>
       <pubDate>Mon, 07 May 2018 10:02:15 +0800</pubDate>
       
-      <guid>serve/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</guid>
+      <guid>https://loresky.github.io/mixed/%E4%BA%91%E6%9C%8D%E5%8A%A1/</guid>
       <description>https://www.heroku.com/ https://blog.csdn.net/cancer94/article/details/54838871</description>
     </item>
     
     <item>
       <title>时间</title>
-      <link>serve/mixed/%E6%97%B6%E9%97%B4/</link>
+      <link>https://loresky.github.io/mixed/%E6%97%B6%E9%97%B4/</link>
       <pubDate>Fri, 04 May 2018 09:03:13 +0800</pubDate>
       
-      <guid>serve/mixed/%E6%97%B6%E9%97%B4/</guid>
+      <guid>https://loresky.github.io/mixed/%E6%97%B6%E9%97%B4/</guid>
       <description>1小时(h)=60分钟(min) 1分钟(m)=60秒(s) 1秒(s)=1000毫秒(ms) 1毫秒(ms)=1000微秒(μs) 1微秒(μs)=1000纳秒(ns) 1纳秒(ns)=1000皮秒(ps)</description>
     </item>
     
     <item>
       <title>Api规范</title>
-      <link>serve/mixed/api%E8%A7%84%E8%8C%83/</link>
+      <link>https://loresky.github.io/mixed/api%E8%A7%84%E8%8C%83/</link>
       <pubDate>Thu, 03 May 2018 10:38:56 +0800</pubDate>
       
-      <guid>serve/mixed/api%E8%A7%84%E8%8C%83/</guid>
+      <guid>https://loresky.github.io/mixed/api%E8%A7%84%E8%8C%83/</guid>
       <description>   名称 地址     http-status-codes http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml   http-api-design https://github.com/ZhangBohan/http-api-design-ZH_CN   jsonapi http://jsonapi.org.cn/   微软 https://github.com/Microsoft/api-guidelines   PayPal https://segmentfault.com/a/1190000005924733    </description>
     </item>
     
     <item>
       <title>文件系统</title>
-      <link>serve/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <link>https://loresky.github.io/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Wed, 02 May 2018 16:27:24 +0800</pubDate>
       
-      <guid>serve/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>https://loresky.github.io/mixed/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
       <description>   名称 地址     seaweedfs https://github.com/chrislusf/glow    </description>
     </item>
     
     <item>
       <title>全球可用的NTP服务器</title>
-      <link>serve/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://loresky.github.io/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Sat, 28 Apr 2018 19:57:00 +0800</pubDate>
       
-      <guid>serve/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://loresky.github.io/mixed/%E5%85%A8%E7%90%83%E5%8F%AF%E7%94%A8%E7%9A%84ntp%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description>http://ntp.org.cn/</description>
     </item>
     
     <item>
       <title>Vps</title>
-      <link>serve/mixed/vps/</link>
+      <link>https://loresky.github.io/mixed/vps/</link>
       <pubDate>Sat, 28 Apr 2018 18:12:27 +0800</pubDate>
       
-      <guid>serve/mixed/vps/</guid>
+      <guid>https://loresky.github.io/mixed/vps/</guid>
       <description>Vultr : https://www.vultr.com/</description>
     </item>
     
     <item>
       <title>openvpn</title>
-      <link>serve/mixed/openvpn/</link>
+      <link>https://loresky.github.io/mixed/openvpn/</link>
       <pubDate>Tue, 31 Oct 2017 21:12:52 +0000</pubDate>
       
-      <guid>serve/mixed/openvpn/</guid>
+      <guid>https://loresky.github.io/mixed/openvpn/</guid>
       <description>1 打开终端并安装openvpn用以下命令 sudo apt-get install openvpn network-manager-openvpn  2 打开网络菜单，转到“VPN连接”，然后点击“配置VPN…”。 3 Click on &amp;ldquo;Add&amp;rdquo;. 4 Click on &amp;ldquo;Import a saved VPN configuration&amp;hellip;&amp;rdquo;. 5 Click on &amp;ldquo;Create&amp;rdquo;. 6 Download the OpenVPN configuration, unzip it and import the .ovpn file. 7 Enter your login credentials and click on &amp;ldquo;Save&amp;hellip;&amp;rdquo;. 7a Switch to &amp;ldquo;Advanced Configuration&amp;rdquo; and in the tab &amp;ldquo;TLS Authentication&amp;rdquo; check &amp;ldquo;Use additional TLS authentication&amp;rdquo;. Select the file &amp;ldquo;StaticKey.pem&amp;rdquo; from the configuration and set the &amp;ldquo;Key Direction&amp;rdquo; to &amp;ldquo;0&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>mongodb可视化</title>
-      <link>serve/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
+      <link>https://loresky.github.io/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/</link>
       <pubDate>Tue, 26 Sep 2017 10:17:09 +0000</pubDate>
       
-      <guid>serve/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
+      <guid>https://loresky.github.io/mixed/mongodb%E5%8F%AF%E8%A7%86%E5%8C%96/</guid>
       <description> mongo-express 复制创建配置文件
 cp config.default.js config.js  配置Mongo数据库的连接信息：
 mongo = { db: &#39;db&#39;, host: &#39;localhost&#39;, password: &#39;pass&#39;, port: 27017, ssl: false, url: &#39;mongodb://localhost:27017/db&#39;, username: &#39;admin&#39;, }  配置Web服务的信息 其中根据场景需求，可能需要把  host: process.env.VCAP_APP_HOST || &#39;localhost&#39;  修改为  host: process.env.VCAP_APP_HOST || &#39;0.0.0.0&#39;, 
@@ -155,28 +155,28 @@ admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGOD
     
     <item>
       <title>android配置</title>
-      <link>serve/mixed/android%E9%85%8D%E7%BD%AE/</link>
+      <link>https://loresky.github.io/mixed/android%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Tue, 27 Jun 2017 11:30:39 +0000</pubDate>
       
-      <guid>serve/mixed/android%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://loresky.github.io/mixed/android%E9%85%8D%E7%BD%AE/</guid>
       <description>buildscript { repositories { maven { url &#39;https://maven.aliyun.com/repository/public&#39; } maven { url &#39;https://maven.aliyun.com/repository/google } maven { url &#39;https://maven.aliyun.com/repository/jcenter&#39; } maven { url &#39;https://maven.aliyun.com/repository/gradle-plugin&#39; } } } allprojects { repositories { maven { url &#39;https://maven.aliyun.com/repository/public&#39; } maven { url &#39;https://maven.aliyun.com/repository/google } maven { url &#39;https://maven.aliyun.com/repository/jcenter&#39; } }  app外build.gradle ext { minSdkVersion = 19 targetSdkVersion = 28 compileSdkVersion = 28 supportLibraryVersion = &amp;quot;28.+&amp;quot; }  app内build.gradle android { compileSdkVersion rootProject.</description>
     </item>
     
     <item>
       <title>maven配置</title>
-      <link>serve/mixed/maven%E9%85%8D%E7%BD%AE/</link>
+      <link>https://loresky.github.io/mixed/maven%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 26 Jun 2017 08:23:45 +0000</pubDate>
       
-      <guid>serve/mixed/maven%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://loresky.github.io/mixed/maven%E9%85%8D%E7%BD%AE/</guid>
       <description>本地仓库的配置 &amp;lt;localRepository&amp;gt;/opt/maven/repo&amp;lt;/localRepository&amp;gt;  国内maven repository 在前添加 &amp;lt;mirror&amp;gt; &amp;lt;id&amp;gt;nexus-aliyun&amp;lt;/id&amp;gt; &amp;lt;mirrorOf&amp;gt;*&amp;lt;/mirrorOf&amp;gt; &amp;lt;name&amp;gt;Nexus aliyun&amp;lt;/name&amp;gt; &amp;lt;url&amp;gt;http://maven.aliyun.com/nexus/content/groups/public&amp;lt;/url&amp;gt; &amp;lt;/mirror&amp;gt;  打包不测试idea&amp;ndash;&amp;gt;maven&amp;ndash;&amp;gt;package&amp;ndash;&amp;gt;Command line: clean package -DskipTests</description>
     </item>
     
     <item>
       <title>Tomcat设置</title>
-      <link>serve/mixed/tomcat%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://loresky.github.io/mixed/tomcat%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Sun, 23 Apr 2017 10:49:47 +0000</pubDate>
       
-      <guid>serve/mixed/tomcat%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://loresky.github.io/mixed/tomcat%E8%AE%BE%E7%BD%AE/</guid>
       <description>tomcat配置虚拟目录 apache-tomcat-8.0.18\conf\Catalina\localhost 下建一个xml
 &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;Context path=&amp;quot;/qqq&amp;quot; docBase=&amp;quot;E:\qqq&amp;quot; reloadable=&amp;quot;false&amp;quot; /&amp;gt;  文件名改成你自己的譬如http://localhost:8080/qqq ，文件名就为qqq.xml 再打开Tomcat安装目录,打开conf/web.xml 文件，在其中找到
 &amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;listings&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;false&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt;  将false设成true保存，重启Tomcat。 在浏览器输入 http://localhost/demo/，就可以显示文件列表了。</description>
@@ -184,10 +184,10 @@ admin: process.env.ME_CONFIG_MONGODB_ENABLE_ADMIN ? process.env.ME_CONFIG_MONGOD
     
     <item>
       <title>MySQL配置文件详解</title>
-      <link>serve/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
+      <link>https://loresky.github.io/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</link>
       <pubDate>Tue, 18 Apr 2017 12:16:18 +0000</pubDate>
       
-      <guid>serve/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</guid>
+      <guid>https://loresky.github.io/mixed/mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</guid>
       <description>找到C:\Program Files\MariaDB 5.5\data\my.ini
 [mysqld]下增加character-set-server=utf8 [client]下增加default-character-set=utf8 [MySQL] 下增加default-character-set=utf8  设置MySQL5.6的远程连接
 use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO root@&amp;quot;%&amp;quot; IDENTIFIED BY &amp;quot;root&amp;quot;; //设置root用户密码 update user set Password = password(&#39;123456&#39;) where User=&#39;root&#39;; //刷新刚才的内容 flush privileges;  </description>
@@ -195,10 +195,10 @@ use mysql; //为root添加远程连接的能力 GRANT ALL PRIVILEGES ON *.* TO r
     
     <item>
       <title>大公司github</title>
-      <link>serve/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</link>
+      <link>https://loresky.github.io/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</link>
       <pubDate>Mon, 13 Mar 2017 17:05:50 +0800</pubDate>
       
-      <guid>serve/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</guid>
+      <guid>https://loresky.github.io/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/</guid>
       <description> 公司开源导航页 https://www.oschina.net/company
 github 趋势 https://github.com/trending
  Square Facebook LinkedIn：全球最大职业社交网站. VRG Soft：VRG Soft. NHN：NHN娱乐(前端).
@@ -226,28 +226,28 @@ github 趋势 https://github.com/trending
     
     <item>
       <title>Vscode插件</title>
-      <link>serve/mixed/vscode%E6%8F%92%E4%BB%B6/</link>
+      <link>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Mon, 13 Mar 2017 17:05:48 +0800</pubDate>
       
-      <guid>serve/mixed/vscode%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/</guid>
       <description>   名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片    </description>
     </item>
     
     <item>
       <title>浏览器插件</title>
-      <link>serve/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link>
+      <link>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Mon, 06 Mar 2017 17:20:57 +0800</pubDate>
       
-      <guid>serve/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
+      <guid>https://loresky.github.io/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/</guid>
       <description>    名称 描述     Tampermonkey 脚本管理器   Proxy SwitchyOmega 代理设置   Adblock Plus 广告拦截   uBlock Origin 广告拦截   Awesome Screenshot 网页截图:注释&amp;amp;录屏   OneTab 减轻标签页混乱   Wappalyzer 网站技术分析   SimilarWeb 流量分析   Ghostery 强大的隐私保护   LastPass 密码管理器   Sourcegraph 代码搜索浏览   Octotree github目录树形结构   GiteeTree 码云 Gitee目录树形结构    chrome    名称 描述     广告终结者 广告拦截   Chrono 下载管理器   crxMouse Chrome™ 鼠标手势   易撤销 历史关闭助手   IP Whois 显示网站国家标志   Fatkun 图片批量下载   oscnews 开源中国    firefox    名称 描述     Flagfox 显示网站国家标志    </description>
     </item>
     
     <item>
       <title>常用软件</title>
-      <link>serve/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
+      <link>https://loresky.github.io/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Fri, 03 Mar 2017 09:40:19 +0800</pubDate>
       
-      <guid>serve/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
+      <guid>https://loresky.github.io/mixed/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</guid>
       <description>名称 描述     refind 引导多系统   obs 免费的屏幕录制和视频直播软件   TeamViewer 远程   fd 快速和用户友好的find替代﹑中文   fzf 模糊搜索神器﹑中文   ripgrep 一款命令行下最快的文本搜索神器   httpie 类似于cURL的HTTP命令行客户端﹑中文   cloc 统计代码的行数.能够统计空行﹑注释行   transfer.sh 从命令行轻松共享文件   croc 一个能够轻松在互联网上两台电脑之间安全传输文件的工具   SwitchHosts 快速切换hosts   shadowsocks 科学上网   v2ray Project V定制网络体系   WebTorrent 在线播放视频的 BT 下载   FreeTube Youtube 播放器   FlareGet 下载   uGet 下载   Photon 支持 HTTP/HTTPS，磁力链，BT 和 Metalink 下载   RetroArch 全能游戏模拟器   Tor 匿名浏览器﹑网桥   vivaldi 浏览器   Krita 绘画软件   Anki 记忆辅助   Arctime 跨平台字幕软件   PicGo 图片上传+管理   f.</description>
     </item>
     
