@@ -21,3 +21,20 @@ docker run  -idt -p 80:80 -v /www:/usr/share/nginx/html:ro  -v /config/nginx.con
 ```
 docker run -d -p 6379:6379 -v ~/redis/data:/data -d redis:latest redis-server --appendonly yes --requirepass "123456"
 ```
+
+## mongodb
+```
+docker run -itd  -p 27017:27017 -v /data/mongoDb/:/data/db -d mongo:latest
+```
+
+## mongo-express
+```
+docker run -it --rm \
+	--name mongo-express \
+	--link {id/name}mongo \
+	-p 8088:8081 \
+	-e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance" \
+	-e ME_CONFIG_BASICAUTH_USERNAME="admin" \
+	-e ME_CONFIG_BASICAUTH_PASSWORD="pass" \
+	mongo-express
+```
