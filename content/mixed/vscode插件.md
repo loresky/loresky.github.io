@@ -51,6 +51,70 @@ description = ""
 |[Turbo Console Log](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)|自动执行编写日志消息的操作js|
 |[Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)|快速地将JSON数据转为JavaScript代码|
 |[Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)|代码片段生成一个高清图片|
+|[gi](https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi)|快速生成.gitignore|
+|[Vusion Peek](https://marketplace.visualstudio.com/items?itemName=lingximu.vusion-peek)|Vue组件快速跳转|
+
+
+
+
+
+```javascript
+{
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    // 配置文件关联
+    "files.associations": {
+        "*.vue": "vue"
+    },
+    // 配置emmet是否启用tab展开缩写
+    "emmet.triggerExpansionOnTab": true,
+    // 配置emmet对文件类型的支持
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html",
+        "javascript": "javascriptreact",
+        "xml": {
+            "attr_quotes": "single"
+        }
+    },
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    //js-beautify-html格式化配置，属性强制换行 文档：https://github.com/beautify-web/js-beautify#css--html
+    "vetur.format.defaultFormatterOptions": {
+        "js-beautify-html": {
+            // 属性强制折行对齐
+            "wrap_attributes": "force-aligned",
+        }
+    },
+    //使用单引号而不是双引号
+    "prettier.singleQuote": true,
+    //无需分号
+    "prettier.semi": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "window.zoomLevel": 1,
+    "vim.disableExtension": true,
+    "go.formatTool": "gofmt",
+    // 保存时自动格式化
+    "editor.formatOnPaste": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
+```
+
+
 
 
 
