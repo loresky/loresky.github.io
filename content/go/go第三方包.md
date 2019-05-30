@@ -6,6 +6,10 @@ featured_image = ""
 description = ""
 +++
 
+# go模块的全局代理
+- [goproxy]https://github.com/goproxyio/goproxy
+
+
 ## 日志
 
 - [zap](https://github.com/uber-go/zap)
