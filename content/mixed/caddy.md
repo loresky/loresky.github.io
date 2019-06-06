@@ -6,6 +6,8 @@ featured_image = ""
 description = ""
 +++
 
+* [filebrowser](https://github.com/filebrowser/filebrowser)
+
 ##   文件管理
 Caddyfile
 ```
