@@ -1,216 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    
 
-
-    <head>
-    <link href="https://gmpg.org/xfn/11" rel="profile">
+  <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Cache-Control" content="public" />
-<!-- Enable responsiveness on mobile devices -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.53" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
 
     
-    
-    
 
-<title>Vscode插件 • </title>
+    <meta name="author" content="Author">
+    <meta name="description" content="名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片   gi 快速生成.">
+    <meta name="keywords" content="blog,developer,personal">
 
-
-<meta name="twitter:card" content="summary"/>
+    <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Vscode插件"/>
-<meta name="twitter:description" content="   名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片    "/>
+<meta name="twitter:description" content="名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片   gi 快速生成."/>
 
-<meta property="og:title" content="Vscode插件" />
-<meta property="og:description" content="   名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片    " />
+    <meta property="og:title" content="Vscode插件" />
+<meta property="og:description" content="名称 描述     Auto Close Tag 自动闭合HTML标签   Auto Rename Tag 修改HTML标签时，自动修改匹配的标签   Auto Import 自动导入模块，适用于 TypeScript 和 TSX（的自动补全）   Beautify HTML、CSS、JS、JSON语法高亮   Better Comments 更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释   Better TOML TOML语言支持   Bracket Pair Colorizer 对括号对进行着色   indent-rainbow 缩进显示不同颜色交替   change-case 快速更改当前选择或当前单词的大小写   Settings Sync VSCode设置同步到Gist   Color Highlight 颜色值在代码中高亮显示   Document This 在TypeScript和JavaScript文件中添加注释   Git History 查看git日志，文件历史记录，比较分支或提交   GitLens 显示文件最近的commit和作者，显示当前行commit信息   Guides 代码对齐辅助线   IntelliSense for CSS class names in HTML CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示   HTMLHint HTML格式提示   Live Server 为静态和动态页面启动具有实时刷新功能的开发本地服务器   Local History 本地文件修改记录   markdownlint Markdown格式提示   Markdown All in One Markdown自动预览   Output Colorizer 彩色输出日志信息   Partial Diff 比较（差异）文件，文件或剪贴板中的文本选择   Path Intellisense 文件路径补全   Mermaid Preview 流程图   PlantUML 流程图 UML图   Project Manager 项目管理，让我们方便的在命令面板中切换项目文件夹   REST Client 发送REST风格的HTTP请求   Color Picker 拾色器   vscode-fileheader 顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间   File Peek 根据路径字符串，快速定位到文件   filesize 在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间   Image preview 显示图像预览   SVG Viewer SVG 图像预览   TODO Highlight TODO高亮显示   TODO Parser 解析 TODO，TODO 计数器   Todo Tree 资源管理器窗格的树视图中显示器   TypeLens 查看引用数量   Trailing Spaces 高亮那些冗余的空格，可以快速删掉   WakaTime 从你的使用习惯中生成数据报表   Turbo Console Log 自动执行编写日志消息的操作js   Paste JSON as Code 快速地将JSON数据转为JavaScript代码   Polacode 代码片段生成一个高清图片   gi 快速生成." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/" /><meta property="article:published_time" content="2017-03-13T17:05:48&#43;08:00"/>
-<meta property="article:modified_time" content="2017-03-13T17:05:48&#43;08:00"/><meta property="og:site_name" content="Title" />
+<meta property="og:url" content="https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/" /><meta property="article:section" content="mixed" />
+<meta property="article:published_time" content="2017-03-13T17:05:48+08:00" />
+<meta property="article:modified_time" content="2017-03-13T17:05:48+08:00" />
 
+
+
+    <title>
+  Vscode插件 · loresky
+</title>
+
+    
+      <link rel="canonical" href="https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
+    
 
     
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
-
-
-<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
-
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="/favicon.png">
     
-
-</head>
-
-
-    <body class=" ">
-    
-<div class="sidebar">
-  <div class="container ">
-    <div class="sidebar-about">
-      <span class="site__title">
-        <a href="https://loresky.github.io"></a>
-      </span>
       
         
         
-        
-        <div class="author-image">
-          <img src="https://loresky.github.ioimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
-        </div>
-        
+        <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
       
-      
-      <p class="site__description">
-         生面 
-      </p>
-    </div>
-    <div class="collapsible-menu">
-      <input type="checkbox" id="menuToggle">
-      <label for="menuToggle"></label>
-      <div class="menu-content">
-        <div>
-	<ul class="sidebar-nav">
-		 
-		 
-			 
-				<li>
-					<a href="/posts/">
-						<span>Posts</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/docker/">
-						<span>Docker</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/git/">
-						<span>Git</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/go/">
-						<span>Go</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/linux/">
-						<span>Linux</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/mixed/">
-						<span>Mixed</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/web/">
-						<span>Web</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/win/">
-						<span>Win</span>
-					</a>
-				</li>
-			 
-		
-		</li>
-	</ul>
-</div>
-
-        <section class="social">
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</section>
-
-      </div>
-    </div>
     
 
+    
 
-  </div>
-</div>
+    
 
-        <div class="content container">
-            
-    <article>
-  <header>
-    <h1>Vscode插件</h1>
-    
-    
-<div class="post__meta">
-    
-    
-      <i class="fas fa-calendar-alt"></i> Mar 13, 2017
-    
-    
-    
-    
-    
-    <br/>
-    <i class="fas fa-clock"></i> 1 min read
-</div>
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-  </header>
+    <meta name="generator" content="Hugo 0.94.2" />
+  </head>
+
   
   
-  <div class="post">
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      loresky
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/docker/">docker</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/git/">git</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/go/">go</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/linux/">linux</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/mixed/">mixed</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/web/">web</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/win/">win</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://loresky.github.io/mixed/vscode%E6%8F%92%E4%BB%B6/">
+          Vscode插件
+        </a>
+      </h1>
+    </header>
+
     <table>
 <thead>
 <tr>
@@ -218,276 +150,287 @@
 <th>描述</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">Auto Close Tag</a></td>
 <td>自动闭合HTML标签</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">Auto Rename Tag</a></td>
 <td>修改HTML标签时，自动修改匹配的标签</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=steoates.autoimport">Auto Import</a></td>
 <td>自动导入模块，适用于 TypeScript 和 TSX（的自动补全）</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify">Beautify</a></td>
 <td>HTML、CSS、JS、JSON语法高亮</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a></td>
 <td>更加人性化的注释，通过使用警报，信息，TODO等进行注释来改进您的代码注释</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml">Better TOML</a></td>
 <td>TOML语言支持</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer">Bracket Pair Colorizer</a></td>
 <td>对括号对进行着色</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow">indent-rainbow</a></td>
 <td>缩进显示不同颜色交替</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=wmaurer.change-case">change-case</a></td>
 <td>快速更改当前选择或当前单词的大小写</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync">Settings Sync</a></td>
 <td>VSCode设置同步到Gist</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight">Color Highlight</a></td>
 <td>颜色值在代码中高亮显示</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=joelday.docthis">Document This</a></td>
 <td>在TypeScript和JavaScript文件中添加注释</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory">Git History</a></td>
 <td>查看git日志，文件历史记录，比较分支或提交</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a></td>
 <td>显示文件最近的commit和作者，显示当前行commit信息</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=spywhere.guides">Guides</a></td>
 <td>代码对齐辅助线</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">IntelliSense for CSS class names in HTML</a></td>
 <td>CSS 类名补全，会自动扫描整个项目里面的 CSS 类名并在你输入类名时做智能提示</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint">HTMLHint</a></td>
 <td>HTML格式提示</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></td>
 <td>为静态和动态页面启动具有实时刷新功能的开发本地服务器</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=xyz.local-history">Local History</a></td>
 <td>本地文件修改记录</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">markdownlint</a></td>
 <td>Markdown格式提示</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a></td>
 <td>Markdown自动预览</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer">Output Colorizer</a></td>
 <td>彩色输出日志信息</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff">Partial Diff</a></td>
 <td>比较（差异）文件，文件或剪贴板中的文本选择</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></td>
 <td>文件路径补全</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=vstirbu.vscode-mermaid-preview">Mermaid Preview</a></td>
 <td>流程图</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml">PlantUML</a></td>
 <td>流程图 UML图</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager">Project Manager</a></td>
 <td>项目管理，让我们方便的在命令面板中切换项目文件夹</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=humao.rest-client">REST Client</a></td>
 <td>发送REST风格的HTTP请求</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color">Color Picker</a></td>
 <td>拾色器</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=mikey.vscode-fileheader">vscode-fileheader</a></td>
 <td>顶部注释模板，可定义作者、时间等信息，并会自动更新最后修改时间</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=abierbaum.vscode-file-peek">File Peek</a></td>
 <td>根据路径字符串，快速定位到文件</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=mkxml.vscode-filesize">filesize</a></td>
 <td>在底部状态栏显示当前文件大小，点击后还可以看到详细创建、修改时间</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview">Image preview</a></td>
 <td>显示图像预览</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer">SVG Viewer</a></td>
 <td>SVG 图像预览</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">TODO Highlight</a></td>
 <td>TODO高亮显示</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=minhthai.vscode-todo-parser">TODO Parser</a></td>
 <td>解析 TODO，TODO 计数器</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree">Todo Tree</a></td>
 <td>资源管理器窗格的树视图中显示器</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=kisstkondoros.typelens">TypeLens</a></td>
 <td>查看引用数量</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces">Trailing Spaces</a></td>
 <td>高亮那些冗余的空格，可以快速删掉</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime">WakaTime</a></td>
 <td>从你的使用习惯中生成数据报表</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log">Turbo Console Log</a></td>
 <td>自动执行编写日志消息的操作js</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype">Paste JSON as Code</a></td>
 <td>快速地将JSON数据转为JavaScript代码</td>
 </tr>
-
 <tr>
 <td><a href="https://marketplace.visualstudio.com/items?itemName=pnp.polacode">Polacode</a></td>
 <td>代码片段生成一个高清图片</td>
 </tr>
+<tr>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi">gi</a></td>
+<td>快速生成.gitignore</td>
+</tr>
+<tr>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=lingximu.vusion-peek">Vusion Peek</a></td>
+<td>Vue组件快速跳转</td>
+</tr>
 </tbody>
 </table>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;gitlens.keymap&#34;</span>: <span style="font-style:italic">&#34;alternate&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;gitlens.advanced.messages&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;suppressCommitHasNoPreviousCommitWarning&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;suppressCommitNotFoundWarning&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;suppressFileNotUnderSourceControlWarning&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;suppressGitVersionWarning&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;suppressLineUncommittedWarning&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;suppressNoRepositoryWarning&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;suppressResultsExplorerNotice&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;suppressShowKeyBindingsNotice&#34;</span>: <span style="font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">// 配置文件关联
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>    <span style="font-style:italic">&#34;files.associations&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;*.vue&#34;</span>: <span style="font-style:italic">&#34;vue&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">// 配置emmet是否启用tab展开缩写
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>    <span style="font-style:italic">&#34;emmet.triggerExpansionOnTab&#34;</span>: <span style="font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">// 配置emmet对文件类型的支持
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>    <span style="font-style:italic">&#34;emmet.syntaxProfiles&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;vue-html&#34;</span>: <span style="font-style:italic">&#34;html&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;vue&#34;</span>: <span style="font-style:italic">&#34;html&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;javascript&#34;</span>: <span style="font-style:italic">&#34;javascriptreact&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;xml&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="font-style:italic">&#34;attr_quotes&#34;</span>: <span style="font-style:italic">&#34;single&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;vetur.format.defaultFormatter.html&#34;</span>: <span style="font-style:italic">&#34;js-beautify-html&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;vetur.format.defaultFormatter.js&#34;</span>: <span style="font-style:italic">&#34;vscode-typescript&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">//js-beautify-html格式化配置，属性强制换行 文档：https://github.com/beautify-web/js-beautify#css--html
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>    <span style="font-style:italic">&#34;vetur.format.defaultFormatterOptions&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;js-beautify-html&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="font-style:italic">// 属性强制折行对齐
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>            <span style="font-style:italic">&#34;wrap_attributes&#34;</span>: <span style="font-style:italic">&#34;force-aligned&#34;</span>,
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">//使用单引号而不是双引号
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>    <span style="font-style:italic">&#34;prettier.singleQuote&#34;</span>: <span style="font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">//无需分号
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>    <span style="font-style:italic">&#34;prettier.semi&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;javascript.format.insertSpaceBeforeFunctionParenthesis&#34;</span>: <span style="font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;workbench.colorTheme&#34;</span>: <span style="font-style:italic">&#34;One Dark Pro&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;editor.fontFamily&#34;</span>: <span style="font-style:italic">&#34;Fira Code&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;editor.fontLigatures&#34;</span>: <span style="font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;window.zoomLevel&#34;</span>: 1,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;vim.disableExtension&#34;</span>: <span style="font-weight:bold">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;go.formatTool&#34;</span>: <span style="font-style:italic">&#34;gofmt&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">// 保存时自动格式化
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>    <span style="font-style:italic">&#34;editor.formatOnPaste&#34;</span>: <span style="font-weight:bold">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="font-style:italic">&#34;[typescript]&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="font-style:italic">&#34;editor.defaultFormatter&#34;</span>: <span style="font-style:italic">&#34;esbenp.prettier-vscode&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+  </article>
+</section>
 
-  </div>
   
 
-<div class="navigation navigation-single">
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
     
-    <a href="/mixed/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/" class="navigation-prev">
-      <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">浏览器插件</span>
-    </a>
+      2018 -
     
+    2022
+     Author 
+    ·
     
-    <a href="/mixed/%E5%A4%A7%E5%85%AC%E5%8F%B8github/" class="navigation-next">
-      <span class="navigation-tittle">大公司github</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
-    </a>
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
-</div>
+  </section>
+</footer>
 
-
-  
-
-  
-    
-
-
-</article>
-
-
-        </div>
-        
-    
-<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-
+    </main>
 
     
+      
+      <script src="/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js" integrity="sha256-j7hjdqFuaEr0cqMprvUC2&#43;vPq2XOJk6XUNFEkSlHxgI="></script>
     
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-        
-    
-    <script type="text/javascript">
-        
-        hljs.initHighlightingOnLoad();
-    </script>
-    
-
-
-
 
     
 
+    
 
+    
 
-    </body>
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
 </html>

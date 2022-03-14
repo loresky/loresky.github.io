@@ -1,332 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    
 
-
-    <head>
-    <link href="https://gmpg.org/xfn/11" rel="profile">
+  <head>
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Cache-Control" content="public" />
-<!-- Enable responsiveness on mobile devices -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.53" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
 
     
-    
-    
 
-<title>go结构for • </title>
+    <meta name="author" content="Author">
+    <meta name="description" content="1. 基于计数器的迭代for 初始化语句; 条件语句; 修饰语句 {}
+package main  import &#34;fmt&#34;  func main() {  for i := 0; i &lt; 5; i&#43;&#43; {  fmt.Printf(&#34;This is the %d iteration\n&#34;, i)  } } 循环中同时使用多个计数器：
+**for i, j := 0, N; i &lt; j; i, j = i&#43;1, j-1 {} **2. 基于条件判断的迭代for 结构的第二种形式是没有头部的条件判断迭代（类似其它语言中的 while 循环），基本形式为：for 条件语句 {}。 您也可以认为这是没有初始化语句和修饰语句的 for 结构，因此 ;; 便是多余的了。">
+    <meta name="keywords" content="blog,developer,personal">
 
-
-<meta name="twitter:card" content="summary"/>
+    <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="go结构for"/>
-<meta name="twitter:description" content="1. 基于计数器的迭代 for 初始化语句; 条件语句; 修饰语句 {}
-package main import &quot;fmt&quot; func main() { for i := 0; i &lt; 5; i&#43;&#43; { fmt.Printf(&quot;This is the %d iteration\n&quot;, i) } }  循环中同时使用多个计数器：
-**for i, j := 0, N; i &lt; j; i, j = i&#43;1, j-1 {} ** 2. 基于条件判断的迭代 for 结构的第二种形式是没有头部的条件判断迭代（类似其它语言中的 while 循环），基本形式为：for 条件语句 {}。 您也可以认为这是没有初始化语句和修饰语句的 for 结构，因此 ;; 便是多余的了。
-package main import &quot;fmt&quot; func main() { var i int = 5 for i &gt;= 0 { i = i - 1 fmt."/>
+<meta name="twitter:description" content="1. 基于计数器的迭代for 初始化语句; 条件语句; 修饰语句 {}
+package main  import &#34;fmt&#34;  func main() {  for i := 0; i &lt; 5; i&#43;&#43; {  fmt.Printf(&#34;This is the %d iteration\n&#34;, i)  } } 循环中同时使用多个计数器：
+**for i, j := 0, N; i &lt; j; i, j = i&#43;1, j-1 {} **2. 基于条件判断的迭代for 结构的第二种形式是没有头部的条件判断迭代（类似其它语言中的 while 循环），基本形式为：for 条件语句 {}。 您也可以认为这是没有初始化语句和修饰语句的 for 结构，因此 ;; 便是多余的了。"/>
 
-<meta property="og:title" content="go结构for" />
-<meta property="og:description" content="1. 基于计数器的迭代 for 初始化语句; 条件语句; 修饰语句 {}
-package main import &quot;fmt&quot; func main() { for i := 0; i &lt; 5; i&#43;&#43; { fmt.Printf(&quot;This is the %d iteration\n&quot;, i) } }  循环中同时使用多个计数器：
-**for i, j := 0, N; i &lt; j; i, j = i&#43;1, j-1 {} ** 2. 基于条件判断的迭代 for 结构的第二种形式是没有头部的条件判断迭代（类似其它语言中的 while 循环），基本形式为：for 条件语句 {}。 您也可以认为这是没有初始化语句和修饰语句的 for 结构，因此 ;; 便是多余的了。
-package main import &quot;fmt&quot; func main() { var i int = 5 for i &gt;= 0 { i = i - 1 fmt." />
+    <meta property="og:title" content="go结构for" />
+<meta property="og:description" content="1. 基于计数器的迭代for 初始化语句; 条件语句; 修饰语句 {}
+package main  import &#34;fmt&#34;  func main() {  for i := 0; i &lt; 5; i&#43;&#43; {  fmt.Printf(&#34;This is the %d iteration\n&#34;, i)  } } 循环中同时使用多个计数器：
+**for i, j := 0, N; i &lt; j; i, j = i&#43;1, j-1 {} **2. 基于条件判断的迭代for 结构的第二种形式是没有头部的条件判断迭代（类似其它语言中的 while 循环），基本形式为：for 条件语句 {}。 您也可以认为这是没有初始化语句和修饰语句的 for 结构，因此 ;; 便是多余的了。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://loresky.github.io/go/go%E7%BB%93%E6%9E%84for/" /><meta property="article:published_time" content="2018-01-06T16:26:28&#43;00:00"/>
-<meta property="article:modified_time" content="2018-01-06T16:26:28&#43;00:00"/><meta property="og:site_name" content="Title" />
+<meta property="og:url" content="https://loresky.github.io/go/go%E7%BB%93%E6%9E%84for/" /><meta property="article:section" content="go" />
+<meta property="article:published_time" content="2018-01-06T16:26:28+00:00" />
+<meta property="article:modified_time" content="2018-01-06T16:26:28+00:00" />
 
+
+
+    <title>
+  go结构for · loresky
+</title>
+
+    
+      <link rel="canonical" href="https://loresky.github.io/go/go%E7%BB%93%E6%9E%84for/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
+    
 
     
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
-
-
-<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
-
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="/favicon.png">
     
-
-</head>
-
-
-    <body class=" ">
-    
-<div class="sidebar">
-  <div class="container ">
-    <div class="sidebar-about">
-      <span class="site__title">
-        <a href="https://loresky.github.io"></a>
-      </span>
       
         
         
-        
-        <div class="author-image">
-          <img src="https://loresky.github.ioimg/hugo.png" alt="Author Image" class="img--circle img--headshot element--center">
-        </div>
-        
+        <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
       
-      
-      <p class="site__description">
-         生面 
-      </p>
-    </div>
-    <div class="collapsible-menu">
-      <input type="checkbox" id="menuToggle">
-      <label for="menuToggle"></label>
-      <div class="menu-content">
-        <div>
-	<ul class="sidebar-nav">
-		 
-		 
-			 
-				<li>
-					<a href="/posts/">
-						<span>Posts</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/docker/">
-						<span>Docker</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/git/">
-						<span>Git</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/go/">
-						<span>Go</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/linux/">
-						<span>Linux</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/mixed/">
-						<span>Mixed</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/web/">
-						<span>Web</span>
-					</a>
-				</li>
-			 
-		 
-			 
-				<li>
-					<a href="/win/">
-						<span>Win</span>
-					</a>
-				</li>
-			 
-		
-		</li>
-	</ul>
-</div>
-
-        <section class="social">
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</section>
-
-      </div>
-    </div>
     
 
+    
 
-  </div>
-</div>
+    
 
-        <div class="content container">
-            
-    <article>
-  <header>
-    <h1>go结构for</h1>
-    
-    
-<div class="post__meta">
-    
-    
-      <i class="fas fa-calendar-alt"></i> Jan 6, 2018
-    
-    
-    
-    
-    
-    <br/>
-    <i class="fas fa-clock"></i> 1 min read
-</div>
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-  </header>
+    <meta name="generator" content="Hugo 0.94.2" />
+  </head>
+
   
   
-  <div class="post">
     
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
 
-<h2 id="1-基于计数器的迭代">1. 基于计数器的迭代</h2>
 
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      loresky
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/docker/">docker</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/git/">git</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/go/">go</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/linux/">linux</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/mixed/">mixed</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Posts</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/web/">web</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/win/">win</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://loresky.github.io/go/go%E7%BB%93%E6%9E%84for/">
+          go结构for
+        </a>
+      </h1>
+    </header>
+
+    <h2 id="1-基于计数器的迭代">
+  1. 基于计数器的迭代
+  <a class="heading-link" href="#1-%e5%9f%ba%e4%ba%8e%e8%ae%a1%e6%95%b0%e5%99%a8%e7%9a%84%e8%bf%ad%e4%bb%a3">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p><code>for 初始化语句; 条件语句; 修饰语句 {}</code></p>
-
-<pre><code class="language-go">package main
-
-import &quot;fmt&quot;
-
-func main() {
-    for i := 0; i &lt; 5; i++ {
-        fmt.Printf(&quot;This is the %d iteration\n&quot;, i)
-    }
-}
-</code></pre>
-
-<p>循环中同时使用多个计数器：</p>
-
-<h3 id="for-i-j-0-n-i-j-i-j-i-1-j-1">**for i, j := 0, N; i &lt; j; i, j = i+1, j-1 {} **</h3>
-
-<h2 id="2-基于条件判断的迭代">2. 基于条件判断的迭代</h2>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="font-weight:bold">package</span> main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> <span style="font-style:italic">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> main() {
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">for</span> i := 0; i &lt; 5; i++ {
+</span></span><span style="display:flex;"><span>        fmt.Printf(<span style="font-style:italic">&#34;This is the %d iteration\n&#34;</span>, i)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>循环中同时使用多个计数器：</p>
+<h3 id="for-i-j--0-n-i--j-i-j--i1-j-1--">
+  **for i, j := 0, N; i &lt; j; i, j = i+1, j-1 {} **
+  <a class="heading-link" href="#for-i-j--0-n-i--j-i-j--i1-j-1--">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<h2 id="2-基于条件判断的迭代">
+  2. 基于条件判断的迭代
+  <a class="heading-link" href="#2-%e5%9f%ba%e4%ba%8e%e6%9d%a1%e4%bb%b6%e5%88%a4%e6%96%ad%e7%9a%84%e8%bf%ad%e4%bb%a3">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p>for 结构的第二种形式是没有头部的条件判断迭代（类似其它语言中的 while 循环），基本形式为：for 条件语句 {}。
 您也可以认为这是没有初始化语句和修饰语句的 for 结构，因此 ;; 便是多余的了。</p>
-
-<pre><code class="language-go">package main
-
-import &quot;fmt&quot;
-
-func main() {
-    var i int = 5
-
-    for i &gt;= 0 {
-        i = i - 1
-        fmt.Printf(&quot;The variable i is now: %d\n&quot;, i)
-    }
-}
-输出：
-The variable i is now: 4
-The variable i is now: 3
-The variable i is now: 2
-The variable i is now: 1
-The variable i is now: 0
-The variable i is now: -1
-</code></pre>
-
-<h2 id="3-for-range-结构">3. for-range 结构</h2>
-
-<pre><code class="language-go">for pos, char := range str {
-...
-}
- str := &quot;Go is a beautiful language!&quot;
-    fmt.Printf(&quot;The length of str is: %d\n&quot;, len(str))
-    for pos, char := range str {
-        fmt.Printf(&quot;Character on position %d is: %c \n&quot;, pos, char)
-    }
-</code></pre>
-
-  </div>
-  
-
-<div class="navigation navigation-single">
-    
-    <a href="/go/go%E7%BB%93%E6%9E%84switch/" class="navigation-prev">
-      <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">go结构switch</span>
-    </a>
-    
-    
-    <a href="/go/go%E6%A0%87%E7%AD%BE%E4%B8%8Egoto/" class="navigation-next">
-      <span class="navigation-tittle">go标签与goto</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
-    </a>
-    
-</div>
-
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="font-weight:bold">package</span> main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">import</span> <span style="font-style:italic">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">func</span> main() {
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">var</span> i <span style="">int</span> = 5
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">for</span> i &gt;= 0 {
+</span></span><span style="display:flex;"><span>        i = i - 1
+</span></span><span style="display:flex;"><span>        fmt.Printf(<span style="font-style:italic">&#34;The variable i is now: %d\n&#34;</span>, i)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>输出<span style="">：</span>
+</span></span><span style="display:flex;"><span>The variable i is now: 4
+</span></span><span style="display:flex;"><span>The variable i is now: 3
+</span></span><span style="display:flex;"><span>The variable i is now: 2
+</span></span><span style="display:flex;"><span>The variable i is now: 1
+</span></span><span style="display:flex;"><span>The variable i is now: 0
+</span></span><span style="display:flex;"><span>The variable i is now: -1
+</span></span></code></pre></div><h2 id="3-for-range-结构">
+  3. for-range 结构
+  <a class="heading-link" href="#3-for-range-%e7%bb%93%e6%9e%84">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="font-weight:bold">for</span> pos, char := <span style="font-weight:bold">range</span> str {
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span> str := <span style="font-style:italic">&#34;Go is a beautiful language!&#34;</span>
+</span></span><span style="display:flex;"><span>    fmt.Printf(<span style="font-style:italic">&#34;The length of str is: %d\n&#34;</span>, len(str))
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">for</span> pos, char := <span style="font-weight:bold">range</span> str {
+</span></span><span style="display:flex;"><span>        fmt.Printf(<span style="font-style:italic">&#34;Character on position %d is: %c \n&#34;</span>, pos, char)
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div>
+  </article>
+</section>
 
   
 
-  
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
     
-
-
-</article>
-
-
-        </div>
-        
+      2018 -
     
-<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    2022
+     Author 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
 
+    </main>
 
     
+      
+      <script src="/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js" integrity="sha256-j7hjdqFuaEr0cqMprvUC2&#43;vPq2XOJk6XUNFEkSlHxgI="></script>
     
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-        
-    
-    <script type="text/javascript">
-        
-        hljs.initHighlightingOnLoad();
-    </script>
-    
-
-
-
 
     
 
+    
 
+    
 
-    </body>
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
 </html>

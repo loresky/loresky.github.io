@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on </title>
+    <title>Categories on loresky</title>
     <link>https://loresky.github.io/categories/</link>
-    <description>Recent content in Categories on </description>
+    <description>Recent content in Categories on loresky</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    
-	<atom:link href="https://loresky.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://loresky.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Development</title>
       <link>https://loresky.github.io/categories/development/</link>
@@ -20,7 +17,7 @@
     </item>
     
     <item>
-      <title>Golang</title>
+      <title>golang</title>
       <link>https://loresky.github.io/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
