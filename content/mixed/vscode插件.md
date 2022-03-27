@@ -56,7 +56,8 @@ description = ""
 
 
 
-
+[vscode终端颜色](https://glitchbone.github.io/vscode-base16-term/#/)
+[vscode配置](https://blog.csdn.net/qq_42374233/article/details/111308827)
 
 ```javascript
 {

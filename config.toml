@@ -1,28 +1,59 @@
 ## Basic Configuration
-baseurl = "https://loresky.github.io/"
+baseURL = "https://loresky.github.io/"
+title = "loresky"
 languageCode = "en"
+defaultContentLanguage = "en"
 
-theme = "hyde-hyde"
+theme = "hugo-coder"
+
+paginate = 60
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+enableEmoji = true
+
+# Enable Disqus comments
+# disqusShortname = "yourdiscussshortname"
 
 ## Site Settings
 [params]
-    author = "Author"
-    title = "Title"
-    description = "生面"
-    authorimage = "/img/hugo.png"
-    dateformat = "Jan 2, 2006"
-    highlightjs = true
+  author = "Author"
+  info = "Full Stack DevOps and Magician"
+  description = "生面"
+  keywords = "blog,developer,personal"
+  avatarurl = "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fup.enterdesk.com%2Fedpic%2Ff7%2F80%2F97%2Ff7809705cbe5c0fc580e401270522a0a.jpg&refer=http%3A%2F%2Fup.enterdesk.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649830138&t=44e72fd5a2ae97caff3f30c5edff5ca7"
+
+  since = 2018
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+  # Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/loresky"
 
 ## Main Menu
 [[menu.main]]
-    name = "Posts"
-    weight = 100
-    identifier = "posts"
-    url = "/posts/"
- 
+    name = "mixed"
+    weight = 1
+    identifier = "mixed"
+    url = "/mixed/"
+
 [[menu.main]]
     name = "linux"
-    weight = 100
+    weight = 2
     identifier = "linux"
     url = "/linux/"
 
@@ -51,13 +82,13 @@ theme = "hyde-hyde"
     url = "/win/"
 
 [[menu.main]]
-    name = "mixed"
-    weight = 100
-    identifier = "mixed"
-    url = "/mixed/"   
-
-[[menu.main]]
     name = "web"
     weight = 100
     identifier = "web"
-    url = "/web/" 
+    url = "/web/"
+
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
