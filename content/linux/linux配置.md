@@ -52,3 +52,20 @@ StartupNotify=false
 
 ## Fcitx输入中文不显示候选词框的解决办法
 `sudo apt remove fcitx-module-kimpanel`
+
+
+## alias
+```
+alias cat='bat'
+alias ping='prettyping --nolegend'
+//--color dark 使用颜色方案   -rr 只读模式（防止误删和运行新的 shell 程序）--exclude 忽略不想操作的目录
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+
+
+
+//alias preview="fzf --preview 'bat --color \"always\" {}'"
+//支持在 VS Code 里用 ctrl+o 来打开选择的文件
+//export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+
+
+```

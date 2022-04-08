@@ -53,6 +53,7 @@ description = ""
 |[Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)|代码片段生成一个高清图片|
 |[gi](https://marketplace.visualstudio.com/items?itemName=rubbersheep.gi)|快速生成.gitignore|
 |[Vusion Peek](https://marketplace.visualstudio.com/items?itemName=lingximu.vusion-peek)|Vue组件快速跳转|
+|[vscode-faker](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-faker)|生成虚假数据|
 
 
 
