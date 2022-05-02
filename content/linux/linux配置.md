@@ -67,5 +67,8 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 //支持在 VS Code 里用 ctrl+o 来打开选择的文件
 //export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
 
+alias docker='podman'
 
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"
 ```

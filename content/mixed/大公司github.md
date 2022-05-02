@@ -38,3 +38,5 @@ https://github.com/trending
 
 
 - [ApacheCN](https://github.com/apachecn)：专注于优秀项目维护的开源组织.
+
+- [程序员技能图谱](https://github.com/TeamStuQ/skill-map)

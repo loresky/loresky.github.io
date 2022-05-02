@@ -3,7 +3,7 @@ title: docker安装设置
 date: 2017-06-13 18:00:00
 ---
 
-## * [Docker 中国](https://www.docker-cn.com/)
+## * [[Docker 极速下载](http://get.daocloud.io/)](http://get.daocloud.io/)
 
 ## * [官网安装教程](https://docs.docker.com/engine/installation/#supported-platforms)
 
