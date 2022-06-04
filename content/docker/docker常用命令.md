@@ -26,3 +26,9 @@ docker run -d -p 3306:3306 hub.c.163.com/library/tomcat:latest
 ```xml
 docker ps -a
 ```
+
+
+## docker错误:Error response from daemon: cannot stop container：
+```xml
+aa-remove-unknown
+```

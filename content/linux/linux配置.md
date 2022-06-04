@@ -53,6 +53,12 @@ StartupNotify=false
 ## Fcitx输入中文不显示候选词框的解决办法
 `sudo apt remove fcitx-module-kimpanel`
 
+## ssh
+``` bash
+sudo apt-get install openssh-server
+sudo echo PermitRootLogin yes > /etc/ssh/sshd_config
+sudo service sshd restart
+```
 
 ## alias
 ```
